@@ -1,0 +1,455 @@
+
+{
+  "header": {
+    "home": "Accueil",
+    "services": "Services",
+    "formations": "Formations",
+    "certifications": "Certifications",
+    "blog": "Blog",
+    "case_studies": "Études de cas",
+    "contact": "Contact",
+    "services_agent": "Création d'agents IA",
+    "services_integration": "Accompagnement à l'intégration IA",
+    "services_dev": "Développement de logiciels",
+    "services_chatbot": "Création de chatbots intelligents"
+  },
+  "hero": {
+    "title": "Élever l'Excellence de l'Expérience Client en RDC avec les Standards ICXI",
+    "subtitle": "En tant que Partenaire Régional de Certification ICXI, nous transformons le service en RDC pour un professionnalisme accru et des résultats mesurables, en s'alignant sur les meilleures pratiques internationales.",
+    "cta_services": "Découvrez nos services",
+    "cta_contact": "Contactez-nous"
+  },
+  "services_overview": {
+    "title": "Notre Expertise",
+    "subtitle": "En tant que Partenaire Régional de Certification ICXI, nous transformons le service en RDC pour un professionnalisme accru et des résultats mesurables, en s'alignant sur les meilleures pratiques internationales.",
+    "agent_title": "Création d'agents IA",
+    "agent_desc": "Automatisez votre service client, vos RH et plus encore avec des agents intelligents et autonomes.",
+    "integration_title": "Accompagnement IA",
+    "integration_desc": "Nous vous guidons pas à pas dans l'adoption de l'intelligence artificielle au sein de vos processus.",
+    "dev_title": "Développement de logiciels",
+    "dev_desc": "Des applications web aux plateformes SaaS, nous bâtissons des logiciels robustes propulsés par l'IA.",
+    "chatbot_title": "Création de chatbots intelligents",
+    "chatbot_desc": "Transformez votre service client avec des chatbots IA qui comprennent et répondent naturellement à vos clients.",
+    "cta": "En savoir plus"
+  },
+  "footer": {
+    "slogan": "Des solutions IA pionnières pour un avenir plus intelligent.",
+    "company": "Entreprise",
+    "services": "Services",
+    "legal": "Légal",
+    "privacy_policy": "Politique de confidentialité",
+    "terms_of_use": "Conditions d'utilisation",
+    "legal_notice": "Mentions légales",
+    "copyright": "© 2025 DRC PIONEERS PARTNERS – Tous droits réservés."
+  },
+  "pages": {
+    "services_title": "Nos Services",
+    "services_content": "Contenu à venir...",
+    "formations_title": "Nos Formations",
+    "formations_content": "Programmes de formation certifiés en expérience client et bien-être employé.",
+    "certifications_title": "Nos Certifications",
+    "certifications_content": "Certifications internationales ICXI reconnues mondialement.",
+    "blog_title": "Notre Blog",
+    "blog_content": "Actualités et insights sur l'expérience client et l'excellence opérationnelle.",
+    "casestudies_title": "Nos Études de Cas",
+    "casestudies_content": "Contenu à venir...",
+    "contact_title": "Nous Contacter",
+    "contact_content": "Prenez contact avec notre équipe. Nous sommes là pour vous aider."
+  },
+  "services_page": {
+    "title": "Nos Services en Détail",
+    "subtitle": "Des solutions sur mesure pour transformer votre entreprise grâce à l'intelligence artificielle.",
+    "cta_contact_us": "Obtenez une consultation gratuite",
+    "ai_agents": {
+      "banner_title": "Créez Votre Équipe d'Agents IA Autonomes",
+      "banner_subtitle": "Déléguez les tâches, automatisez les processus et gagnez en efficacité avec des agents intelligents conçus pour votre entreprise.",
+      "title": "Création d'Agents IA",
+      "id": "creation-agents",
+      "definition": "Qu'est-ce qu'un agent IA ?",
+      "definition_text": "Un agent IA est un programme autonome qui observe son environnement, prend des décisions et exécute des actions pour atteindre des objectifs spécifiques. Ils peuvent automatiser des tâches complexes, interagir avec les utilisateurs et apprendre de leurs expériences.",
+      "applications_title": "Domaines d'application clés",
+      "applications": {
+        "customer_service": "Service client",
+        "hr": "Ressources humaines",
+        "education": "Éducation",
+        "finance": "Finance"
+      },
+      "use_cases_title": "Cas d'usage concrets",
+      "use_cases": {
+        "customer_service": "Un chatbot disponible 24/7 pour répondre aux questions fréquentes et résoudre les problèmes de base, améliorant la satisfaction client.",
+        "hr": "Un assistant virtuel pour trier les CV, planifier les entretiens et répondre aux questions des candidats, accélérant le processus de recrutement.",
+        "education": "Un tuteur virtuel personnalisé qui s'adapte au rythme d'apprentissage de chaque étudiant et propose des exercices sur mesure.",
+        "finance": "Un conseiller financier automatisé qui analyse les marchés, propose des stratégies d'investissement et gère les portefeuilles."
+      },
+      "use_cases_benefits": {
+        "customer_service": [
+          "Disponibilité accrue",
+          "Temps de réponse réduit",
+          "Optimisation des coûts"
+        ],
+        "hr": [
+          "Recrutement accéléré",
+          "Pré-sélection objective",
+          "Expérience candidat améliorée"
+        ],
+        "education": [
+          "Apprentissage personnalisé",
+          "Engagement étudiant accru",
+          "Feedback instantané"
+        ],
+        "finance": [
+          "Analyse en temps réel",
+          "Réduction des risques",
+          "Optimisation de portefeuille"
+        ]
+      },
+      "benefits_title": "Bénéfices",
+      "benefits": [
+        "Gain de temps et d'efficacité",
+        "Réduction des coûts opérationnels",
+        "Amélioration de la satisfaction client",
+        "Prise de décision basée sur les données"
+      ],
+      "tech_title": "Technologies",
+      "tech": "IA, Traitement du Langage Naturel (NLP), Machine Learning.",
+      "cta_quote": "Demander un devis",
+      "cta_demo": "Voir une démo"
+    },
+    "ai_integration": {
+      "banner_title": "Intégrez l'IA en Douceur dans Vos Opérations",
+      "banner_subtitle": "Dotez vos systèmes existants de l'intelligence de l'IA. Nous rendons la transition fluide et performante.",
+      "title": "Accompagnement à l'Intégration IA",
+      "id": "integration-ia",
+      "section_intro_title": "Une Transition en Douceur vers l'Intelligence Artificielle",
+      "description": "Nous vous guidons pour intégrer l'intelligence artificielle dans vos processus existants, de la stratégie à la mise en œuvre, pour maximiser votre retour sur investissement.",
+      "process_title": "Notre processus étape par étape",
+      "process_steps": {
+        "audit": "Audit de vos besoins et de votre infrastructure existante.",
+        "planning": "Planification stratégique et définition d'une feuille de route.",
+        "development": "Développement ou intégration de solutions IA sur mesure.",
+        "training": "Formation de vos équipes pour une adoption réussie.",
+        "maintenance": "Support et maintenance continus pour garantir les performances."
+      },
+      "target_title": "Pour qui ?",
+      "target_audience": "Des PME aux grandes entreprises, nous adaptons notre approche à votre secteur et à votre maturité digitale.",
+      "faq_title": "Questions fréquentes",
+      "faq_items": [
+        {
+          "question": "Quelle est la durée d'un projet d'intégration IA ?",
+          "answer": "La durée varie en fonction de la complexité du projet, de quelques semaines pour un pilote à plusieurs mois pour une intégration à grande échelle. Nous définissons un calendrier précis après la phase d'audit."
+        },
+        {
+          "question": "Comment garantissez-vous la confidentialité des données ?",
+          "answer": "La sécurité et la confidentialité sont nos priorités. Nous respectons les réglementations en vigueur (comme le RGPD) et mettons en place des protocoles stricts pour protéger vos données à chaque étape."
+        }
+      ],
+      "cta_expert": "Parlez à un expert IA",
+      "cta_consultation": "Planifiez une consultation"
+    },
+    "software_development": {
+      "banner_title": "Des Logiciels Intelligents, Conçus pour Vous",
+      "banner_subtitle": "Du concept au lancement, nous développons des solutions logicielles robustes et propulsées par l'IA qui stimulent la croissance et l'innovation.",
+      "title": "Développement de Logiciels sur Mesure",
+      "id": "developpement-logiciels",
+      "description": "Nous créons des applications web, mobiles et des plateformes SaaS robustes et évolutives, en intégrant l'IA pour offrir des fonctionnalités intelligentes et une expérience utilisateur unique.",
+      "tech_stack_title": "Nos technologies",
+      "tech_stack": [
+        "React / Next.js",
+        "Node.js",
+        "Python",
+        "Bases de données SQL & NoSQL"
+      ],
+      "sectors_title": "Secteurs d'activité",
+      "sectors": [
+        "Finance",
+        "Santé",
+        "Industrie",
+        "E-commerce"
+      ],
+      "faq_title": "Questions fréquentes",
+      "faq_items": [
+        {
+          "question": "Travaillez-vous avec des méthodologies agiles ?",
+          "answer": "Oui, nous privilégions les approches agiles comme Scrum pour garantir la flexibilité, la transparence et une collaboration étroite avec nos clients tout au long du projet."
+        },
+        {
+          "question": "Fournissez-vous la maintenance après le lancement ?",
+          "answer": "Absolument. Nous proposons des contrats de maintenance et de support pour assurer le bon fonctionnement, la sécurité et l'évolution de votre logiciel après sa mise en production."
+        }
+      ],
+      "cta_estimate": "Demandez une estimation",
+      "cta_references": "Voir nos références",
+      "realized_projects": {
+        "title": "Quelques-unes de nos réalisations",
+        "projects": [
+          {
+            "image_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop",
+            "image_alt": "Plateforme e-commerce sur un ordinateur portable",
+            "title": "Plateforme E-commerce dopée à l'IA",
+            "description": "Une solution e-commerce évolutive avec des recommandations personnalisées et une gestion de stock intelligente.",
+            "tags": ["React", "Node.js", "E-commerce", "IA"]
+          },
+          {
+            "image_url": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop",
+            "image_alt": "Application de santé sur un écran",
+            "title": "SaaS pour Professionnels de Santé",
+            "description": "Une plateforme sécurisée pour la gestion des dossiers patients et des rendez-vous, simplifiant les flux administratifs.",
+            "tags": ["Python", "SaaS", "Santé"]
+          },
+          {
+            "image_url": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop",
+            "image_alt": "Tableau de bord financier avec des graphiques",
+            "title": "Dashboard d'Analyse Fintech",
+            "description": "Un tableau de bord interactif pour la visualisation de données financières en temps réel et l'analyse prédictive.",
+            "tags": ["Next.js", "Fintech", "Data Viz"]
+          }
+        ]
+      }
+    },
+    "chatbots": {
+      "banner_title": "Révolutionnez Votre Service Client avec des Chatbots Intelligents",
+      "banner_subtitle": "Créez des conversations naturelles et personnalisées qui transforment l'expérience client et optimisent votre support.",
+      "title": "Création de Chatbots Intelligents",
+      "id": "chatbots-intelligents",
+      "intro_title": "L'Évolution du Service Client",
+      "intro_text": "Transformez votre service client avec des chatbots propulsés par l'intelligence artificielle qui comprennent le contexte, apprennent de chaque interaction et offrent des réponses personnalisées 24h/24.",
+      "advantages_title": "Avantages pour Votre Entreprise",
+      "advantages": [
+        {
+          "title": "Disponibilité 24/7",
+          "description": "Vos clients obtiennent des réponses instantanées à toute heure, même en dehors des heures d'ouverture."
+        },
+        {
+          "title": "Réduction des coûts",
+          "description": "Diminuez jusqu'à 70% les coûts de support client tout en améliorant la qualité du service."
+        },
+        {
+          "title": "Personnalisation avancée",
+          "description": "Chaque interaction est adaptée au profil et à l'historique du client pour une expérience unique."
+        },
+        {
+          "title": "Évolutivité illimitée",
+          "description": "Gérez des milliers de conversations simultanées sans dégradation de la qualité."
+        }
+      ],
+      "ai_vs_traditional_title": "Chatbots IA vs Chatbots Traditionnels",
+      "ai_benefits": [
+        {
+          "feature": "Compréhension du langage naturel",
+          "traditional": "Réponses basées sur des mots-clés fixes",
+          "ai": "Comprend l'intention et le contexte des messages"
+        },
+        {
+          "feature": "Apprentissage continu",
+          "traditional": "Règles statiques nécessitant une mise à jour manuelle",
+          "ai": "S'améliore automatiquement avec chaque interaction"
+        },
+        {
+          "feature": "Gestion des conversations complexes",
+          "traditional": "Limité aux scénarios préprogrammés",
+          "ai": "Capable de gérer des discussions nuancées et multi-tours"
+        },
+        {
+          "feature": "Personnalisation",
+          "traditional": "Réponses génériques pour tous les utilisateurs",
+          "ai": "Adaptation en temps réel selon le profil utilisateur"
+        }
+      ],
+      "integrations_title": "Intégrations Natives",
+      "integrations_text": "Nos chatbots s'intègrent parfaitement à vos systèmes existants pour une expérience fluide et unifiée.",
+      "integration_platforms": [
+        {
+          "category": "Plateformes de communication",
+          "platforms": ["WhatsApp Business", "Facebook Messenger", "Telegram", "Site web", "Application mobile"]
+        },
+        {
+          "category": "Systèmes CRM",
+          "platforms": ["Salesforce", "HubSpot", "Pipedrive", "Zoho CRM", "Systèmes personnalisés"]
+        },
+        {
+          "category": "Outils de support",
+          "platforms": ["Zendesk", "Freshdesk", "Intercom", "ServiceNow", "Microsoft Teams"]
+        },
+        {
+          "category": "E-commerce",
+          "platforms": ["Shopify", "WooCommerce", "Magento", "PrestaShop", "Systèmes sur mesure"]
+        }
+      ],
+      "use_cases_title": "Cas d'Usage Concrets",
+      "use_cases": [
+        {
+          "title": "Support Client Automatisé",
+          "description": "Résolution instantanée des questions fréquentes, escalade intelligente vers les agents humains pour les cas complexes."
+        },
+        {
+          "title": "Assistant Commercial",
+          "description": "Qualification des leads, présentation des produits, prise de rendez-vous et suivi des prospects."
+        },
+        {
+          "title": "Service Après-Vente",
+          "description": "Suivi des commandes, gestion des retours, planification des interventions techniques."
+        },
+        {
+          "title": "Assistant RH Interne",
+          "description": "Réponses aux questions des employés, gestion des congés, procédures internes."
+        }
+      ],
+      "cta_demo": "Voir une démonstration",
+      "cta_quote": "Demander un devis personnalisé",
+      "cta_consultation": "Planifier une consultation gratuite"
+    }
+  },
+  "contact_form": {
+    "title": "Envoyez-nous un message",
+    "name": "Nom",
+    "name_placeholder": "Votre nom complet",
+    "email": "Email",
+    "email_placeholder": "votre.email@exemple.com",
+    "company": "Société",
+    "company_placeholder": "Le nom de votre société",
+    "service": "Service concerné",
+    "service_placeholder": "Sélectionnez un service",
+    "service_agent": "Création d'agents IA",
+    "service_integration": "Accompagnement IA",
+    "service_dev": "Développement de logiciels",
+    "service_chatbot": "Création de chatbots intelligents",
+    "service_other": "Autre",
+    "message": "Message",
+    "message_placeholder": "Parlez-nous de votre projet...",
+    "submit": "Envoyer le message",
+    "success_title": "Message envoyé !",
+    "success_description": "Merci, nous vous recontacterons dans les 24h.",
+    "validation": {
+      "required": "Ce champ est obligatoire",
+      "invalid_email": "Adresse email invalide"
+    },
+    "info_title": "Coordonnées",
+    "phone": "Téléphone",
+    "technical_support": "Support technique"
+  },
+  "not_implemented": {
+    "title": "Page en Développement",
+    "description": "Cette page est actuellement en cours de développement. Notre équipe travaille activement pour vous offrir une expérience exceptionnelle très bientôt.",
+    "coming_soon_title": "Bientôt Disponible",
+    "features": {
+      "detailed_content": "Contenu détaillé",
+      "interactive_interface": "Interface interactive",
+      "advanced_features": "Fonctionnalités avancées",
+      "optimized_experience": "Expérience optimisée"
+    },
+    "cta_home": "Retour à l'Accueil",
+    "cta_contact": "Nous Contacter",
+    "cta_back": "Retour à la page précédente",
+    "footer_brand": "DRC Pioneer Partners - Excellence en CX & EX",
+    "footer_thanks": "Nous vous remercions pour votre patience"
+  },
+  "services": {
+    "title": "Nos Services d'Excellence",
+    "subtitle": "Solutions complètes en expérience client et bien-être employé. De la formation à la certification, nous accompagnons votre développement professionnel et organisationnel en RDC.",
+    "certifications": {
+      "title": "Certifications ICXI",
+      "subtitle": "Standards Internationaux",
+      "description": "Distinguez-vous avec nos certifications TISSE, ICXS, IDCXS et IEHWS, validées par des organismes tiers comme BSI. Excellence garantie.",
+      "cta": "Voir Certifications",
+      "features": {
+        "international_recognition": "Reconnaissance Internationale",
+        "bsi_validated": "Validé par BSI",
+        "four_certifications": "4 Certifications",
+        "global_standards": "Standards Mondiaux"
+      },
+      "stats": {
+        "success_rate": "95%",
+        "success_rate_label": "Taux de Réussite",
+        "countries": "50+",
+        "validation": "BSI"
+      }
+    },
+    "formations": {
+      "title": "Formations CX & EX",
+      "subtitle": "Programmes Certifiés ICXI",
+      "description": "Développez des compétences de pointe avec nos programmes reconnus internationalement (CXOP, CXMP, CXLP, Masterclass). Dispensées en RDC pour transformer vos équipes.",
+      "cta": "Voir les Programmes",
+      "features": {
+        "training_drc": "Formation en RDC",
+        "international_cert": "Certification Internationale",
+        "duration": "3 à 7 jours",
+        "satisfaction": "4.8★ Satisfaction"
+      },
+      "stats": {
+        "participants": "100+",
+        "participants_label": "Participants Formés",
+        "satisfaction": "4.8★"
+      }
+    },
+    "pme_solutions": {
+      "title": "Solutions PME",
+      "subtitle": "ICXI Navigators",
+      "description": "Évaluez et améliorez votre PME avec des outils intelligents basés sur l'IA. Diagnostics précis et stratégies adaptées au marché congolais.",
+      "cta": "Découvrir Navigators",
+      "features": {
+        "ai_intelligence": "IA Intelligente",
+        "dashboards": "Tableaux de Bord",
+        "targeted_solutions": "Solutions Ciblées",
+        "drc_market": "Marché RDC"
+      },
+      "stats": {
+        "improvement": "85%",
+        "improvement_label": "PME Améliorées",
+        "roi": "3x",
+        "market": "RDC"
+      }
+    },
+    "msc_program": {
+      "title": "Programme MSc",
+      "subtitle": "Master of Science",
+      "description": "Accédez au plus haut niveau avec notre MSc en Customer Experience & Service Management. Programme universitaire de renommée internationale.",
+      "cta": "Détails du MSc",
+      "features": {
+        "international_diploma": "Diplôme International",
+        "prestigious_partners": "Partenaires Prestigieux",
+        "international_network": "Réseau International",
+        "academic_excellence": "Excellence Académique"
+      },
+      "stats": {
+        "success_rate": "98%",
+        "success_rate_label": "Taux de Réussite",
+        "universities": "15+",
+        "graduates": "500+",
+        "rating": "4.9★"
+      }
+    },
+    "summary": {
+      "brand": "DRC Pioneer Partners - Excellence en CX & EX",
+      "features": {
+        "standards": "Standards Internationaux",
+        "training": "Formation En RDC",
+        "partners": "Partenaires Prestigieux",
+        "excellence": "Excellence Garantie"
+      }
+    }
+  },
+  "slides": {
+    "certification": {
+      "title": "Certifications ICXI : L'Excellence Mondiale en RDC",
+      "description": "Obtenez les certifications reconnues mondialement (TISSE, ICXS, IDCXS, IEHWS) pour élever vos standards de service client et d'expérience employé aux meilleures pratiques internationales.",
+      "cta_discover": "Découvrir nos certifications",
+      "cta_contact": "Nous contacter"
+    },
+    "formation": {
+      "title": "Formations ICXI : Développez Vos Talents en CX & EX",
+      "description": "Maîtrisez l'expérience client et le bien-être employé avec nos programmes certifiés (CXOP, CXMP, CXLP, Masterclass, MSc) dispensés localement en RDC.",
+      "cta_explore": "Explorer nos formations",
+      "cta_contact": "Nous contacter"
+    },
+    "navigator": {
+      "title": "ICXI Navigators : CX & EX sur Mesure pour PME",
+      "description": "Des outils d'évaluation et d'amélioration accessibles et innovants, comme les ICXI Navigators, conçus spécifiquement pour les petites et moyennes entreprises de la RDC.",
+      "cta_explore": "Explorer ICXI Navigators",
+      "cta_contact": "Nous contacter"
+    },
+    "audit": {
+      "title": "Audits et Stratégies d'Amélioration CX/EX",
+      "description": "Évaluez objectivement et optimisez vos performances en expérience client et bien-être employé grâce aux cadres d'audit et de conseil de l'ICXI."
+    }
+  }
+}

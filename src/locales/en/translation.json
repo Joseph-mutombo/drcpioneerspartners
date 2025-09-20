@@ -1,0 +1,454 @@
+{
+  "header": {
+    "home": "Home",
+    "services": "Services",
+    "formations": "Training",
+    "certifications": "Certifications",
+    "blog": "Blog",
+    "case_studies": "Case Studies",
+    "contact": "Contact",
+    "services_agent": "AI Agents Creation",
+    "services_integration": "AI Integration Support",
+    "services_dev": "Software Development",
+    "services_chatbot": "Intelligent Chatbots Creation"
+  },
+  "hero": {
+    "title": "Your Partner in Artificial Intelligence Solutions",
+    "subtitle": "We design and integrate custom AI solutions to propel your business into the future. From intelligent agents to tailored software, we turn your challenges into opportunities.",
+    "cta_services": "Discover Our Services",
+    "cta_contact": "Contact Us"
+  },
+  "services_overview": {
+    "title": "Our Expertise",
+    "subtitle": "Cutting-edge solutions to meet your business needs.",
+    "agent_title": "AI Agents Creation",
+    "agent_desc": "Automate your customer service, HR, and more with intelligent and autonomous agents.",
+    "integration_title": "AI Integration Support",
+    "integration_desc": "We guide you step-by-step in adopting AI within your existing processes.",
+    "dev_title": "Custom Software Development",
+    "dev_desc": "From web applications to SaaS platforms, we build robust software powered by AI.",
+    "chatbot_title": "Intelligent Chatbots Creation",
+    "chatbot_desc": "Transform your customer service with AI chatbots that understand and respond naturally to your customers.",
+    "cta": "Learn More"
+  },
+  "footer": {
+    "slogan": "Improve customer experience in DRC with ICXI standards.",
+    "company": "Company",
+    "services": "Services",
+    "legal": "Legal",
+    "privacy_policy": "Privacy Policy",
+    "terms_of_use": "Terms of Use",
+    "legal_notice": "Legal Notice",
+    "copyright": "© 2025 DRC PIONEERS PARTNERS – All rights reserved."
+  },
+  "pages": {
+    "services_title": "Our Services",
+    "services_content": "Content coming soon...",
+    "formations_title": "Our Training Programs",
+    "formations_content": "Certified training programs in customer experience and employee well-being.",
+    "certifications_title": "Our Certifications",
+    "certifications_content": "Internationally recognized ICXI certifications.",
+    "blog_title": "Our Blog",
+    "blog_content": "News and insights on customer experience and operational excellence.",
+    "casestudies_title": "Our Case Studies",
+    "casestudies_content": "Content coming soon...",
+    "contact_title": "Contact Us",
+    "contact_content": "Get in touch with our team. We're here to help you."
+  },
+  "services_page": {
+    "title": "Our Services in Detail",
+    "subtitle": "Custom solutions to transform your business with artificial intelligence.",
+    "cta_contact_us": "Get a Free Consultation",
+    "ai_agents": {
+      "banner_title": "Build Your Autonomous AI Workforce",
+      "banner_subtitle": "Delegate tasks, automate processes, and boost efficiency with intelligent AI agents tailored to your business.",
+      "title": "AI Agent Creation",
+      "id": "creation-agents",
+      "definition": "What is an AI agent?",
+      "definition_text": "An AI agent is an autonomous program that observes its environment, makes decisions, and performs actions to achieve specific goals. They can automate complex tasks, interact with users, and learn from their experiences.",
+      "applications_title": "Key Application Areas",
+      "applications": {
+        "customer_service": "Customer Service",
+        "hr": "Human Resources",
+        "education": "Education",
+        "finance": "Finance"
+      },
+      "use_cases_title": "Concrete Use Cases",
+      "use_cases": {
+        "customer_service": "A 24/7 chatbot to answer frequently asked questions and resolve basic issues, improving customer satisfaction.",
+        "hr": "A virtual assistant to screen resumes, schedule interviews, and answer candidate questions, speeding up the recruitment process.",
+        "education": "A personalized virtual tutor that adapts to each student's learning pace and offers tailored exercises.",
+        "finance": "An automated financial advisor that analyzes markets, suggests investment strategies, and manages portfolios."
+      },
+      "use_cases_benefits": {
+        "customer_service": [
+          "Increased availability",
+          "Reduced response time",
+          "Cost optimization"
+        ],
+        "hr": [
+          "Accelerated recruitment",
+          "Objective pre-screening",
+          "Improved candidate experience"
+        ],
+        "education": [
+          "Personalized learning",
+          "Increased student engagement",
+          "Instant feedback"
+        ],
+        "finance": [
+          "Real-time analysis",
+          "Risk reduction",
+          "Portfolio optimization"
+        ]
+      },
+      "benefits_title": "Benefits",
+      "benefits": [
+        "Time and efficiency gains",
+        "Reduction of operational costs",
+        "Improved customer satisfaction",
+        "Data-driven decision making"
+      ],
+      "tech_title": "Technologies",
+      "tech": "AI, Natural Language Processing (NLP), Machine Learning.",
+      "cta_quote": "Request a Quote",
+      "cta_demo": "See a Demo"
+    },
+    "ai_integration": {
+      "banner_title": "Seamlessly Integrate AI into Your Workflow",
+      "banner_subtitle": "Empower your existing systems with the intelligence of AI. We make the transition smooth and effective.",
+      "title": "AI Integration Support",
+      "id": "integration-ia",
+      "section_intro_title": "A Smooth Transition to Artificial Intelligence",
+      "description": "We guide you in integrating artificial intelligence into your existing processes, from strategy to implementation, to maximize your return on investment.",
+      "process_title": "Our Step-by-Step Process",
+      "process_steps": {
+        "audit": "Audit of your needs and existing infrastructure.",
+        "planning": "Strategic planning and roadmap definition.",
+        "development": "Development or integration of custom AI solutions.",
+        "training": "Training your teams for successful adoption.",
+        "maintenance": "Ongoing support and maintenance to ensure performance."
+      },
+      "target_title": "Who is it for?",
+      "target_audience": "From SMEs to large corporations, we adapt our approach to your industry and digital maturity.",
+      "faq_title": "Frequently Asked Questions",
+      "faq_items": [
+        {
+          "question": "How long does an AI integration project take?",
+          "answer": "The duration varies depending on the project's complexity, from a few weeks for a pilot to several months for a large-scale integration. We define a precise timeline after the audit phase."
+        },
+        {
+          "question": "How do you ensure data privacy?",
+          "answer": "Security and confidentiality are our priorities. We comply with current regulations (like GDPR) and implement strict protocols to protect your data at every stage."
+        }
+      ],
+      "cta_expert": "Talk to an AI Expert",
+      "cta_consultation": "Schedule a Consultation"
+    },
+    "software_development": {
+      "banner_title": "Intelligent Software, Built for You",
+      "banner_subtitle": "From concept to launch, we develop robust, AI-powered software solutions that drive growth and innovation.",
+      "title": "Custom Software Development",
+      "id": "software-development",
+      "description": "We create robust and scalable web, mobile, and SaaS platforms, integrating AI to provide smart features and a unique user experience.",
+      "tech_stack_title": "Our Technologies",
+      "tech_stack": [
+        "React / Next.js",
+        "Node.js",
+        "Python",
+        "SQL & NoSQL Databases"
+      ],
+      "sectors_title": "Business Sectors",
+      "sectors": [
+        "Finance",
+        "Healthcare",
+        "Industry",
+        "E-commerce"
+      ],
+      "faq_title": "Frequently Asked Questions",
+      "faq_items": [
+        {
+          "question": "Do you work with agile methodologies?",
+          "answer": "Yes, we favor agile approaches like Scrum to ensure flexibility, transparency, and close collaboration with our clients throughout the project."
+        },
+        {
+          "question": "Do you provide maintenance after launch?",
+          "answer": "Absolutely. We offer maintenance and support contracts to ensure the proper functioning, security, and evolution of your software after its production release."
+        }
+      ],
+      "cta_estimate": "Request an Estimate",
+      "cta_references": "See Our References",
+      "realized_projects": {
+        "title": "Some of Our Creations",
+        "projects": [
+          {
+            "image_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop",
+            "image_alt": "E-commerce platform on a laptop",
+            "title": "AI-Powered E-commerce Platform",
+            "description": "A scalable e-commerce solution with personalized recommendations and intelligent inventory management.",
+            "tags": ["React", "Node.js", "E-commerce", "AI"]
+          },
+          {
+            "image_url": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop",
+            "image_alt": "Healthcare application on a screen",
+            "title": "SaaS for Healthcare Professionals",
+            "description": "A secure platform for managing patient records and appointments, simplifying administrative workflows.",
+            "tags": ["Python", "SaaS", "Healthcare"]
+          },
+          {
+            "image_url": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop",
+            "image_alt": "Financial dashboard with charts",
+            "title": "Fintech Analysis Dashboard",
+            "description": "An interactive dashboard for real-time financial data visualization and predictive analysis.",
+            "tags": ["Next.js", "Fintech", "Data Viz"]
+          }
+        ]
+      }
+    },
+    "chatbots": {
+      "banner_title": "Revolutionize Your Customer Service with Intelligent Chatbots",
+      "banner_subtitle": "Create natural and personalized conversations that transform customer experience and optimize your support.",
+      "title": "Intelligent Chatbots Creation",
+      "id": "intelligent-chatbots",
+      "intro_title": "The Evolution of Customer Service",
+      "intro_text": "Transform your customer service with AI-powered chatbots that understand context, learn from every interaction, and provide personalized responses 24/7.",
+      "advantages_title": "Benefits for Your Business",
+      "advantages": [
+        {
+          "title": "24/7 Availability",
+          "description": "Your customers get instant answers at any time, even outside business hours."
+        },
+        {
+          "title": "Cost Reduction",
+          "description": "Reduce customer support costs by up to 70% while improving service quality."
+        },
+        {
+          "title": "Advanced Personalization",
+          "description": "Every interaction is tailored to the customer's profile and history for a unique experience."
+        },
+        {
+          "title": "Unlimited Scalability",
+          "description": "Handle thousands of simultaneous conversations without quality degradation."
+        }
+      ],
+      "ai_vs_traditional_title": "AI Chatbots vs Traditional Chatbots",
+      "ai_benefits": [
+        {
+          "feature": "Natural language understanding",
+          "traditional": "Keyword-based fixed responses",
+          "ai": "Understands intent and context of messages"
+        },
+        {
+          "feature": "Continuous learning",
+          "traditional": "Static rules requiring manual updates",
+          "ai": "Automatically improves with every interaction"
+        },
+        {
+          "feature": "Complex conversation handling",
+          "traditional": "Limited to pre-programmed scenarios",
+          "ai": "Capable of handling nuanced multi-turn discussions"
+        },
+        {
+          "feature": "Personalization",
+          "traditional": "Generic responses for all users",
+          "ai": "Real-time adaptation based on user profile"
+        }
+      ],
+      "integrations_title": "Native Integrations",
+      "integrations_text": "Our chatbots seamlessly integrate with your existing systems for a smooth and unified experience.",
+      "integration_platforms": [
+        {
+          "category": "Communication platforms",
+          "platforms": ["WhatsApp Business", "Facebook Messenger", "Telegram", "Website", "Mobile app"]
+        },
+        {
+          "category": "CRM systems",
+          "platforms": ["Salesforce", "HubSpot", "Pipedrive", "Zoho CRM", "Custom systems"]
+        },
+        {
+          "category": "Support tools",
+          "platforms": ["Zendesk", "Freshdesk", "Intercom", "ServiceNow", "Microsoft Teams"]
+        },
+        {
+          "category": "E-commerce",
+          "platforms": ["Shopify", "WooCommerce", "Magento", "PrestaShop", "Custom systems"]
+        }
+      ],
+      "use_cases_title": "Real Use Cases",
+      "use_cases": [
+        {
+          "title": "Automated Customer Support",
+          "description": "Instant resolution of frequently asked questions, intelligent escalation to human agents for complex cases."
+        },
+        {
+          "title": "Sales Assistant",
+          "description": "Lead qualification, product presentation, appointment booking and prospect follow-up."
+        },
+        {
+          "title": "After-Sales Service",
+          "description": "Order tracking, returns management, technical intervention scheduling."
+        },
+        {
+          "title": "Internal HR Assistant",
+          "description": "Employee questions answers, leave management, internal procedures."
+        }
+      ],
+      "cta_demo": "See a demonstration",
+      "cta_quote": "Request a personalized quote",
+      "cta_consultation": "Schedule a free consultation"
+    }
+  },
+  "contact_form": {
+    "title": "Send us a message",
+    "name": "Name",
+    "name_placeholder": "Your full name",
+    "email": "Email",
+    "email_placeholder": "your.email@example.com",
+    "company": "Company",
+    "company_placeholder": "Your company name",
+    "service": "Concerned Service",
+    "service_placeholder": "Select a service",
+    "service_agent": "AI Agents Creation",
+    "service_integration": "AI Integration Support",
+    "service_dev": "Software Development",
+    "service_chatbot": "Intelligent Chatbots Creation",
+    "service_other": "Other",
+    "message": "Message",
+    "message_placeholder": "Tell us about your project...",
+    "submit": "Send Message",
+    "success_title": "Message Sent!",
+    "success_description": "Thank you, we will get back to you within 24 hours.",
+    "validation": {
+      "required": "This field is required",
+      "invalid_email": "Invalid email address"
+    },
+    "info_title": "Contact Information",
+    "phone": "Phone",
+    "technical_support": "Technical Support"
+  },
+  "not_implemented": {
+    "title": "Page Under Development",
+    "description": "This page is currently under development. Our team is actively working to provide you with an exceptional experience very soon.",
+    "coming_soon_title": "Coming Soon",
+    "features": {
+      "detailed_content": "Detailed content",
+      "interactive_interface": "Interactive interface",
+      "advanced_features": "Advanced features",
+      "optimized_experience": "Optimized experience"
+    },
+    "cta_home": "Back to Home",
+    "cta_contact": "Contact Us",
+    "cta_back": "Back to previous page",
+    "footer_brand": "DRC Pioneer Partners - Excellence in CX & EX",
+    "footer_thanks": "Thank you for your patience"
+  },
+  "services": {
+    "title": "Our Services of Excellence",
+    "subtitle": "Complete solutions in customer experience and employee well-being. From training to certification, we support your professional and organizational development in DRC.",
+    "certifications": {
+      "title": "ICXI Certifications",
+      "subtitle": "International Standards",
+      "description": "Stand out with our TISSE, ICXS, IDCXS and IEHWS certifications, validated by third-party organizations like BSI. Excellence guaranteed.",
+      "cta": "View Certifications",
+      "features": {
+        "international_recognition": "International Recognition",
+        "bsi_validated": "BSI Validated",
+        "four_certifications": "4 Certifications",
+        "global_standards": "Global Standards"
+      },
+      "stats": {
+        "success_rate": "95%",
+        "success_rate_label": "Success Rate",
+        "countries": "50+",
+        "validation": "BSI"
+      }
+    },
+    "formations": {
+      "title": "CX & EX Training",
+      "subtitle": "ICXI Certified Programs",
+      "description": "Develop cutting-edge skills with our internationally recognized programs (CXOP, CXMP, CXLP, Masterclass). Delivered in DRC to transform your teams.",
+      "cta": "View Programs",
+      "features": {
+        "training_drc": "Training in DRC",
+        "international_cert": "International Certification",
+        "duration": "3 to 7 days",
+        "satisfaction": "4.8★ Satisfaction"
+      },
+      "stats": {
+        "participants": "100+",
+        "participants_label": "Trained Participants",
+        "satisfaction": "4.8★"
+      }
+    },
+    "pme_solutions": {
+      "title": "SME Solutions",
+      "subtitle": "ICXI Navigators",
+      "description": "Assess and improve your SME with intelligent AI-based tools. Precise diagnostics and strategies adapted to the Congolese market.",
+      "cta": "Discover Navigators",
+      "features": {
+        "ai_intelligence": "AI Intelligence",
+        "dashboards": "Dashboards",
+        "targeted_solutions": "Targeted Solutions",
+        "drc_market": "DRC Market"
+      },
+      "stats": {
+        "improvement": "85%",
+        "improvement_label": "SMEs Improved",
+        "roi": "3x",
+        "market": "DRC"
+      }
+    },
+    "msc_program": {
+      "title": "MSc Program",
+      "subtitle": "Master of Science",
+      "description": "Reach the highest level with our MSc in Customer Experience & Service Management. Internationally renowned university program.",
+      "cta": "MSc Details",
+      "features": {
+        "international_diploma": "International Diploma",
+        "prestigious_partners": "Prestigious Partners",
+        "international_network": "International Network",
+        "academic_excellence": "Academic Excellence"
+      },
+      "stats": {
+        "success_rate": "98%",
+        "success_rate_label": "Success Rate",
+        "universities": "15+",
+        "graduates": "500+",
+        "rating": "4.9★"
+      }
+    },
+    "summary": {
+      "brand": "DRC Pioneer Partners - Excellence in CX & EX",
+      "features": {
+        "standards": "International Standards",
+        "training": "Training in DRC",
+        "partners": "Prestigious Partners",
+        "excellence": "Guaranteed Excellence"
+      }
+    }
+  },
+  "slides": {
+    "certification": {
+      "title": "ICXI Certifications: Global Excellence in DRC",
+      "description": "Obtain globally recognized certifications (TISSE, ICXS, IDCXS, IEHWS) to elevate your customer service and employee experience standards to international best practices.",
+      "cta_discover": "Discover our certifications",
+      "cta_contact": "Contact us"
+    },
+    "formation": {
+      "title": "ICXI Training: Develop Your CX & EX Talents",
+      "description": "Master customer experience and employee well-being with our certified programs (CXOP, CXMP, CXLP, Masterclass, MSc) delivered locally in DRC.",
+      "cta_explore": "Explore our training programs",
+      "cta_contact": "Contact us"
+    },
+    "navigator": {
+      "title": "ICXI Navigators: Tailored CX & EX for SMEs",
+      "description": "Accessible and innovative assessment and improvement tools, like ICXI Navigators, designed specifically for small and medium enterprises in DRC.",
+      "cta_explore": "Explore ICXI Navigators",
+      "cta_contact": "Contact us"
+    },
+    "audit": {
+      "title": "CX/EX Audit and Improvement Strategies",
+      "description": "Objectively assess and optimize your customer experience and employee well-being performance through ICXI's audit and consulting frameworks."
+    }
+  }
+}
