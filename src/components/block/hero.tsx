@@ -5,6 +5,9 @@ import CertificationSlide from './slides/CertificationSlide';
 import FormationSlide from './slides/FormationSlide';
 import AuditSlide from './slides/AuditSlide';
 import NavigatorSlide from './slides/NavigatorSlide';
+import heroImage from '../../assets/images/hero.png';
+import callCenter from '../../assets/images/call-center.png';
+import experts from '../../assets/images/employers.png';
 
 const HeroSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -15,7 +18,7 @@ const HeroSlider = () => {
       id: 1,
       title: "Certifications ICXI : L'Excellence Mondiale en RDC",
       subtitle: "Obtenez les certifications reconnues mondialement (TISSE, ICXS, IDCXS, IEHWS) pour élever vos standards de service client et d'expérience employé aux meilleures pratiques internationales.",
-      imageUrl: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1926&q=80",
+      imageUrl: heroImage,
       imageAlt: "Professionnels africains tenant des certificats de formation",
       component: CertificationSlide
     },
@@ -23,7 +26,7 @@ const HeroSlider = () => {
       id: 2,
       title: "Formations ICXI : Développez Vos Talents en CX & EX",
       subtitle: "Maîtrisez l'expérience client et le bien-être employé avec nos programmes certifiés (CXOP, CXMP, CXLP, Masterclass, MSc) dispensés localement en RDC.",
-      imageUrl: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1926&q=80",
+      imageUrl: callCenter,
       imageAlt: "Formation en salle avec participants engagés",
       component: FormationSlide
     },
@@ -109,14 +112,13 @@ const HeroSlider = () => {
   return (
     <section 
     id="accueil" 
-    className="flex items-center relative overflow-hidden"
     style={{
-      backgroundImage: 'linear-gradient(rgba(13, 27, 62, 0.9), rgba(13, 27, 62, 0.7)), url("https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop")',
+      backgroundImage: 'linear-gradient(rgba(13, 27, 62, 0.9), rgba(13, 27, 62, 0.8)), url("' + heroImage + '")',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundAttachment: 'fixed'
     }}
-      //className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700"
+      className="relative flex items-center overflow-hidden bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 sm:py-10 md:py-0"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       role="region"
@@ -144,7 +146,7 @@ const HeroSlider = () => {
       </div> */}
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
           
           {/* Left Column - Content */}
@@ -164,15 +166,16 @@ const HeroSlider = () => {
             data-aos-delay="600"
           >
             <div className="relative">
-              <div className="w-96 h-96 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 flex items-center justify-center">
+              {/* <div className="w-96 h-96 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 flex items-center justify-center">
                 <div className="w-80 h-80 bg-white/5 rounded-full flex items-center justify-center">
                   <div className="text-white/80 text-8xl font-light">
                     {String(currentSlide + 1).padStart(2, '0')}
                   </div>
                 </div>
-              </div>
+              </div> */}
+              <img src={experts} alt={slides[currentSlide].imageAlt} style={{ width: '120%', height: '120%' }} className="object-cover" />
               
-              {/* Decorative elements */}
+              
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-blue-300/30 rounded-full animate-pulse"></div>
               <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-blue-400/20 rounded-full animate-pulse delay-1000"></div>
             </div>
