@@ -12,7 +12,7 @@ const CertificationSlide: React.FC<SlideProps> = ({
   
   return (
     <div className="space-y-8">
-      <div 
+      {/* <div 
         className="flex items-center space-x-4 mb-6"
         data-aos="fade-right"
         data-aos-duration="800"
@@ -24,16 +24,16 @@ const CertificationSlide: React.FC<SlideProps> = ({
         <div className="text-yellow-500 font-medium text-lg">
           Certifications Internationales ICXI
         </div>
-      </div>
+      </div> */}
 
       <div className="space-y-6">
         <h1 
           className="text-4xl lg:text-5xl font-bold text-white leading-tight transition-all duration-700 ease-in-out"
-          data-aos="fade-up"
+          data-aos="fade-right"
           data-aos-duration="800"
           data-aos-delay="300"
         >
-          {t('slides.certification.title')}
+          Formation et Certification ICXI
         </h1>
         
         <p 
@@ -42,13 +42,13 @@ const CertificationSlide: React.FC<SlideProps> = ({
           data-aos-duration="800"
           data-aos-delay="400"
         >
-          {t('slides.certification.description')}
+          Professionnalisez vos équipes locales avec des programmes de certification reconnus (ex: CXOP, CXMP, CXLP), garantissant des compétences alignées sur les standards mondiaux.
         </p>
       </div>
 
       <div 
         className="flex flex-col sm:flex-row gap-4"
-        data-aos="fade-up"
+        data-aos="fade-in"
         data-aos-duration="800"
         data-aos-delay="500"
       >

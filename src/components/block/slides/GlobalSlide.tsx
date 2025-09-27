@@ -1,39 +1,25 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { Users, ChevronRight } from 'lucide-react';
+import { TrendingUp, ChevronRight } from 'lucide-react';
 import { SlideProps } from './SlideInterface';
+import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
+import { t } from 'i18next';
 
-const FormationSlide: React.FC<SlideProps> = ({ 
+const GlobalSlide: React.FC<SlideProps> = ({ 
   isActive, 
   onActionClick, 
   onContactClick 
 }) => {
-  const { t } = useTranslation();
-  
   return (
     <div className="space-y-8">
-      {/* <div 
-        className="flex items-center space-x-4 mb-6"
-        data-aos="fade-right"
-        data-aos-duration="800"
-        data-aos-delay="200"
-      >
-        <div className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center text-yellow-500 border border-white/20">
-          <Users className="w-8 h-8" />
-        </div>
-        <div className="text-yellow-500 font-medium text-lg">
-          Programmes de Formation CX & EX
-        </div>
-      </div> */}
-
       <div className="space-y-6">
         <h1 
           className="text-4xl lg:text-5xl font-bold text-white leading-tight transition-all duration-700 ease-in-out"
-          data-aos="fade-up"
+          data-aos="fade-right"
           data-aos-duration="800"
-          data-aos-delay="300"
+          data-aos-delay="200"
         >
-          Certification d'Entreprise
+            Transformez votre service client en un avantage concurrentiel décisif en RDC.
         </h1>
         
         <p 
@@ -42,13 +28,13 @@ const FormationSlide: React.FC<SlideProps> = ({
           data-aos-duration="800"
           data-aos-delay="400"
         >
-          Obtenez la <span className="font-bold text-yellow-500">Crédibilité Internationale Immédiate</span> d'une certification délivrée par l'ICXI, un atout majeur auprès de vos clients et partenaires, ouvrant la voie à la certification BSI
+          Dans un marché congolais en pleine mutation, l'attente des clients n'a jamais été aussi élevée. Pour les institutions ambitieuses, se contenter de l'ordinaire n'est plus une option.
         </p>
       </div>
 
       <div 
         className="flex flex-col sm:flex-row gap-4"
-        data-aos="fade-up"
+        data-aos="fade-in"
         data-aos-duration="800"
         data-aos-delay="500"
       >
@@ -70,4 +56,4 @@ const FormationSlide: React.FC<SlideProps> = ({
   );
 };
 
-export default FormationSlide;
+export default GlobalSlide;

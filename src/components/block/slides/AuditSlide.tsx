@@ -12,7 +12,7 @@ const AuditSlide: React.FC<SlideProps> = ({
 }) => {
   return (
     <div className="space-y-8">
-      <div 
+      {/* <div 
         className="flex items-center space-x-4 mb-6"
         data-aos="fade-right"
         data-aos-duration="800"
@@ -24,16 +24,16 @@ const AuditSlide: React.FC<SlideProps> = ({
         <div className="text-yellow-500 font-medium text-lg">
           Audits & Conseil en Amélioration
         </div>
-      </div>
+      </div> */}
 
       <div className="space-y-6">
         <h1 
           className="text-4xl lg:text-5xl font-bold text-white leading-tight transition-all duration-700 ease-in-out"
-          data-aos="fade-up"
+          data-aos="fade-right"
           data-aos-duration="800"
-          data-aos-delay="300"
+          data-aos-delay="200"
         >
-          {t('slides.audit.title')}
+          Audit de Service TISSE
         </h1>
         
         <p 
@@ -42,13 +42,13 @@ const AuditSlide: React.FC<SlideProps> = ({
           data-aos-duration="800"
           data-aos-delay="400"
         >
-          {t('slides.audit.description')}
+          Évaluez objectivement et optimisez vos performances en expérience client et bien-être employé grâce aux cadres d'audit et de conseil de l'ICXI.
         </p>
       </div>
 
       <div 
         className="flex flex-col sm:flex-row gap-4"
-        data-aos="fade-up"
+        data-aos="fade-in"
         data-aos-duration="800"
         data-aos-delay="500"
       >

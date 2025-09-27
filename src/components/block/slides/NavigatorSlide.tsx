@@ -12,7 +12,7 @@ const NavigatorSlide: React.FC<SlideProps> = ({
   
   return (
     <div className="space-y-8">
-      <div 
+      {/* <div 
         className="flex items-center space-x-4 mb-6"
         data-aos="fade-right"
         data-aos-duration="800"
@@ -24,16 +24,16 @@ const NavigatorSlide: React.FC<SlideProps> = ({
         <div className="text-yellow-500 font-medium text-lg">
           Solutions sur Mesure pour PME
         </div>
-      </div>
+      </div> */}
 
-      <div className="space-y-6">
+      <div className="space-y-6 mt-4">
         <h1 
           className="text-4xl lg:text-5xl font-bold text-white leading-tight transition-all duration-700 ease-in-out"
           data-aos="fade-up"
           data-aos-duration="800"
           data-aos-delay="300"
         >
-          {t('slides.navigator.title')}
+          ICXI Navigators
         </h1>
         
         <p 
@@ -42,12 +42,12 @@ const NavigatorSlide: React.FC<SlideProps> = ({
           data-aos-duration="800"
           data-aos-delay="400"
         >
-          {t('slides.navigator.description')}
+          Outil puissant basé sur l'IA pour évaluer rapidement la maturité de votre Expérience Client (CX) et de votre Expérience Employé (EX). Obtenez des analyses vérifiées, des recommandations personnalisées et une feuille de route claire pour l'amélioration. Idéal pour les PME et comme point de départ pour les grandes entreprises
         </p>
       </div>
 
       <div 
-        className="flex flex-col sm:flex-row gap-4"
+        className="flex flex-col sm:flex-row gap-4 mb-4"
         data-aos="fade-up"
         data-aos-duration="800"
         data-aos-delay="500"
