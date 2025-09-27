@@ -33,7 +33,7 @@ const AuditSlide: React.FC<SlideProps> = ({
           data-aos-duration="800"
           data-aos-delay="200"
         >
-          Audit de Service TISSE
+          Audit de Service TISSE 
         </h1>
         
         <p 
