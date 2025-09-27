@@ -131,7 +131,7 @@ const HeroSlider = () => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       role="region"
-      aria-label="Services Hero Slider"
+      aria-label="Services Hero Slider hero-slider"
       aria-live="polite"
     >
       {/* Content */}
