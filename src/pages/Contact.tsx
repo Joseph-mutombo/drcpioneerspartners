@@ -76,7 +76,7 @@ const Contact = () => {
             <h1 className="text-5xl font-bold">{t('pages.contact_title')}</h1>
             <p className="mt-4 text-lg text-white/90">Pour toute question ou demande de service, n'hésitez pas à nous contacter. Notre équipe est à votre disposition pour vous aider.</p>
           </div>
-          <img src={callCenter} data-aos="fade-left" alt="call center" style={{ width: '35%', height: '35%' }} className="object-cover" />
+          <img src={callCenter} data-aos="fade-left" alt="call center" style={{ width: '35%', height: '35%' }} className="hidden lg:flex object-cover" />
         </div>
       </div>
 

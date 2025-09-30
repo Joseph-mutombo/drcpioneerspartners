@@ -19,7 +19,7 @@ const Header = () => {
     { to: '/', text: t('header.home') },
     { to: '/formations', text: t('header.formations') },
     { to: '/certifications', text: t('header.certifications') },
-    { to: '/audit & consultation', text: 'Audit & Consultation' },
+    { to: '/audit-consultation', text: 'Audit & Consultation' },
     { to: '/blog', text: 'Blog' },
     { to: '/contact', text: t('header.contact') },
   ];
