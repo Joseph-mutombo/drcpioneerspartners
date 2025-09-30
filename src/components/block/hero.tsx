@@ -122,7 +122,7 @@ const HeroSlider = () => {
     <section 
     id="accueil" 
     style={{
-      backgroundImage: 'linear-gradient(rgba(13, 27, 62, 0.9), rgba(13, 27, 62, 0.8)), url("' + heroImage + '")',
+      backgroundImage: 'linear-gradient(rgba(13, 27, 62, 0.9), rgba(13, 27, 62, 0.7)), url("' + heroImage + '")',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundAttachment: 'fixed'

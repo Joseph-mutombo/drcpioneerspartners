@@ -12,23 +12,36 @@ const GlobalSlide: React.FC<SlideProps> = ({
 }) => {
   return (
     <div className="space-y-8">
+      <div 
+        className="flex items-center space-x-2 mb-2"
+        data-aos="fade-right"
+        data-aos-duration="800"
+        data-aos-delay="200"
+      >
+        <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center text-yellow-500 border border-white/20">
+          <TrendingUp className="w-8 h-8" />
+        </div>
+        <div className="text-yellow-500 font-medium text-lg">
+          Partenaire exclusif de l’ICXI en RDC
+        </div>
+      </div>
       <div className="space-y-6">
         <h1 
-          className="text-4xl lg:text-5xl font-bold text-white leading-tight transition-all duration-700 ease-in-out"
-          data-aos="fade-right"
+          className="text-4xl lg:text-5xl line-height font-bold text-white leading-tight transition-all duration-700 ease-in-out"
+          data-aos="fade-up"
           data-aos-duration="800"
           data-aos-delay="200"
         >
-            Transformez votre service client en un avantage concurrentiel décisif en RDC.
+          Elevez votre service client grâce à la Certification TISSE.
         </h1>
         
         <p 
-          className="text-xl text-white/90 leading-relaxed max-w-2xl transition-all duration-700 ease-in-out"
+          className="text-xl text-white/95 leading-relaxed max-w-2xl transition-all duration-700 ease-in-out"
           data-aos="fade-up"
           data-aos-duration="800"
           data-aos-delay="400"
         >
-          Dans un marché congolais en pleine mutation, l'attente des clients n'a jamais été aussi élevée. Pour les institutions ambitieuses, se contenter de l'ordinaire n'est plus une option.
+          Devenez une référence mondiale. Implémentez la norme Internationale d'Excellence de Service (TISSE) pour des résultats mesurables et une fidélité client durable.
         </p>
       </div>
 

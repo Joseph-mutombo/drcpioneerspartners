@@ -1,0 +1,28 @@
+import { Link } from "react-router-dom";
+import { Button } from "../ui/button";
+import heroImage from '../../assets/images/hero.png';
+import { ArrowRight } from "lucide-react";
+
+export const CtaAudit = () => (
+  <section
+  style={{
+      backgroundImage: 'linear-gradient(rgba(13, 27, 62, 0.9), rgba(13, 27, 62, 0.7)), url("' + heroImage + '")',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundAttachment: 'fixed'
+    }}
+  className="py-20 bg-white" >
+    <div className="container mx-auto text-center">
+      <h2 className="text-4xl font-bold mb-4  text-white">Prêt à Améliorer Votre Service Client?</h2>
+      <p className="text-lg mb-8  text-white">Contactez-nous dès aujourd'hui pour un audit gratuit de votre service client et découvrez comment TISSE peut transformer votre entreprise.</p>
+      <Link
+                to="/contact"
+                className="inline-flex bg-yellow-500 hover:bg-yellow-600 text-brand-blue px-6 py-3 rounded-lg font-semibold flex items-center justify-center space-x-2 transition-colors duration-300"
+            >
+                <span>Demander un Audit</span>
+                <ArrowRight className="w-5 h-5" />
+            </Link>
+            
+    </div>
+  </section>
+);
