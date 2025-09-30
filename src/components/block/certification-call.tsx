@@ -25,7 +25,7 @@ const CertificationCall = () => {
           
           {/* Header */}
           <div className="mb-12">
-            <h2 className="text-3xl font-bold text-white mb-4">
+            <h2 className="text-4xl font-bold text-white mb-4">
               {t('services.certifications.title')}
             </h2>
             <p className="text-lg text-white/90 max-w-4xl mx-auto">

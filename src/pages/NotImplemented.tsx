@@ -7,7 +7,7 @@ const NotImplemented: React.FC = () => {
   const { t } = useTranslation();
   
   return (
-    <div className="min-h-screen bg-brand-gray flex items-center justify-center px-4">
+    <div className="min-h-screen bg-brand-gray flex items-center justify-center px-4 py-20">
       <div className="max-w-2xl mx-auto text-center">
         
         {/* Icon */}
@@ -83,15 +83,6 @@ const NotImplemented: React.FC = () => {
           </div>
         </div>
 
-        {/* Footer Note */}
-        <div className="mt-12 pt-8 border-t border-brand-gray-dark">
-          <p className="text-sm text-brand-blue/60">
-            {t('not_implemented.footer_brand')}
-          </p>
-          <p className="text-xs text-brand-blue/50 mt-1">
-            {t('not_implemented.footer_thanks')}
-          </p>
-        </div>
       </div>
     </div>
   );

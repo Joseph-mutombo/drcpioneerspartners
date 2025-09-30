@@ -17,10 +17,10 @@ const Header = () => {
 
   const navLinks = [
     { to: '/', text: t('header.home') },
-    { to: '/services', text: t('header.services') },
     { to: '/formations', text: t('header.formations') },
     { to: '/certifications', text: t('header.certifications') },
-    { to: '/etudes-de-cas', text: t('header.case_studies') },
+    { to: '/audit & consultation', text: 'Audit & Consultation' },
+    { to: '/blog', text: 'Blog' },
     { to: '/contact', text: t('header.contact') },
   ];
 
@@ -40,8 +40,8 @@ const Header = () => {
           className={({ isActive }) =>
             `px-3 py-2 text-sm font-medium transition-colors ${
               isActive
-                ? 'text-brand-blue-light'
-                : 'text-brand-blue hover:text-brand-blue-light'
+                ? 'text-yellow-600'
+                : 'text-brand-blue hover:text-yellow-600'
             }`
           }
           onClick={() => setIsMobileMenuOpen(false)}

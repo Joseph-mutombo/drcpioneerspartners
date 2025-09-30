@@ -23,10 +23,10 @@ const App = () => (
         <Layout>
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/services" element={<Services />} />
+            <Route path="/audit-consultation" element={<Services />} />
             <Route path="/formations" element={<NotImplemented />} />
             <Route path="/certifications" element={<NotImplemented />} />
-            <Route path="/etudes-de-cas" element={<NotImplemented />} />
+            <Route path="/blog" element={<NotImplemented />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

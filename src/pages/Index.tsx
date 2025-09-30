@@ -17,14 +17,15 @@ const Index = () => {
     <div className="text-brand-blue">
       <Hero />
       <WhyTiss />
-      <CtaAudit />
-      <Normes />
-      <CtaCertCompany />
-      <Services />
-      <Partners />
       <CertificationCall />
+      <Services />
+      {/* <Normes /> */}
+      <CtaCertCompany />
       <FormationCall />
+      <CtaAudit />
       <PMECall />
+      <CtaAudit />
+      <Partners />
     </div>
   );
 };

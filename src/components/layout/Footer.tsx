@@ -1,7 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Facebook, Linkedin, Twitter } from 'lucide-react';
+import { Facebook, Linkedin, MapPin, Twitter } from 'lucide-react';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
             <div className="flex items-center space-x-2 mb-2">
-              <img src="/logo-transparent.png" alt="drcpioneers" className="h-20 w-auto" />
+              <img src="/logo.png" alt="drcpioneers" className="h-20 w-auto" />
             </div>
             <p className="mt-2 text-sm text-gray-300">
               {t('footer.slogan')}
@@ -26,15 +26,15 @@ const Footer = () => {
           <div>
             <h3 className="text-sm font-semibold tracking-wider uppercase">{t('footer.services')}</h3>
             <ul className="mt-4 space-y-2 text-sm">
-              <li><Link to="/services" className="text-gray-300 hover:text-white">{t('header.services')}</Link></li>
               <li><Link to="/formations" className="text-gray-300 hover:text-white">{t('header.formations')}</Link></li>
               <li><Link to="/certifications" className="text-gray-300 hover:text-white">{t('header.certifications')}</Link></li>
+              <li><Link to="/audit-consultation" className="text-gray-300 hover:text-white">Audit & Consultation</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="text-sm font-semibold tracking-wider uppercase">{t('footer.company')}</h3>
             <ul className="mt-4 space-y-2 text-sm">
-              <li><Link to="/etudes-de-cas" className="text-gray-300 hover:text-white">{t('header.case_studies')}</Link></li>
+              <li><Link to="/blog" className="text-gray-300 hover:text-white">Blog</Link></li>
               <li><Link to="/contact" className="text-gray-300 hover:text-white">{t('header.contact')}</Link></li>
             </ul>
           </div>
@@ -47,11 +47,14 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+        <div className="mt-6 flex flex-row items-start gap-2">
+          <MapPin size={12} className="w-10 h-10 text-gray-400" />
+          <div className="text-sm text-gray-400">
+            <p>60, Boulevard du 30 juin,  Immeuble mayumbe, niveau 6, appartement 33, C/Gombe, Kinshasa, RDC</p>
+            <p>+243 978 847 886 | suport@drcpioneers.com</p>
+          </div>
+        </div>
         <div className="mt-12 border-t border-gray-700 pt-8">
-            <div className="text-sm text-gray-400">
-                <p>1 av. OUA, concession PROCOKI, Q/ Basoko, C/ Ngaliema, Kinshasa, RDC</p>
-                <p>+243 978 847 886 | suport@iasolution.site</p>
-            </div>
           <p className="text-center text-sm text-gray-400 mt-4 md:mt-0">{t('footer.copyright')}</p>
         </div>
       </div>

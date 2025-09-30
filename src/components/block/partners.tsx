@@ -1,5 +1,6 @@
 import React from 'react';
 import icxiLogo from '../../assets/images/partners/ICXI.png';
+import bsiLogo from '../../assets/images/partners/bsi-logo.avif';
 
 interface Partner {
   id: string;
@@ -23,7 +24,7 @@ const Partners = () => {
     {
       id: 'bsi',
       name: 'British Standards Institution',
-      logo: icxiLogo,
+      logo: bsiLogo,
       website: 'https://www.bsigroup.com',
       description: 'Corps de certification indépendant international',
       category: 'certification'
@@ -70,7 +71,7 @@ const Partners = () => {
             data-aos-duration="600"
             data-aos-delay="100"
           >
-            Soutenus par les Leaders de l'Industrie
+            Nos Partenaires Principaux
           </h2>
           <p 
             className="text-lg text-brand-blue/80 max-w-3xl mx-auto"
@@ -85,14 +86,14 @@ const Partners = () => {
 
         {/* Primary Partners (ICXI & BSI) */}
         <div className="mb-16">
-          <h3 
+          {/* <h3 
             className="text-center text-xl font-semibold text-brand-blue mb-8"
             data-aos="fade-up"
             data-aos-duration="600"
             data-aos-delay="300"
           >
             Partenaires Principaux
-          </h3>
+          </h3> */}
           <div 
             className="flex flex-wrap justify-center items-center gap-12 lg:gap-16"
             data-aos="fade-up"
@@ -113,11 +114,11 @@ const Partners = () => {
                   }
                 }}
               >
-                <div className="bg-white rounded-lg shadow-sm border border-brand-gray-dark p-8 hover:shadow-lg hover:border-yellow-500 transition-all duration-300">
+                <div className="bg-white rounded-lg shadow-sm border border-brand-gray-dark p-2 hover:shadow-lg hover:border-yellow-500 transition-all duration-300">
                   <img
                     src={partner.logo}
                     alt={`Logo de ${partner.name}`}
-                    className="h-16 w-auto mx-auto filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                    className="w-auto mx-auto  transition-all duration-300"
                     loading="lazy"
                   />
                   <div className="mt-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -131,7 +132,7 @@ const Partners = () => {
         </div>
 
         {/* Academic Partners */}
-        <div>
+        {/* <div>
           <h3 
             className="text-center text-xl font-semibold text-brand-blue mb-8"
             data-aos="fade-up"
@@ -175,10 +176,10 @@ const Partners = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Trust Indicators */}
-        <div 
+        {/* <div 
           className="mt-16 text-center"
           data-aos="fade-up"
           data-aos-duration="600"
@@ -199,7 +200,7 @@ const Partners = () => {
               </span>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

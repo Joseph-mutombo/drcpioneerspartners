@@ -11,8 +11,13 @@ export const CtaCertCompany = () => (
       backgroundPosition: 'center',
       backgroundAttachment: 'fixed'
     }}
-  className="py-20 bg-white" >
-    <div className="container mx-auto text-center">
+  className="py-16 bg-white" >
+    <div 
+    className="container mx-auto text-center"
+    data-aos="fade-right"
+    data-aos-duration="800"
+    data-aos-delay="200"
+    >
       <h2 className="text-4xl font-bold mb-4  text-white">Certifiez Votre Entreprise</h2>
       <p className="text-lg mb-8  text-white">Augmentez la satisfaction de vos clients et améliorez vos processus internes grâce à nos normes de certification.</p>
       

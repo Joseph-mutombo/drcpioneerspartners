@@ -11,8 +11,13 @@ export const CtaAudit = () => (
       backgroundPosition: 'center',
       backgroundAttachment: 'fixed'
     }}
-  className="py-20 bg-white" >
-    <div className="container mx-auto text-center">
+  className="py-16 bg-white" >
+    <div 
+      className="container mx-auto text-center"
+      data-aos="fade-up"
+      data-aos-duration="800"
+      data-aos-delay="200"
+      >
       <h2 className="text-4xl font-bold mb-4  text-white">Prêt à Améliorer Votre Service Client?</h2>
       <p className="text-lg mb-8  text-white">Contactez-nous dès aujourd'hui pour un audit gratuit de votre service client et découvrez comment TISSE peut transformer votre entreprise.</p>
       <Link

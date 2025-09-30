@@ -98,7 +98,7 @@ const Services = () => {
         
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-brand-blue mb-4">
+          <h2 className="text-4xl font-bold text-brand-blue mb-4">
             {t('services.title')}
           </h2>
           <p className="text-lg text-brand-blue/80 max-w-4xl mx-auto">
