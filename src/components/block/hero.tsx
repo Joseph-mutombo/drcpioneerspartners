@@ -127,7 +127,7 @@ const HeroSlider = () => {
       backgroundPosition: 'center',
       backgroundAttachment: 'fixed'
     }}
-      className=" flex items-center overflow-hidden bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700"
+      className=" sm:min-h-[100%] lg:h-auto flex items-center overflow-hidden bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       role="region"
@@ -135,7 +135,7 @@ const HeroSlider = () => {
       aria-live="polite"
     >
       {/* Content */}
-      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 items-center">
+      <div className="mx-auto px-4 sm:px-6 lg:px-16 grid grid-cols-1 lg:grid-cols-2 items-center">
           
           {/* Left Column - Content */}
           <div key={`slide-content-${currentSlide}`} className='py-3'>
@@ -154,7 +154,7 @@ const HeroSlider = () => {
             data-aos-delay="600"
           >
             <div className="relative">
-              <img src={experts} alt={slides[currentSlide].imageAlt} style={{ width: '120%', height: '120%' }} className="object-cover" />
+              <img src={experts} alt={slides[currentSlide].imageAlt} style={{ width: '130%', height: '130%' }} className="object-cover" />
               
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-blue-300/30 rounded-full animate-pulse"></div>
               <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-blue-400/20 rounded-full animate-pulse delay-1000"></div>

@@ -11,8 +11,8 @@ const NavigatorSlide: React.FC<SlideProps> = ({
   const { t } = useTranslation();
   
   return (
-    <div className="space-y-8">
-      {/* <div 
+    <div className="space-y-8 py-10 sm:py-0">
+      <div 
         className="flex items-center space-x-4 mb-6"
         data-aos="fade-right"
         data-aos-duration="800"
@@ -24,7 +24,7 @@ const NavigatorSlide: React.FC<SlideProps> = ({
         <div className="text-yellow-500 font-medium text-lg">
           Solutions sur Mesure pour PME
         </div>
-      </div> */}
+      </div>
 
       <div className="space-y-6 mt-4">
         <h1 
@@ -42,7 +42,7 @@ const NavigatorSlide: React.FC<SlideProps> = ({
           data-aos-duration="800"
           data-aos-delay="400"
         >
-          Outil puissant basé sur l'IA pour évaluer rapidement la maturité de votre Expérience Client (CX) et de votre Expérience Employé (EX). Obtenez des analyses vérifiées, des recommandations personnalisées et une feuille de route claire pour l'amélioration. Idéal pour les PME et comme point de départ pour les grandes entreprises
+          Outil puissant basé sur l'IA pour évaluer rapidement la maturité de votre Expérience Client (CX) et de votre Expérience Employé (EX). Obtenez des analyses vérifiées, des recommandations personnalisées et une feuille de route claire pour l'amélioration.
         </p>
       </div>
 

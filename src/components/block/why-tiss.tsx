@@ -7,7 +7,7 @@ export const WhyTiss = () => (
   <>
     {/* Services Section */}
     <section className="py-20 bg-white">
-      <div className="container mx-auto">
+      <div className="mx-auto px-4 sm:px-6 lg:px-16">
         <SectionTitle
           title="Pourquoi TISSE en RDC?"
             subtitle="Pourquoi TISSE est Essentiel pour votre Succès en RDC ?"

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Users, ChevronRight } from 'lucide-react';
+import { Users, ChevronRight, Award } from 'lucide-react';
 import { SlideProps } from './SlideInterface';
 
 const FormationSlide: React.FC<SlideProps> = ({ 
@@ -11,20 +11,20 @@ const FormationSlide: React.FC<SlideProps> = ({
   const { t } = useTranslation();
   
   return (
-    <div className="space-y-8">
-      {/* <div 
+    <div className="space-y-8 py-10 sm:py-0">
+      <div 
         className="flex items-center space-x-4 mb-6"
         data-aos="fade-right"
         data-aos-duration="800"
         data-aos-delay="200"
       >
         <div className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center text-yellow-500 border border-white/20">
-          <Users className="w-8 h-8" />
+          <Award className="w-8 h-8" />
         </div>
         <div className="text-yellow-500 font-medium text-lg">
-          Programmes de Formation CX & EX
+          Certifications Internationales ICXI
         </div>
-      </div> */}
+      </div>
 
       <div className="space-y-6">
         <h1 

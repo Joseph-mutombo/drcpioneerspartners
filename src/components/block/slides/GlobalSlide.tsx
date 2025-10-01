@@ -11,7 +11,7 @@ const GlobalSlide: React.FC<SlideProps> = ({
   onContactClick 
 }) => {
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 py-10 sm:py-0">
       <div 
         className="flex items-center space-x-2 mb-2"
         data-aos="fade-right"

@@ -11,8 +11,8 @@ const AuditSlide: React.FC<SlideProps> = ({
   onContactClick 
 }) => {
   return (
-    <div className="space-y-8">
-      {/* <div 
+    <div className="space-y-8 py-10 sm:py-0">
+      <div 
         className="flex items-center space-x-4 mb-6"
         data-aos="fade-right"
         data-aos-duration="800"
@@ -24,7 +24,7 @@ const AuditSlide: React.FC<SlideProps> = ({
         <div className="text-yellow-500 font-medium text-lg">
           Audits & Conseil en Amélioration
         </div>
-      </div> */}
+      </div>
 
       <div className="space-y-6">
         <h1 
