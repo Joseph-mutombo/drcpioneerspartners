@@ -1,6 +1,6 @@
 import React from 'react';
-import icxiLogo from '../../assets/images/partners/ICXI.png';
-import bsiLogo from '../../assets/images/partners/bsi-logo.avif';
+import icxiLogo from '@/assets/images/partners/ICXI.png';
+import bsiLogo from '@/assets/images/partners/bsi-logo.avif';
 
 interface Partner {
   id: string;

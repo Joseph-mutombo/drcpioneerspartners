@@ -5,9 +5,9 @@ import CertificationSlide from './slides/CertificationSlide';
 import FormationSlide from './slides/FormationSlide';
 import AuditSlide from './slides/AuditSlide';
 import NavigatorSlide from './slides/NavigatorSlide';
-import heroImage from '../../assets/images/hero.png';
-import callCenter from '../../assets/images/call-center.png';
-import experts from '../../assets/images/employers.png';
+import heroImage from '@/assets/images/hero.png';
+import callCenter from '@/assets/images/call-center.png';
+import experts from '@/assets/images/employers.png';
 import GlobalSlide from './slides/GlobalSlide';
 
 const HeroSlider = () => {

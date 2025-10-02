@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import { Button } from "../ui/button";
-import heroImage from '../../assets/images/hero.png';
+import { Button } from "@/components/ui/button";
+import heroImage from '@/assets/images/hero.png';
 import { ArrowRight } from "lucide-react";
 
-export const CtaCertCompany = () => (
+export const CtaAudit = () => (
   <section
   style={{
       backgroundImage: 'linear-gradient(rgba(13, 27, 62, 0.9), rgba(13, 27, 62, 0.7)), url("' + heroImage + '")',
@@ -13,21 +13,21 @@ export const CtaCertCompany = () => (
     }}
   className="py-16 bg-white" >
     <div 
-    className="container mx-auto text-center"
-    data-aos="fade-right"
-    data-aos-duration="800"
-    data-aos-delay="200"
-    >
-      <h2 className="text-4xl font-bold mb-4  text-white">Certifiez Votre Entreprise</h2>
-      <p className="text-lg mb-8  text-white">Augmentez la satisfaction de vos clients et améliorez vos processus internes grâce à nos normes de certification.</p>
-      
-            <Link
+      className="container mx-auto text-center"
+      data-aos="fade-up"
+      data-aos-duration="800"
+      data-aos-delay="200"
+      >
+      <h2 className="text-4xl font-bold mb-4  text-white">Prêt à Améliorer Votre Service Client?</h2>
+      <p className="text-lg mb-8  text-white">Contactez-nous dès aujourd'hui pour un audit gratuit de votre service client et découvrez comment TISSE peut transformer votre entreprise.</p>
+      <Link
                 to="/contact"
                 className="inline-flex bg-yellow-500 hover:bg-yellow-600 text-brand-blue px-6 py-3 rounded-lg font-semibold flex items-center justify-center space-x-2 transition-colors duration-300"
             >
                 <span>Demander un Audit</span>
                 <ArrowRight className="w-5 h-5" />
             </Link>
+            
     </div>
   </section>
 );

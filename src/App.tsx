@@ -11,6 +11,10 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Layout from "./components/layout/Layout";
 import NotImplemented from "./pages/NotImplemented";
+import Formations from "./pages/Formations";
+import Certifications from "./pages/Certifications";
+import Blog from "./pages/Blog";
+import Audit from "./pages/Audit";
 
 const queryClient = new QueryClient();
 
@@ -23,10 +27,10 @@ const App = () => (
         <Layout>
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/audit-consultation" element={<NotImplemented />} />
-            <Route path="/formations" element={<NotImplemented />} />
-            <Route path="/certifications" element={<NotImplemented />} />
-            <Route path="/blog" element={<NotImplemented />} />
+            <Route path="/audit-consultation" element={<Audit />} />
+            <Route path="/formations" element={<Formations />} />
+            <Route path="/certifications" element={<Certifications />} />
+            <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

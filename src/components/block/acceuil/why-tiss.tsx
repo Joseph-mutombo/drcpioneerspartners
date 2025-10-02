@@ -1,7 +1,7 @@
 import { BarChart, Bot, ChartNoAxesCombined, ChartNoAxesGantt, Code, Database, Eye, FileText, Globe, Link, ShieldCheck } from "lucide-react";
-import SectionTitle from "../sectionTitle";
-import ServiceCard from "../serviceCard";
-import { Button } from "../ui/button";
+import SectionTitle from "@/components/sectionTitle";
+import ServiceCard from "@/components/serviceCard";
+import { Button } from "@/components/ui/button";
 
 export const WhyTiss = () => (
   <>

@@ -38,7 +38,7 @@ const Header = () => {
           key={link.to}
           to={link.to}
           className={({ isActive }) =>
-            `px-3 py-2 text-sm font-medium transition-colors ${
+            `px-3 py-2 font-medium transition-colors ${
               isActive
                 ? 'text-yellow-600'
                 : 'text-brand-blue hover:text-yellow-600'
