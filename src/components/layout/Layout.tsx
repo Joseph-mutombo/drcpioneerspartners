@@ -2,6 +2,8 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import ChatbotProvider from '../ChatbotProvider';
+import GoToTopProvider from '../GoToTopProvider';
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -9,6 +11,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <Header />
       <main className="flex-grow">{children}</main>
       <Footer />
+      <ChatbotProvider />
+      <GoToTopProvider />
     </div>
   );
 };

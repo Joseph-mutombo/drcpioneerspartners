@@ -15,6 +15,8 @@ import Formations from "./pages/Formations";
 import Certifications from "./pages/Certifications";
 import Blog from "./pages/Blog";
 import Audit from "./pages/Audit";
+import Chatbot from "./components/block/chatbot";
+import GoToTopProvider from "./components/GoToTopProvider";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +25,8 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+      <Chatbot />
+      <GoToTopProvider />
       <BrowserRouter>
         <Layout>
           <Routes>

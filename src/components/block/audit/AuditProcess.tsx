@@ -95,7 +95,7 @@ const AuditProcess = () => {
         </div>
 
         {/* Processus étape par étape */}
-        <div className="relative">
+        <div className="relative mb-32">
           {/* Ligne de connexion */}
           <div className="hidden lg:block absolute top-24 left-0 right-0 h-0.5 bg-gradient-to-r from-brand-blue via-yellow-400 to-brand-blue"></div>
           
@@ -159,7 +159,7 @@ const AuditProcess = () => {
 
         {/* Section avantages du processus */}
         <div 
-          className="mt-20 bg-gradient-to-r from-brand-blue to-blue-600 rounded-2xl p-8 md:p-12 text-white"
+          className="bg-gradient-to-r from-brand-blue to-blue-600 rounded-2xl p-8 md:p-12 text-white mt-24"
           data-aos="fade-up"
           data-aos-duration="600"
           data-aos-delay="600"
