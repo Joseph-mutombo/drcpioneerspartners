@@ -6,7 +6,10 @@ import {
   CheckCircle, 
   ArrowRight,
   Calendar,
-  Clock
+  Clock,
+  Search,
+  BarChart3,
+  Target
 } from 'lucide-react';
 
 const AuditProcess = () => {
@@ -31,7 +34,7 @@ const AuditProcess = () => {
       id: 2,
       title: t('audit_page.process.step2.title'),
       description: t('audit_page.process.step2.description'),
-      icon: FileText,
+      icon: Search,
       color: 'bg-green-100 text-green-600',
       details: [
         t('audit_page.process.step2.details.audit_plan'),
@@ -45,7 +48,7 @@ const AuditProcess = () => {
       id: 3,
       title: t('audit_page.process.step3.title'),
       description: t('audit_page.process.step3.description'),
-      icon: Users,
+      icon: BarChart3,
       color: 'bg-purple-100 text-purple-600',
       details: [
         t('audit_page.process.step3.details.on_site_audit'),
@@ -59,7 +62,7 @@ const AuditProcess = () => {
       id: 4,
       title: t('audit_page.process.step4.title'),
       description: t('audit_page.process.step4.description'),
-      icon: CheckCircle,
+      icon: Target,
       color: 'bg-orange-100 text-orange-600',
       details: [
         t('audit_page.process.step4.details.data_analysis'),

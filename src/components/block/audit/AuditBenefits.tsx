@@ -9,7 +9,10 @@ import {
   BarChart3,
   Lightbulb,
   Clock,
-  DollarSign
+  DollarSign,
+  Heart,
+  Globe,
+  Star
 } from 'lucide-react';
 
 const AuditBenefits = () => {
@@ -17,73 +20,73 @@ const AuditBenefits = () => {
 
   const benefits = [
     {
-      id: 'compliance',
-      title: t('audit_page.benefits.compliance.title'),
-      description: t('audit_page.benefits.compliance.description'),
-      icon: Shield,
-      color: 'bg-blue-100 text-blue-600',
-      stats: t('audit_page.benefits.compliance.stats'),
+      id: 'customer-satisfaction',
+      title: t('audit_page.benefits.customer_satisfaction.title'),
+      description: t('audit_page.benefits.customer_satisfaction.description'),
+      icon: Heart,
+      color: 'bg-red-100 text-red-600',
+      stats: t('audit_page.benefits.customer_satisfaction.stats'),
       details: [
-        t('audit_page.benefits.compliance.details.requirements_identification'),
-        t('audit_page.benefits.compliance.details.current_compliance_verification'),
-        t('audit_page.benefits.compliance.details.action_plan'),
-        t('audit_page.benefits.compliance.details.follow_up')
+        t('audit_page.benefits.customer_satisfaction.details.journey_mapping'),
+        t('audit_page.benefits.customer_satisfaction.details.touchpoint_analysis'),
+        t('audit_page.benefits.customer_satisfaction.details.satisfaction_measurement'),
+        t('audit_page.benefits.customer_satisfaction.details.improvement_roadmap')
       ]
     },
     {
-      id: 'efficiency',
-      title: t('audit_page.benefits.efficiency.title'),
-      description: t('audit_page.benefits.efficiency.description'),
-      icon: TrendingUp,
-      color: 'bg-green-100 text-green-600',
-      stats: t('audit_page.benefits.efficiency.stats'),
-      details: [
-        t('audit_page.benefits.efficiency.details.process_analysis'),
-        t('audit_page.benefits.efficiency.details.bottleneck_identification'),
-        t('audit_page.benefits.efficiency.details.optimization_recommendations'),
-        t('audit_page.benefits.efficiency.details.performance_measurement')
-      ]
-    },
-    {
-      id: 'quality',
-      title: t('audit_page.benefits.quality.title'),
-      description: t('audit_page.benefits.quality.description'),
+      id: 'service-excellence',
+      title: t('audit_page.benefits.service_excellence.title'),
+      description: t('audit_page.benefits.service_excellence.description'),
       icon: Award,
       color: 'bg-yellow-100 text-yellow-600',
-      stats: t('audit_page.benefits.quality.stats'),
+      stats: t('audit_page.benefits.service_excellence.stats'),
       details: [
-        t('audit_page.benefits.quality.details.quality_systems'),
-        t('audit_page.benefits.quality.details.staff_training'),
-        t('audit_page.benefits.quality.details.internal_controls'),
-        t('audit_page.benefits.quality.details.continuous_improvement')
+        t('audit_page.benefits.service_excellence.details.tisse_standards'),
+        t('audit_page.benefits.service_excellence.details.process_evaluation'),
+        t('audit_page.benefits.service_excellence.details.benchmarking'),
+        t('audit_page.benefits.service_excellence.details.best_practices')
       ]
     },
     {
-      id: 'risk-management',
-      title: t('audit_page.benefits.risk_management.title'),
-      description: t('audit_page.benefits.risk_management.description'),
-      icon: Target,
-      color: 'bg-red-100 text-red-600',
-      stats: t('audit_page.benefits.risk_management.stats'),
+      id: 'digital-transformation',
+      title: t('audit_page.benefits.digital_transformation.title'),
+      description: t('audit_page.benefits.digital_transformation.description'),
+      icon: Globe,
+      color: 'bg-green-100 text-green-600',
+      stats: t('audit_page.benefits.digital_transformation.stats'),
       details: [
-        t('audit_page.benefits.risk_management.details.risk_mapping'),
-        t('audit_page.benefits.risk_management.details.probability_assessment'),
-        t('audit_page.benefits.risk_management.details.mitigation_plan'),
-        t('audit_page.benefits.risk_management.details.continuous_monitoring')
+        t('audit_page.benefits.digital_transformation.details.ux_evaluation'),
+        t('audit_page.benefits.digital_transformation.details.usability_testing'),
+        t('audit_page.benefits.digital_transformation.details.accessibility_audit'),
+        t('audit_page.benefits.digital_transformation.details.performance_analysis')
       ]
     },
     {
-      id: 'team-development',
-      title: t('audit_page.benefits.team_development.title'),
-      description: t('audit_page.benefits.team_development.description'),
+      id: 'employee-engagement',
+      title: t('audit_page.benefits.employee_engagement.title'),
+      description: t('audit_page.benefits.employee_engagement.description'),
       icon: Users,
       color: 'bg-purple-100 text-purple-600',
-      stats: t('audit_page.benefits.team_development.stats'),
+      stats: t('audit_page.benefits.employee_engagement.stats'),
       details: [
-        t('audit_page.benefits.team_development.details.best_practices_training'),
-        t('audit_page.benefits.team_development.details.quality_awareness'),
-        t('audit_page.benefits.team_development.details.skill_transfer'),
-        t('audit_page.benefits.team_development.details.follow_up')
+        t('audit_page.benefits.employee_engagement.details.engagement_survey'),
+        t('audit_page.benefits.employee_engagement.details.culture_analysis'),
+        t('audit_page.benefits.employee_engagement.details.workplace_assessment'),
+        t('audit_page.benefits.employee_engagement.details.improvement_plan')
+      ]
+    },
+    {
+      id: 'operational-efficiency',
+      title: t('audit_page.benefits.operational_efficiency.title'),
+      description: t('audit_page.benefits.operational_efficiency.description'),
+      icon: TrendingUp,
+      color: 'bg-blue-100 text-blue-600',
+      stats: t('audit_page.benefits.operational_efficiency.stats'),
+      details: [
+        t('audit_page.benefits.operational_efficiency.details.process_analysis'),
+        t('audit_page.benefits.operational_efficiency.details.bottleneck_identification'),
+        t('audit_page.benefits.operational_efficiency.details.optimization_recommendations'),
+        t('audit_page.benefits.operational_efficiency.details.performance_measurement')
       ]
     },
     {
@@ -263,7 +266,7 @@ const AuditBenefits = () => {
             <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <Lightbulb key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                  <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
                 ))}
               </div>
               <p className="text-gray-600 mb-4 italic">
@@ -276,7 +279,7 @@ const AuditBenefits = () => {
             <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <Lightbulb key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                  <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
                 ))}
               </div>
               <p className="text-gray-600 mb-4 italic">
@@ -289,7 +292,7 @@ const AuditBenefits = () => {
             <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <Lightbulb key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                  <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
                 ))}
               </div>
               <p className="text-gray-600 mb-4 italic">

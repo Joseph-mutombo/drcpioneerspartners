@@ -1,0 +1,52 @@
+    "services": {
+      "title": "Nos Services d'Audit & Consultation",
+      "description": "Découvrez notre gamme complète de services d'audit spécialisés dans l'excellence de service et l'expérience client, adaptés aux besoins spécifiques de votre entreprise.",
+      "cx_audit": {
+        "title": "Audit Expérience Client",
+        "description": "Évaluation complète de l'expérience client à travers tous les points de contact et parcours clients.",
+        "features": {
+          "customer_journey": "Cartographie des parcours clients",
+          "touchpoint_analysis": "Analyse des points de contact",
+          "satisfaction_measurement": "Mesure de la satisfaction client",
+          "improvement_roadmap": "Plan d'amélioration personnalisé"
+        },
+        "duration": "3-5 jours",
+        "price": "Sur devis"
+      },
+      "service_excellence": {
+        "title": "Audit Excellence de Service",
+        "description": "Évaluation de vos standards de service selon les critères TISSE et les meilleures pratiques internationales.",
+        "features": {
+          "tisse_standards": "Évaluation selon les standards TISSE",
+          "process_evaluation": "Évaluation des processus d'accueil",
+          "benchmarking": "Benchmarking des bonnes pratiques",
+          "best_practices": "Identification des axes d'amélioration"
+        },
+        "duration": "2-4 jours",
+        "price": "Sur devis"
+      },
+      "digital_experience": {
+        "title": "Audit Expérience Digitale",
+        "description": "Évaluation de l'expérience utilisateur de vos plateformes digitales et optimisation UX/UI.",
+        "features": {
+          "ux_evaluation": "Évaluation de l'expérience utilisateur",
+          "usability_testing": "Tests d'utilisabilité",
+          "accessibility_audit": "Audit d'accessibilité",
+          "performance_analysis": "Analyse des performances"
+        },
+        "duration": "2-3 jours",
+        "price": "Sur devis"
+      },
+      "employee_wellbeing": {
+        "title": "Audit Bien-être Employé",
+        "description": "Évaluation de l'engagement et du bien-être de vos équipes selon les standards IEHWS.",
+        "features": {
+          "engagement_survey": "Enquête d'engagement des employés",
+          "culture_analysis": "Analyse de la culture d'entreprise",
+          "workplace_assessment": "Évaluation des conditions de travail",
+          "improvement_plan": "Plan d'amélioration du bien-être"
+        },
+        "duration": "3-4 jours",
+        "price": "Sur devis"
+      }
+    },

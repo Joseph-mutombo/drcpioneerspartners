@@ -890,6 +890,28 @@
           "follow_up": "Follow-up and compliance maintenance"
         }
       },
+      "digital_transformation": {
+        "title": "Digital Transformation",
+        "description": "Optimize your digital experience with UX/UI audits and accessibility testing.",
+        "stats": "Optimized UX/UI",
+        "details": {
+          "ux_evaluation": "User experience evaluation",
+          "usability_testing": "Usability testing",
+          "accessibility_audit": "Accessibility audit",
+          "performance_analysis": "Performance analysis"
+        }
+      },
+      "employee_engagement": {
+        "title": "Employee Engagement",
+        "description": "Improve employee engagement and wellbeing according to IEHWS standards.",
+        "stats": "95% engagement",
+        "details": {
+          "engagement_survey": "Employee engagement survey",
+          "culture_analysis": "Corporate culture analysis",
+          "workplace_assessment": "Workplace conditions assessment",
+          "improvement_plan": "Wellbeing improvement plan"
+        }
+      },
       "efficiency": {
         "title": "Performance Improvement",
         "description": "Optimize your processes to increase efficiency and reduce costs.",
@@ -928,21 +950,10 @@
         "description": "Train and develop your teams' skills.",
         "stats": "100% of staff trained",
         "details": {
-          "best_practices_training": "Best practices training",
+          "ux_evaluation": "User experience evaluation",
           "quality_awareness": "Quality issues awareness",
-          "skill_transfer": "Skill transfer",
-          "follow_up": "Follow-up and evaluation"
-        }
-      },
-      "competitive_advantage": {
-        "title": "Competitive Advantage",
-        "description": "Stand out from the competition through your certifications and optimized processes.",
-        "stats": "+25% market share",
-        "details": {
-          "recognized_certifications": "Recognized certifications",
-          "standardized_processes": "Standardized processes",
-          "brand_improvement": "Brand image improvement",
-          "new_markets": "Access to new markets"
+          "accessibility_audit": "Accessibility audit",
+          "performance_analysis": "Performance analysis"
         }
       },
       "roi": {
@@ -1014,49 +1025,39 @@
       },
       "placeholders": {
         "company_name": "Your company name",
-        "industry": "Select your industry",
-        "company_size": "Select the size",
         "contact_person": "Your full name",
         "email": "your@email.com",
         "phone": "+243 XXX XXX XXX",
-        "service_type": "Select the service type",
-        "audit_scope": "Describe the desired scope for the audit (departments, processes, etc.)",
-        "objectives": "What are your main objectives? (certification, improvement, compliance, etc.)",
-        "timeline": "Select the timeline",
-        "budget": "Select the budget",
-        "additional_info": "Any additional information that could help us better understand your needs"
+        "select_service_type": "Select service type",
+        "select_company_size": "Select company size",
+        "select_industry": "Select industry",
+        "select_timeline": "Select desired timeline",
+        "select_budget": "Select approximate budget",
+        "audit_scope": "Describe the desired audit scope",
+        "objectives": "What are your main objectives?",
+        "additional_info": "Any additional information"
       },
       "options": {
-        "service_types": {
-          "quality": "Quality Audit (ISO 9001)",
-          "environmental": "Environmental Audit (ISO 14001)",
-          "safety": "Safety Audit (OHSAS 18001)",
-          "strategic": "Strategic Consulting",
-          "complete": "Complete Audit (Multi-standards)",
-          "other": "Other (specify in comments)"
-        },
-        "company_sizes": {
-          "micro": "Micro-enterprise (1-9 employees)",
-          "small": "Small enterprise (10-49 employees)",
-          "medium": "Medium enterprise (50-249 employees)",
-          "large": "Large enterprise (250+ employees)"
-        },
         "industries": {
-          "manufacturing": "Manufacturing / Industry",
+          "manufacturing": "Manufacturing",
           "services": "Services",
-          "construction": "Construction / BTP",
-          "healthcare": "Health / Medical",
-          "food": "Food Industry",
-          "technology": "Technology / IT",
-          "retail": "Commerce / Distribution",
+          "construction": "Construction",
+          "healthcare": "Healthcare",
+          "food": "Food",
+          "technology": "Technology",
+          "retail": "Retail",
           "other": "Other"
         },
         "timelines": {
-          "urgent": "Urgent (under 1 month)",
+          "immediate": "Immediate",
+          "1_month": "1 month",
+          "3_months": "3 months",
+          "6_months": "6 months",
+          "flexible": "Flexible",
+          "asap": "As soon as possible",
           "1_3_months": "1-3 months",
           "3_6_months": "3-6 months",
-          "6_12_months": "6-12 months",
-          "flexible": "Flexible"
+          "6_12_months": "6-12 months"
         },
         "budgets": {
           "under_5k": "Under $5,000",
@@ -1064,10 +1065,46 @@
           "10k_25k": "$10,000 - $25,000",
           "25k_50k": "$25,000 - $50,000",
           "over_50k": "Over $50,000",
+          "under_1k": "Under $1,000",
+          "1k_5k": "$1,000 - $5,000",
+          "over_25k": "Over $25,000",
           "discuss": "To discuss"
         }
       },
+      "industries": {
+          "manufacturing": "Manufacturing",
+          "services": "Services",
+          "construction": "Construction",
+          "healthcare": "Healthcare",
+          "food": "Food",
+          "technology": "Technology",
+          "retail": "Retail",
+          "other": "Other"
+        },
+        "timelines": {
+          "immediate": "Immediate",
+          "1_month": "1 month",
+          "3_months": "3 months",
+          "6_months": "6 months",
+          "flexible": "Flexible",
+          "asap": "As soon as possible",
+          "1_3_months": "1-3 months",
+          "3_6_months": "3-6 months",
+          "6_12_months": "6-12 months"
+        },
+        "budgets": {
+          "under_5k": "Under $5,000",
+          "5k_10k": "$5,000 - $10,000",
+          "10k_25k": "$10,000 - $25,000",
+          "25k_50k": "$25,000 - $50,000",
+          "over_50k": "Over $50,000",
+          "under_1k": "Under $1,000",
+          "1k_5k": "$1,000 - $5,000",
+          "over_25k": "Over $25,000",
+          "discuss": "To discuss"
+        },
       "validation": {
+        "agree_terms_required": "You must accept the terms and conditions",
         "company_name_required": "Company name is required",
         "contact_person_required": "Contact name is required",
         "invalid_email": "Invalid email address",
@@ -1085,9 +1122,28 @@
         "title": "Request sent successfully",
         "description": "We will contact you as soon as possible to discuss your project."
       },
+      "company_sizes": {
+        "micro": "Micro-enterprise (1-9 employees)",
+        "small": "Small enterprise (10-49 employees)",
+        "medium": "Medium enterprise (50-249 employees)",
+        "large": "Large enterprise (250+ employees)"
+      },
+      "service_types": {
+        "cx_audit": "Customer Experience Audit",
+        "service_excellence": "Service Excellence Audit",
+        "digital_experience": "Digital Experience Audit",
+        "employee_wellbeing": "Employee Wellbeing Audit",
+        "complete_audit": "Complete Audit (Multi-standards)",
+        "other": "Other (specify in comments)"
+      },
+      "conditions": {
+        "agree_terms": "I accept the terms of use and privacy policy *",
+        "agree_newsletter": "I wish to receive information about your services and news"
+      },
       "submit_button": "Send Request",
       "alternative_contact": {
-        "title": "Would you prefer to contact us directly?"
+        "title": "Would you prefer to contact us directly?",
+        "description": "Feel free to call us or send us an email to discuss your audit needs."
       }
     }
   },

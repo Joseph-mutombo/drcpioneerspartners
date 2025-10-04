@@ -1,4 +1,3 @@
-
 {
   "header": {
     "home": "Accueil",
@@ -187,21 +186,34 @@
             "image_alt": "Plateforme e-commerce sur un ordinateur portable",
             "title": "Plateforme E-commerce dopée à l'IA",
             "description": "Une solution e-commerce évolutive avec des recommandations personnalisées et une gestion de stock intelligente.",
-            "tags": ["React", "Node.js", "E-commerce", "IA"]
+            "tags": [
+              "React",
+              "Node.js",
+              "E-commerce",
+              "IA"
+            ]
           },
           {
             "image_url": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop",
             "image_alt": "Application de santé sur un écran",
             "title": "SaaS pour Professionnels de Santé",
             "description": "Une plateforme sécurisée pour la gestion des dossiers patients et des rendez-vous, simplifiant les flux administratifs.",
-            "tags": ["Python", "SaaS", "Santé"]
+            "tags": [
+              "Python",
+              "SaaS",
+              "Santé"
+            ]
           },
           {
             "image_url": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop",
             "image_alt": "Tableau de bord financier avec des graphiques",
             "title": "Dashboard d'Analyse Fintech",
             "description": "Un tableau de bord interactif pour la visualisation de données financières en temps réel et l'analyse prédictive.",
-            "tags": ["Next.js", "Fintech", "Data Viz"]
+            "tags": [
+              "Next.js",
+              "Fintech",
+              "Data Viz"
+            ]
           }
         ]
       }
@@ -260,19 +272,43 @@
       "integration_platforms": [
         {
           "category": "Plateformes de communication",
-          "platforms": ["WhatsApp Business", "Facebook Messenger", "Telegram", "Site web", "Application mobile"]
+          "platforms": [
+            "WhatsApp Business",
+            "Facebook Messenger",
+            "Telegram",
+            "Site web",
+            "Application mobile"
+          ]
         },
         {
           "category": "Systèmes CRM",
-          "platforms": ["Salesforce", "HubSpot", "Pipedrive", "Zoho CRM", "Systèmes personnalisés"]
+          "platforms": [
+            "Salesforce",
+            "HubSpot",
+            "Pipedrive",
+            "Zoho CRM",
+            "Systèmes personnalisés"
+          ]
         },
         {
           "category": "Outils de support",
-          "platforms": ["Zendesk", "Freshdesk", "Intercom", "ServiceNow", "Microsoft Teams"]
+          "platforms": [
+            "Zendesk",
+            "Freshdesk",
+            "Intercom",
+            "ServiceNow",
+            "Microsoft Teams"
+          ]
         },
         {
           "category": "E-commerce",
-          "platforms": ["Shopify", "WooCommerce", "Magento", "PrestaShop", "Systèmes sur mesure"]
+          "platforms": [
+            "Shopify",
+            "WooCommerce",
+            "Magento",
+            "PrestaShop",
+            "Systèmes sur mesure"
+          ]
         }
       ],
       "use_cases_title": "Cas d'Usage Concrets",
@@ -479,7 +515,11 @@
           "expertise": "Certifications TISSE & ICXS",
           "experience": "15+ années",
           "description": "Expert reconnu internationalement dans l'excellence de service et l'expérience client.",
-          "certifications": ["TISSE Master", "ICXS Expert", "BSI Certified"],
+          "certifications": [
+            "TISSE Master",
+            "ICXS Expert",
+            "BSI Certified"
+          ],
           "contact": {
             "phone": "+243 978 847 886",
             "email": "j.mbuyi@drcpioneers.com"
@@ -491,7 +531,11 @@
           "expertise": "Programmes de Formation",
           "experience": "12+ années",
           "description": "Spécialiste en développement des compétences et formation professionnelle.",
-          "certifications": ["CXOP Master", "Formation Internationale", "Pédagogie Avancée"],
+          "certifications": [
+            "CXOP Master",
+            "Formation Internationale",
+            "Pédagogie Avancée"
+          ],
           "contact": {
             "phone": "+243 978 847 887",
             "email": "m.kabongo@drcpioneers.com"
@@ -503,7 +547,11 @@
           "expertise": "Audit & Amélioration Continue",
           "experience": "10+ années",
           "description": "Expert en audit de processus et optimisation des performances organisationnelles.",
-          "certifications": ["Audit ISO 9001", "Process Improvement", "Quality Management"],
+          "certifications": [
+            "Audit ISO 9001",
+            "Process Improvement",
+            "Quality Management"
+          ],
           "contact": {
             "phone": "+243 978 847 888",
             "email": "p.mwamba@drcpioneers.com"
@@ -880,21 +928,10 @@
         "description": "Formez et développez les compétences de vos équipes.",
         "stats": "100% du personnel formé",
         "details": {
-          "best_practices_training": "Formation sur les bonnes pratiques",
+          "ux_evaluation": "�valuation de l'exp�rience utilisateur",
           "quality_awareness": "Sensibilisation aux enjeux qualité",
           "skill_transfer": "Transfert de compétences",
           "follow_up": "Suivi et évaluation"
-        }
-      },
-      "competitive_advantage": {
-        "title": "Avantage Concurrentiel",
-        "description": "Distinguez-vous de la concurrence grâce à vos certifications et processus optimisés.",
-        "stats": "+25% de parts de marché",
-        "details": {
-          "recognized_certifications": "Certifications reconnues",
-          "standardized_processes": "Processus standardisés",
-          "brand_improvement": "Amélioration de l'image de marque",
-          "new_markets": "Accès à de nouveaux marchés"
         }
       },
       "roi": {
@@ -937,16 +974,46 @@
           "author": "Pierre L., Directeur",
           "company": "Eco Solutions"
         }
+      },
+      "digital_transformation": {
+        "title": "Transformation Digitale",
+        "description": "Optimisez votre expérience digitale avec des audits UX/UI et des tests d'accessibilité.",
+        "stats": "UX/UI optimisée",
+        "details": {
+          "ux_evaluation": "Évaluation de l'expérience utilisateur",
+          "usability_testing": "Tests d'utilisabilité",
+          "accessibility_audit": "Audit d'accessibilité",
+          "performance_analysis": "Analyse des performances"
+        }
+      },
+      "employee_engagement": {
+        "title": "Engagement Employé",
+        "description": "Améliorez l'engagement et le bien-être de vos équipes selon les standards IEHWS.",
+        "stats": "95% d'engagement",
+        "details": {
+          "engagement_survey": "Enquête d'engagement des employés",
+          "culture_analysis": "Analyse de la culture d'entreprise",
+          "workplace_assessment": "Évaluation des conditions de travail",
+          "improvement_plan": "Plan d'amélioration du bien-être"
+        }
       }
     },
     "form": {
       "title": "Demander un Audit",
       "description": "Remplissez ce formulaire pour nous faire part de vos besoins en audit et consultation. Nous vous contacterons dans les plus brefs délais.",
-      "sections": {
-        "company_info": "Informations de l'entreprise",
-        "contact_info": "Informations de contact",
-        "audit_details": "Détails de l'audit",
-        "preferences": "Préférences et conditions"
+      "placeholders": {
+        "company_name": "Nom de votre entreprise",
+        "contact_person": "Votre nom complet",
+        "email": "votre@email.com",
+        "phone": "+243 XXX XXX XXX",
+        "select_service_type": "Sélectionnez le type de service",
+        "select_company_size": "Sélectionnez la taille",
+        "select_industry": "Sélectionnez le secteur",
+        "select_timeline": "Sélectionnez le délai",
+        "select_budget": "Sélectionnez le budget",
+        "audit_scope": "Décrivez le périmètre souhaité pour l'audit",
+        "objectives": "Quels sont vos objectifs principaux ?",
+        "additional_info": "Toute information supplémentaire"
       },
       "labels": {
         "company_name": "Nom de l'entreprise *",
@@ -964,82 +1031,123 @@
         "agree_terms": "J'accepte les conditions d'utilisation et la politique de confidentialité *",
         "agree_newsletter": "Je souhaite recevoir des informations sur vos services et actualités"
       },
-      "placeholders": {
-        "company_name": "Nom de votre entreprise",
-        "industry": "Sélectionnez votre secteur",
-        "company_size": "Sélectionnez la taille",
-        "contact_person": "Votre nom complet",
-        "email": "votre@email.com",
-        "phone": "+243 XXX XXX XXX",
-        "service_type": "Sélectionnez le type de service",
-        "audit_scope": "Décrivez le périmètre souhaité pour l'audit (départements, processus, etc.)",
-        "objectives": "Quels sont vos objectifs principaux ? (certification, amélioration, conformité, etc.)",
-        "timeline": "Sélectionnez le délai",
-        "budget": "Sélectionnez le budget",
-        "additional_info": "Toute information supplémentaire qui pourrait nous aider à mieux comprendre vos besoins"
-      },
       "options": {
-        "service_types": {
-          "quality": "Audit de Qualité (ISO 9001)",
-          "environmental": "Audit Environnemental (ISO 14001)",
-          "safety": "Audit de Sécurité (OHSAS 18001)",
-          "strategic": "Consultation Stratégique",
-          "complete": "Audit Complet (Multi-normes)",
-          "other": "Autre (préciser dans les commentaires)"
-        },
-        "company_sizes": {
-          "micro": "Micro-entreprise (1-9 employés)",
-          "small": "Petite entreprise (10-49 employés)",
-          "medium": "Moyenne entreprise (50-249 employés)",
-          "large": "Grande entreprise (250+ employés)"
-        },
         "industries": {
-          "manufacturing": "Manufacturing / Industrie",
+          "manufacturing": "Manufacture",
           "services": "Services",
-          "construction": "Construction / BTP",
-          "healthcare": "Santé / Médical",
-          "food": "Agroalimentaire",
-          "technology": "Technologie / IT",
-          "retail": "Commerce / Distribution",
+          "construction": "Construction",
+          "healthcare": "Santé",
+          "food": "Alimentaire",
+          "technology": "Technologie",
+          "retail": "Commerce de détail",
           "other": "Autre"
         },
         "timelines": {
-          "urgent": "Urgent (sous 1 mois)",
+          "immediate": "Immédiat",
+          "1_month": "1 mois",
+          "3_months": "3 mois",
+          "6_months": "6 mois",
+          "asap": "Dès que possible",
           "1_3_months": "1-3 mois",
           "3_6_months": "3-6 mois",
           "6_12_months": "6-12 mois",
           "flexible": "Flexible"
         },
         "budgets": {
+          "under_1k": "Moins de 1 000 $",
+          "1k_5k": "1 000 - 5 000 $",
+          "over_25k": "Plus de 25 000 $",
           "under_5k": "Moins de 5 000 $",
-          "5k_10k": "5 000 $ - 10 000 $",
-          "10k_25k": "10 000 $ - 25 000 $",
-          "25k_50k": "25 000 $ - 50 000 $",
+          "5k_10k": "5 000 - 10 000 $",
+          "10k_25k": "10 000 - 25 000 $",
+          "25k_50k": "25 000 - 50 000 $",
           "over_50k": "Plus de 50 000 $",
           "discuss": "À discuter"
         }
       },
+      "industries": {
+          "manufacturing": "Manufacture",
+          "services": "Services",
+          "construction": "Construction",
+          "healthcare": "Santé",
+          "food": "Alimentaire",
+          "technology": "Technologie",
+          "retail": "Commerce de détail",
+          "other": "Autre"
+        },
+        "timelines": {
+          "immediate": "Immédiat",
+          "1_month": "1 mois",
+          "3_months": "3 mois",
+          "6_months": "6 mois",
+          "asap": "Dès que possible",
+          "1_3_months": "1-3 mois",
+          "3_6_months": "3-6 mois",
+          "6_12_months": "6-12 mois",
+          "flexible": "Flexible"
+        },
+        "budgets": {
+          "under_1k": "Moins de 1 000 $",
+          "1k_5k": "1 000 - 5 000 $",
+          "over_25k": "Plus de 25 000 $",
+          "under_5k": "Moins de 5 000 $",
+          "5k_10k": "5 000 - 10 000 $",
+          "10k_25k": "10 000 - 25 000 $",
+          "25k_50k": "25 000 - 50 000 $",
+          "over_50k": "Plus de 50 000 $",
+          "discuss": "À discuter"
+        },
       "validation": {
         "company_name_required": "Le nom de l'entreprise est requis",
         "contact_person_required": "Le nom du contact est requis",
         "invalid_email": "Adresse email invalide",
-        "phone_required": "Le numéro de téléphone est requis",
-        "service_type_required": "Veuillez sélectionner un type de service",
-        "company_size_required": "Veuillez sélectionner la taille de l'entreprise",
-        "industry_required": "Veuillez sélectionner le secteur d'activité",
-        "audit_scope_required": "Veuillez décrire le périmètre de l'audit",
-        "objectives_required": "Veuillez décrire les objectifs",
-        "timeline_required": "Veuillez indiquer le délai souhaité",
-        "budget_required": "Veuillez indiquer votre budget approximatif",
-        "terms_required": "Vous devez accepter les conditions"
+        "phone_required": "Le téléphone est requis",
+        "service_type_required": "Le type de service est requis",
+        "company_size_required": "La taille de l'entreprise est requise",
+        "industry_required": "Le secteur d'activité est requis",
+        "audit_scope_required": "Le périmètre de l'audit est requis",
+        "request_type_required": "Le type de demande est requis",
+        "program_required": "Le programme de formation est requis",
+        "current_level_required": "Le niveau actuel est requis",
+        "terms_required": "Vous devez accepter les conditions d'utilisation",
+        "objectives_required": "Les objectifs sont requis",
+        "timeline_required": "Le délai est requis",
+        "budget_required": "Le budget est requis",
+        "agree_terms_required": "Vous devez accepter les conditions d'utilisation"
       },
       "success": {
         "title": "Demande envoyée avec succès",
         "description": "Nous vous contacterons dans les plus brefs délais pour discuter de votre projet."
       },
+      "sections": {
+        "service_type": "Type de Service",
+        "contact_info": "Informations de Contact",
+        "audit_details": "Détails de l'Audit",
+        "project_details": "Détails du Projet",
+        "conditions": "Conditions et Consentements"
+      },
+      "company_sizes": {
+        "micro": "Micro-entreprise (1-9 employés)",
+        "small": "Petite entreprise (10-49 employés)",
+        "medium": "Moyenne entreprise (50-249 employés)",
+        "large": "Grande entreprise (250+ employés)"
+      },
+      "service_types": {
+        "cx_audit": "Audit Expérience Client",
+        "service_excellence": "Audit Excellence de Service",
+        "digital_experience": "Audit Expérience Digitale",
+        "employee_wellbeing": "Audit Bien-être Employé",
+        "complete_audit": "Audit Complet (Multi-normes)",
+        "other": "Autre (préciser dans les commentaires)"
+      },
+      "conditions": {
+        "agree_terms": "J'accepte les conditions d'utilisation et la politique de confidentialité *",
+        "agree_newsletter": "Je souhaite recevoir des informations sur vos services et actualités"
+      },
       "submit_button": "Envoyer la demande",
       "alternative_contact": {
-        "title": "Préférez-vous nous contacter directement ?"
+        "title": "Préférez-vous nous contacter directement ?",
+        "description": "N'hésitez pas à nous appeler ou nous envoyer un email pour discuter de vos besoins en audit."
       }
     }
   },
@@ -1412,351 +1520,351 @@
         },
         "price": "Sur devis"
       },
-        "msc": {
-          "name": "Masterclass Spécialisées",
-          "description": "Sessions intensives sur des sujets spécialisés de l'expérience client et des technologies émergentes.",
-          "duration": "1-2 jours",
-          "level": "Spécialisé",
-          "target": "Experts, Consultants, Formateurs",
-          "benefits": {
-            "current_topics": "Sujets d'actualité",
-            "emerging_technologies": "Technologies émergentes",
-            "advanced_case_studies": "Cas d'étude avancés",
-            "expert_network": "Réseau d'experts"
-          },
-          "price": "Sur devis"
+      "msc": {
+        "name": "Masterclass Spécialisées",
+        "description": "Sessions intensives sur des sujets spécialisés de l'expérience client et des technologies émergentes.",
+        "duration": "1-2 jours",
+        "level": "Spécialisé",
+        "target": "Experts, Consultants, Formateurs",
+        "benefits": {
+          "current_topics": "Sujets d'actualité",
+          "emerging_technologies": "Technologies émergentes",
+          "advanced_case_studies": "Cas d'étude avancés",
+          "expert_network": "Réseau d'experts"
         },
-        "levels": {
-          "fundamental": "Fondamental",
-          "advanced": "Avancé",
-          "expert": "Expert",
-          "specialized": "Spécialisé"
-        },
-        "labels": {
-          "duration": "Durée",
-          "level": "Niveau",
-          "target": "Public"
-        },
-        "what_you_will_learn": "Ce que vous apprendrez",
-        "coming_soon": "Bientôt disponible",
-        "register": "S'inscrire",
-        "finalization": {
-          "title": "Programmes en cours de finalisation",
-          "description": "Nos équipes d'experts travaillent actuellement sur le contenu détaillé de chaque programme. Inscrivez-vous à notre liste d'attente pour être informé dès le lancement.",
-          "contact_us": "Nous contacter",
-          "get_prospectus": "Obtenir le prospectus"
-        }
-      }
-    },
-    "types": {
-      "title": "Formation pour Tous",
-      "description": "Que vous soyez un particulier souhaitant développer vos compétences ou une entreprise cherchant à former vos équipes, nous avons la solution adaptée à vos besoins.",
-      "enterprise": {
-        "title": "Pour Entreprises",
-        "subtitle": "Solutions complètes pour votre organisation",
-        "on_site_training": {
-          "title": "Formation sur Site",
-          "description": "Formations personnalisées dans vos locaux pour vos équipes.",
-          "benefits": {
-            "adapted_training": "Formation adaptée à votre contexte",
-            "teams_trained_together": "Équipes formées ensemble",
-            "reduced_travel_costs": "Réduction des coûts de déplacement",
-            "immediate_integration": "Intégration immédiate des apprentissages"
-          }
-        },
-        "team_training": {
-          "title": "Formation des Équipes",
-          "description": "Programmes conçus pour développer les compétences collectives.",
-          "benefits": {
-            "enhanced_team_cohesion": "Cohésion d'équipe renforcée",
-            "common_cx_language": "Langage commun CX",
-            "improved_collaboration": "Collaboration améliorée",
-            "unified_corporate_culture": "Culture d'entreprise unifiée"
-          }
-        },
-        "personalized_support": {
-          "title": "Accompagnement Personnalisé",
-          "description": "Suivi individuel et collectif pour maximiser l'impact.",
-          "benefits": {
-            "customized_plan": "Plan de formation sur mesure",
-            "personalized_mentoring": "Mentoring personnalisé",
-            "progress_tracking": "Suivi des progrès",
-            "post_training_support": "Support post-formation"
-          }
-        },
-        "request_quote_button": "Demander un devis entreprise"
+        "price": "Sur devis"
       },
-      "individual": {
-        "title": "Pour Particuliers",
-        "subtitle": "Développez vos compétences personnelles",
-        "register_button": "S'inscrire en tant que particulier",
-        "individual_training": {
-          "title": "Formation Individuelle",
-          "description": "Développement personnel de vos compétences en CX.",
-          "benefits": {
-            "pace_progression": "Progression à votre rythme",
-            "specific_needs_focus": "Focus sur vos besoins spécifiques",
-            "schedule_flexibility": "Flexibilité des horaires",
-            "personal_certification": "Certification personnelle"
-          }
-        },
-        "flexible_training": {
-          "title": "Formation Flexible",
-          "description": "Formats adaptés à votre emploi du temps et vos contraintes.",
-          "benefits": {
-            "online_or_presential": "Formation en ligne ou présentiel",
-            "flexible_schedules": "Horaires flexibles",
-            "resources_24_7": "Accès aux ressources 24/7",
-            "continuous_support": "Support pédagogique continu"
-          }
-        },
-        "international_recognition": {
-          "title": "Reconnaissance Internationale",
-          "description": "Certifications reconnues dans le monde entier.",
-          "benefits": {
-            "international_validity": "Validité internationale",
-            "employer_recognition": "Reconnaissance par les employeurs",
-            "professional_mobility": "Mobilité professionnelle",
-            "international_network": "Réseau international"
-          }
-        }
-      },
-      "comparison": {
-        "title": "Comparaison des Offres",
-        "features": "Fonctionnalités",
-        "enterprise": "Entreprises",
-        "individual": "Particuliers",
-        "format": "Format",
-        "enterprise_format": "Sur site + En ligne",
-        "individual_format": "En ligne + Présentiel optionnel",
-        "duration": "Durée",
-        "enterprise_duration": "3-7 jours par programme",
-        "individual_duration": "1-7 jours selon le niveau",
-        "support": "Accompagnement",
-        "enterprise_support": "Dédié + Suivi personnalisé",
-        "individual_support": "Support communautaire + Tutorat",
-        "certification": "Certification",
-        "enterprise_certification": "Certification d'équipe + Individuelle",
-        "individual_certification": "Certification individuelle",
-        "price": "Prix",
-        "enterprise_price": "Sur devis (volume)",
-        "individual_price": "Tarif individuel",
-        "support_24_7": "Support",
-        "enterprise_support_24_7": "24/7 + Hotline dédiée",
-        "individual_support_24_7": "Email + Forum communautaire",
-        "help_text": "Besoin d'aide pour choisir la solution qui vous convient ?",
-        "consult_expert_button": "Consulter un expert"
-      }
-    },
-    "form": {
-      "title": "Demander une Formation",
-      "description": "Remplissez ce formulaire pour nous faire part de votre intérêt pour nos programmes de formation. Nous vous contacterons pour discuter de vos besoins spécifiques.",
-      "sections": {
-        "request_type": "Type de demande",
-        "contact_info": "Informations de contact",
-        "training_details": "Détails de la formation"
+      "levels": {
+        "fundamental": "Fondamental",
+        "advanced": "Avancé",
+        "expert": "Expert",
+        "specialized": "Spécialisé"
       },
       "labels": {
-        "request_type": "Type de formation souhaitée *",
-        "company_name": "Nom de l'entreprise",
-        "contact_person": "Nom du contact *",
-        "email": "Email *",
-        "phone": "Téléphone *",
-        "formation_program": "Programme de formation souhaité *",
-        "participant_count": "Nombre de participants",
-        "current_level": "Niveau actuel *",
-        "objectives": "Objectifs de formation *",
-        "timeline": "Délai souhaité *",
-        "budget": "Budget approximatif *",
-        "additional_info": "Informations supplémentaires",
-        "agree_terms": "J'accepte les conditions d'utilisation et la politique de confidentialité *",
-        "agree_newsletter": "Je souhaite recevoir des informations sur nos programmes de formation"
+        "duration": "Durée",
+        "level": "Niveau",
+        "target": "Public"
       },
-      "placeholders": {
-        "request_type": "Sélectionnez le type de demande",
-        "company_name": "Nom de votre entreprise",
-        "contact_person": "Votre nom complet",
-        "email": "votre@email.com",
-        "phone": "+243 XXX XXX XXX",
-        "formation_program": "Sélectionnez un programme",
-        "participant_count": "Nombre de personnes à former",
-        "current_level": "Sélectionnez votre niveau",
-        "objectives": "Décrivez vos objectifs et ce que vous souhaitez accomplir avec cette formation",
-        "timeline": "Sélectionnez le délai",
-        "budget": "Sélectionnez le budget",
-        "additional_info": "Toute information supplémentaire qui pourrait nous aider à mieux comprendre vos besoins"
-      },
-      "options": {
-        "request_types": {
-          "individual": "Particulier",
-          "enterprise": "Entreprise"
-        },
-        "programs": {
-          "cxop": "CXOP - Customer Experience Officer Program",
-          "cxmp": "CXMP - Customer Experience Management Program",
-          "cxlp": "CXLP - Customer Experience Leadership Program",
-          "msc": "MSC - Masterclass Spécialisées",
-          "multiple": "Plusieurs programmes",
-          "consultation": "Consultation personnalisée"
-        },
-        "levels": {
-          "beginner": "Débutant",
-          "intermediate": "Intermédiaire",
-          "advanced": "Avancé",
-          "expert": "Expert"
-        },
-        "timelines": {
-          "asap": "Dès que possible",
-          "1_3_months": "1-3 mois",
-          "3_6_months": "3-6 mois",
-          "6_12_months": "6-12 mois",
-          "flexible": "Flexible"
-        },
-        "budgets": {
-          "under_1k": "Moins de 1 000 $",
-          "1k_5k": "1 000 $ - 5 000 $",
-          "5k_10k": "5 000 $ - 10 000 $",
-          "10k_25k": "10 000 $ - 25 000 $",
-          "over_25k": "Plus de 25 000 $",
-          "discuss": "À discuter"
+      "what_you_will_learn": "Ce que vous apprendrez",
+      "coming_soon": "Bientôt disponible",
+      "register": "S'inscrire",
+      "finalization": {
+        "title": "Programmes en cours de finalisation",
+        "description": "Nos équipes d'experts travaillent actuellement sur le contenu détaillé de chaque programme. Inscrivez-vous à notre liste d'attente pour être informé dès le lancement.",
+        "contact_us": "Nous contacter",
+        "get_prospectus": "Obtenir le prospectus"
+      }
+    }
+  },
+  "types": {
+    "title": "Formation pour Tous",
+    "description": "Que vous soyez un particulier souhaitant développer vos compétences ou une entreprise cherchant à former vos équipes, nous avons la solution adaptée à vos besoins.",
+    "enterprise": {
+      "title": "Pour Entreprises",
+      "subtitle": "Solutions complètes pour votre organisation",
+      "on_site_training": {
+        "title": "Formation sur Site",
+        "description": "Formations personnalisées dans vos locaux pour vos équipes.",
+        "benefits": {
+          "adapted_training": "Formation adaptée à votre contexte",
+          "teams_trained_together": "Équipes formées ensemble",
+          "reduced_travel_costs": "Réduction des coûts de déplacement",
+          "immediate_integration": "Intégration immédiate des apprentissages"
         }
       },
-      "validation": {
-        "request_type_required": "Veuillez sélectionner le type de demande",
-        "contact_person_required": "Le nom du contact est requis",
-        "invalid_email": "Adresse email invalide",
-        "phone_required": "Le numéro de téléphone est requis",
-        "program_required": "Veuillez sélectionner un programme",
-        "current_level_required": "Veuillez indiquer votre niveau actuel",
-        "objectives_required": "Veuillez décrire vos objectifs",
-        "timeline_required": "Veuillez indiquer le délai souhaité",
-        "budget_required": "Veuillez indiquer votre budget approximatif",
-        "terms_required": "Vous devez accepter les conditions"
+      "team_training": {
+        "title": "Formation des Équipes",
+        "description": "Programmes conçus pour développer les compétences collectives.",
+        "benefits": {
+          "enhanced_team_cohesion": "Cohésion d'équipe renforcée",
+          "common_cx_language": "Langage commun CX",
+          "improved_collaboration": "Collaboration améliorée",
+          "unified_corporate_culture": "Culture d'entreprise unifiée"
+        }
       },
-      "success": {
-        "title": "Demande envoyée avec succès",
-        "description": "Nous vous contacterons dans les plus brefs délais pour discuter de votre projet de formation."
+      "personalized_support": {
+        "title": "Accompagnement Personnalisé",
+        "description": "Suivi individuel et collectif pour maximiser l'impact.",
+        "benefits": {
+          "customized_plan": "Plan de formation sur mesure",
+          "personalized_mentoring": "Mentoring personnalisé",
+          "progress_tracking": "Suivi des progrès",
+          "post_training_support": "Support post-formation"
+        }
       },
-      "submit_button": "Envoyer la demande",
-      "alternative_contact": {
-        "title": "Préférez-vous nous contacter directement ?"
+      "request_quote_button": "Demander un devis entreprise"
+    },
+    "individual": {
+      "title": "Pour Particuliers",
+      "subtitle": "Développez vos compétences personnelles",
+      "register_button": "S'inscrire en tant que particulier",
+      "individual_training": {
+        "title": "Formation Individuelle",
+        "description": "Développement personnel de vos compétences en CX.",
+        "benefits": {
+          "pace_progression": "Progression à votre rythme",
+          "specific_needs_focus": "Focus sur vos besoins spécifiques",
+          "schedule_flexibility": "Flexibilité des horaires",
+          "personal_certification": "Certification personnelle"
+        }
+      },
+      "flexible_training": {
+        "title": "Formation Flexible",
+        "description": "Formats adaptés à votre emploi du temps et vos contraintes.",
+        "benefits": {
+          "online_or_presential": "Formation en ligne ou présentiel",
+          "flexible_schedules": "Horaires flexibles",
+          "resources_24_7": "Accès aux ressources 24/7",
+          "continuous_support": "Support pédagogique continu"
+        }
+      },
+      "international_recognition": {
+        "title": "Reconnaissance Internationale",
+        "description": "Certifications reconnues dans le monde entier.",
+        "benefits": {
+          "international_validity": "Validité internationale",
+          "employer_recognition": "Reconnaissance par les employeurs",
+          "professional_mobility": "Mobilité professionnelle",
+          "international_network": "Réseau international"
+        }
       }
     },
-    "process": {
-      "title": "Votre Parcours de Formation",
-      "description": "Découvrez comment nous vous accompagnons étape par étape pour développer vos compétences en Customer Experience et obtenir votre certification.",
-      "step1": {
-        "title": "Inscription & Évaluation",
-        "description": "Inscrivez-vous au programme et passez une évaluation de vos compétences actuelles.",
-        "details": {
-          "registration_form": "Remplissage du formulaire d'inscription",
-          "skills_assessment": "Évaluation de vos compétences CX",
-          "learning_objectives": "Définition de vos objectifs d'apprentissage",
-          "personalized_planning": "Planification personnalisée du parcours"
-        },
-        "duration": "1-2 semaines"
-      },
-      "step2": {
-        "title": "Formation & Apprentissage",
-        "description": "Suivez les modules de formation adaptés à votre niveau et vos objectifs.",
-        "details": {
-          "training_resources": "Accès aux ressources de formation",
-          "online_or_presential": "Formation en ligne ou présentiel",
-          "practical_exercises": "Exercices pratiques et cas d'étude",
-          "continuous_support": "Support pédagogique continu"
-        },
-        "duration": "1-7 jours selon le programme"
-      },
-      "step3": {
-        "title": "Pratique & Application",
-        "description": "Mettez en pratique vos acquis avec des projets concrets et des simulations.",
-        "details": {
-          "team_projects": "Projets pratiques en équipe",
-          "real_situations": "Simulations de situations réelles",
-          "case_studies": "Études de cas d'entreprises",
-          "personalized_feedback": "Feedback personnalisé"
-        },
-        "duration": "2-4 semaines"
-      },
-      "step4": {
-        "title": "Évaluation & Certification",
-        "description": "Passez l'évaluation finale et obtenez votre certification professionnelle.",
-        "details": {
-          "skills_evaluation": "Évaluation des compétences acquises",
-          "practical_theoretical_exam": "Examen pratique et théorique",
-          "official_certificate": "Délivrance du certificat officiel",
-          "certified_registry": "Inscription au registre des certifiés"
-        },
-        "duration": "1-2 semaines"
-      },
-      "features": {
-        "flexible_training": {
-          "title": "Formation Flexible",
-          "description": "Apprenez à votre rythme avec des formats adaptés à votre emploi du temps."
-        },
-        "expert_support": {
-          "title": "Accompagnement Expert",
-          "description": "Bénéficiez du support de nos formateurs certifiés tout au long de votre parcours."
-        },
-        "personalized_goals": {
-          "title": "Objectifs Personnalisés",
-          "description": "Votre parcours est adapté à vos objectifs professionnels et votre niveau."
-        },
-        "recognized_certification": {
-          "title": "Certification Reconnue",
-          "description": "Obtenez une certification reconnue dans le domaine de l'expérience client."
-        }
-      },
-      "learning_methods": {
-        "title": "Méthodes d'Apprentissage"
-      },
-      "methods": {
-        "presential": {
-          "method": "Formation Présentielle",
-          "description": "Sessions en salle avec formateurs experts",
-          "duration": "3-7 jours",
-          "benefits": {
-            "direct_interaction": "Interaction directe",
-            "team_work": "Travail en équipe",
-            "immediate_feedback": "Feedback immédiat"
-          }
-        },
-        "online": {
-          "method": "Formation en Ligne",
-          "description": "Modules interactifs accessibles 24/7",
-          "duration": "Flexible",
-          "benefits": {
-            "autonomous_learning": "Apprentissage autonome",
-            "flexible_schedules": "Horaires flexibles",
-            "permanent_resources": "Ressources permanentes"
-          }
-        },
-        "hybrid": {
-          "method": "Formation Hybride",
-          "description": "Combinaison de présentiel et d'e-learning",
-          "duration": "Variable",
-          "benefits": {
-            "best_of_both": "Meilleur des deux mondes",
-            "adaptability": "Adaptabilité",
-            "optimal_efficiency": "Efficacité optimale"
-          }
-        }
-      },
-      "advantages": {
-        "title": "Pourquoi choisir notre processus de formation ?",
-        "high_success_rate": {
-          "title": "Taux de réussite élevé",
-          "description": "98% de nos participants obtiennent leur certification grâce à notre accompagnement personnalisé."
-        },
-        "active_community": {
-          "title": "Communauté active",
-          "description": "Rejoignez une communauté de plus de 500 professionnels formés dans le domaine CX."
-        },
-        "professional_recognition": {
-          "title": "Reconnaissance professionnelle",
-          "description": "Vos certifications sont reconnues par les employeurs et valorisent votre expertise."
-        }
-      },
-      "start_training_button": "Commencer ma formation"
+    "comparison": {
+      "title": "Comparaison des Offres",
+      "features": "Fonctionnalités",
+      "enterprise": "Entreprises",
+      "individual": "Particuliers",
+      "format": "Format",
+      "enterprise_format": "Sur site + En ligne",
+      "individual_format": "En ligne + Présentiel optionnel",
+      "duration": "Durée",
+      "enterprise_duration": "3-7 jours par programme",
+      "individual_duration": "1-7 jours selon le niveau",
+      "support": "Accompagnement",
+      "enterprise_support": "Dédié + Suivi personnalisé",
+      "individual_support": "Support communautaire + Tutorat",
+      "certification": "Certification",
+      "enterprise_certification": "Certification d'équipe + Individuelle",
+      "individual_certification": "Certification individuelle",
+      "price": "Prix",
+      "enterprise_price": "Sur devis (volume)",
+      "individual_price": "Tarif individuel",
+      "support_24_7": "Support",
+      "enterprise_support_24_7": "24/7 + Hotline dédiée",
+      "individual_support_24_7": "Email + Forum communautaire",
+      "help_text": "Besoin d'aide pour choisir la solution qui vous convient ?",
+      "consult_expert_button": "Consulter un expert"
     }
+  },
+  "form": {
+    "title": "Demander une Formation",
+    "description": "Remplissez ce formulaire pour nous faire part de votre intérêt pour nos programmes de formation. Nous vous contacterons pour discuter de vos besoins spécifiques.",
+    "sections": {
+      "request_type": "Type de demande",
+      "contact_info": "Informations de contact",
+      "training_details": "Détails de la formation"
+    },
+    "labels": {
+      "request_type": "Type de formation souhaitée *",
+      "company_name": "Nom de l'entreprise",
+      "contact_person": "Nom du contact *",
+      "email": "Email *",
+      "phone": "Téléphone *",
+      "formation_program": "Programme de formation souhaité *",
+      "participant_count": "Nombre de participants",
+      "current_level": "Niveau actuel *",
+      "objectives": "Objectifs de formation *",
+      "timeline": "Délai souhaité *",
+      "budget": "Budget approximatif *",
+      "additional_info": "Informations supplémentaires",
+      "agree_terms": "J'accepte les conditions d'utilisation et la politique de confidentialité *",
+      "agree_newsletter": "Je souhaite recevoir des informations sur nos programmes de formation"
+    },
+    "placeholders": {
+      "request_type": "Sélectionnez le type de demande",
+      "company_name": "Nom de votre entreprise",
+      "contact_person": "Votre nom complet",
+      "email": "votre@email.com",
+      "phone": "+243 XXX XXX XXX",
+      "formation_program": "Sélectionnez un programme",
+      "participant_count": "Nombre de personnes à former",
+      "current_level": "Sélectionnez votre niveau",
+      "objectives": "Décrivez vos objectifs et ce que vous souhaitez accomplir avec cette formation",
+      "timeline": "Sélectionnez le délai",
+      "budget": "Sélectionnez le budget",
+      "additional_info": "Toute information supplémentaire qui pourrait nous aider à mieux comprendre vos besoins"
+    },
+    "options": {
+      "request_types": {
+        "individual": "Particulier",
+        "enterprise": "Entreprise"
+      },
+      "programs": {
+        "cxop": "CXOP - Customer Experience Officer Program",
+        "cxmp": "CXMP - Customer Experience Management Program",
+        "cxlp": "CXLP - Customer Experience Leadership Program",
+        "msc": "MSC - Masterclass Spécialisées",
+        "multiple": "Plusieurs programmes",
+        "consultation": "Consultation personnalisée"
+      },
+      "levels": {
+        "beginner": "Débutant",
+        "intermediate": "Intermédiaire",
+        "advanced": "Avancé",
+        "expert": "Expert"
+      },
+      "timelines": {
+        "asap": "Dès que possible",
+        "1_3_months": "1-3 mois",
+        "3_6_months": "3-6 mois",
+        "6_12_months": "6-12 mois",
+        "flexible": "Flexible"
+      },
+      "budgets": {
+        "under_1k": "Moins de 1 000 $",
+        "1k_5k": "1 000 $ - 5 000 $",
+        "5k_10k": "5 000 $ - 10 000 $",
+        "10k_25k": "10 000 $ - 25 000 $",
+        "over_25k": "Plus de 25 000 $",
+        "discuss": "À discuter"
+      }
+    },
+    "validation": {
+      "request_type_required": "Veuillez sélectionner le type de demande",
+      "contact_person_required": "Le nom du contact est requis",
+      "invalid_email": "Adresse email invalide",
+      "phone_required": "Le numéro de téléphone est requis",
+      "program_required": "Veuillez sélectionner un programme",
+      "current_level_required": "Veuillez indiquer votre niveau actuel",
+      "objectives_required": "Veuillez décrire vos objectifs",
+      "timeline_required": "Veuillez indiquer le délai souhaité",
+      "budget_required": "Veuillez indiquer votre budget approximatif",
+      "terms_required": "Vous devez accepter les conditions"
+    },
+    "success": {
+      "title": "Demande envoyée avec succès",
+      "description": "Nous vous contacterons dans les plus brefs délais pour discuter de votre projet de formation."
+    },
+    "submit_button": "Envoyer la demande",
+    "alternative_contact": {
+      "title": "Préférez-vous nous contacter directement ?"
+    }
+  },
+  "process": {
+    "title": "Votre Parcours de Formation",
+    "description": "Découvrez comment nous vous accompagnons étape par étape pour développer vos compétences en Customer Experience et obtenir votre certification.",
+    "step1": {
+      "title": "Inscription & Évaluation",
+      "description": "Inscrivez-vous au programme et passez une évaluation de vos compétences actuelles.",
+      "details": {
+        "registration_form": "Remplissage du formulaire d'inscription",
+        "skills_assessment": "Évaluation de vos compétences CX",
+        "learning_objectives": "Définition de vos objectifs d'apprentissage",
+        "personalized_planning": "Planification personnalisée du parcours"
+      },
+      "duration": "1-2 semaines"
+    },
+    "step2": {
+      "title": "Formation & Apprentissage",
+      "description": "Suivez les modules de formation adaptés à votre niveau et vos objectifs.",
+      "details": {
+        "training_resources": "Accès aux ressources de formation",
+        "online_or_presential": "Formation en ligne ou présentiel",
+        "practical_exercises": "Exercices pratiques et cas d'étude",
+        "continuous_support": "Support pédagogique continu"
+      },
+      "duration": "1-7 jours selon le programme"
+    },
+    "step3": {
+      "title": "Pratique & Application",
+      "description": "Mettez en pratique vos acquis avec des projets concrets et des simulations.",
+      "details": {
+        "team_projects": "Projets pratiques en équipe",
+        "real_situations": "Simulations de situations réelles",
+        "case_studies": "Études de cas d'entreprises",
+        "personalized_feedback": "Feedback personnalisé"
+      },
+      "duration": "2-4 semaines"
+    },
+    "step4": {
+      "title": "Évaluation & Certification",
+      "description": "Passez l'évaluation finale et obtenez votre certification professionnelle.",
+      "details": {
+        "skills_evaluation": "Évaluation des compétences acquises",
+        "practical_theoretical_exam": "Examen pratique et théorique",
+        "official_certificate": "Délivrance du certificat officiel",
+        "certified_registry": "Inscription au registre des certifiés"
+      },
+      "duration": "1-2 semaines"
+    },
+    "features": {
+      "flexible_training": {
+        "title": "Formation Flexible",
+        "description": "Apprenez à votre rythme avec des formats adaptés à votre emploi du temps."
+      },
+      "expert_support": {
+        "title": "Accompagnement Expert",
+        "description": "Bénéficiez du support de nos formateurs certifiés tout au long de votre parcours."
+      },
+      "personalized_goals": {
+        "title": "Objectifs Personnalisés",
+        "description": "Votre parcours est adapté à vos objectifs professionnels et votre niveau."
+      },
+      "recognized_certification": {
+        "title": "Certification Reconnue",
+        "description": "Obtenez une certification reconnue dans le domaine de l'expérience client."
+      }
+    },
+    "learning_methods": {
+      "title": "Méthodes d'Apprentissage"
+    },
+    "methods": {
+      "presential": {
+        "method": "Formation Présentielle",
+        "description": "Sessions en salle avec formateurs experts",
+        "duration": "3-7 jours",
+        "benefits": {
+          "direct_interaction": "Interaction directe",
+          "team_work": "Travail en équipe",
+          "immediate_feedback": "Feedback immédiat"
+        }
+      },
+      "online": {
+        "method": "Formation en Ligne",
+        "description": "Modules interactifs accessibles 24/7",
+        "duration": "Flexible",
+        "benefits": {
+          "autonomous_learning": "Apprentissage autonome",
+          "flexible_schedules": "Horaires flexibles",
+          "permanent_resources": "Ressources permanentes"
+        }
+      },
+      "hybrid": {
+        "method": "Formation Hybride",
+        "description": "Combinaison de présentiel et d'e-learning",
+        "duration": "Variable",
+        "benefits": {
+          "best_of_both": "Meilleur des deux mondes",
+          "adaptability": "Adaptabilité",
+          "optimal_efficiency": "Efficacité optimale"
+        }
+      }
+    },
+    "advantages": {
+      "title": "Pourquoi choisir notre processus de formation ?",
+      "high_success_rate": {
+        "title": "Taux de réussite élevé",
+        "description": "98% de nos participants obtiennent leur certification grâce à notre accompagnement personnalisé."
+      },
+      "active_community": {
+        "title": "Communauté active",
+        "description": "Rejoignez une communauté de plus de 500 professionnels formés dans le domaine CX."
+      },
+      "professional_recognition": {
+        "title": "Reconnaissance professionnelle",
+        "description": "Vos certifications sont reconnues par les employeurs et valorisent votre expertise."
+      }
+    },
+    "start_training_button": "Commencer ma formation"
   }
+}

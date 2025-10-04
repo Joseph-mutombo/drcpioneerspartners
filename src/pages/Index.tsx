@@ -8,7 +8,7 @@ import PMECall from '@/components/block/acceuil/pme-call';
 import Services from '@/components/block/acceuil/services';
 import { WhyTiss } from '@/components/block/acceuil/why-tiss';
 import { CtaAudit } from '@/components/block/acceuil/cta-audit';
-import Normes from '@/components/block/acceuil/normes';
+//import Normes from '@/components/block/acceuil/normes';
 import { CtaCertCompany } from '@/components/block/acceuil/cta-cert-company';
 
 const Index = () => {

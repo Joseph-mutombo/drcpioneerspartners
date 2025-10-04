@@ -1,9 +1,9 @@
 import { useTranslation } from 'react-i18next';
 import { 
   Shield, 
-  FileText, 
   Users, 
-  Target, 
+  Globe, 
+  Heart, 
   CheckCircle, 
   Clock,
   ArrowRight
@@ -14,64 +14,64 @@ const AuditServices = () => {
 
   const services = [
     {
-      id: 'audit-qualite',
-      title: t('audit_page.services.quality.title'),
-      description: t('audit_page.services.quality.description'),
-      icon: Shield,
+      id: 'audit-cx',
+      title: t('audit_page.services.cx_audit.title'),
+      description: t('audit_page.services.cx_audit.description'),
+      icon: Users,
       color: 'bg-blue-100 text-blue-600',
       features: [
-        t('audit_page.services.quality.features.process_analysis'),
-        t('audit_page.services.quality.features.non_conformities'),
-        t('audit_page.services.quality.features.improvement_recommendations'),
-        t('audit_page.services.quality.features.action_plan')
+        t('audit_page.services.cx_audit.features.customer_journey'),
+        t('audit_page.services.cx_audit.features.touchpoint_analysis'),
+        t('audit_page.services.cx_audit.features.satisfaction_measurement'),
+        t('audit_page.services.cx_audit.features.improvement_roadmap')
       ],
-      duration: t('audit_page.services.quality.duration'),
-      price: t('audit_page.services.quality.price')
+      duration: t('audit_page.services.cx_audit.duration'),
+      price: t('audit_page.services.cx_audit.price')
     },
     {
-      id: 'audit-environnement',
-      title: t('audit_page.services.environmental.title'),
-      description: t('audit_page.services.environmental.description'),
-      icon: FileText,
+      id: 'audit-excellence-service',
+      title: t('audit_page.services.service_excellence.title'),
+      description: t('audit_page.services.service_excellence.description'),
+      icon: Shield,
+      color: 'bg-yellow-100 text-yellow-600',
+      features: [
+        t('audit_page.services.service_excellence.features.tisse_standards'),
+        t('audit_page.services.service_excellence.features.process_evaluation'),
+        t('audit_page.services.service_excellence.features.benchmarking'),
+        t('audit_page.services.service_excellence.features.best_practices')
+      ],
+      duration: t('audit_page.services.service_excellence.duration'),
+      price: t('audit_page.services.service_excellence.price')
+    },
+    {
+      id: 'audit-digital',
+      title: t('audit_page.services.digital_experience.title'),
+      description: t('audit_page.services.digital_experience.description'),
+      icon: Globe,
       color: 'bg-green-100 text-green-600',
       features: [
-        t('audit_page.services.environmental.features.iso_14001'),
-        t('audit_page.services.environmental.features.risk_assessment'),
-        t('audit_page.services.environmental.features.resource_optimization'),
-        t('audit_page.services.environmental.features.detailed_report')
+        t('audit_page.services.digital_experience.features.ux_evaluation'),
+        t('audit_page.services.digital_experience.features.usability_testing'),
+        t('audit_page.services.digital_experience.features.accessibility_audit'),
+        t('audit_page.services.digital_experience.features.performance_analysis')
       ],
-      duration: t('audit_page.services.environmental.duration'),
-      price: t('audit_page.services.environmental.price')
+      duration: t('audit_page.services.digital_experience.duration'),
+      price: t('audit_page.services.digital_experience.price')
     },
     {
-      id: 'audit-securite',
-      title: t('audit_page.services.safety.title'),
-      description: t('audit_page.services.safety.description'),
-      icon: Target,
+      id: 'audit-bien-etre',
+      title: t('audit_page.services.employee_wellbeing.title'),
+      description: t('audit_page.services.employee_wellbeing.description'),
+      icon: Heart,
       color: 'bg-red-100 text-red-600',
       features: [
-        t('audit_page.services.safety.features.risk_assessment'),
-        t('audit_page.services.safety.features.ohsas_18001'),
-        t('audit_page.services.safety.features.staff_training'),
-        t('audit_page.services.safety.features.procedure_update')
+        t('audit_page.services.employee_wellbeing.features.engagement_survey'),
+        t('audit_page.services.employee_wellbeing.features.culture_analysis'),
+        t('audit_page.services.employee_wellbeing.features.workplace_assessment'),
+        t('audit_page.services.employee_wellbeing.features.improvement_plan')
       ],
-      duration: t('audit_page.services.safety.duration'),
-      price: t('audit_page.services.safety.price')
-    },
-    {
-      id: 'consultation-strategique',
-      title: t('audit_page.services.strategic.title'),
-      description: t('audit_page.services.strategic.description'),
-      icon: Users,
-      color: 'bg-purple-100 text-purple-600',
-      features: [
-        t('audit_page.services.strategic.features.certification_strategy'),
-        t('audit_page.services.strategic.features.team_training'),
-        t('audit_page.services.strategic.features.follow_up'),
-        t('audit_page.services.strategic.features.continuous_optimization')
-      ],
-      duration: t('audit_page.services.strategic.duration'),
-      price: t('audit_page.services.strategic.price')
+      duration: t('audit_page.services.employee_wellbeing.duration'),
+      price: t('audit_page.services.employee_wellbeing.price')
     }
   ];
 

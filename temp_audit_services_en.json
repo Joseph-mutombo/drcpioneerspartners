@@ -1,0 +1,52 @@
+    "services": {
+      "title": "Our Audit & Consulting Services",
+      "description": "Discover our complete range of audit services specialized in service excellence and customer experience, tailored to your company's specific needs.",
+      "cx_audit": {
+        "title": "Customer Experience Audit",
+        "description": "Comprehensive evaluation of customer experience across all touchpoints and customer journeys.",
+        "features": {
+          "customer_journey": "Customer journey mapping",
+          "touchpoint_analysis": "Touchpoint analysis",
+          "satisfaction_measurement": "Customer satisfaction measurement",
+          "improvement_roadmap": "Personalized improvement plan"
+        },
+        "duration": "3-5 days",
+        "price": "On quote"
+      },
+      "service_excellence": {
+        "title": "Service Excellence Audit",
+        "description": "Evaluation of your service standards according to TISSE criteria and international best practices.",
+        "features": {
+          "tisse_standards": "Evaluation according to TISSE standards",
+          "process_evaluation": "Reception process evaluation",
+          "benchmarking": "Best practices benchmarking",
+          "best_practices": "Improvement areas identification"
+        },
+        "duration": "2-4 days",
+        "price": "On quote"
+      },
+      "digital_experience": {
+        "title": "Digital Experience Audit",
+        "description": "Evaluation of user experience on your digital platforms and UX/UI optimization.",
+        "features": {
+          "ux_evaluation": "User experience evaluation",
+          "usability_testing": "Usability testing",
+          "accessibility_audit": "Accessibility audit",
+          "performance_analysis": "Performance analysis"
+        },
+        "duration": "2-3 days",
+        "price": "On quote"
+      },
+      "employee_wellbeing": {
+        "title": "Employee Wellbeing Audit",
+        "description": "Evaluation of employee engagement and wellbeing according to IEHWS standards.",
+        "features": {
+          "engagement_survey": "Employee engagement survey",
+          "culture_analysis": "Corporate culture analysis",
+          "workplace_assessment": "Workplace conditions assessment",
+          "improvement_plan": "Wellbeing improvement plan"
+        },
+        "duration": "3-4 days",
+        "price": "On quote"
+      }
+    },
