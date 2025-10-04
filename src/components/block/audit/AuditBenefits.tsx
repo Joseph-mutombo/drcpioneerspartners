@@ -18,86 +18,86 @@ const AuditBenefits = () => {
   const benefits = [
     {
       id: 'compliance',
-      title: 'Conformité Réglementaire',
-      description: 'Assurez-vous de respecter toutes les réglementations en vigueur dans votre secteur d\'activité.',
+      title: t('audit_page.benefits.compliance.title'),
+      description: t('audit_page.benefits.compliance.description'),
       icon: Shield,
       color: 'bg-blue-100 text-blue-600',
-      stats: '100% de conformité garantie',
+      stats: t('audit_page.benefits.compliance.stats'),
       details: [
-        'Identification des exigences réglementaires',
-        'Vérification de la conformité actuelle',
-        'Plan d\'action pour les écarts identifiés',
-        'Suivi et maintenance de la conformité'
+        t('audit_page.benefits.compliance.details.requirements_identification'),
+        t('audit_page.benefits.compliance.details.current_compliance_verification'),
+        t('audit_page.benefits.compliance.details.action_plan'),
+        t('audit_page.benefits.compliance.details.follow_up')
       ]
     },
     {
       id: 'efficiency',
-      title: 'Amélioration des Performances',
-      description: 'Optimisez vos processus pour augmenter l\'efficacité et réduire les coûts.',
+      title: t('audit_page.benefits.efficiency.title'),
+      description: t('audit_page.benefits.efficiency.description'),
       icon: TrendingUp,
       color: 'bg-green-100 text-green-600',
-      stats: 'Jusqu\'à 30% d\'amélioration',
+      stats: t('audit_page.benefits.efficiency.stats'),
       details: [
-        'Analyse des processus existants',
-        'Identification des goulots d\'étranglement',
-        'Recommandations d\'optimisation',
-        'Mesure des gains de performance'
+        t('audit_page.benefits.efficiency.details.process_analysis'),
+        t('audit_page.benefits.efficiency.details.bottleneck_identification'),
+        t('audit_page.benefits.efficiency.details.optimization_recommendations'),
+        t('audit_page.benefits.efficiency.details.performance_measurement')
       ]
     },
     {
       id: 'quality',
-      title: 'Amélioration de la Qualité',
-      description: 'Renforcez la qualité de vos produits et services pour satisfaire vos clients.',
+      title: t('audit_page.benefits.quality.title'),
+      description: t('audit_page.benefits.quality.description'),
       icon: Award,
       color: 'bg-yellow-100 text-yellow-600',
-      stats: 'Réduction de 50% des défauts',
+      stats: t('audit_page.benefits.quality.stats'),
       details: [
-        'Mise en place de systèmes qualité',
-        'Formation du personnel',
-        'Contrôles et audits internes',
-        'Amélioration continue'
+        t('audit_page.benefits.quality.details.quality_systems'),
+        t('audit_page.benefits.quality.details.staff_training'),
+        t('audit_page.benefits.quality.details.internal_controls'),
+        t('audit_page.benefits.quality.details.continuous_improvement')
       ]
     },
     {
       id: 'risk-management',
-      title: 'Gestion des Risques',
-      description: 'Identifiez et maîtrisez les risques pour protéger votre entreprise.',
+      title: t('audit_page.benefits.risk_management.title'),
+      description: t('audit_page.benefits.risk_management.description'),
       icon: Target,
       color: 'bg-red-100 text-red-600',
-      stats: 'Réduction de 70% des risques',
+      stats: t('audit_page.benefits.risk_management.stats'),
       details: [
-        'Cartographie des risques',
-        'Évaluation de la probabilité et impact',
-        'Plan de mitigation',
-        'Monitoring continu'
+        t('audit_page.benefits.risk_management.details.risk_mapping'),
+        t('audit_page.benefits.risk_management.details.probability_assessment'),
+        t('audit_page.benefits.risk_management.details.mitigation_plan'),
+        t('audit_page.benefits.risk_management.details.continuous_monitoring')
       ]
     },
     {
       id: 'team-development',
-      title: 'Développement des Compétences',
-      description: 'Formez et développez les compétences de vos équipes.',
+      title: t('audit_page.benefits.team_development.title'),
+      description: t('audit_page.benefits.team_development.description'),
       icon: Users,
       color: 'bg-purple-100 text-purple-600',
-      stats: '100% du personnel formé',
+      stats: t('audit_page.benefits.team_development.stats'),
       details: [
-        'Formation sur les bonnes pratiques',
-        'Sensibilisation aux enjeux qualité',
-        'Transfert de compétences',
-        'Suivi et évaluation'
+        t('audit_page.benefits.team_development.details.best_practices_training'),
+        t('audit_page.benefits.team_development.details.quality_awareness'),
+        t('audit_page.benefits.team_development.details.skill_transfer'),
+        t('audit_page.benefits.team_development.details.follow_up')
       ]
     },
     {
       id: 'competitive-advantage',
-      title: 'Avantage Concurrentiel',
-      description: 'Distinguez-vous de la concurrence grâce à vos certifications et processus optimisés.',
+      title: t('audit_page.benefits.competitive_advantage.title'),
+      description: t('audit_page.benefits.competitive_advantage.description'),
       icon: BarChart3,
       color: 'bg-indigo-100 text-indigo-600',
-      stats: '+25% de parts de marché',
+      stats: t('audit_page.benefits.competitive_advantage.stats'),
       details: [
-        'Certifications reconnues',
-        'Processus standardisés',
-        'Amélioration de l\'image de marque',
-        'Accès à de nouveaux marchés'
+        t('audit_page.benefits.competitive_advantage.details.recognized_certifications'),
+        t('audit_page.benefits.competitive_advantage.details.standardized_processes'),
+        t('audit_page.benefits.competitive_advantage.details.brand_improvement'),
+        t('audit_page.benefits.competitive_advantage.details.new_markets')
       ]
     }
   ];
@@ -106,26 +106,26 @@ const AuditBenefits = () => {
     {
       icon: DollarSign,
       value: '300%',
-      label: 'Retour sur investissement moyen',
-      description: 'Les entreprises voient un ROI de 300% dans les 2 ans'
+      label: t('audit_page.benefits.roi.average_roi.label'),
+      description: t('audit_page.benefits.roi.average_roi.description')
     },
     {
       icon: Clock,
       value: '6 mois',
-      label: 'Temps de récupération',
-      description: 'Récupération de l\'investissement en moyenne 6 mois'
+      label: t('audit_page.benefits.roi.payback_time.label'),
+      description: t('audit_page.benefits.roi.payback_time.description')
     },
     {
       icon: TrendingUp,
       value: '+40%',
-      label: 'Amélioration de la productivité',
-      description: 'Gains de productivité significatifs observés'
+      label: t('audit_page.benefits.roi.productivity_improvement.label'),
+      description: t('audit_page.benefits.roi.productivity_improvement.description')
     },
     {
       icon: CheckCircle,
       value: '95%',
-      label: 'Taux de satisfaction client',
-      description: 'Nos clients sont très satisfaits de nos services'
+      label: t('audit_page.benefits.roi.client_satisfaction.label'),
+      description: t('audit_page.benefits.roi.client_satisfaction.description')
     }
   ];
 
@@ -139,7 +139,7 @@ const AuditBenefits = () => {
             data-aos="fade-up"
             data-aos-duration="600"
           >
-            Les Avantages de l'Audit & Consultation
+            {t('audit_page.benefits.title')}
           </h2>
           <p 
             className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
@@ -147,8 +147,7 @@ const AuditBenefits = () => {
             data-aos-duration="600"
             data-aos-delay="200"
           >
-            Découvrez comment nos services d'audit et de consultation peuvent transformer 
-            votre entreprise et générer des résultats mesurables.
+            {t('audit_page.benefits.description')}
           </p>
         </div>
 
@@ -208,11 +207,10 @@ const AuditBenefits = () => {
         >
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold mb-4">
-              Retour sur Investissement Garanti
+              {t('audit_page.benefits.roi_section.title')}
             </h3>
             <p className="text-xl text-white/90 max-w-3xl mx-auto">
-              Nos clients constatent des améliorations significatives et mesurables 
-              dans les mois qui suivent nos interventions.
+              {t('audit_page.benefits.roi_section.description')}
             </p>
           </div>
 
@@ -254,11 +252,10 @@ const AuditBenefits = () => {
         >
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-gray-900 mb-4">
-              Ce que disent nos clients
+              {t('audit_page.benefits.testimonials.title')}
             </h3>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Découvrez les témoignages de nos clients qui ont transformé leur entreprise 
-              grâce à nos services d'audit et de consultation.
+              {t('audit_page.benefits.testimonials.description')}
             </p>
           </div>
 
@@ -270,11 +267,10 @@ const AuditBenefits = () => {
                 ))}
               </div>
               <p className="text-gray-600 mb-4 italic">
-                "L'audit de qualité nous a permis d'identifier des axes d'amélioration 
-                que nous n'avions pas vus. Nos processus sont maintenant 40% plus efficaces."
+                "{t('audit_page.benefits.testimonials.testimonial1.quote')}"
               </p>
-              <div className="font-semibold text-gray-900">Jean M., Directeur Qualité</div>
-              <div className="text-sm text-gray-500">Manufacturing Corp</div>
+              <div className="font-semibold text-gray-900">{t('audit_page.benefits.testimonials.testimonial1.author')}</div>
+              <div className="text-sm text-gray-500">{t('audit_page.benefits.testimonials.testimonial1.company')}</div>
             </div>
 
             <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
@@ -284,11 +280,10 @@ const AuditBenefits = () => {
                 ))}
               </div>
               <p className="text-gray-600 mb-4 italic">
-                "Grâce à leur expertise, nous avons obtenu la certification ISO 9001 
-                en seulement 6 mois. Un accompagnement exceptionnel !"
+                "{t('audit_page.benefits.testimonials.testimonial2.quote')}"
               </p>
-              <div className="font-semibold text-gray-900">Marie K., PDG</div>
-              <div className="text-sm text-gray-500">Services Pro</div>
+              <div className="font-semibold text-gray-900">{t('audit_page.benefits.testimonials.testimonial2.author')}</div>
+              <div className="text-sm text-gray-500">{t('audit_page.benefits.testimonials.testimonial2.company')}</div>
             </div>
 
             <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
@@ -298,11 +293,10 @@ const AuditBenefits = () => {
                 ))}
               </div>
               <p className="text-gray-600 mb-4 italic">
-                "L'audit environnemental nous a aidés à réduire nos coûts de 25% 
-                tout en améliorant notre image de marque. Un investissement rentable !"
+                "{t('audit_page.benefits.testimonials.testimonial3.quote')}"
               </p>
-              <div className="font-semibold text-gray-900">Pierre L., Directeur</div>
-              <div className="text-sm text-gray-500">Eco Solutions</div>
+              <div className="font-semibold text-gray-900">{t('audit_page.benefits.testimonials.testimonial3.author')}</div>
+              <div className="text-sm text-gray-500">{t('audit_page.benefits.testimonials.testimonial3.company')}</div>
             </div>
           </div>
         </div>

@@ -7,35 +7,35 @@ const FormationHero = () => {
   const programs = [
     { 
       code: 'CXOP', 
-      name: 'Customer Experience Officer Program', 
-      duration: '3 jours',
-      level: 'Fondamental'
+      name: t('formations_page.hero.programs.cxop.name'), 
+      duration: t('formations_page.hero.programs.cxop.duration'),
+      level: t('formations_page.hero.programs.cxop.level')
     },
     { 
       code: 'CXMP', 
-      name: 'Customer Experience Management Program', 
-      duration: '5 jours',
-      level: 'Avancé'
+      name: t('formations_page.hero.programs.cxmp.name'), 
+      duration: t('formations_page.hero.programs.cxmp.duration'),
+      level: t('formations_page.hero.programs.cxmp.level')
     },
     { 
       code: 'CXLP', 
-      name: 'Customer Experience Leadership Program', 
-      duration: '7 jours',
-      level: 'Expert'
+      name: t('formations_page.hero.programs.cxlp.name'), 
+      duration: t('formations_page.hero.programs.cxlp.duration'),
+      level: t('formations_page.hero.programs.cxlp.level')
     },
     { 
       code: 'MSC', 
-      name: 'Masterclass Spécialisées', 
-      duration: '1-2 jours',
-      level: 'Spécialisé'
+      name: t('formations_page.hero.programs.msc.name'), 
+      duration: t('formations_page.hero.programs.msc.duration'),
+      level: t('formations_page.hero.programs.msc.level')
     }
   ];
 
   const benefits = [
-    { icon: Users, text: 'Formation en RDC', color: 'text-yellow-500' },
-    { icon: Award, text: 'Certification Internationale', color: 'text-brand-blue' },
-    { icon: TrendingUp, text: 'Développement Professionnel', color: 'text-yellow-500' },
-    { icon: Monitor, text: 'Méthodes Modernes', color: 'text-brand-blue' }
+    { icon: Users, text: t('formations_page.hero.benefits.training_rdc'), color: 'text-yellow-500' },
+    { icon: Award, text: t('formations_page.hero.benefits.international_certification'), color: 'text-brand-blue' },
+    { icon: TrendingUp, text: t('formations_page.hero.benefits.professional_development'), color: 'text-yellow-500' },
+    { icon: Monitor, text: t('formations_page.hero.benefits.modern_methods'), color: 'text-brand-blue' }
   ];
 
   return (
@@ -67,8 +67,8 @@ const FormationHero = () => {
               data-aos-duration="800"
               data-aos-delay="200"
             >
-              Formations
-              <span className="block text-yellow-400">d'Excellence</span>
+              {t('formations_page.hero.title')}
+              <span className="block text-yellow-400">{t('formations_page.hero.subtitle')}</span>
             </h1>
             
             <p 
@@ -77,9 +77,7 @@ const FormationHero = () => {
               data-aos-duration="800"
               data-aos-delay="400"
             >
-              Découvrez nos programmes de formation professionnels conçus pour développer 
-              vos compétences en Customer Experience. Que vous soyez un particulier ou une entreprise, 
-              nos formations vous accompagnent vers l'excellence.
+              {t('formations_page.hero.description')}
             </p>
           </div>
 

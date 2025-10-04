@@ -38,20 +38,20 @@ const CertificationRequestForm = () => {
   const { t } = useTranslation();
 
   const formSchema = z.object({
-    requestType: z.string().min(1, { message: "Veuillez sélectionner le type de demande" }),
+    requestType: z.string().min(1, { message: t('certifications_page.form.validation.request_type') }),
     companyName: z.string().optional(),
-    contactPerson: z.string().min(1, { message: "Le nom du contact est requis" }),
-    email: z.string().email({ message: "Adresse email invalide" }),
-    phone: z.string().min(1, { message: "Le numéro de téléphone est requis" }),
-    certificationProgram: z.string().min(1, { message: "Veuillez sélectionner un programme" }),
+    contactPerson: z.string().min(1, { message: t('certifications_page.form.validation.contact_person') }),
+    email: z.string().email({ message: t('certifications_page.form.validation.email') }),
+    phone: z.string().min(1, { message: t('certifications_page.form.validation.phone') }),
+    certificationProgram: z.string().min(1, { message: t('certifications_page.form.validation.certification_program') }),
     participantCount: z.string().optional(),
-    currentLevel: z.string().min(1, { message: "Veuillez indiquer votre niveau actuel" }),
-    objectives: z.string().min(1, { message: "Veuillez décrire vos objectifs" }),
-    timeline: z.string().min(1, { message: "Veuillez indiquer le délai souhaité" }),
-    budget: z.string().min(1, { message: "Veuillez indiquer votre budget approximatif" }),
+    currentLevel: z.string().min(1, { message: t('certifications_page.form.validation.current_level') }),
+    objectives: z.string().min(1, { message: t('certifications_page.form.validation.objectives') }),
+    timeline: z.string().min(1, { message: t('certifications_page.form.validation.timeline') }),
+    budget: z.string().min(1, { message: t('certifications_page.form.validation.budget') }),
     additionalInfo: z.string().optional(),
     agreeTerms: z.boolean().refine((val) => val === true, {
-      message: "Vous devez accepter les conditions"
+      message: t('certifications_page.form.validation.agree_terms')
     }),
     agreeNewsletter: z.boolean().optional()
   });
@@ -81,48 +81,48 @@ const CertificationRequestForm = () => {
   function onSubmit(values: z.infer<typeof formSchema>) {
     console.log(values);
     toast({
-      title: "Demande envoyée avec succès",
-      description: "Nous vous contacterons dans les plus brefs délais pour discuter de votre projet de certification.",
+      title: t('certifications_page.form.success.title'),
+      description: t('certifications_page.form.success.description'),
     });
     form.reset();
   }
 
   const requestTypes = [
-    { value: "individual", label: "Particulier" },
-    { value: "enterprise", label: "Entreprise" }
+    { value: "individual", label: t('certifications_page.form.options.request_types.individual') },
+    { value: "enterprise", label: t('certifications_page.form.options.request_types.enterprise') }
   ];
 
   const certificationPrograms = [
-    { value: "tisse", label: "TISSE - Standards d'Excellence de Service" },
-    { value: "icxs", label: "ICXS - Certification Expérience Client" },
-    { value: "idcxs", label: "IDCXS - Certification Expérience Digitale" },
-    { value: "iehws", label: "IEHWS - Standards Bien-être Employé" },
-    { value: "multiple", label: "Plusieurs programmes" },
-    { value: "consultation", label: "Consultation personnalisée" }
+    { value: "tisse", label: t('certifications_page.form.options.programs.tisse') },
+    { value: "icxs", label: t('certifications_page.form.options.programs.icxs') },
+    { value: "idcxs", label: t('certifications_page.form.options.programs.idcxs') },
+    { value: "iehws", label: t('certifications_page.form.options.programs.iehws') },
+    { value: "multiple", label: t('certifications_page.form.options.programs.multiple') },
+    { value: "consultation", label: t('certifications_page.form.options.programs.consultation') }
   ];
 
   const currentLevels = [
-    { value: "beginner", label: "Débutant" },
-    { value: "intermediate", label: "Intermédiaire" },
-    { value: "advanced", label: "Avancé" },
-    { value: "expert", label: "Expert" }
+    { value: "beginner", label: t('certifications_page.form.options.levels.beginner') },
+    { value: "intermediate", label: t('certifications_page.form.options.levels.intermediate') },
+    { value: "advanced", label: t('certifications_page.form.options.levels.advanced') },
+    { value: "expert", label: t('certifications_page.form.options.levels.expert') }
   ];
 
   const timelines = [
-    { value: "asap", label: "Dès que possible" },
-    { value: "1-3months", label: "1-3 mois" },
-    { value: "3-6months", label: "3-6 mois" },
-    { value: "6-12months", label: "6-12 mois" },
-    { value: "flexible", label: "Flexible" }
+    { value: "asap", label: t('certifications_page.form.options.timelines.asap') },
+    { value: "1-3months", label: t('certifications_page.form.options.timelines.1_3_months') },
+    { value: "3-6months", label: t('certifications_page.form.options.timelines.3_6_months') },
+    { value: "6-12months", label: t('certifications_page.form.options.timelines.6_12_months') },
+    { value: "flexible", label: t('certifications_page.form.options.timelines.flexible') }
   ];
 
   const budgets = [
-    { value: "under-1k", label: "Moins de 1 000 $" },
-    { value: "1k-5k", label: "1 000 $ - 5 000 $" },
-    { value: "5k-10k", label: "5 000 $ - 10 000 $" },
-    { value: "10k-25k", label: "10 000 $ - 25 000 $" },
-    { value: "over-25k", label: "Plus de 25 000 $" },
-    { value: "discuss", label: "À discuter" }
+    { value: "under-1k", label: t('certifications_page.form.options.budgets.under_1k') },
+    { value: "1k-5k", label: t('certifications_page.form.options.budgets.1k_5k') },
+    { value: "5k-10k", label: t('certifications_page.form.options.budgets.5k_10k') },
+    { value: "10k-25k", label: t('certifications_page.form.options.budgets.10k_25k') },
+    { value: "over-25k", label: t('certifications_page.form.options.budgets.over_25k') },
+    { value: "discuss", label: t('certifications_page.form.options.budgets.discuss') }
   ];
 
   return (
@@ -135,7 +135,7 @@ const CertificationRequestForm = () => {
             data-aos="fade-up"
             data-aos-duration="600"
           >
-            Demander une Certification
+            {t('certifications_page.form.title')}
           </h2>
           <p 
             className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed"
@@ -143,8 +143,7 @@ const CertificationRequestForm = () => {
             data-aos-duration="600"
             data-aos-delay="200"
           >
-            Remplissez ce formulaire pour nous faire part de votre intérêt pour nos programmes de certification. 
-            Nous vous contacterons pour discuter de vos besoins spécifiques.
+            {t('certifications_page.form.description')}
           </p>
         </div>
 
@@ -161,7 +160,7 @@ const CertificationRequestForm = () => {
               <div>
                 <h3 className="text-2xl font-semibold text-gray-900 mb-6 flex items-center gap-3">
                   <Award className="w-6 h-6 text-brand-blue" />
-                  Type de demande
+                  {t('certifications_page.form.sections.request_type')}
                 </h3>
                 
                 <FormField
@@ -169,11 +168,11 @@ const CertificationRequestForm = () => {
                   name="requestType"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Type de certification souhaitée *</FormLabel>
+                      <FormLabel>{t('certifications_page.form.labels.certification_type')}</FormLabel>
                       <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl>
                           <SelectTrigger>
-                            <SelectValue placeholder="Sélectionnez le type de demande" />
+                            <SelectValue placeholder={t('certifications_page.form.placeholders.select_request_type')} />
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
@@ -194,7 +193,7 @@ const CertificationRequestForm = () => {
               <div>
                 <h3 className="text-2xl font-semibold text-gray-900 mb-6 flex items-center gap-3">
                   <User className="w-6 h-6 text-brand-blue" />
-                  Informations de contact
+                  {t('certifications_page.form.sections.contact_info')}
                 </h3>
                 
                 <div className="grid md:grid-cols-2 gap-6">
@@ -204,9 +203,9 @@ const CertificationRequestForm = () => {
                       name="companyName"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Nom de l'entreprise</FormLabel>
+                          <FormLabel>{t('certifications_page.form.labels.company_name')}</FormLabel>
                           <FormControl>
-                            <Input placeholder="Nom de votre entreprise" {...field} />
+                            <Input placeholder={t('certifications_page.form.placeholders.company_name')} {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -219,9 +218,9 @@ const CertificationRequestForm = () => {
                     name="contactPerson"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Nom du contact *</FormLabel>
+                        <FormLabel>{t('certifications_page.form.labels.contact_person')}</FormLabel>
                         <FormControl>
-                          <Input placeholder="Votre nom complet" {...field} />
+                          <Input placeholder={t('certifications_page.form.placeholders.contact_person')} {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -233,9 +232,9 @@ const CertificationRequestForm = () => {
                     name="email"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Email *</FormLabel>
+                        <FormLabel>{t('certifications_page.form.labels.email')}</FormLabel>
                         <FormControl>
-                          <Input placeholder="votre@email.com" type="email" {...field} />
+                          <Input placeholder={t('certifications_page.form.placeholders.email')} type="email" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -247,9 +246,9 @@ const CertificationRequestForm = () => {
                     name="phone"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Téléphone *</FormLabel>
+                        <FormLabel>{t('certifications_page.form.labels.phone')}</FormLabel>
                         <FormControl>
-                          <Input placeholder="+243 XXX XXX XXX" {...field} />
+                          <Input placeholder={t('certifications_page.form.placeholders.phone')} {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -262,7 +261,7 @@ const CertificationRequestForm = () => {
               <div>
                 <h3 className="text-2xl font-semibold text-gray-900 mb-6 flex items-center gap-3">
                   <Award className="w-6 h-6 text-brand-blue" />
-                  Détails de la certification
+                  {t('certifications_page.form.sections.certification_details')}
                 </h3>
                 
                 <div className="space-y-6">
@@ -271,11 +270,11 @@ const CertificationRequestForm = () => {
                     name="certificationProgram"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Programme de certification souhaité *</FormLabel>
+                        <FormLabel>{t('certifications_page.form.labels.certification_program')}</FormLabel>
                         <Select onValueChange={field.onChange} defaultValue={field.value}>
                           <FormControl>
                             <SelectTrigger>
-                              <SelectValue placeholder="Sélectionnez un programme" />
+                              <SelectValue placeholder={t('certifications_page.form.placeholders.select_program')} />
                             </SelectTrigger>
                           </FormControl>
                           <SelectContent>
@@ -297,9 +296,9 @@ const CertificationRequestForm = () => {
                       name="participantCount"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Nombre de participants</FormLabel>
+                          <FormLabel>{t('certifications_page.form.labels.participant_count')}</FormLabel>
                           <FormControl>
-                            <Input placeholder="Nombre de personnes à certifier" {...field} />
+                            <Input placeholder={t('certifications_page.form.placeholders.participant_count')} {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -312,11 +311,11 @@ const CertificationRequestForm = () => {
                     name="currentLevel"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Niveau actuel *</FormLabel>
+                        <FormLabel>{t('certifications_page.form.labels.current_level')}</FormLabel>
                         <Select onValueChange={field.onChange} defaultValue={field.value}>
                           <FormControl>
                             <SelectTrigger>
-                              <SelectValue placeholder="Sélectionnez votre niveau" />
+                              <SelectValue placeholder={t('certifications_page.form.placeholders.select_level')} />
                             </SelectTrigger>
                           </FormControl>
                           <SelectContent>
@@ -337,10 +336,10 @@ const CertificationRequestForm = () => {
                     name="objectives"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Objectifs de certification *</FormLabel>
+                        <FormLabel>{t('certifications_page.form.labels.objectives')}</FormLabel>
                         <FormControl>
                           <Textarea
-                            placeholder="Décrivez vos objectifs et ce que vous souhaitez accomplir avec cette certification"
+                            placeholder={t('certifications_page.form.placeholders.objectives')}
                             className="min-h-[100px]"
                             {...field}
                           />
@@ -356,11 +355,11 @@ const CertificationRequestForm = () => {
                       name="timeline"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Délai souhaité *</FormLabel>
+                          <FormLabel>{t('certifications_page.form.labels.timeline')}</FormLabel>
                           <Select onValueChange={field.onChange} defaultValue={field.value}>
                             <FormControl>
                               <SelectTrigger>
-                                <SelectValue placeholder="Sélectionnez le délai" />
+                                <SelectValue placeholder={t('certifications_page.form.placeholders.select_timeline')} />
                               </SelectTrigger>
                             </FormControl>
                             <SelectContent>
@@ -381,11 +380,11 @@ const CertificationRequestForm = () => {
                       name="budget"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Budget approximatif *</FormLabel>
+                          <FormLabel>{t('certifications_page.form.labels.budget')}</FormLabel>
                           <Select onValueChange={field.onChange} defaultValue={field.value}>
                             <FormControl>
                               <SelectTrigger>
-                                <SelectValue placeholder="Sélectionnez le budget" />
+                                <SelectValue placeholder={t('certifications_page.form.placeholders.select_budget')} />
                               </SelectTrigger>
                             </FormControl>
                             <SelectContent>
@@ -407,10 +406,10 @@ const CertificationRequestForm = () => {
                     name="additionalInfo"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Informations supplémentaires</FormLabel>
+                        <FormLabel>{t('certifications_page.form.labels.additional_info')}</FormLabel>
                         <FormControl>
                           <Textarea
-                            placeholder="Toute information supplémentaire qui pourrait nous aider à mieux comprendre vos besoins"
+                            placeholder={t('certifications_page.form.placeholders.additional_info')}
                             className="min-h-[100px]"
                             {...field}
                           />
@@ -437,7 +436,7 @@ const CertificationRequestForm = () => {
                       </FormControl>
                       <div className="space-y-1 leading-none">
                         <FormLabel>
-                          J'accepte les conditions d'utilisation et la politique de confidentialité *
+                          {t('certifications_page.form.conditions.agree_terms')}
                         </FormLabel>
                         <FormMessage />
                       </div>
@@ -458,7 +457,7 @@ const CertificationRequestForm = () => {
                       </FormControl>
                       <div className="space-y-1 leading-none">
                         <FormLabel>
-                          Je souhaite recevoir des informations sur nos programmes de certification
+                          {t('certifications_page.form.conditions.newsletter')}
                         </FormLabel>
                       </div>
                     </FormItem>
@@ -473,7 +472,7 @@ const CertificationRequestForm = () => {
                   className="w-full group flex items-center justify-center gap-2 px-8 py-4 bg-brand-blue text-white font-semibold rounded-lg hover:bg-yellow-600 transition-colors duration-200"
                 >
                   <Send className="w-5 h-5" />
-                  <span>Envoyer la demande</span>
+                  <span>{t('certifications_page.form.submit_button')}</span>
                 </Button>
               </div>
             </form>
@@ -489,7 +488,7 @@ const CertificationRequestForm = () => {
         >
           <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
             <h3 className="text-xl font-semibold text-gray-900 mb-4">
-              Préférez-vous nous contacter directement ?
+              {t('certifications_page.form.alternative_contact.title')}
             </h3>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 

@@ -1,15 +1,17 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { TrendingUp, ChevronRight } from 'lucide-react';
 import { SlideProps } from './SlideInterface';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { t } from 'i18next';
 
 const GlobalSlide: React.FC<SlideProps> = ({ 
   isActive, 
   onActionClick, 
   onContactClick 
 }) => {
+  const { t } = useTranslation();
+  
   return (
     <div className="space-y-8 py-10 sm:py-0">
       <div 
@@ -22,7 +24,7 @@ const GlobalSlide: React.FC<SlideProps> = ({
           <TrendingUp className="w-8 h-8" />
         </div>
         <div className="text-yellow-500 font-medium text-lg">
-          Partenaire exclusif de l’ICXI en RDC
+          {t('slides.global.badge')}
         </div>
       </div>
       <div className="space-y-6">
@@ -32,7 +34,7 @@ const GlobalSlide: React.FC<SlideProps> = ({
           data-aos-duration="800"
           data-aos-delay="200"
         >
-          Elevez votre service client grâce à la Certification TISSE.
+          {t('slides.global.title')}
         </h1>
         
         <p 
@@ -41,7 +43,7 @@ const GlobalSlide: React.FC<SlideProps> = ({
           data-aos-duration="800"
           data-aos-delay="400"
         >
-          Devenez une référence mondiale. Implémentez la norme Internationale d'Excellence de Service (TISSE) pour des résultats mesurables et une fidélité client durable.
+          {t('slides.global.description')}
         </p>
       </div>
 
@@ -55,14 +57,14 @@ const GlobalSlide: React.FC<SlideProps> = ({
           onClick={onActionClick}
           className="bg-yellow-500 hover:bg-yellow-600 text-brand-blue px-8 py-2 rounded-lg font-semibold flex items-center justify-center gap-2 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
         >
-          En savoir plus
+          {t('slides.global.cta_discover')}
           <ChevronRight className="w-5 h-5" />
         </button>
         <button 
           onClick={onContactClick}
           className="border-2 border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-brand-blue px-8 py-2 rounded-lg font-semibold transition-all duration-300"
         >
-          Nous contacter
+          {t('slides.global.cta_contact')}
         </button>
       </div>
     </div>

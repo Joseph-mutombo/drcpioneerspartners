@@ -18,35 +18,35 @@ const FormationTypes = () => {
   const enterpriseFeatures = [
     {
       icon: Building2,
-      title: 'Formation sur Site',
-      description: 'Formations personnalisées dans vos locaux pour vos équipes.',
+      title: t('formations_page.types.enterprise.on_site_training.title'),
+      description: t('formations_page.types.enterprise.on_site_training.description'),
       benefits: [
-        'Formation adaptée à votre contexte',
-        'Équipes formées ensemble',
-        'Réduction des coûts de déplacement',
-        'Intégration immédiate des apprentissages'
+        t('formations_page.types.enterprise.on_site_training.benefits.adapted_training'),
+        t('formations_page.types.enterprise.on_site_training.benefits.teams_trained_together'),
+        t('formations_page.types.enterprise.on_site_training.benefits.reduced_travel_costs'),
+        t('formations_page.types.enterprise.on_site_training.benefits.immediate_integration')
       ]
     },
     {
       icon: Users,
-      title: 'Formation des Équipes',
-      description: 'Programmes conçus pour développer les compétences collectives.',
+      title: t('formations_page.types.enterprise.team_training.title'),
+      description: t('formations_page.types.enterprise.team_training.description'),
       benefits: [
-        'Cohésion d\'équipe renforcée',
-        'Langage commun CX',
-        'Collaboration améliorée',
-        'Culture d\'entreprise unifiée'
+        t('formations_page.types.enterprise.team_training.benefits.enhanced_team_cohesion'),
+        t('formations_page.types.enterprise.team_training.benefits.common_cx_language'),
+        t('formations_page.types.enterprise.team_training.benefits.improved_collaboration'),
+        t('formations_page.types.enterprise.team_training.benefits.unified_corporate_culture')
       ]
     },
     {
       icon: Target,
-      title: 'Accompagnement Personnalisé',
-      description: 'Suivi individuel et collectif pour maximiser l\'impact.',
+      title: t('formations_page.types.enterprise.personalized_support.title'),
+      description: t('formations_page.types.enterprise.personalized_support.description'),
       benefits: [
-        'Plan de formation sur mesure',
-        'Mentoring personnalisé',
-        'Suivi des progrès',
-        'Support post-formation'
+        t('formations_page.types.enterprise.personalized_support.benefits.customized_plan'),
+        t('formations_page.types.enterprise.personalized_support.benefits.personalized_mentoring'),
+        t('formations_page.types.enterprise.personalized_support.benefits.progress_tracking'),
+        t('formations_page.types.enterprise.personalized_support.benefits.post_training_support')
       ]
     }
   ];
@@ -54,69 +54,69 @@ const FormationTypes = () => {
   const individualFeatures = [
     {
       icon: BookOpen,
-      title: 'Formation Individuelle',
-      description: 'Développement personnel de vos compétences en CX.',
+      title: t('formations_page.types.individual.individual_training.title'),
+      description: t('formations_page.types.individual.individual_training.description'),
       benefits: [
-        'Progression à votre rythme',
-        'Focus sur vos besoins spécifiques',
-        'Flexibilité des horaires',
-        'Certification personnelle'
+        t('formations_page.types.individual.individual_training.benefits.pace_progression'),
+        t('formations_page.types.individual.individual_training.benefits.specific_needs_focus'),
+        t('formations_page.types.individual.individual_training.benefits.schedule_flexibility'),
+        t('formations_page.types.individual.individual_training.benefits.personal_certification')
       ]
     },
     {
       icon: Clock,
-      title: 'Formation Flexible',
-      description: 'Formats adaptés à votre emploi du temps et vos contraintes.',
+      title: t('formations_page.types.individual.flexible_training.title'),
+      description: t('formations_page.types.individual.flexible_training.description'),
       benefits: [
-        'Formation en ligne ou présentiel',
-        'Horaires flexibles',
-        'Accès aux ressources 24/7',
-        'Support pédagogique continu'
+        t('formations_page.types.individual.flexible_training.benefits.online_or_presential'),
+        t('formations_page.types.individual.flexible_training.benefits.flexible_schedules'),
+        t('formations_page.types.individual.flexible_training.benefits.resources_24_7'),
+        t('formations_page.types.individual.flexible_training.benefits.continuous_support')
       ]
     },
     {
       icon: Globe,
-      title: 'Reconnaissance Internationale',
-      description: 'Certifications reconnues dans le monde entier.',
+      title: t('formations_page.types.individual.international_recognition.title'),
+      description: t('formations_page.types.individual.international_recognition.description'),
       benefits: [
-        'Validité internationale',
-        'Reconnaissance par les employeurs',
-        'Mobilité professionnelle',
-        'Réseau international'
+        t('formations_page.types.individual.international_recognition.benefits.international_validity'),
+        t('formations_page.types.individual.international_recognition.benefits.employer_recognition'),
+        t('formations_page.types.individual.international_recognition.benefits.professional_mobility'),
+        t('formations_page.types.individual.international_recognition.benefits.international_network')
       ]
     }
   ];
 
   const comparisonData = [
     {
-      feature: 'Format',
-      enterprise: 'Sur site + En ligne',
-      individual: 'En ligne + Présentiel optionnel'
+      feature: t('formations_page.types.comparison.format'),
+      enterprise: t('formations_page.types.comparison.enterprise_format'),
+      individual: t('formations_page.types.comparison.individual_format')
     },
     {
-      feature: 'Durée',
-      enterprise: '3-7 jours par programme',
-      individual: '1-7 jours selon le niveau'
+      feature: t('formations_page.types.comparison.duration'),
+      enterprise: t('formations_page.types.comparison.enterprise_duration'),
+      individual: t('formations_page.types.comparison.individual_duration')
     },
     {
-      feature: 'Accompagnement',
-      enterprise: 'Dédié + Suivi personnalisé',
-      individual: 'Support communautaire + Tutorat'
+      feature: t('formations_page.types.comparison.support'),
+      enterprise: t('formations_page.types.comparison.enterprise_support'),
+      individual: t('formations_page.types.comparison.individual_support')
     },
     {
-      feature: 'Certification',
-      enterprise: 'Certification d\'équipe + Individuelle',
-      individual: 'Certification individuelle'
+      feature: t('formations_page.types.comparison.certification'),
+      enterprise: t('formations_page.types.comparison.enterprise_certification'),
+      individual: t('formations_page.types.comparison.individual_certification')
     },
     {
-      feature: 'Prix',
-      enterprise: 'Sur devis (volume)',
-      individual: 'Tarif individuel'
+      feature: t('formations_page.types.comparison.price'),
+      enterprise: t('formations_page.types.comparison.enterprise_price'),
+      individual: t('formations_page.types.comparison.individual_price')
     },
     {
-      feature: 'Support',
-      enterprise: '24/7 + Hotline dédiée',
-      individual: 'Email + Forum communautaire'
+      feature: t('formations_page.types.comparison.support_24_7'),
+      enterprise: t('formations_page.types.comparison.enterprise_support_24_7'),
+      individual: t('formations_page.types.comparison.individual_support_24_7')
     }
   ];
 
@@ -130,7 +130,7 @@ const FormationTypes = () => {
             data-aos="fade-up"
             data-aos-duration="600"
           >
-            Formation pour Tous
+            {t('formations_page.types.title')}
           </h2>
           <p 
             className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
@@ -138,8 +138,7 @@ const FormationTypes = () => {
             data-aos-duration="600"
             data-aos-delay="200"
           >
-            Que vous soyez un particulier souhaitant développer vos compétences ou une entreprise 
-            cherchant à former vos équipes, nous avons la solution adaptée à vos besoins.
+            {t('formations_page.types.description')}
           </p>
         </div>
 
@@ -156,8 +155,8 @@ const FormationTypes = () => {
                 <Building2 className="w-8 h-8 text-yellow-400" />
               </div>
               <div>
-                <h3 className="text-3xl font-bold">Pour Entreprises</h3>
-                <p className="text-white/90">Solutions complètes pour votre organisation</p>
+                <h3 className="text-3xl font-bold">{t('formations_page.types.enterprise.title')}</h3>
+                <p className="text-white/90">{t('formations_page.types.enterprise.subtitle')}</p>
               </div>
             </div>
 
@@ -189,7 +188,7 @@ const FormationTypes = () => {
             </div>
 
             <button className="w-full group flex items-center justify-center gap-2 px-8 py-4 bg-yellow-500 text-brand-blue font-semibold rounded-lg hover:bg-yellow-600 transition-all duration-200">
-              <span>Demander un devis entreprise</span>
+              <span>{t('formations_page.types.enterprise.request_quote_button')}</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
             </button>
           </div>
@@ -205,8 +204,8 @@ const FormationTypes = () => {
                 <Users className="w-8 h-8 text-brand-blue" />
               </div>
               <div>
-                <h3 className="text-3xl font-bold text-gray-900">Pour Particuliers</h3>
-                <p className="text-gray-600">Développez vos compétences personnelles</p>
+                <h3 className="text-3xl font-bold text-gray-900">{t('formations_page.types.individual.title')}</h3>
+                <p className="text-gray-600">{t('formations_page.types.individual.subtitle')}</p>
               </div>
             </div>
 
@@ -238,7 +237,7 @@ const FormationTypes = () => {
             </div>
 
             <button className="w-full group flex items-center justify-center gap-2 px-8 py-4 bg-brand-blue text-white font-semibold rounded-lg hover:bg-yellow-600 transition-all duration-200">
-              <span>S'inscrire en tant que particulier</span>
+              <span>{t('formations_page.types.individual.register_button')}</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
             </button>
           </div>
@@ -252,16 +251,16 @@ const FormationTypes = () => {
           data-aos-delay="400"
         >
           <h3 className="text-3xl font-bold text-gray-900 text-center mb-8">
-            Comparaison des Offres
+            {t('formations_page.types.comparison.title')}
           </h3>
           
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead>
                 <tr className="border-b border-gray-200">
-                  <th className="text-left py-4 px-6 font-semibold text-gray-900">Fonctionnalités</th>
-                  <th className="text-center py-4 px-6 font-semibold text-brand-blue">Entreprises</th>
-                  <th className="text-center py-4 px-6 font-semibold text-gray-600">Particuliers</th>
+                  <th className="text-left py-4 px-6 font-semibold text-gray-900">{t('formations_page.types.comparison.features')}</th>
+                  <th className="text-center py-4 px-6 font-semibold text-brand-blue">{t('formations_page.types.comparison.enterprise')}</th>
+                  <th className="text-center py-4 px-6 font-semibold text-gray-600">{t('formations_page.types.comparison.individual')}</th>
                 </tr>
               </thead>
               <tbody>
@@ -278,10 +277,10 @@ const FormationTypes = () => {
 
           <div className="mt-8 text-center">
             <p className="text-gray-600 mb-6">
-              Besoin d'aide pour choisir la solution qui vous convient ?
+              {t('formations_page.types.comparison.help_text')}
             </p>
             <button className="px-8 py-3 bg-brand-blue text-white font-semibold rounded-lg hover:bg-yellow-600 transition-colors duration-200">
-              Consulter un expert
+              {t('formations_page.types.comparison.consult_expert_button')}
             </button>
           </div>
         </div>

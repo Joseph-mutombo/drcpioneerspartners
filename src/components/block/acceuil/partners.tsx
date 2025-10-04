@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import icxiLogo from '@/assets/images/partners/ICXI.png';
 import bsiLogo from '@/assets/images/partners/bsi-logo.avif';
 
@@ -12,45 +13,47 @@ interface Partner {
 }
 
 const Partners = () => {
+  const { t } = useTranslation();
+  
   const partners: Partner[] = [
     {
       id: 'icxi',
-      name: 'International Customer Experience Institute',
+      name: t('partners.icxi.name'),
       logo: icxiLogo,
       website: 'https://www.icxi.com',
-      description: 'Organisation mondiale basée à Dubaï, leader en standards CX/EX',
+      description: t('partners.icxi.description'),
       category: 'primary'
     },
     {
       id: 'bsi',
-      name: 'British Standards Institution',
+      name: t('partners.bsi.name'),
       logo: bsiLogo,
       website: 'https://www.bsigroup.com',
-      description: 'Corps de certification indépendant international',
+      description: t('partners.bsi.description'),
       category: 'certification'
     },
     {
       id: 'almaktoum',
-      name: 'Al-Maktoum College',
+      name: t('partners.almaktoum.name'),
       logo: icxiLogo,
       website: 'https://www.almcollege.ac.ae',
-      description: 'Partenaire académique pour le MSc en Customer Experience',
+      description: t('partners.almaktoum.description'),
       category: 'academic'
     },
     {
       id: 'abertay',
-      name: 'Abertay University',
+      name: t('partners.abertay.name'),
       logo: icxiLogo,
       website: 'https://www.abertay.ac.uk',
-      description: 'Partenaire académique pour les programmes CX & Service Management',
+      description: t('partners.abertay.description'),
       category: 'academic'
     },
     {
       id: 'pretoria',
-      name: 'University of Pretoria',
+      name: t('partners.pretoria.name'),
       logo: icxiLogo,
       website: 'https://www.up.ac.za',
-      description: 'Partenaire pour la Chaire d\'Expérience Client et formations',
+      description: t('partners.pretoria.description'),
       category: 'academic'
     }
   ];
@@ -71,7 +74,7 @@ const Partners = () => {
             data-aos-duration="600"
             data-aos-delay="100"
           >
-            Nos Partenaires Principaux
+            {t('partners.title')}
           </h2>
           <p 
             className="text-lg text-brand-blue/80 max-w-3xl mx-auto"
@@ -79,8 +82,7 @@ const Partners = () => {
             data-aos-duration="600"
             data-aos-delay="200"
           >
-            DRC Pioneer Partners s'appuie sur un réseau de partenaires internationaux reconnus 
-            pour garantir l'excellence et la crédibilité de nos services en RDC.
+            {t('partners.description')}
           </p>
         </div>
 

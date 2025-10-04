@@ -5,10 +5,10 @@ const CertificationHero = () => {
   const { t } = useTranslation();
 
   const certifications = [
-    { name: 'TISSE', description: 'Standards d\'Excellence de Service' },
-    { name: 'ICXS', description: 'Certification Expérience Client' },
-    { name: 'IDCXS', description: 'Certification Expérience Digitale' },
-    { name: 'IEHWS', description: 'Standards Bien-être Employé' }
+    { name: 'TISSE', description: t('certifications_page.hero.certifications.tisse') },
+    { name: 'ICXS', description: t('certifications_page.hero.certifications.icxs') },
+    { name: 'IDCXS', description: t('certifications_page.hero.certifications.idcxs') },
+    { name: 'IEHWS', description: t('certifications_page.hero.certifications.iehws') }
   ];
 
   return (
@@ -40,8 +40,8 @@ const CertificationHero = () => {
               data-aos-duration="800"
               data-aos-delay="200"
             >
-              Certifications
-              <span className="block text-yellow-400">d'Excellence</span>
+              {t('certifications_page.hero.title')}
+              <span className="block text-yellow-400">{t('certifications_page.hero.subtitle')}</span>
             </h1>
             
             <p 
@@ -50,9 +50,7 @@ const CertificationHero = () => {
               data-aos-duration="800"
               data-aos-delay="400"
             >
-              Découvrez nos programmes de certification reconnus internationalement. 
-              Que vous soyez un particulier ou une entreprise, développez vos compétences 
-              et valorisez votre expertise avec nos certifications professionnelles.
+              {t('certifications_page.hero.description')}
             </p>
           </div>
 
@@ -90,7 +88,7 @@ const CertificationHero = () => {
                 <CheckCircle className="w-8 h-8 text-yellow-400" />
               </div>
               <div className="text-4xl font-bold text-yellow-500 mb-2">98%</div>
-              <div className="text-white/90">Taux de Réussite</div>
+              <div className="text-white/90">{t('certifications_page.hero.stats.success_rate')}</div>
             </div>
             
             <div className="text-center">
@@ -98,7 +96,7 @@ const CertificationHero = () => {
                 <Globe className="w-8 h-8 text-yellow-400" />
               </div>
               <div className="text-4xl font-bold text-yellow-500 mb-2">50+</div>
-              <div className="text-white/90">Pays de Reconnaissance</div>
+              <div className="text-white/90">{t('certifications_page.hero.stats.countries')}</div>
             </div>
             
             <div className="text-center">
@@ -106,7 +104,7 @@ const CertificationHero = () => {
                 <Building2 className="w-8 h-8 text-yellow-400" />
               </div>
               <div className="text-4xl font-bold text-yellow-500 mb-2">1000+</div>
-              <div className="text-white/90">Entreprises Certifiées</div>
+              <div className="text-white/90">{t('certifications_page.hero.stats.companies')}</div>
             </div>
             
             <div className="text-center">
@@ -114,7 +112,7 @@ const CertificationHero = () => {
                 <Users className="w-8 h-8 text-yellow-400" />
               </div>
               <div className="text-4xl font-bold text-yellow-500 mb-2">5000+</div>
-              <div className="text-white/90">Professionnels Certifiés</div>
+              <div className="text-white/90">{t('certifications_page.hero.stats.professionals')}</div>
             </div>
           </div>
 

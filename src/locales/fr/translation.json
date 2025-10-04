@@ -309,10 +309,10 @@
     "company_placeholder": "Le nom de votre société",
     "service": "Service concerné",
     "service_placeholder": "Sélectionnez un service",
-    "service_agent": "Création d'agents IA",
-    "service_integration": "Accompagnement IA",
-    "service_dev": "Développement de logiciels",
-    "service_chatbot": "Création de chatbots intelligents",
+    "service_certifications": "Certifications",
+    "service_formations": "Formations",
+    "service_audit": "Audit & Consultation",
+    "service_pme": "Solutions PME",
     "service_other": "Autre",
     "message": "Message",
     "message_placeholder": "Parlez-nous de votre projet...",
@@ -326,6 +326,202 @@
     "info_title": "Coordonnées",
     "phone": "Téléphone",
     "technical_support": "Support technique"
+  },
+  "contact_page": {
+    "hero": {
+      "badge": "Contact Professionnel",
+      "title": "Contactez Nos",
+      "title_highlight": "Experts",
+      "subtitle": "Pour Votre Transformation",
+      "description": "Notre équipe d'experts certifiés est à votre disposition pour vous accompagner dans votre démarche d'excellence. Obtenez des conseils personnalisés et découvrez comment nos certifications peuvent transformer votre entreprise.",
+      "why_contact": {
+        "team_experts": {
+          "title": "Équipe d'Experts",
+          "description": "Plus de 15 ans d'expérience en excellence de service"
+        },
+        "certifications": {
+          "title": "Certifications Reconnues",
+          "description": "Standards internationaux validés par BSI"
+        },
+        "results": {
+          "title": "Résultats Garantis",
+          "description": "98% de satisfaction client et ROI mesurable"
+        }
+      },
+      "office": {
+        "title": "Notre Bureau",
+        "address": "60, Boulevard du 30 juin, Immeuble Mayumbe, Niveau 6, Appartement 33<br />C/Gombe, Kinshasa, RDC",
+        "hours_title": "Horaires d'Ouverture",
+        "hours": "Lundi - Vendredi : 8h00 - 18h00<br />Samedi : 9h00 - 13h00"
+      },
+      "contact_methods": {
+        "direct_call": {
+          "title": "Appel Direct",
+          "description": "Parlez directement à nos experts",
+          "value": "+243 978 847 886",
+          "action": "Appeler maintenant"
+        },
+        "email": {
+          "title": "Email Professionnel",
+          "description": "Réponse sous 24h garantie",
+          "value": "info@drcpioneers.com",
+          "action": "Envoyer un email"
+        },
+        "chat": {
+          "title": "Chat en Direct",
+          "description": "Assistance immédiate",
+          "value": "Disponible 24/7",
+          "action": "Commencer le chat"
+        }
+      }
+    },
+    "cta_section": {
+      "title": "Comment Souhaitez-Vous Nous Contacter ?",
+      "subtitle": "Choisissez la méthode qui correspond le mieux à vos besoins. Nos experts sont disponibles pour vous accompagner dans votre démarche d'excellence.",
+      "options": {
+        "consultation": {
+          "title": "Consultation Gratuite",
+          "description": "Évaluez vos besoins avec nos experts",
+          "features": [
+            "Évaluation personnalisée de vos besoins",
+            "Recommandations adaptées à votre secteur",
+            "Plan d'action personnalisé",
+            "Durée : 30 minutes"
+          ],
+          "cta": "Réserver une Consultation",
+          "highlight": "GRATUIT",
+          "urgency": "Réponse sous 2h"
+        },
+        "audit": {
+          "title": "Audit Express",
+          "description": "Diagnostic rapide de vos processus",
+          "features": [
+            "Audit de vos processus actuels",
+            "Identification des points d'amélioration",
+            "Rapport détaillé avec recommandations",
+            "Durée : 1 heure"
+          ],
+          "cta": "Demander un Audit",
+          "highlight": "EXPRESS",
+          "urgency": "Disponible immédiatement"
+        },
+        "formation": {
+          "title": "Formation sur Mesure",
+          "description": "Programme adapté à votre équipe",
+          "features": [
+            "Formation personnalisée pour vos équipes",
+            "Certification internationale incluse",
+            "Suivi post-formation",
+            "Durée : 1-5 jours"
+          ],
+          "cta": "Planifier une Formation",
+          "highlight": "SUR MESURE",
+          "urgency": "Démarrage sous 48h"
+        }
+      },
+      "quick_actions": {
+        "title": "Actions Rapides",
+        "subtitle": "Besoin d'une réponse immédiate ? Utilisez nos canaux de contact directs.",
+        "direct_call": {
+          "title": "Appel Direct",
+          "description": "Parlez à un expert maintenant",
+          "value": "+243 978 847 886",
+          "action": "Appeler"
+        },
+        "email": {
+          "title": "Email Rapide",
+          "description": "Réponse garantie sous 24h",
+          "value": "info@drcpioneers.com",
+          "action": "Écrire"
+        },
+        "calendar": {
+          "title": "Planifier un RDV",
+          "description": "Choisissez votre créneau",
+          "value": "Calendrier en ligne",
+          "action": "Réserver"
+        }
+      },
+      "brochure": {
+        "title": "Téléchargez notre Brochure Complète",
+        "description": "Découvrez tous nos services, certifications et programmes de formation dans un document détaillé et professionnel.",
+        "cta": "Télécharger la Brochure"
+      }
+    },
+    "team_section": {
+      "title": "Rencontrez Notre Équipe d'Experts",
+      "subtitle": "Nos experts certifiés possèdent une expertise reconnue internationalement et sont dédiés à votre succès. Chaque membre de notre équipe apporte des années d'expérience et des certifications de pointe.",
+      "stats": {
+        "experts": {
+          "value": "50+",
+          "label": "Experts Certifiés",
+          "description": "Équipe internationale"
+        },
+        "experience": {
+          "value": "15+",
+          "label": "Années d'Expérience",
+          "description": "Cumulée de l'équipe"
+        },
+        "countries": {
+          "value": "50+",
+          "label": "Pays d'Intervention",
+          "description": "Présence internationale"
+        },
+        "satisfaction": {
+          "value": "98%",
+          "label": "Satisfaction Client",
+          "description": "Taux de réussite"
+        }
+      },
+      "team_members": {
+        "director": {
+          "name": "Dr. Jean-Baptiste Mbuyi",
+          "position": "Directeur Général & Expert Principal",
+          "expertise": "Certifications TISSE & ICXS",
+          "experience": "15+ années",
+          "description": "Expert reconnu internationalement dans l'excellence de service et l'expérience client.",
+          "certifications": ["TISSE Master", "ICXS Expert", "BSI Certified"],
+          "contact": {
+            "phone": "+243 978 847 886",
+            "email": "j.mbuyi@drcpioneers.com"
+          }
+        },
+        "training_manager": {
+          "name": "Marie-Claire Kabongo",
+          "position": "Responsable Formations & Certifications",
+          "expertise": "Programmes de Formation",
+          "experience": "12+ années",
+          "description": "Spécialiste en développement des compétences et formation professionnelle.",
+          "certifications": ["CXOP Master", "Formation Internationale", "Pédagogie Avancée"],
+          "contact": {
+            "phone": "+243 978 847 887",
+            "email": "m.kabongo@drcpioneers.com"
+          }
+        },
+        "consultant": {
+          "name": "Patrick Mwamba",
+          "position": "Consultant Senior en Audit",
+          "expertise": "Audit & Amélioration Continue",
+          "experience": "10+ années",
+          "description": "Expert en audit de processus et optimisation des performances organisationnelles.",
+          "certifications": ["Audit ISO 9001", "Process Improvement", "Quality Management"],
+          "contact": {
+            "phone": "+243 978 847 888",
+            "email": "p.mwamba@drcpioneers.com"
+          }
+        }
+      },
+      "bottom_cta": {
+        "title": "Prêt à Travailler avec Nos Experts ?",
+        "subtitle": "Chaque projet est unique. Nos experts vous accompagnent personnellement pour garantir le succès de votre transformation.",
+        "consultation": "Planifier une Consultation",
+        "all_experts": "Voir Tous les Experts"
+      }
+    },
+    "form_section": {
+      "title": "Envoyez-Nous un Message",
+      "subtitle": "Notre équipe d'experts est là pour répondre à toutes vos questions et vous accompagner dans votre démarche d'excellence.",
+      "form_description": "Remplissez le formulaire ci-dessous et notre équipe vous contactera sous 24h"
+    }
   },
   "not_implemented": {
     "title": "Page en Développement",
@@ -430,26 +626,1137 @@
   },
   "slides": {
     "certification": {
-      "title": "Certifications ICXI : L'Excellence Mondiale en RDC",
-      "description": "Obtenez les certifications reconnues mondialement (TISSE, ICXS, IDCXS, IEHWS) pour élever vos standards de service client et d'expérience employé aux meilleures pratiques internationales.",
-      "cta_discover": "Découvrir nos certifications",
+      "title": "Formation et Certification ICXI",
+      "description": "Professionnalisez vos équipes locales avec des programmes de certification reconnus (ex: CXOP, CXMP, CXLP), garantissant des compétences alignées sur les standards mondiaux.",
+      "badge": "Certifications Internationales ICXI",
+      "cta_explore": "En savoir plus",
       "cta_contact": "Nous contacter"
     },
     "formation": {
-      "title": "Formations ICXI : Développez Vos Talents en CX & EX",
-      "description": "Maîtrisez l'expérience client et le bien-être employé avec nos programmes certifiés (CXOP, CXMP, CXLP, Masterclass, MSc) dispensés localement en RDC.",
-      "cta_explore": "Explorer nos formations",
+      "title": "Certification d'Entreprise",
+      "description": "Obtenez la Crédibilité Internationale Immédiate d'une certification délivrée par l'ICXI, un atout majeur auprès de vos clients et partenaires, ouvrant la voie à la certification BSI",
+      "badge": "Certifications Internationales ICXI",
+      "cta_explore": "En savoir plus",
       "cta_contact": "Nous contacter"
     },
     "navigator": {
-      "title": "ICXI Navigators : CX & EX sur Mesure pour PME",
-      "description": "Des outils d'évaluation et d'amélioration accessibles et innovants, comme les ICXI Navigators, conçus spécifiquement pour les petites et moyennes entreprises de la RDC.",
+      "title": "ICXI Navigators",
+      "description": "Outil puissant basé sur l'IA pour évaluer rapidement la maturité de votre Expérience Client (CX) et de votre Expérience Employé (EX). Obtenez des analyses vérifiées, des recommandations personnalisées et une feuille de route claire pour l'amélioration.",
+      "badge": "Solutions sur Mesure pour PME",
       "cta_explore": "Explorer ICXI Navigators",
       "cta_contact": "Nous contacter"
     },
     "audit": {
       "title": "Audits et Stratégies d'Amélioration CX/EX",
-      "description": "Évaluez objectivement et optimisez vos performances en expérience client et bien-être employé grâce aux cadres d'audit et de conseil de l'ICXI."
+      "description": "Évaluez objectivement et optimisez vos performances en expérience client et bien-être employé grâce aux cadres d'audit et de conseil de l'ICXI.",
+      "badge": "Audits & Conseil en Amélioration",
+      "cta_discover": "Découvrir nos audits",
+      "cta_contact": "Nous contacter"
+    },
+    "global": {
+      "title": "Élevez votre service client grâce à la Certification TISSE",
+      "description": "Devenez une référence mondiale. Implémentez la norme Internationale d'Excellence de Service (TISSE) pour des résultats mesurables et une fidélité client durable.",
+      "badge": "Partenaire exclusif de l'ICXI en RDC",
+      "cta_discover": "En savoir plus",
+      "cta_contact": "Nous contacter"
+    }
+  },
+  "why_tiss": {
+    "title": "Pourquoi TISSE en RDC?",
+    "subtitle": "Pourquoi TISSE est Essentiel pour votre Succès en RDC ?",
+    "alignment": {
+      "title": "Alignement International",
+      "description": "Une Qualité Reconnue, Partout dans le Monde. La norme TISSE aligne votre service sur les meilleures pratiques mondiales, notamment celles inspirées par l'ISO 9001. C'est la garantie d'une crédibilité incontestable pour votre entreprise en RDC, renforçant la confiance des investisseurs et ouvrant les portes à de nouvelles opportunités internationales."
+    },
+    "credibility": {
+      "title": "Crédibilité & Structure",
+      "description": "En RDC, où les cadres de formation en service client sont limités, TISSE offre un avantage stratégique. Il fournit une structure fiable et des outils concrets pour évaluer, former et améliorer la qualité de service, permettant aux entreprises de se distinguer par leur professionnalisme et leur excellence durable."
+    },
+    "results": {
+      "title": "Résultats Mesurables",
+      "description": "Le TISSE transforme l'intention de bien faire en performance mesurable. Son cadre rigoureux vous donne les KPI et outils nécessaires pour quantifier l'impact de l'amélioration du service sur la rétention client et la croissance des revenus. Vous pilotez ainsi vos décisions avec des données fiables, faisant du service client un investissement stratégique et rentable."
+    }
+  },
+  "cta_audit": {
+    "title": "Prêt à Améliorer Votre Service Client ?",
+    "description": "Contactez-nous dès aujourd'hui pour un audit gratuit de votre service client et découvrez comment TISSE peut transformer votre entreprise.",
+    "button": "Demander un Audit"
+  },
+  "cta_cert_company": {
+    "title": "Certifiez Votre Entreprise",
+    "description": "Augmentez la satisfaction de vos clients et améliorez vos processus internes grâce à nos normes de certification.",
+    "button": "Demander un Audit"
+  },
+  "partners": {
+    "title": "Nos Partenaires Principaux",
+    "description": "DRC Pioneer Partners s'appuie sur un réseau de partenaires internationaux reconnus pour garantir l'excellence et la crédibilité de nos services en RDC.",
+    "icxi": {
+      "name": "International Customer Experience Institute",
+      "description": "Organisation mondiale basée à Dubaï, leader en standards CX/EX"
+    },
+    "bsi": {
+      "name": "British Standards Institution",
+      "description": "Corps de certification indépendant international"
+    },
+    "almaktoum": {
+      "name": "Al-Maktoum College",
+      "description": "Partenaire académique pour le MSc en Customer Experience"
+    },
+    "abertay": {
+      "name": "Abertay University",
+      "description": "Partenaire académique pour les programmes CX & Service Management"
+    },
+    "pretoria": {
+      "name": "University of Pretoria",
+      "description": "Partenaire pour la Chaire d'Expérience Client et formations"
+    }
+  },
+  "audit_page": {
+    "hero": {
+      "title": "Audit & Consultation",
+      "subtitle": "pour Entreprises",
+      "description": "Optimisez vos processus, assurez la conformité et améliorez vos performances grâce à nos services d'audit et de consultation professionnels. Nos experts vous accompagnent dans votre démarche d'excellence.",
+      "key_points": {
+        "process_audit": "Audit complet de vos processus",
+        "compliance": "Conformité réglementaire garantie",
+        "recommendations": "Recommandations personnalisées"
+      },
+      "stats": {
+        "audited_companies": "Entreprises auditées",
+        "certified_experts": "Experts certifiés",
+        "satisfaction_rate": "Taux de satisfaction",
+        "years_experience": "Années d'expérience"
+      }
+    },
+    "services": {
+      "title": "Nos Services d'Audit & Consultation",
+      "description": "Découvrez notre gamme complète de services d'audit et de consultation adaptés aux besoins spécifiques de votre entreprise.",
+      "quality": {
+        "title": "Audit de Qualité",
+        "description": "Évaluation complète de vos systèmes de management de la qualité selon les normes ISO 9001.",
+        "features": {
+          "process_analysis": "Analyse des processus existants",
+          "non_conformities": "Identification des non-conformités",
+          "improvement_recommendations": "Recommandations d'amélioration",
+          "action_plan": "Plan d'action personnalisé"
+        },
+        "duration": "2-5 jours",
+        "price": "Sur devis"
+      },
+      "environmental": {
+        "title": "Audit Environnemental",
+        "description": "Vérification de la conformité environnementale et évaluation de l'impact écologique.",
+        "features": {
+          "iso_14001": "Conformité ISO 14001",
+          "risk_assessment": "Évaluation des risques environnementaux",
+          "resource_optimization": "Optimisation des ressources",
+          "detailed_report": "Rapport détaillé"
+        },
+        "duration": "3-7 jours",
+        "price": "Sur devis"
+      },
+      "safety": {
+        "title": "Audit de Sécurité",
+        "description": "Analyse de la sécurité au travail et conformité aux réglementations en vigueur.",
+        "features": {
+          "risk_assessment": "Évaluation des risques professionnels",
+          "ohsas_18001": "Conformité OHSAS 18001",
+          "staff_training": "Formation du personnel",
+          "procedure_update": "Mise à jour des procédures"
+        },
+        "duration": "2-4 jours",
+        "price": "Sur devis"
+      },
+      "strategic": {
+        "title": "Consultation Stratégique",
+        "description": "Accompagnement dans la mise en place de systèmes de management intégrés.",
+        "features": {
+          "certification_strategy": "Stratégie de certification",
+          "team_training": "Formation des équipes",
+          "follow_up": "Suivi et accompagnement",
+          "continuous_optimization": "Optimisation continue"
+        },
+        "duration": "Variable",
+        "price": "Sur devis"
+      }
+    },
+    "process": {
+      "title": "Notre Processus d'Audit",
+      "description": "Découvrez comment nous procédons pour vous offrir un audit de qualité, méthodique et adapté à vos besoins spécifiques.",
+      "step1": {
+        "title": "Demande & Consultation",
+        "description": "Nous analysons vos besoins et définissons ensemble les objectifs de l'audit.",
+        "details": {
+          "request_analysis": "Analyse de votre demande",
+          "needs_assessment": "Évaluation des besoins spécifiques",
+          "scope_definition": "Définition du périmètre d'audit",
+          "methodology_presentation": "Présentation de notre méthodologie"
+        },
+        "duration": "1-2 jours"
+      },
+      "step2": {
+        "title": "Préparation & Planification",
+        "description": "Nous préparons l'audit en détail et planifions les interventions.",
+        "details": {
+          "audit_plan": "Élaboration du plan d'audit",
+          "document_preparation": "Préparation des documents",
+          "appointment_planning": "Planification des rendez-vous",
+          "team_training": "Formation de l'équipe d'audit"
+        },
+        "duration": "2-3 jours"
+      },
+      "step3": {
+        "title": "Réalisation de l'Audit",
+        "description": "Nos experts réalisent l'audit sur site selon la méthodologie définie.",
+        "details": {
+          "on_site_audit": "Audit sur site",
+          "staff_interviews": "Entretiens avec le personnel",
+          "process_verification": "Vérification des processus",
+          "evidence_collection": "Collecte des preuves"
+        },
+        "duration": "Variable selon le périmètre"
+      },
+      "step4": {
+        "title": "Analyse & Rapport",
+        "description": "Nous analysons les résultats et rédigeons un rapport détaillé.",
+        "details": {
+          "data_analysis": "Analyse des données collectées",
+          "improvement_points": "Identification des points d'amélioration",
+          "final_report": "Rédaction du rapport final",
+          "personalized_recommendations": "Recommandations personnalisées"
+        },
+        "duration": "3-5 jours"
+      }
+    },
+    "benefits": {
+      "title": "Les Avantages de l'Audit & Consultation",
+      "description": "Découvrez comment nos services d'audit et de consultation peuvent transformer votre entreprise et générer des résultats mesurables.",
+      "compliance": {
+        "title": "Conformité Réglementaire",
+        "description": "Assurez-vous de respecter toutes les réglementations en vigueur dans votre secteur d'activité.",
+        "stats": "100% de conformité garantie",
+        "details": {
+          "requirements_identification": "Identification des exigences réglementaires",
+          "current_compliance_verification": "Vérification de la conformité actuelle",
+          "action_plan": "Plan d'action pour les écarts identifiés",
+          "follow_up": "Suivi et maintenance de la conformité"
+        }
+      },
+      "efficiency": {
+        "title": "Amélioration des Performances",
+        "description": "Optimisez vos processus pour augmenter l'efficacité et réduire les coûts.",
+        "stats": "Jusqu'à 30% d'amélioration",
+        "details": {
+          "process_analysis": "Analyse des processus existants",
+          "bottleneck_identification": "Identification des goulots d'étranglement",
+          "optimization_recommendations": "Recommandations d'optimisation",
+          "performance_measurement": "Mesure des gains de performance"
+        }
+      },
+      "quality": {
+        "title": "Amélioration de la Qualité",
+        "description": "Renforcez la qualité de vos produits et services pour satisfaire vos clients.",
+        "stats": "Réduction de 50% des défauts",
+        "details": {
+          "quality_systems": "Mise en place de systèmes qualité",
+          "staff_training": "Formation du personnel",
+          "internal_controls": "Contrôles et audits internes",
+          "continuous_improvement": "Amélioration continue"
+        }
+      },
+      "risk_management": {
+        "title": "Gestion des Risques",
+        "description": "Identifiez et maîtrisez les risques pour protéger votre entreprise.",
+        "stats": "Réduction de 70% des risques",
+        "details": {
+          "risk_mapping": "Cartographie des risques",
+          "probability_assessment": "Évaluation de la probabilité et impact",
+          "mitigation_plan": "Plan de mitigation",
+          "continuous_monitoring": "Monitoring continu"
+        }
+      },
+      "team_development": {
+        "title": "Développement des Compétences",
+        "description": "Formez et développez les compétences de vos équipes.",
+        "stats": "100% du personnel formé",
+        "details": {
+          "best_practices_training": "Formation sur les bonnes pratiques",
+          "quality_awareness": "Sensibilisation aux enjeux qualité",
+          "skill_transfer": "Transfert de compétences",
+          "follow_up": "Suivi et évaluation"
+        }
+      },
+      "competitive_advantage": {
+        "title": "Avantage Concurrentiel",
+        "description": "Distinguez-vous de la concurrence grâce à vos certifications et processus optimisés.",
+        "stats": "+25% de parts de marché",
+        "details": {
+          "recognized_certifications": "Certifications reconnues",
+          "standardized_processes": "Processus standardisés",
+          "brand_improvement": "Amélioration de l'image de marque",
+          "new_markets": "Accès à de nouveaux marchés"
+        }
+      },
+      "roi": {
+        "average_roi": {
+          "label": "Retour sur investissement moyen",
+          "description": "Les entreprises voient un ROI de 300% dans les 2 ans"
+        },
+        "payback_time": {
+          "label": "Temps de récupération",
+          "description": "Récupération de l'investissement en moyenne 6 mois"
+        },
+        "productivity_improvement": {
+          "label": "Amélioration de la productivité",
+          "description": "Gains de productivité significatifs observés"
+        },
+        "client_satisfaction": {
+          "label": "Taux de satisfaction client",
+          "description": "Nos clients sont très satisfaits de nos services"
+        }
+      },
+      "roi_section": {
+        "title": "Retour sur Investissement Garanti",
+        "description": "Nos clients constatent des améliorations significatives et mesurables dans les mois qui suivent nos interventions."
+      },
+      "testimonials": {
+        "title": "Ce que disent nos clients",
+        "description": "Découvrez les témoignages de nos clients qui ont transformé leur entreprise grâce à nos services d'audit et de consultation.",
+        "testimonial1": {
+          "quote": "L'audit de qualité nous a permis d'identifier des axes d'amélioration que nous n'avions pas vus. Nos processus sont maintenant 40% plus efficaces.",
+          "author": "Jean M., Directeur Qualité",
+          "company": "Manufacturing Corp"
+        },
+        "testimonial2": {
+          "quote": "Grâce à leur expertise, nous avons obtenu la certification ISO 9001 en seulement 6 mois. Un accompagnement exceptionnel !",
+          "author": "Marie K., PDG",
+          "company": "Services Pro"
+        },
+        "testimonial3": {
+          "quote": "L'audit environnemental nous a aidés à réduire nos coûts de 25% tout en améliorant notre image de marque. Un investissement rentable !",
+          "author": "Pierre L., Directeur",
+          "company": "Eco Solutions"
+        }
+      }
+    },
+    "form": {
+      "title": "Demander un Audit",
+      "description": "Remplissez ce formulaire pour nous faire part de vos besoins en audit et consultation. Nous vous contacterons dans les plus brefs délais.",
+      "sections": {
+        "company_info": "Informations de l'entreprise",
+        "contact_info": "Informations de contact",
+        "audit_details": "Détails de l'audit",
+        "preferences": "Préférences et conditions"
+      },
+      "labels": {
+        "company_name": "Nom de l'entreprise *",
+        "industry": "Secteur d'activité *",
+        "company_size": "Taille de l'entreprise *",
+        "contact_person": "Nom du contact *",
+        "email": "Email *",
+        "phone": "Téléphone *",
+        "service_type": "Type de service *",
+        "audit_scope": "Périmètre de l'audit *",
+        "objectives": "Objectifs *",
+        "timeline": "Délai souhaité *",
+        "budget": "Budget approximatif *",
+        "additional_info": "Informations supplémentaires",
+        "agree_terms": "J'accepte les conditions d'utilisation et la politique de confidentialité *",
+        "agree_newsletter": "Je souhaite recevoir des informations sur vos services et actualités"
+      },
+      "placeholders": {
+        "company_name": "Nom de votre entreprise",
+        "industry": "Sélectionnez votre secteur",
+        "company_size": "Sélectionnez la taille",
+        "contact_person": "Votre nom complet",
+        "email": "votre@email.com",
+        "phone": "+243 XXX XXX XXX",
+        "service_type": "Sélectionnez le type de service",
+        "audit_scope": "Décrivez le périmètre souhaité pour l'audit (départements, processus, etc.)",
+        "objectives": "Quels sont vos objectifs principaux ? (certification, amélioration, conformité, etc.)",
+        "timeline": "Sélectionnez le délai",
+        "budget": "Sélectionnez le budget",
+        "additional_info": "Toute information supplémentaire qui pourrait nous aider à mieux comprendre vos besoins"
+      },
+      "options": {
+        "service_types": {
+          "quality": "Audit de Qualité (ISO 9001)",
+          "environmental": "Audit Environnemental (ISO 14001)",
+          "safety": "Audit de Sécurité (OHSAS 18001)",
+          "strategic": "Consultation Stratégique",
+          "complete": "Audit Complet (Multi-normes)",
+          "other": "Autre (préciser dans les commentaires)"
+        },
+        "company_sizes": {
+          "micro": "Micro-entreprise (1-9 employés)",
+          "small": "Petite entreprise (10-49 employés)",
+          "medium": "Moyenne entreprise (50-249 employés)",
+          "large": "Grande entreprise (250+ employés)"
+        },
+        "industries": {
+          "manufacturing": "Manufacturing / Industrie",
+          "services": "Services",
+          "construction": "Construction / BTP",
+          "healthcare": "Santé / Médical",
+          "food": "Agroalimentaire",
+          "technology": "Technologie / IT",
+          "retail": "Commerce / Distribution",
+          "other": "Autre"
+        },
+        "timelines": {
+          "urgent": "Urgent (sous 1 mois)",
+          "1_3_months": "1-3 mois",
+          "3_6_months": "3-6 mois",
+          "6_12_months": "6-12 mois",
+          "flexible": "Flexible"
+        },
+        "budgets": {
+          "under_5k": "Moins de 5 000 $",
+          "5k_10k": "5 000 $ - 10 000 $",
+          "10k_25k": "10 000 $ - 25 000 $",
+          "25k_50k": "25 000 $ - 50 000 $",
+          "over_50k": "Plus de 50 000 $",
+          "discuss": "À discuter"
+        }
+      },
+      "validation": {
+        "company_name_required": "Le nom de l'entreprise est requis",
+        "contact_person_required": "Le nom du contact est requis",
+        "invalid_email": "Adresse email invalide",
+        "phone_required": "Le numéro de téléphone est requis",
+        "service_type_required": "Veuillez sélectionner un type de service",
+        "company_size_required": "Veuillez sélectionner la taille de l'entreprise",
+        "industry_required": "Veuillez sélectionner le secteur d'activité",
+        "audit_scope_required": "Veuillez décrire le périmètre de l'audit",
+        "objectives_required": "Veuillez décrire les objectifs",
+        "timeline_required": "Veuillez indiquer le délai souhaité",
+        "budget_required": "Veuillez indiquer votre budget approximatif",
+        "terms_required": "Vous devez accepter les conditions"
+      },
+      "success": {
+        "title": "Demande envoyée avec succès",
+        "description": "Nous vous contacterons dans les plus brefs délais pour discuter de votre projet."
+      },
+      "submit_button": "Envoyer la demande",
+      "alternative_contact": {
+        "title": "Préférez-vous nous contacter directement ?"
+      }
+    }
+  },
+  "certifications_page": {
+    "hero": {
+      "title": "Certifications",
+      "subtitle": "d'Excellence",
+      "description": "Découvrez nos programmes de certification reconnus internationalement. Que vous soyez un particulier ou une entreprise, développez vos compétences et valorisez votre expertise avec nos certifications professionnelles.",
+      "certifications": {
+        "tisse": "Standards d'Excellence de Service",
+        "icxs": "Certification Expérience Client",
+        "idcxs": "Certification Expérience Digitale",
+        "iehws": "Standards Bien-être Employé"
+      },
+      "stats": {
+        "success_rate": "Taux de Réussite",
+        "countries": "Pays de Reconnaissance",
+        "companies": "Entreprises Certifiées",
+        "professionals": "Professionnels Certifiés"
+      }
+    },
+    "programs": {
+      "title": "Nos Programmes de Certification",
+      "description": "Découvrez nos programmes de certification professionnels conçus pour développer vos compétences et valoriser votre expertise dans différents domaines.",
+      "status": {
+        "coming_soon": "Bientôt disponible",
+        "available": "Disponible"
+      },
+      "register": "S'inscrire",
+      "finalization": {
+        "title": "Programmes en cours de finalisation",
+        "description": "Nos équipes d'experts travaillent actuellement sur le contenu détaillé de chaque programme. Inscrivez-vous à notre liste d'attente pour être informé dès le lancement.",
+        "waitlist": "S'inscrire à la liste d'attente",
+        "download_prospectus": "Télécharger le prospectus"
+      },
+      "tisse": {
+        "full_name": "Standards d'Excellence de Service",
+        "description": "Certification qui établit les standards d'excellence dans la prestation de services, garantissant une qualité supérieure et une satisfaction client optimale.",
+        "duration": "3-6 mois",
+        "level": "Intermédiaire",
+        "target": "Professionnels du service client",
+        "benefits": {
+          "client_satisfaction": "Amélioration de la satisfaction client",
+          "process_standardization": "Standardisation des processus de service",
+          "international_recognition": "Reconnaissance internationale",
+          "professional_network": "Accès à un réseau de professionnels certifiés"
+        },
+        "price": "Sur devis"
+      },
+      "icxs": {
+        "full_name": "Certification Expérience Client",
+        "description": "Programme spécialisé dans l'optimisation de l'expérience client à travers tous les points de contact et canaux de communication.",
+        "duration": "4-8 mois",
+        "level": "Avancé",
+        "target": "Gestionnaires CX, Chefs de projet",
+        "benefits": {
+          "cx_optimization": "Optimisation de l'expérience client",
+          "metrics_analysis": "Mesure et analyse des métriques CX",
+          "loyalty_strategies": "Stratégies de fidélisation",
+          "employer_recognition": "Certification reconnue par les employeurs"
+        },
+        "price": "Sur devis"
+      },
+      "idcxs": {
+        "full_name": "Certification Expérience Digitale",
+        "description": "Certification axée sur l'excellence de l'expérience digitale, couvrant les plateformes numériques, l'UX/UI et les technologies émergentes.",
+        "duration": "5-10 mois",
+        "level": "Expert",
+        "target": "Développeurs, Designers UX/UI, Product Managers",
+        "benefits": {
+          "digital_mastery": "Maîtrise des technologies digitales",
+          "ux_design": "Design d'expériences utilisateur optimales",
+          "trend_integration": "Intégration des dernières tendances",
+          "tech_certification": "Certification tech reconnue"
+        },
+        "price": "Sur devis"
+      },
+      "iehws": {
+        "full_name": "Standards Bien-être Employé",
+        "description": "Programme dédié à l'amélioration du bien-être et de l'engagement des employés, créant un environnement de travail sain et productif.",
+        "duration": "3-6 mois",
+        "level": "Intermédiaire",
+        "target": "RH, Managers, Responsables d'équipe",
+        "benefits": {
+          "workplace_wellbeing": "Amélioration du bien-être au travail",
+          "turnover_reduction": "Réduction du turnover",
+          "productivity_increase": "Augmentation de la productivité",
+          "positive_culture": "Culture d'entreprise positive"
+        },
+        "price": "Sur devis"
+      }
+    },
+    "types": {
+      "title": "Certification pour Tous",
+      "description": "Que vous soyez un particulier souhaitant développer vos compétences ou une entreprise cherchant à certifier votre organisation, nous avons la solution adaptée à vos besoins.",
+      "enterprise": {
+        "title": "Pour Entreprises",
+        "subtitle": "Solutions complètes pour votre organisation",
+        "request_quote": "Demander un devis entreprise",
+        "organizational_certification": {
+          "title": "Certification Organisationnelle",
+          "description": "Certifiez votre entreprise entière selon nos standards d'excellence reconnus internationalement.",
+          "benefits": {
+            "recognition": "Reconnaissance de votre excellence organisationnelle",
+            "brand_improvement": "Amélioration de votre image de marque",
+            "competitive_differentiation": "Différenciation concurrentielle",
+            "market_access": "Accès à de nouveaux marchés"
+          }
+        },
+        "team_training": {
+          "title": "Formation des Équipes",
+          "description": "Formez vos employés aux meilleures pratiques et obtenez des certifications individuelles.",
+          "benefits": {
+            "skill_development": "Développement des compétences de vos équipes",
+            "performance_improvement": "Amélioration de la performance collective",
+            "turnover_reduction": "Réduction du turnover",
+            "culture_strengthening": "Culture d'entreprise renforcée"
+          }
+        },
+        "personalized_support": {
+          "title": "Accompagnement Personnalisé",
+          "description": "Bénéficiez d'un accompagnement sur mesure pour réussir votre certification.",
+          "benefits": {
+            "adapted_plan": "Plan de certification adapté à vos besoins",
+            "flexible_training": "Formation en interne ou externe",
+            "expert_follow_up": "Suivi personnalisé par nos experts",
+            "technical_support": "Support technique dédié"
+          }
+        }
+      },
+      "individual": {
+        "title": "Pour Particuliers",
+        "subtitle": "Développez vos compétences personnelles",
+        "register": "S'inscrire en tant que particulier",
+        "individual_certification": {
+          "title": "Certification Individuelle",
+          "description": "Développez vos compétences personnelles et obtenez une certification reconnue.",
+          "benefits": {
+            "cv_enhancement": "Valorisation de votre CV",
+            "expertise_recognition": "Reconnaissance de votre expertise",
+            "career_opportunities": "Nouvelles opportunités professionnelles",
+            "skill_confidence": "Confiance en vos compétences"
+          }
+        },
+        "flexible_training": {
+          "title": "Formation Flexible",
+          "description": "Apprenez à votre rythme avec des formats adaptés à votre emploi du temps.",
+          "benefits": {
+            "online_presentiel": "Formation en ligne ou présentiel",
+            "flexible_schedule": "Horaires flexibles",
+            "resource_access": "Accès aux ressources 24/7",
+            "continuous_support": "Support pédagogique continu"
+          }
+        },
+        "international_recognition": {
+          "title": "Reconnaissance Internationale",
+          "description": "Obtenez une certification reconnue dans plus de 50 pays à travers le monde.",
+          "benefits": {
+            "international_validity": "Validité internationale",
+            "employer_recognition": "Reconnaissance par les employeurs",
+            "career_mobility": "Mobilité professionnelle facilitée",
+            "professional_network": "Réseau international de professionnels"
+          }
+        }
+      },
+      "comparison": {
+        "title": "Comparaison des Offres",
+        "features": "Fonctionnalités",
+        "enterprise": "Entreprises",
+        "individual": "Particuliers",
+        "certification": "Certification",
+        "enterprise_certification": "Organisationnelle + Individuelle",
+        "individual_certification": "Individuelle uniquement",
+        "training": "Formation",
+        "enterprise_training": "Sur site + En ligne",
+        "individual_training": "En ligne + Présentiel optionnel",
+        "support": "Accompagnement",
+        "enterprise_support": "Dédié + Suivi personnalisé",
+        "individual_support": "Support communautaire + Tutorat",
+        "duration": "Durée",
+        "enterprise_duration": "6-12 mois",
+        "individual_duration": "3-6 mois",
+        "price": "Prix",
+        "enterprise_price": "Sur devis (volume)",
+        "individual_price": "Tarif individuel",
+        "support_type": "Support",
+        "enterprise_support_type": "24/7 + Hotline dédiée",
+        "individual_support_type": "Email + Forum communautaire",
+        "need_help": "Besoin d'aide pour choisir la solution qui vous convient ?",
+        "consult_expert": "Consulter un expert"
+      }
+    },
+    "form": {
+      "title": "Demander une Certification",
+      "description": "Remplissez ce formulaire pour nous faire part de votre intérêt pour nos programmes de certification. Nous vous contacterons pour discuter de vos besoins spécifiques.",
+      "sections": {
+        "request_type": "Type de demande",
+        "contact_info": "Informations de contact",
+        "certification_details": "Détails de la certification"
+      },
+      "labels": {
+        "certification_type": "Type de certification souhaitée",
+        "company_name": "Nom de l'entreprise",
+        "contact_person": "Nom du contact",
+        "email": "Email",
+        "phone": "Téléphone",
+        "certification_program": "Programme de certification souhaité",
+        "participant_count": "Nombre de participants",
+        "current_level": "Niveau actuel",
+        "objectives": "Objectifs de certification",
+        "timeline": "Délai souhaité",
+        "budget": "Budget approximatif",
+        "additional_info": "Informations supplémentaires"
+      },
+      "placeholders": {
+        "select_request_type": "Sélectionnez le type de demande",
+        "company_name": "Nom de votre entreprise",
+        "contact_person": "Votre nom complet",
+        "email": "votre@email.com",
+        "phone": "+243 XXX XXX XXX",
+        "select_program": "Sélectionnez un programme",
+        "participant_count": "Nombre de personnes à certifier",
+        "select_level": "Sélectionnez votre niveau",
+        "objectives": "Décrivez vos objectifs et ce que vous souhaitez accomplir avec cette certification",
+        "select_timeline": "Sélectionnez le délai",
+        "select_budget": "Sélectionnez le budget",
+        "additional_info": "Toute information supplémentaire qui pourrait nous aider à mieux comprendre vos besoins"
+      },
+      "options": {
+        "request_types": {
+          "individual": "Particulier",
+          "enterprise": "Entreprise"
+        },
+        "programs": {
+          "tisse": "TISSE - Standards d'Excellence de Service",
+          "icxs": "ICXS - Certification Expérience Client",
+          "idcxs": "IDCXS - Certification Expérience Digitale",
+          "iehws": "IEHWS - Standards Bien-être Employé",
+          "multiple": "Plusieurs programmes",
+          "consultation": "Consultation personnalisée"
+        },
+        "levels": {
+          "beginner": "Débutant",
+          "intermediate": "Intermédiaire",
+          "advanced": "Avancé",
+          "expert": "Expert"
+        },
+        "timelines": {
+          "asap": "Dès que possible",
+          "1_3_months": "1-3 mois",
+          "3_6_months": "3-6 mois",
+          "6_12_months": "6-12 mois",
+          "flexible": "Flexible"
+        },
+        "budgets": {
+          "under_1k": "Moins de 1 000 $",
+          "1k_5k": "1 000 $ - 5 000 $",
+          "5k_10k": "5 000 $ - 10 000 $",
+          "10k_25k": "10 000 $ - 25 000 $",
+          "over_25k": "Plus de 25 000 $",
+          "discuss": "À discuter"
+        }
+      },
+      "validation": {
+        "request_type": "Veuillez sélectionner le type de demande",
+        "contact_person": "Le nom du contact est requis",
+        "email": "Adresse email invalide",
+        "phone": "Le numéro de téléphone est requis",
+        "certification_program": "Veuillez sélectionner un programme",
+        "current_level": "Veuillez indiquer votre niveau actuel",
+        "objectives": "Veuillez décrire vos objectifs",
+        "timeline": "Veuillez indiquer le délai souhaité",
+        "budget": "Veuillez indiquer votre budget approximatif",
+        "agree_terms": "Vous devez accepter les conditions"
+      },
+      "success": {
+        "title": "Demande envoyée avec succès",
+        "description": "Nous vous contacterons dans les plus brefs délais pour discuter de votre projet de certification."
+      },
+      "conditions": {
+        "agree_terms": "J'accepte les conditions d'utilisation et la politique de confidentialité",
+        "newsletter": "Je souhaite recevoir des informations sur nos programmes de certification"
+      },
+      "submit_button": "Envoyer la demande",
+      "alternative_contact": {
+        "title": "Préférez-vous nous contacter directement ?"
+      }
+    }
+  },
+  "formations_page": {
+    "hero": {
+      "title": "Formations",
+      "subtitle": "d'Excellence",
+      "description": "Découvrez nos programmes de formation professionnels conçus pour développer vos compétences en Customer Experience. Que vous soyez un particulier ou une entreprise, nos formations vous accompagnent vers l'excellence.",
+      "programs": {
+        "cxop": {
+          "name": "Customer Experience Officer Program",
+          "duration": "3 jours",
+          "level": "Fondamental"
+        },
+        "cxmp": {
+          "name": "Customer Experience Management Program",
+          "duration": "5 jours",
+          "level": "Avancé"
+        },
+        "cxlp": {
+          "name": "Customer Experience Leadership Program",
+          "duration": "7 jours",
+          "level": "Expert"
+        },
+        "msc": {
+          "name": "Masterclass Spécialisées",
+          "duration": "1-2 jours",
+          "level": "Spécialisé"
+        }
+      },
+      "benefits": {
+        "training_rdc": "Formation en RDC",
+        "international_certification": "Certification Internationale",
+        "professional_development": "Développement Professionnel",
+        "modern_methods": "Méthodes Modernes"
+      }
+    },
+    "programs": {
+      "title": "Nos Programmes de Formation",
+      "description": "Découvrez notre gamme complète de programmes de formation en Customer Experience, conçus pour répondre aux besoins de tous les niveaux professionnels.",
+      "status": {
+        "coming_soon": "Bientôt disponible",
+        "available": "Disponible"
+      },
+      "cxop": {
+        "name": "Customer Experience Officer Program",
+        "description": "Programme fondamental pour maîtriser les bases de l'expérience client et développer les compétences essentielles.",
+        "duration": "3 jours",
+        "level": "Fondamental",
+        "target": "Professionnels débutants, Responsables clientèle",
+        "benefits": {
+          "understand_cx": "Comprendre les enjeux de l'expérience client",
+          "master_tools": "Maîtriser les outils de mesure CX",
+          "develop_culture": "Développer une culture client",
+          "international_certification": "Certification internationale"
+        },
+        "price": "Sur devis"
+      },
+      "cxmp": {
+        "name": "Customer Experience Management Program",
+        "description": "Programme avancé pour gérer et optimiser l'expérience client à l'échelle organisationnelle.",
+        "duration": "5 jours",
+        "level": "Avancé",
+        "target": "Managers, Chefs de projet CX",
+        "benefits": {
+          "organizational_strategy": "Stratégie CX organisationnelle",
+          "team_management": "Gestion des équipes CX",
+          "process_optimization": "Optimisation des processus",
+          "advanced_metrics": "Métriques et KPIs avancés"
+        },
+        "price": "Sur devis"
+      },
+      "cxlp": {
+        "name": "Customer Experience Leadership Program",
+        "description": "Programme expert pour diriger la transformation CX et développer une vision stratégique.",
+        "duration": "7 jours",
+        "level": "Expert",
+        "target": "Directeurs, VP, Leaders transformationnels",
+        "benefits": {
+          "transformational_leadership": "Leadership transformationnel",
+          "strategic_vision": "Vision stratégique CX",
+          "change_management": "Gestion du changement",
+          "innovation_disruption": "Innovation et disruption"
+        },
+        "price": "Sur devis"
+      },
+        "msc": {
+          "name": "Masterclass Spécialisées",
+          "description": "Sessions intensives sur des sujets spécialisés de l'expérience client et des technologies émergentes.",
+          "duration": "1-2 jours",
+          "level": "Spécialisé",
+          "target": "Experts, Consultants, Formateurs",
+          "benefits": {
+            "current_topics": "Sujets d'actualité",
+            "emerging_technologies": "Technologies émergentes",
+            "advanced_case_studies": "Cas d'étude avancés",
+            "expert_network": "Réseau d'experts"
+          },
+          "price": "Sur devis"
+        },
+        "levels": {
+          "fundamental": "Fondamental",
+          "advanced": "Avancé",
+          "expert": "Expert",
+          "specialized": "Spécialisé"
+        },
+        "labels": {
+          "duration": "Durée",
+          "level": "Niveau",
+          "target": "Public"
+        },
+        "what_you_will_learn": "Ce que vous apprendrez",
+        "coming_soon": "Bientôt disponible",
+        "register": "S'inscrire",
+        "finalization": {
+          "title": "Programmes en cours de finalisation",
+          "description": "Nos équipes d'experts travaillent actuellement sur le contenu détaillé de chaque programme. Inscrivez-vous à notre liste d'attente pour être informé dès le lancement.",
+          "contact_us": "Nous contacter",
+          "get_prospectus": "Obtenir le prospectus"
+        }
+      }
+    },
+    "types": {
+      "title": "Formation pour Tous",
+      "description": "Que vous soyez un particulier souhaitant développer vos compétences ou une entreprise cherchant à former vos équipes, nous avons la solution adaptée à vos besoins.",
+      "enterprise": {
+        "title": "Pour Entreprises",
+        "subtitle": "Solutions complètes pour votre organisation",
+        "on_site_training": {
+          "title": "Formation sur Site",
+          "description": "Formations personnalisées dans vos locaux pour vos équipes.",
+          "benefits": {
+            "adapted_training": "Formation adaptée à votre contexte",
+            "teams_trained_together": "Équipes formées ensemble",
+            "reduced_travel_costs": "Réduction des coûts de déplacement",
+            "immediate_integration": "Intégration immédiate des apprentissages"
+          }
+        },
+        "team_training": {
+          "title": "Formation des Équipes",
+          "description": "Programmes conçus pour développer les compétences collectives.",
+          "benefits": {
+            "enhanced_team_cohesion": "Cohésion d'équipe renforcée",
+            "common_cx_language": "Langage commun CX",
+            "improved_collaboration": "Collaboration améliorée",
+            "unified_corporate_culture": "Culture d'entreprise unifiée"
+          }
+        },
+        "personalized_support": {
+          "title": "Accompagnement Personnalisé",
+          "description": "Suivi individuel et collectif pour maximiser l'impact.",
+          "benefits": {
+            "customized_plan": "Plan de formation sur mesure",
+            "personalized_mentoring": "Mentoring personnalisé",
+            "progress_tracking": "Suivi des progrès",
+            "post_training_support": "Support post-formation"
+          }
+        },
+        "request_quote_button": "Demander un devis entreprise"
+      },
+      "individual": {
+        "title": "Pour Particuliers",
+        "subtitle": "Développez vos compétences personnelles",
+        "register_button": "S'inscrire en tant que particulier",
+        "individual_training": {
+          "title": "Formation Individuelle",
+          "description": "Développement personnel de vos compétences en CX.",
+          "benefits": {
+            "pace_progression": "Progression à votre rythme",
+            "specific_needs_focus": "Focus sur vos besoins spécifiques",
+            "schedule_flexibility": "Flexibilité des horaires",
+            "personal_certification": "Certification personnelle"
+          }
+        },
+        "flexible_training": {
+          "title": "Formation Flexible",
+          "description": "Formats adaptés à votre emploi du temps et vos contraintes.",
+          "benefits": {
+            "online_or_presential": "Formation en ligne ou présentiel",
+            "flexible_schedules": "Horaires flexibles",
+            "resources_24_7": "Accès aux ressources 24/7",
+            "continuous_support": "Support pédagogique continu"
+          }
+        },
+        "international_recognition": {
+          "title": "Reconnaissance Internationale",
+          "description": "Certifications reconnues dans le monde entier.",
+          "benefits": {
+            "international_validity": "Validité internationale",
+            "employer_recognition": "Reconnaissance par les employeurs",
+            "professional_mobility": "Mobilité professionnelle",
+            "international_network": "Réseau international"
+          }
+        }
+      },
+      "comparison": {
+        "title": "Comparaison des Offres",
+        "features": "Fonctionnalités",
+        "enterprise": "Entreprises",
+        "individual": "Particuliers",
+        "format": "Format",
+        "enterprise_format": "Sur site + En ligne",
+        "individual_format": "En ligne + Présentiel optionnel",
+        "duration": "Durée",
+        "enterprise_duration": "3-7 jours par programme",
+        "individual_duration": "1-7 jours selon le niveau",
+        "support": "Accompagnement",
+        "enterprise_support": "Dédié + Suivi personnalisé",
+        "individual_support": "Support communautaire + Tutorat",
+        "certification": "Certification",
+        "enterprise_certification": "Certification d'équipe + Individuelle",
+        "individual_certification": "Certification individuelle",
+        "price": "Prix",
+        "enterprise_price": "Sur devis (volume)",
+        "individual_price": "Tarif individuel",
+        "support_24_7": "Support",
+        "enterprise_support_24_7": "24/7 + Hotline dédiée",
+        "individual_support_24_7": "Email + Forum communautaire",
+        "help_text": "Besoin d'aide pour choisir la solution qui vous convient ?",
+        "consult_expert_button": "Consulter un expert"
+      }
+    },
+    "form": {
+      "title": "Demander une Formation",
+      "description": "Remplissez ce formulaire pour nous faire part de votre intérêt pour nos programmes de formation. Nous vous contacterons pour discuter de vos besoins spécifiques.",
+      "sections": {
+        "request_type": "Type de demande",
+        "contact_info": "Informations de contact",
+        "training_details": "Détails de la formation"
+      },
+      "labels": {
+        "request_type": "Type de formation souhaitée *",
+        "company_name": "Nom de l'entreprise",
+        "contact_person": "Nom du contact *",
+        "email": "Email *",
+        "phone": "Téléphone *",
+        "formation_program": "Programme de formation souhaité *",
+        "participant_count": "Nombre de participants",
+        "current_level": "Niveau actuel *",
+        "objectives": "Objectifs de formation *",
+        "timeline": "Délai souhaité *",
+        "budget": "Budget approximatif *",
+        "additional_info": "Informations supplémentaires",
+        "agree_terms": "J'accepte les conditions d'utilisation et la politique de confidentialité *",
+        "agree_newsletter": "Je souhaite recevoir des informations sur nos programmes de formation"
+      },
+      "placeholders": {
+        "request_type": "Sélectionnez le type de demande",
+        "company_name": "Nom de votre entreprise",
+        "contact_person": "Votre nom complet",
+        "email": "votre@email.com",
+        "phone": "+243 XXX XXX XXX",
+        "formation_program": "Sélectionnez un programme",
+        "participant_count": "Nombre de personnes à former",
+        "current_level": "Sélectionnez votre niveau",
+        "objectives": "Décrivez vos objectifs et ce que vous souhaitez accomplir avec cette formation",
+        "timeline": "Sélectionnez le délai",
+        "budget": "Sélectionnez le budget",
+        "additional_info": "Toute information supplémentaire qui pourrait nous aider à mieux comprendre vos besoins"
+      },
+      "options": {
+        "request_types": {
+          "individual": "Particulier",
+          "enterprise": "Entreprise"
+        },
+        "programs": {
+          "cxop": "CXOP - Customer Experience Officer Program",
+          "cxmp": "CXMP - Customer Experience Management Program",
+          "cxlp": "CXLP - Customer Experience Leadership Program",
+          "msc": "MSC - Masterclass Spécialisées",
+          "multiple": "Plusieurs programmes",
+          "consultation": "Consultation personnalisée"
+        },
+        "levels": {
+          "beginner": "Débutant",
+          "intermediate": "Intermédiaire",
+          "advanced": "Avancé",
+          "expert": "Expert"
+        },
+        "timelines": {
+          "asap": "Dès que possible",
+          "1_3_months": "1-3 mois",
+          "3_6_months": "3-6 mois",
+          "6_12_months": "6-12 mois",
+          "flexible": "Flexible"
+        },
+        "budgets": {
+          "under_1k": "Moins de 1 000 $",
+          "1k_5k": "1 000 $ - 5 000 $",
+          "5k_10k": "5 000 $ - 10 000 $",
+          "10k_25k": "10 000 $ - 25 000 $",
+          "over_25k": "Plus de 25 000 $",
+          "discuss": "À discuter"
+        }
+      },
+      "validation": {
+        "request_type_required": "Veuillez sélectionner le type de demande",
+        "contact_person_required": "Le nom du contact est requis",
+        "invalid_email": "Adresse email invalide",
+        "phone_required": "Le numéro de téléphone est requis",
+        "program_required": "Veuillez sélectionner un programme",
+        "current_level_required": "Veuillez indiquer votre niveau actuel",
+        "objectives_required": "Veuillez décrire vos objectifs",
+        "timeline_required": "Veuillez indiquer le délai souhaité",
+        "budget_required": "Veuillez indiquer votre budget approximatif",
+        "terms_required": "Vous devez accepter les conditions"
+      },
+      "success": {
+        "title": "Demande envoyée avec succès",
+        "description": "Nous vous contacterons dans les plus brefs délais pour discuter de votre projet de formation."
+      },
+      "submit_button": "Envoyer la demande",
+      "alternative_contact": {
+        "title": "Préférez-vous nous contacter directement ?"
+      }
+    },
+    "process": {
+      "title": "Votre Parcours de Formation",
+      "description": "Découvrez comment nous vous accompagnons étape par étape pour développer vos compétences en Customer Experience et obtenir votre certification.",
+      "step1": {
+        "title": "Inscription & Évaluation",
+        "description": "Inscrivez-vous au programme et passez une évaluation de vos compétences actuelles.",
+        "details": {
+          "registration_form": "Remplissage du formulaire d'inscription",
+          "skills_assessment": "Évaluation de vos compétences CX",
+          "learning_objectives": "Définition de vos objectifs d'apprentissage",
+          "personalized_planning": "Planification personnalisée du parcours"
+        },
+        "duration": "1-2 semaines"
+      },
+      "step2": {
+        "title": "Formation & Apprentissage",
+        "description": "Suivez les modules de formation adaptés à votre niveau et vos objectifs.",
+        "details": {
+          "training_resources": "Accès aux ressources de formation",
+          "online_or_presential": "Formation en ligne ou présentiel",
+          "practical_exercises": "Exercices pratiques et cas d'étude",
+          "continuous_support": "Support pédagogique continu"
+        },
+        "duration": "1-7 jours selon le programme"
+      },
+      "step3": {
+        "title": "Pratique & Application",
+        "description": "Mettez en pratique vos acquis avec des projets concrets et des simulations.",
+        "details": {
+          "team_projects": "Projets pratiques en équipe",
+          "real_situations": "Simulations de situations réelles",
+          "case_studies": "Études de cas d'entreprises",
+          "personalized_feedback": "Feedback personnalisé"
+        },
+        "duration": "2-4 semaines"
+      },
+      "step4": {
+        "title": "Évaluation & Certification",
+        "description": "Passez l'évaluation finale et obtenez votre certification professionnelle.",
+        "details": {
+          "skills_evaluation": "Évaluation des compétences acquises",
+          "practical_theoretical_exam": "Examen pratique et théorique",
+          "official_certificate": "Délivrance du certificat officiel",
+          "certified_registry": "Inscription au registre des certifiés"
+        },
+        "duration": "1-2 semaines"
+      },
+      "features": {
+        "flexible_training": {
+          "title": "Formation Flexible",
+          "description": "Apprenez à votre rythme avec des formats adaptés à votre emploi du temps."
+        },
+        "expert_support": {
+          "title": "Accompagnement Expert",
+          "description": "Bénéficiez du support de nos formateurs certifiés tout au long de votre parcours."
+        },
+        "personalized_goals": {
+          "title": "Objectifs Personnalisés",
+          "description": "Votre parcours est adapté à vos objectifs professionnels et votre niveau."
+        },
+        "recognized_certification": {
+          "title": "Certification Reconnue",
+          "description": "Obtenez une certification reconnue dans le domaine de l'expérience client."
+        }
+      },
+      "learning_methods": {
+        "title": "Méthodes d'Apprentissage"
+      },
+      "methods": {
+        "presential": {
+          "method": "Formation Présentielle",
+          "description": "Sessions en salle avec formateurs experts",
+          "duration": "3-7 jours",
+          "benefits": {
+            "direct_interaction": "Interaction directe",
+            "team_work": "Travail en équipe",
+            "immediate_feedback": "Feedback immédiat"
+          }
+        },
+        "online": {
+          "method": "Formation en Ligne",
+          "description": "Modules interactifs accessibles 24/7",
+          "duration": "Flexible",
+          "benefits": {
+            "autonomous_learning": "Apprentissage autonome",
+            "flexible_schedules": "Horaires flexibles",
+            "permanent_resources": "Ressources permanentes"
+          }
+        },
+        "hybrid": {
+          "method": "Formation Hybride",
+          "description": "Combinaison de présentiel et d'e-learning",
+          "duration": "Variable",
+          "benefits": {
+            "best_of_both": "Meilleur des deux mondes",
+            "adaptability": "Adaptabilité",
+            "optimal_efficiency": "Efficacité optimale"
+          }
+        }
+      },
+      "advantages": {
+        "title": "Pourquoi choisir notre processus de formation ?",
+        "high_success_rate": {
+          "title": "Taux de réussite élevé",
+          "description": "98% de nos participants obtiennent leur certification grâce à notre accompagnement personnalisé."
+        },
+        "active_community": {
+          "title": "Communauté active",
+          "description": "Rejoignez une communauté de plus de 500 professionnels formés dans le domaine CX."
+        },
+        "professional_recognition": {
+          "title": "Reconnaissance professionnelle",
+          "description": "Vos certifications sont reconnues par les employeurs et valorisent votre expertise."
+        }
+      },
+      "start_training_button": "Commencer ma formation"
     }
   }
-}

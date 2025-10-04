@@ -36,8 +36,8 @@ const AuditHero = () => {
                 data-aos-duration="800"
                 data-aos-delay="200"
               >
-                Audit & Consultation
-                <span className="block text-yellow-400">pour Entreprises</span>
+                {t('audit_page.hero.title')}
+                <span className="block text-yellow-400">{t('audit_page.hero.subtitle')}</span>
               </h1>
               
               {/* Description */}
@@ -47,9 +47,7 @@ const AuditHero = () => {
                 data-aos-duration="800"
                 data-aos-delay="400"
               >
-                Optimisez vos processus, assurez la conformité et améliorez vos performances 
-                grâce à nos services d'audit et de consultation professionnels. 
-                Nos experts vous accompagnent dans votre démarche d'excellence.
+                {t('audit_page.hero.description')}
               </p>
 
               {/* Points clés */}
@@ -61,15 +59,15 @@ const AuditHero = () => {
               >
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-6 h-6 text-green-400 flex-shrink-0" />
-                  <span className="text-white/90">Audit complet de vos processus</span>
+                  <span className="text-white/90">{t('audit_page.hero.key_points.process_audit')}</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-6 h-6 text-green-400 flex-shrink-0" />
-                  <span className="text-white/90">Conformité réglementaire garantie</span>
+                  <span className="text-white/90">{t('audit_page.hero.key_points.compliance')}</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-6 h-6 text-green-400 flex-shrink-0" />
-                  <span className="text-white/90">Recommandations personnalisées</span>
+                  <span className="text-white/90">{t('audit_page.hero.key_points.recommendations')}</span>
                 </div>
               </div>
 
@@ -101,7 +99,7 @@ const AuditHero = () => {
                   <Building2 className="w-8 h-8 text-yellow-400" />
                 </div>
                 <div className="text-3xl font-bold text-white mb-2">500+</div>
-                <div className="text-white/80">Entreprises auditées</div>
+                <div className="text-white/80">{t('audit_page.hero.stats.audited_companies')}</div>
               </div>
               
               <div className="text-center">
@@ -109,7 +107,7 @@ const AuditHero = () => {
                   <Users className="w-8 h-8 text-yellow-400" />
                 </div>
                 <div className="text-3xl font-bold text-white mb-2">50+</div>
-                <div className="text-white/80">Experts certifiés</div>
+                <div className="text-white/80">{t('audit_page.hero.stats.certified_experts')}</div>
               </div>
               
               <div className="text-center">
@@ -117,7 +115,7 @@ const AuditHero = () => {
                   <Shield className="w-8 h-8 text-yellow-400" />
                 </div>
                 <div className="text-3xl font-bold text-white mb-2">98%</div>
-                <div className="text-white/80">Taux de satisfaction</div>
+                <div className="text-white/80">{t('audit_page.hero.stats.satisfaction_rate')}</div>
               </div>
               
               <div className="text-center">
@@ -125,7 +123,7 @@ const AuditHero = () => {
                   <CheckCircle className="w-8 h-8 text-yellow-400" />
                 </div>
                 <div className="text-3xl font-bold text-white mb-2">15+</div>
-                <div className="text-white/80">Années d'expérience</div>
+                <div className="text-white/80">{t('audit_page.hero.stats.years_experience')}</div>
               </div>
             </div>
           </div>

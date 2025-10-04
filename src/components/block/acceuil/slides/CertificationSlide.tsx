@@ -22,7 +22,7 @@ const CertificationSlide: React.FC<SlideProps> = ({
           <Award className="w-8 h-8" />
         </div>
         <div className="text-yellow-500 font-medium text-lg">
-          Certifications Internationales ICXI
+          {t('slides.certification.badge')}
         </div>
       </div>
 
@@ -33,7 +33,7 @@ const CertificationSlide: React.FC<SlideProps> = ({
           data-aos-duration="800"
           data-aos-delay="300"
         >
-          Formation et Certification ICXI
+          {t('slides.certification.title')}
         </h1>
         
         <p 
@@ -42,7 +42,7 @@ const CertificationSlide: React.FC<SlideProps> = ({
           data-aos-duration="800"
           data-aos-delay="400"
         >
-          Professionnalisez vos équipes locales avec des programmes de certification reconnus (ex: CXOP, CXMP, CXLP), garantissant des compétences alignées sur les standards mondiaux.
+          {t('slides.certification.description')}
         </p>
       </div>
 
@@ -56,7 +56,7 @@ const CertificationSlide: React.FC<SlideProps> = ({
           onClick={onActionClick}
           className="bg-yellow-500 hover:bg-yellow-600 text-brand-blue px-8 py-2 rounded-lg font-semibold flex items-center justify-center gap-2 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
         >
-          {t('slides.certification.cta_discover')}
+          {t('slides.certification.cta_explore')}
           <ChevronRight className="w-5 h-5" />
         </button>
         <button 

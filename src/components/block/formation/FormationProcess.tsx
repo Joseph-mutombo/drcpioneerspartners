@@ -19,110 +19,122 @@ const FormationProcess = () => {
   const steps = [
     {
       id: 1,
-      title: 'Inscription & Évaluation',
-      description: 'Inscrivez-vous au programme et passez une évaluation de vos compétences actuelles.',
+      title: t('formations_page.process.step1.title'),
+      description: t('formations_page.process.step1.description'),
       icon: MessageCircle,
       color: 'bg-blue-100 text-blue-600',
       details: [
-        'Remplissage du formulaire d\'inscription',
-        'Évaluation de vos compétences CX',
-        'Définition de vos objectifs d\'apprentissage',
-        'Planification personnalisée du parcours'
+        t('formations_page.process.step1.details.registration_form'),
+        t('formations_page.process.step1.details.skills_assessment'),
+        t('formations_page.process.step1.details.learning_objectives'),
+        t('formations_page.process.step1.details.personalized_planning')
       ],
-      duration: '1-2 semaines'
+      duration: t('formations_page.process.step1.duration')
     },
     {
       id: 2,
-      title: 'Formation & Apprentissage',
-      description: 'Suivez les modules de formation adaptés à votre niveau et vos objectifs.',
+      title: t('formations_page.process.step2.title'),
+      description: t('formations_page.process.step2.description'),
       icon: BookOpen,
       color: 'bg-green-100 text-green-600',
       details: [
-        'Accès aux ressources de formation',
-        'Formation en ligne ou présentiel',
-        'Exercices pratiques et cas d\'étude',
-        'Support pédagogique continu'
+        t('formations_page.process.step2.details.training_resources'),
+        t('formations_page.process.step2.details.online_or_presential'),
+        t('formations_page.process.step2.details.practical_exercises'),
+        t('formations_page.process.step2.details.continuous_support')
       ],
-      duration: '1-7 jours selon le programme'
+      duration: t('formations_page.process.step2.duration')
     },
     {
       id: 3,
-      title: 'Pratique & Application',
-      description: 'Mettez en pratique vos acquis avec des projets concrets et des simulations.',
+      title: t('formations_page.process.step3.title'),
+      description: t('formations_page.process.step3.description'),
       icon: Target,
       color: 'bg-purple-100 text-purple-600',
       details: [
-        'Projets pratiques en équipe',
-        'Simulations de situations réelles',
-        'Études de cas d\'entreprises',
-        'Feedback personnalisé'
+        t('formations_page.process.step3.details.team_projects'),
+        t('formations_page.process.step3.details.real_situations'),
+        t('formations_page.process.step3.details.case_studies'),
+        t('formations_page.process.step3.details.personalized_feedback')
       ],
-      duration: '2-4 semaines'
+      duration: t('formations_page.process.step3.duration')
     },
     {
       id: 4,
-      title: 'Évaluation & Certification',
-      description: 'Passez l\'évaluation finale et obtenez votre certification professionnelle.',
+      title: t('formations_page.process.step4.title'),
+      description: t('formations_page.process.step4.description'),
       icon: Award,
       color: 'bg-orange-100 text-orange-600',
       details: [
-        'Évaluation des compétences acquises',
-        'Examen pratique et théorique',
-        'Délivrance du certificat officiel',
-        'Inscription au registre des certifiés'
+        t('formations_page.process.step4.details.skills_evaluation'),
+        t('formations_page.process.step4.details.practical_theoretical_exam'),
+        t('formations_page.process.step4.details.official_certificate'),
+        t('formations_page.process.step4.details.certified_registry')
       ],
-      duration: '1-2 semaines'
+      duration: t('formations_page.process.step4.duration')
     }
   ];
 
   const processFeatures = [
     {
       icon: Clock,
-      title: 'Formation Flexible',
-      description: 'Apprenez à votre rythme avec des formats adaptés à votre emploi du temps.',
+      title: t('formations_page.process.features.flexible_training.title'),
+      description: t('formations_page.process.features.flexible_training.description'),
       color: 'bg-blue-100 text-blue-600'
     },
     {
       icon: Users,
-      title: 'Accompagnement Expert',
-      description: 'Bénéficiez du support de nos formateurs certifiés tout au long de votre parcours.',
+      title: t('formations_page.process.features.expert_support.title'),
+      description: t('formations_page.process.features.expert_support.description'),
       color: 'bg-green-100 text-green-600'
     },
     {
       icon: Target,
-      title: 'Objectifs Personnalisés',
-      description: 'Votre parcours est adapté à vos objectifs professionnels et votre niveau.',
+      title: t('formations_page.process.features.personalized_goals.title'),
+      description: t('formations_page.process.features.personalized_goals.description'),
       color: 'bg-purple-100 text-purple-600'
     },
     {
       icon: Star,
-      title: 'Certification Reconnue',
-      description: 'Obtenez une certification reconnue dans le domaine de l\'expérience client.',
+      title: t('formations_page.process.features.recognized_certification.title'),
+      description: t('formations_page.process.features.recognized_certification.description'),
       color: 'bg-orange-100 text-orange-600'
     }
   ];
 
   const learningMethods = [
     {
-      method: 'Formation Présentielle',
-      description: 'Sessions en salle avec formateurs experts',
+      method: t('formations_page.process.methods.presential.method'),
+      description: t('formations_page.process.methods.presential.description'),
       icon: Users,
-      duration: '3-7 jours',
-      benefits: ['Interaction directe', 'Travail en équipe', 'Feedback immédiat']
+      duration: t('formations_page.process.methods.presential.duration'),
+      benefits: [
+        t('formations_page.process.methods.presential.benefits.direct_interaction'),
+        t('formations_page.process.methods.presential.benefits.team_work'),
+        t('formations_page.process.methods.presential.benefits.immediate_feedback')
+      ]
     },
     {
-      method: 'Formation en Ligne',
-      description: 'Modules interactifs accessibles 24/7',
+      method: t('formations_page.process.methods.online.method'),
+      description: t('formations_page.process.methods.online.description'),
       icon: Monitor,
-      duration: 'Flexible',
-      benefits: ['Apprentissage autonome', 'Horaires flexibles', 'Ressources permanentes']
+      duration: t('formations_page.process.methods.online.duration'),
+      benefits: [
+        t('formations_page.process.methods.online.benefits.autonomous_learning'),
+        t('formations_page.process.methods.online.benefits.flexible_schedules'),
+        t('formations_page.process.methods.online.benefits.permanent_resources')
+      ]
     },
     {
-      method: 'Formation Hybride',
-      description: 'Combinaison de présentiel et d\'e-learning',
+      method: t('formations_page.process.methods.hybrid.method'),
+      description: t('formations_page.process.methods.hybrid.description'),
       icon: BookOpen,
-      duration: 'Variable',
-      benefits: ['Meilleur des deux mondes', 'Adaptabilité', 'Efficacité optimale']
+      duration: t('formations_page.process.methods.hybrid.duration'),
+      benefits: [
+        t('formations_page.process.methods.hybrid.benefits.best_of_both'),
+        t('formations_page.process.methods.hybrid.benefits.adaptability'),
+        t('formations_page.process.methods.hybrid.benefits.optimal_efficiency')
+      ]
     }
   ];
 
@@ -136,7 +148,7 @@ const FormationProcess = () => {
             data-aos="fade-up"
             data-aos-duration="600"
           >
-            Votre Parcours de Formation
+            {t('formations_page.process.title')}
           </h2>
           <p 
             className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
@@ -144,8 +156,7 @@ const FormationProcess = () => {
             data-aos-duration="600"
             data-aos-delay="200"
           >
-            Découvrez comment nous vous accompagnons étape par étape pour développer 
-            vos compétences en Customer Experience et obtenir votre certification.
+            {t('formations_page.process.description')}
           </p>
         </div>
 
@@ -214,13 +225,13 @@ const FormationProcess = () => {
 
         {/* Méthodes d'apprentissage */}
         <div 
-          className="mb-16 mt-24"
+          className="mb-16 mt-32"
           data-aos="fade-up"
           data-aos-duration="600"
           data-aos-delay="400"
         >
           <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">
-            Méthodes d'Apprentissage
+            {t('formations_page.process.learning_methods.title')}
           </h3>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -303,7 +314,7 @@ const FormationProcess = () => {
         >
           <div className="max-w-4xl mx-auto text-center">
             <h3 className="text-3xl font-bold mb-6">
-              Pourquoi choisir notre processus de formation ?
+              {t('formations_page.process.advantages.title')}
             </h3>
             
             <div className="grid md:grid-cols-3 gap-8 mt-8">
@@ -311,9 +322,9 @@ const FormationProcess = () => {
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-white/10 backdrop-blur-sm rounded-full mb-4">
                   <CheckCircle className="w-8 h-8 text-yellow-400" />
                 </div>
-                <h4 className="text-xl font-semibold mb-2">Taux de réussite élevé</h4>
+                <h4 className="text-xl font-semibold mb-2">{t('formations_page.process.advantages.high_success_rate.title')}</h4>
                 <p className="text-white/90">
-                  98% de nos participants obtiennent leur certification grâce à notre accompagnement personnalisé.
+                  {t('formations_page.process.advantages.high_success_rate.description')}
                 </p>
               </div>
 
@@ -321,9 +332,9 @@ const FormationProcess = () => {
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-white/10 backdrop-blur-sm rounded-full mb-4">
                   <Users className="w-8 h-8 text-yellow-400" />
                 </div>
-                <h4 className="text-xl font-semibold mb-2">Communauté active</h4>
+                <h4 className="text-xl font-semibold mb-2">{t('formations_page.process.advantages.active_community.title')}</h4>
                 <p className="text-white/90">
-                  Rejoignez une communauté de plus de 500 professionnels formés dans le domaine CX.
+                  {t('formations_page.process.advantages.active_community.description')}
                 </p>
               </div>
 
@@ -331,16 +342,16 @@ const FormationProcess = () => {
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-white/10 backdrop-blur-sm rounded-full mb-4">
                   <Award className="w-8 h-8 text-yellow-400" />
                 </div>
-                <h4 className="text-xl font-semibold mb-2">Reconnaissance professionnelle</h4>
+                <h4 className="text-xl font-semibold mb-2">{t('formations_page.process.advantages.professional_recognition.title')}</h4>
                 <p className="text-white/90">
-                  Vos certifications sont reconnues par les employeurs et valorisent votre expertise.
+                  {t('formations_page.process.advantages.professional_recognition.description')}
                 </p>
               </div>
             </div>
 
             <div className="mt-12">
               <button className="group inline-flex items-center gap-2 px-8 py-4 bg-yellow-600 text-brand-blue font-semibold rounded-lg hover:bg-yellow-700 transition-all duration-200">
-                <span>Commencer ma formation</span>
+                <span>{t('formations_page.process.start_training_button')}</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
               </button>
             </div>

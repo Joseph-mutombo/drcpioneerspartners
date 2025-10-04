@@ -15,59 +15,59 @@ const AuditProcess = () => {
   const steps = [
     {
       id: 1,
-      title: 'Demande & Consultation',
-      description: 'Nous analysons vos besoins et définissons ensemble les objectifs de l\'audit.',
+      title: t('audit_page.process.step1.title'),
+      description: t('audit_page.process.step1.description'),
       icon: MessageCircle,
       color: 'bg-blue-100 text-blue-600',
       details: [
-        'Analyse de votre demande',
-        'Évaluation des besoins spécifiques',
-        'Définition du périmètre d\'audit',
-        'Présentation de notre méthodologie'
+        t('audit_page.process.step1.details.request_analysis'),
+        t('audit_page.process.step1.details.needs_assessment'),
+        t('audit_page.process.step1.details.scope_definition'),
+        t('audit_page.process.step1.details.methodology_presentation')
       ],
-      duration: '1-2 jours'
+      duration: t('audit_page.process.step1.duration')
     },
     {
       id: 2,
-      title: 'Préparation & Planification',
-      description: 'Nous préparons l\'audit en détail et planifions les interventions.',
+      title: t('audit_page.process.step2.title'),
+      description: t('audit_page.process.step2.description'),
       icon: FileText,
       color: 'bg-green-100 text-green-600',
       details: [
-        'Élaboration du plan d\'audit',
-        'Préparation des documents',
-        'Planification des rendez-vous',
-        'Formation de l\'équipe d\'audit'
+        t('audit_page.process.step2.details.audit_plan'),
+        t('audit_page.process.step2.details.document_preparation'),
+        t('audit_page.process.step2.details.appointment_planning'),
+        t('audit_page.process.step2.details.team_training')
       ],
-      duration: '2-3 jours'
+      duration: t('audit_page.process.step2.duration')
     },
     {
       id: 3,
-      title: 'Réalisation de l\'Audit',
-      description: 'Nos experts réalisent l\'audit sur site selon la méthodologie définie.',
+      title: t('audit_page.process.step3.title'),
+      description: t('audit_page.process.step3.description'),
       icon: Users,
       color: 'bg-purple-100 text-purple-600',
       details: [
-        'Audit sur site',
-        'Entretiens avec le personnel',
-        'Vérification des processus',
-        'Collecte des preuves'
+        t('audit_page.process.step3.details.on_site_audit'),
+        t('audit_page.process.step3.details.staff_interviews'),
+        t('audit_page.process.step3.details.process_verification'),
+        t('audit_page.process.step3.details.evidence_collection')
       ],
-      duration: 'Variable selon le périmètre'
+      duration: t('audit_page.process.step3.duration')
     },
     {
       id: 4,
-      title: 'Analyse & Rapport',
-      description: 'Nous analysons les résultats et rédigeons un rapport détaillé.',
+      title: t('audit_page.process.step4.title'),
+      description: t('audit_page.process.step4.description'),
       icon: CheckCircle,
       color: 'bg-orange-100 text-orange-600',
       details: [
-        'Analyse des données collectées',
-        'Identification des points d\'amélioration',
-        'Rédaction du rapport final',
-        'Recommandations personnalisées'
+        t('audit_page.process.step4.details.data_analysis'),
+        t('audit_page.process.step4.details.improvement_points'),
+        t('audit_page.process.step4.details.final_report'),
+        t('audit_page.process.step4.details.personalized_recommendations')
       ],
-      duration: '3-5 jours'
+      duration: t('audit_page.process.step4.duration')
     }
   ];
 
@@ -81,7 +81,7 @@ const AuditProcess = () => {
             data-aos="fade-up"
             data-aos-duration="600"
           >
-            Notre Processus d'Audit
+            {t('audit_page.process.title')}
           </h2>
           <p 
             className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
@@ -89,8 +89,7 @@ const AuditProcess = () => {
             data-aos-duration="600"
             data-aos-delay="200"
           >
-            Découvrez comment nous procédons pour vous offrir un audit de qualité, 
-            méthodique et adapté à vos besoins spécifiques.
+            {t('audit_page.process.description')}
           </p>
         </div>
 

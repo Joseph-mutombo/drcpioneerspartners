@@ -15,63 +15,63 @@ const AuditServices = () => {
   const services = [
     {
       id: 'audit-qualite',
-      title: 'Audit de Qualité',
-      description: 'Évaluation complète de vos systèmes de management de la qualité selon les normes ISO 9001.',
+      title: t('audit_page.services.quality.title'),
+      description: t('audit_page.services.quality.description'),
       icon: Shield,
       color: 'bg-blue-100 text-blue-600',
       features: [
-        'Analyse des processus existants',
-        'Identification des non-conformités',
-        'Recommandations d\'amélioration',
-        'Plan d\'action personnalisé'
+        t('audit_page.services.quality.features.process_analysis'),
+        t('audit_page.services.quality.features.non_conformities'),
+        t('audit_page.services.quality.features.improvement_recommendations'),
+        t('audit_page.services.quality.features.action_plan')
       ],
-      duration: '2-5 jours',
-      price: 'Sur devis'
+      duration: t('audit_page.services.quality.duration'),
+      price: t('audit_page.services.quality.price')
     },
     {
       id: 'audit-environnement',
-      title: 'Audit Environnemental',
-      description: 'Vérification de la conformité environnementale et évaluation de l\'impact écologique.',
+      title: t('audit_page.services.environmental.title'),
+      description: t('audit_page.services.environmental.description'),
       icon: FileText,
       color: 'bg-green-100 text-green-600',
       features: [
-        'Conformité ISO 14001',
-        'Évaluation des risques environnementaux',
-        'Optimisation des ressources',
-        'Rapport détaillé'
+        t('audit_page.services.environmental.features.iso_14001'),
+        t('audit_page.services.environmental.features.risk_assessment'),
+        t('audit_page.services.environmental.features.resource_optimization'),
+        t('audit_page.services.environmental.features.detailed_report')
       ],
-      duration: '3-7 jours',
-      price: 'Sur devis'
+      duration: t('audit_page.services.environmental.duration'),
+      price: t('audit_page.services.environmental.price')
     },
     {
       id: 'audit-securite',
-      title: 'Audit de Sécurité',
-      description: 'Analyse de la sécurité au travail et conformité aux réglementations en vigueur.',
+      title: t('audit_page.services.safety.title'),
+      description: t('audit_page.services.safety.description'),
       icon: Target,
       color: 'bg-red-100 text-red-600',
       features: [
-        'Évaluation des risques professionnels',
-        'Conformité OHSAS 18001',
-        'Formation du personnel',
-        'Mise à jour des procédures'
+        t('audit_page.services.safety.features.risk_assessment'),
+        t('audit_page.services.safety.features.ohsas_18001'),
+        t('audit_page.services.safety.features.staff_training'),
+        t('audit_page.services.safety.features.procedure_update')
       ],
-      duration: '2-4 jours',
-      price: 'Sur devis'
+      duration: t('audit_page.services.safety.duration'),
+      price: t('audit_page.services.safety.price')
     },
     {
       id: 'consultation-strategique',
-      title: 'Consultation Stratégique',
-      description: 'Accompagnement dans la mise en place de systèmes de management intégrés.',
+      title: t('audit_page.services.strategic.title'),
+      description: t('audit_page.services.strategic.description'),
       icon: Users,
       color: 'bg-purple-100 text-purple-600',
       features: [
-        'Stratégie de certification',
-        'Formation des équipes',
-        'Suivi et accompagnement',
-        'Optimisation continue'
+        t('audit_page.services.strategic.features.certification_strategy'),
+        t('audit_page.services.strategic.features.team_training'),
+        t('audit_page.services.strategic.features.follow_up'),
+        t('audit_page.services.strategic.features.continuous_optimization')
       ],
-      duration: 'Variable',
-      price: 'Sur devis'
+      duration: t('audit_page.services.strategic.duration'),
+      price: t('audit_page.services.strategic.price')
     }
   ];
 
@@ -85,7 +85,7 @@ const AuditServices = () => {
             data-aos="fade-up"
             data-aos-duration="600"
           >
-            Nos Services d'Audit & Consultation
+            {t('audit_page.services.title')}
           </h2>
           <p 
             className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
@@ -93,8 +93,7 @@ const AuditServices = () => {
             data-aos-duration="600"
             data-aos-delay="200"
           >
-            Découvrez notre gamme complète de services d'audit et de consultation 
-            adaptés aux besoins spécifiques de votre entreprise.
+            {t('audit_page.services.description')}
           </p>
         </div>
 

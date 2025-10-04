@@ -35,9 +35,10 @@ const ContactInfo = () => {
         <div className="flex items-center gap-4">
           <MapPin className="w-6 h-6 text-primary" />
           <div>
-            <h3 className="font-semibold">Adresse :</h3>
-            <p>60, Boulevard du 30 juin, Immeuble Mayumbe, Niveau 6, Appartement 33</p>
-            <p>C/Gombe, Kinshasa, RDC</p>
+            <h3 className="font-semibold">{t('contact_page.hero.office.title')} :</h3>
+            <p 
+              dangerouslySetInnerHTML={{ __html: t('contact_page.hero.office.address') }}
+            />
           </div>
         </div>
       </div>

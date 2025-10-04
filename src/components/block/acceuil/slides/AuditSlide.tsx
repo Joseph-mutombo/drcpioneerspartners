@@ -1,15 +1,17 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { TrendingUp, ChevronRight } from 'lucide-react';
 import { SlideProps } from './SlideInterface';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { t } from 'i18next';
 
 const AuditSlide: React.FC<SlideProps> = ({ 
   isActive, 
   onActionClick, 
   onContactClick 
 }) => {
+  const { t } = useTranslation();
+  
   return (
     <div className="space-y-8 py-10 sm:py-0">
       <div 
@@ -22,7 +24,7 @@ const AuditSlide: React.FC<SlideProps> = ({
           <TrendingUp className="w-8 h-8" />
         </div>
         <div className="text-yellow-500 font-medium text-lg">
-          Audits & Conseil en Amélioration
+          {t('slides.audit.badge')}
         </div>
       </div>
 
@@ -33,7 +35,7 @@ const AuditSlide: React.FC<SlideProps> = ({
           data-aos-duration="800"
           data-aos-delay="200"
         >
-          Audit de Service TISSE 
+          {t('slides.audit.title')}
         </h1>
         
         <p 
@@ -42,7 +44,7 @@ const AuditSlide: React.FC<SlideProps> = ({
           data-aos-duration="800"
           data-aos-delay="400"
         >
-          Évaluez objectivement et optimisez vos performances en expérience client et bien-être employé grâce aux cadres d'audit et de conseil de l'ICXI.
+          {t('slides.audit.description')}
         </p>
       </div>
 
@@ -56,14 +58,14 @@ const AuditSlide: React.FC<SlideProps> = ({
           onClick={onActionClick}
           className="bg-yellow-500 hover:bg-yellow-600 text-brand-blue px-8 py-2 rounded-lg font-semibold flex items-center justify-center gap-2 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
         >
-          {t('slides.certification.cta_discover')}
+          {t('slides.audit.cta_discover')}
           <ChevronRight className="w-5 h-5" />
         </button>
         <button 
           onClick={onContactClick}
           className="border-2 border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-brand-blue px-8 py-2 rounded-lg font-semibold transition-all duration-300"
         >
-          {t('slides.certification.cta_contact')}
+          {t('slides.audit.cta_contact')}
         </button>
       </div>
     </div>

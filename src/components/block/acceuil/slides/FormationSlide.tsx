@@ -22,7 +22,7 @@ const FormationSlide: React.FC<SlideProps> = ({
           <Award className="w-8 h-8" />
         </div>
         <div className="text-yellow-500 font-medium text-lg">
-          Certifications Internationales ICXI
+          {t('slides.formation.badge')}
         </div>
       </div>
 
@@ -33,7 +33,7 @@ const FormationSlide: React.FC<SlideProps> = ({
           data-aos-duration="800"
           data-aos-delay="300"
         >
-          Certification d'Entreprise
+          {t('slides.formation.title')}
         </h1>
         
         <p 
@@ -42,7 +42,7 @@ const FormationSlide: React.FC<SlideProps> = ({
           data-aos-duration="800"
           data-aos-delay="400"
         >
-          Obtenez la <span className="font-bold text-yellow-500">Crédibilité Internationale Immédiate</span> d'une certification délivrée par l'ICXI, un atout majeur auprès de vos clients et partenaires, ouvrant la voie à la certification BSI
+          {t('slides.formation.description')}
         </p>
       </div>
 
@@ -56,14 +56,14 @@ const FormationSlide: React.FC<SlideProps> = ({
           onClick={onActionClick}
           className="bg-yellow-500 hover:bg-yellow-600 text-brand-blue px-8 py-2 rounded-lg font-semibold flex items-center justify-center gap-2 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
         >
-          En savoir plus
+          {t('slides.formation.cta_explore')}
           <ChevronRight className="w-5 h-5" />
         </button>
         <button 
           onClick={onContactClick}
           className="border-2 border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-brand-blue px-8 py-2 rounded-lg font-semibold transition-all duration-300"
         >
-          Nous contacter
+          {t('slides.formation.cta_contact')}
         </button>
       </div>
     </div>

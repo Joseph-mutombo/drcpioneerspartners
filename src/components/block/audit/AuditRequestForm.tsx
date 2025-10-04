@@ -36,20 +36,20 @@ const AuditRequestForm = () => {
   const { t } = useTranslation();
 
   const formSchema = z.object({
-    companyName: z.string().min(1, { message: "Le nom de l'entreprise est requis" }),
-    contactPerson: z.string().min(1, { message: "Le nom du contact est requis" }),
-    email: z.string().email({ message: "Adresse email invalide" }),
-    phone: z.string().min(1, { message: "Le numéro de téléphone est requis" }),
-    serviceType: z.string().min(1, { message: "Veuillez sélectionner un type de service" }),
-    companySize: z.string().min(1, { message: "Veuillez sélectionner la taille de l'entreprise" }),
-    industry: z.string().min(1, { message: "Veuillez sélectionner le secteur d'activité" }),
-    auditScope: z.string().min(1, { message: "Veuillez décrire le périmètre de l'audit" }),
-    objectives: z.string().min(1, { message: "Veuillez décrire les objectifs" }),
-    timeline: z.string().min(1, { message: "Veuillez indiquer le délai souhaité" }),
-    budget: z.string().min(1, { message: "Veuillez indiquer votre budget approximatif" }),
+    companyName: z.string().min(1, { message: t('audit_page.form.validation.company_name_required') }),
+    contactPerson: z.string().min(1, { message: t('audit_page.form.validation.contact_person_required') }),
+    email: z.string().email({ message: t('audit_page.form.validation.invalid_email') }),
+    phone: z.string().min(1, { message: t('audit_page.form.validation.phone_required') }),
+    serviceType: z.string().min(1, { message: t('audit_page.form.validation.service_type_required') }),
+    companySize: z.string().min(1, { message: t('audit_page.form.validation.company_size_required') }),
+    industry: z.string().min(1, { message: t('audit_page.form.validation.industry_required') }),
+    auditScope: z.string().min(1, { message: t('audit_page.form.validation.audit_scope_required') }),
+    objectives: z.string().min(1, { message: t('audit_page.form.validation.objectives_required') }),
+    timeline: z.string().min(1, { message: t('audit_page.form.validation.timeline_required') }),
+    budget: z.string().min(1, { message: t('audit_page.form.validation.budget_required') }),
     additionalInfo: z.string().optional(),
     agreeTerms: z.boolean().refine((val) => val === true, {
-      message: "Vous devez accepter les conditions"
+      message: t('audit_page.form.validation.terms_required')
     }),
     agreeNewsletter: z.boolean().optional()
   });
@@ -77,54 +77,54 @@ const AuditRequestForm = () => {
   function onSubmit(values: z.infer<typeof formSchema>) {
     console.log(values);
     toast({
-      title: "Demande envoyée avec succès",
-      description: "Nous vous contacterons dans les plus brefs délais pour discuter de votre projet.",
+      title: t('audit_page.form.success.title'),
+      description: t('audit_page.form.success.description'),
     });
     form.reset();
   }
 
   const serviceTypes = [
-    { value: "audit-qualite", label: "Audit de Qualité (ISO 9001)" },
-    { value: "audit-environnement", label: "Audit Environnemental (ISO 14001)" },
-    { value: "audit-securite", label: "Audit de Sécurité (OHSAS 18001)" },
-    { value: "consultation-strategique", label: "Consultation Stratégique" },
-    { value: "audit-complet", label: "Audit Complet (Multi-normes)" },
-    { value: "autre", label: "Autre (préciser dans les commentaires)" }
+    { value: "audit-qualite", label: t('audit_page.form.options.service_types.quality') },
+    { value: "audit-environnement", label: t('audit_page.form.options.service_types.environmental') },
+    { value: "audit-securite", label: t('audit_page.form.options.service_types.safety') },
+    { value: "consultation-strategique", label: t('audit_page.form.options.service_types.strategic') },
+    { value: "audit-complet", label: t('audit_page.form.options.service_types.complete') },
+    { value: "autre", label: t('audit_page.form.options.service_types.other') }
   ];
 
   const companySizes = [
-    { value: "micro", label: "Micro-entreprise (1-9 employés)" },
-    { value: "petite", label: "Petite entreprise (10-49 employés)" },
-    { value: "moyenne", label: "Moyenne entreprise (50-249 employés)" },
-    { value: "grande", label: "Grande entreprise (250+ employés)" }
+    { value: "micro", label: t('audit_page.form.options.company_sizes.micro') },
+    { value: "petite", label: t('audit_page.form.options.company_sizes.small') },
+    { value: "moyenne", label: t('audit_page.form.options.company_sizes.medium') },
+    { value: "grande", label: t('audit_page.form.options.company_sizes.large') }
   ];
 
   const industries = [
-    { value: "manufacturing", label: "Manufacturing / Industrie" },
-    { value: "services", label: "Services" },
-    { value: "construction", label: "Construction / BTP" },
-    { value: "healthcare", label: "Santé / Médical" },
-    { value: "food", label: "Agroalimentaire" },
-    { value: "technology", label: "Technologie / IT" },
-    { value: "retail", label: "Commerce / Distribution" },
-    { value: "other", label: "Autre" }
+    { value: "manufacturing", label: t('audit_page.form.options.industries.manufacturing') },
+    { value: "services", label: t('audit_page.form.options.industries.services') },
+    { value: "construction", label: t('audit_page.form.options.industries.construction') },
+    { value: "healthcare", label: t('audit_page.form.options.industries.healthcare') },
+    { value: "food", label: t('audit_page.form.options.industries.food') },
+    { value: "technology", label: t('audit_page.form.options.industries.technology') },
+    { value: "retail", label: t('audit_page.form.options.industries.retail') },
+    { value: "other", label: t('audit_page.form.options.industries.other') }
   ];
 
   const timelines = [
-    { value: "urgent", label: "Urgent (sous 1 mois)" },
-    { value: "1-3months", label: "1-3 mois" },
-    { value: "3-6months", label: "3-6 mois" },
-    { value: "6-12months", label: "6-12 mois" },
-    { value: "flexible", label: "Flexible" }
+    { value: "urgent", label: t('audit_page.form.options.timelines.urgent') },
+    { value: "1-3months", label: t('audit_page.form.options.timelines.1_3_months') },
+    { value: "3-6months", label: t('audit_page.form.options.timelines.3_6_months') },
+    { value: "6-12months", label: t('audit_page.form.options.timelines.6_12_months') },
+    { value: "flexible", label: t('audit_page.form.options.timelines.flexible') }
   ];
 
   const budgets = [
-    { value: "under-5k", label: "Moins de 5 000 $" },
-    { value: "5k-10k", label: "5 000 $ - 10 000 $" },
-    { value: "10k-25k", label: "10 000 $ - 25 000 $" },
-    { value: "25k-50k", label: "25 000 $ - 50 000 $" },
-    { value: "over-50k", label: "Plus de 50 000 $" },
-    { value: "discuss", label: "À discuter" }
+    { value: "under-5k", label: t('audit_page.form.options.budgets.under_5k') },
+    { value: "5k-10k", label: t('audit_page.form.options.budgets.5k_10k') },
+    { value: "10k-25k", label: t('audit_page.form.options.budgets.10k_25k') },
+    { value: "25k-50k", label: t('audit_page.form.options.budgets.25k_50k') },
+    { value: "over-50k", label: t('audit_page.form.options.budgets.over_50k') },
+    { value: "discuss", label: t('audit_page.form.options.budgets.discuss') }
   ];
 
   return (
@@ -137,7 +137,7 @@ const AuditRequestForm = () => {
             data-aos="fade-up"
             data-aos-duration="600"
           >
-            Demander un Audit
+            {t('audit_page.form.title')}
           </h2>
           <p 
             className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed"
@@ -145,8 +145,7 @@ const AuditRequestForm = () => {
             data-aos-duration="600"
             data-aos-delay="200"
           >
-            Remplissez ce formulaire pour nous faire part de vos besoins en audit et consultation. 
-            Nous vous contacterons dans les plus brefs délais.
+            {t('audit_page.form.description')}
           </p>
         </div>
 
@@ -163,7 +162,7 @@ const AuditRequestForm = () => {
               <div>
                 <h3 className="text-2xl font-semibold text-gray-900 mb-6 flex items-center gap-3">
                   <Building2 className="w-6 h-6 text-brand-blue" />
-                  Informations de l'entreprise
+                  {t('audit_page.form.sections.company_info')}
                 </h3>
                 
                 <div className="grid md:grid-cols-2 gap-6">
@@ -172,9 +171,9 @@ const AuditRequestForm = () => {
                     name="companyName"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Nom de l'entreprise *</FormLabel>
+                        <FormLabel>{t('audit_page.form.labels.company_name')}</FormLabel>
                         <FormControl>
-                          <Input placeholder="Nom de votre entreprise" {...field} />
+                          <Input placeholder={t('audit_page.form.placeholders.company_name')} {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -186,11 +185,11 @@ const AuditRequestForm = () => {
                     name="industry"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Secteur d'activité *</FormLabel>
+                        <FormLabel>{t('audit_page.form.labels.industry')}</FormLabel>
                         <Select onValueChange={field.onChange} defaultValue={field.value}>
                           <FormControl>
                             <SelectTrigger>
-                              <SelectValue placeholder="Sélectionnez votre secteur" />
+                              <SelectValue placeholder={t('audit_page.form.placeholders.industry')} />
                             </SelectTrigger>
                           </FormControl>
                           <SelectContent>
@@ -211,11 +210,11 @@ const AuditRequestForm = () => {
                     name="companySize"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Taille de l'entreprise *</FormLabel>
+                        <FormLabel>{t('audit_page.form.labels.company_size')}</FormLabel>
                         <Select onValueChange={field.onChange} defaultValue={field.value}>
                           <FormControl>
                             <SelectTrigger>
-                              <SelectValue placeholder="Sélectionnez la taille" />
+                              <SelectValue placeholder={t('audit_page.form.placeholders.company_size')} />
                             </SelectTrigger>
                           </FormControl>
                           <SelectContent>
@@ -237,7 +236,7 @@ const AuditRequestForm = () => {
               <div>
                 <h3 className="text-2xl font-semibold text-gray-900 mb-6 flex items-center gap-3">
                   <User className="w-6 h-6 text-brand-blue" />
-                  Informations de contact
+                  {t('audit_page.form.sections.contact_info')}
                 </h3>
                 
                 <div className="grid md:grid-cols-2 gap-6">
@@ -246,9 +245,9 @@ const AuditRequestForm = () => {
                     name="contactPerson"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Nom du contact *</FormLabel>
+                        <FormLabel>{t('audit_page.form.labels.contact_person')}</FormLabel>
                         <FormControl>
-                          <Input placeholder="Votre nom complet" {...field} />
+                          <Input placeholder={t('audit_page.form.placeholders.contact_person')} {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -260,9 +259,9 @@ const AuditRequestForm = () => {
                     name="email"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Email *</FormLabel>
+                        <FormLabel>{t('audit_page.form.labels.email')}</FormLabel>
                         <FormControl>
-                          <Input placeholder="votre@email.com" type="email" {...field} />
+                          <Input placeholder={t('audit_page.form.placeholders.email')} type="email" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -274,9 +273,9 @@ const AuditRequestForm = () => {
                     name="phone"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Téléphone *</FormLabel>
+                        <FormLabel>{t('audit_page.form.labels.phone')}</FormLabel>
                         <FormControl>
-                          <Input placeholder="+243 XXX XXX XXX" {...field} />
+                          <Input placeholder={t('audit_page.form.placeholders.phone')} {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -289,7 +288,7 @@ const AuditRequestForm = () => {
               <div>
                 <h3 className="text-2xl font-semibold text-gray-900 mb-6 flex items-center gap-3">
                   <FileText className="w-6 h-6 text-brand-blue" />
-                  Détails du projet
+                  {t('audit_page.form.sections.audit_details')}
                 </h3>
                 
                 <div className="space-y-6">
@@ -298,11 +297,11 @@ const AuditRequestForm = () => {
                     name="serviceType"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Type de service souhaité *</FormLabel>
+                        <FormLabel>{t('audit_page.form.labels.service_type')}</FormLabel>
                         <Select onValueChange={field.onChange} defaultValue={field.value}>
                           <FormControl>
                             <SelectTrigger>
-                              <SelectValue placeholder="Sélectionnez le type de service" />
+                              <SelectValue placeholder={t('audit_page.form.placeholders.service_type')} />
                             </SelectTrigger>
                           </FormControl>
                           <SelectContent>
@@ -323,10 +322,10 @@ const AuditRequestForm = () => {
                     name="auditScope"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Périmètre de l'audit *</FormLabel>
+                        <FormLabel>{t('audit_page.form.labels.audit_scope')}</FormLabel>
                         <FormControl>
                           <Textarea
-                            placeholder="Décrivez le périmètre souhaité pour l'audit (départements, processus, etc.)"
+                            placeholder={t('audit_page.form.placeholders.audit_scope')}
                             className="min-h-[100px]"
                             {...field}
                           />
@@ -341,10 +340,10 @@ const AuditRequestForm = () => {
                     name="objectives"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Objectifs de l'audit *</FormLabel>
+                        <FormLabel>{t('audit_page.form.labels.objectives')}</FormLabel>
                         <FormControl>
                           <Textarea
-                            placeholder="Quels sont vos objectifs principaux ? (certification, amélioration, conformité, etc.)"
+                            placeholder={t('audit_page.form.placeholders.objectives')}
                             className="min-h-[100px]"
                             {...field}
                           />
@@ -360,11 +359,11 @@ const AuditRequestForm = () => {
                       name="timeline"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Délai souhaité *</FormLabel>
+                          <FormLabel>{t('audit_page.form.labels.timeline')}</FormLabel>
                           <Select onValueChange={field.onChange} defaultValue={field.value}>
                             <FormControl>
                               <SelectTrigger>
-                                <SelectValue placeholder="Sélectionnez le délai" />
+                                <SelectValue placeholder={t('audit_page.form.placeholders.timeline')} />
                               </SelectTrigger>
                             </FormControl>
                             <SelectContent>
@@ -385,11 +384,11 @@ const AuditRequestForm = () => {
                       name="budget"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Budget approximatif *</FormLabel>
+                          <FormLabel>{t('audit_page.form.labels.budget')}</FormLabel>
                           <Select onValueChange={field.onChange} defaultValue={field.value}>
                             <FormControl>
                               <SelectTrigger>
-                                <SelectValue placeholder="Sélectionnez le budget" />
+                                <SelectValue placeholder={t('audit_page.form.placeholders.budget')} />
                               </SelectTrigger>
                             </FormControl>
                             <SelectContent>
@@ -411,10 +410,10 @@ const AuditRequestForm = () => {
                     name="additionalInfo"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Informations supplémentaires</FormLabel>
+                        <FormLabel>{t('audit_page.form.labels.additional_info')}</FormLabel>
                         <FormControl>
                           <Textarea
-                            placeholder="Toute information supplémentaire qui pourrait nous aider à mieux comprendre vos besoins"
+                            placeholder={t('audit_page.form.placeholders.additional_info')}
                             className="min-h-[100px]"
                             {...field}
                           />
@@ -441,7 +440,7 @@ const AuditRequestForm = () => {
                       </FormControl>
                       <div className="space-y-1 leading-none">
                         <FormLabel>
-                          J'accepte les conditions d'utilisation et la politique de confidentialité *
+                          {t('audit_page.form.labels.agree_terms')}
                         </FormLabel>
                         <FormMessage />
                       </div>
@@ -462,7 +461,7 @@ const AuditRequestForm = () => {
                       </FormControl>
                       <div className="space-y-1 leading-none">
                         <FormLabel>
-                          Je souhaite recevoir des informations sur vos services et actualités
+                          {t('audit_page.form.labels.agree_newsletter')}
                         </FormLabel>
                       </div>
                     </FormItem>
@@ -477,7 +476,7 @@ const AuditRequestForm = () => {
                   className="w-full group flex items-center justify-center gap-2 px-8 py-4 bg-brand-blue text-white font-semibold rounded-lg hover:bg-yellow-600 transition-colors duration-200"
                 >
                   <Send className="w-5 h-5" />
-                  <span>Envoyer la demande</span>
+                  <span>{t('audit_page.form.submit_button')}</span>
                 </Button>
               </div>
             </form>
@@ -493,7 +492,7 @@ const AuditRequestForm = () => {
         >
           <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
             <h3 className="text-xl font-semibold text-gray-900 mb-4">
-              Préférez-vous nous contacter directement ?
+              {t('audit_page.form.alternative_contact.title')}
             </h3>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 

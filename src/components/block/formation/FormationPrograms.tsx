@@ -19,78 +19,78 @@ const FormationPrograms = () => {
     {
       id: 'cxop',
       code: 'CXOP',
-      name: 'Customer Experience Officer Program',
-      description: 'Programme fondamental pour maîtriser les bases de l\'expérience client et développer les compétences essentielles.',
+      name: t('formations_page.programs.cxop.name'),
+      description: t('formations_page.programs.cxop.description'),
       icon: BookOpen,
       color: 'bg-blue-100 text-blue-600',
-      duration: '3 jours',
-      level: 'Fondamental',
-      target: 'Professionnels débutants, Responsables clientèle',
+      duration: t('formations_page.programs.cxop.duration'),
+      level: t('formations_page.programs.cxop.level'),
+      target: t('formations_page.programs.cxop.target'),
       benefits: [
-        'Comprendre les enjeux de l\'expérience client',
-        'Maîtriser les outils de mesure CX',
-        'Développer une culture client',
-        'Certification internationale'
+        t('formations_page.programs.cxop.benefits.understand_cx'),
+        t('formations_page.programs.cxop.benefits.master_tools'),
+        t('formations_page.programs.cxop.benefits.develop_culture'),
+        t('formations_page.programs.cxop.benefits.international_certification')
       ],
       status: 'coming-soon',
-      price: 'Sur devis'
+      price: t('formations_page.programs.cxop.price')
     },
     {
       id: 'cxmp',
       code: 'CXMP',
-      name: 'Customer Experience Management Program',
-      description: 'Programme avancé pour gérer et optimiser l\'expérience client à l\'échelle organisationnelle.',
+      name: t('formations_page.programs.cxmp.name'),
+      description: t('formations_page.programs.cxmp.description'),
       icon: Target,
       color: 'bg-green-100 text-green-600',
-      duration: '5 jours',
-      level: 'Avancé',
-      target: 'Managers, Chefs de projet CX',
+      duration: t('formations_page.programs.cxmp.duration'),
+      level: t('formations_page.programs.cxmp.level'),
+      target: t('formations_page.programs.cxmp.target'),
       benefits: [
-        'Stratégie CX organisationnelle',
-        'Gestion des équipes CX',
-        'Optimisation des processus',
-        'Métriques et KPIs avancés'
+        t('formations_page.programs.cxmp.benefits.organizational_strategy'),
+        t('formations_page.programs.cxmp.benefits.team_management'),
+        t('formations_page.programs.cxmp.benefits.process_optimization'),
+        t('formations_page.programs.cxmp.benefits.advanced_metrics')
       ],
       status: 'coming-soon',
-      price: 'Sur devis'
+      price: t('formations_page.programs.cxmp.price')
     },
     {
       id: 'cxlp',
       code: 'CXLP',
-      name: 'Customer Experience Leadership Program',
-      description: 'Programme expert pour diriger la transformation CX et développer une vision stratégique.',
+      name: t('formations_page.programs.cxlp.name'),
+      description: t('formations_page.programs.cxlp.description'),
       icon: Award,
       color: 'bg-purple-100 text-purple-600',
-      duration: '7 jours',
-      level: 'Expert',
-      target: 'Directeurs, VP, Leaders transformationnels',
+      duration: t('formations_page.programs.cxlp.duration'),
+      level: t('formations_page.programs.cxlp.level'),
+      target: t('formations_page.programs.cxlp.target'),
       benefits: [
-        'Leadership transformationnel',
-        'Vision stratégique CX',
-        'Gestion du changement',
-        'Innovation et disruption'
+        t('formations_page.programs.cxlp.benefits.transformational_leadership'),
+        t('formations_page.programs.cxlp.benefits.strategic_vision'),
+        t('formations_page.programs.cxlp.benefits.change_management'),
+        t('formations_page.programs.cxlp.benefits.innovation_disruption')
       ],
       status: 'coming-soon',
-      price: 'Sur devis'
+      price: t('formations_page.programs.cxlp.price')
     },
     {
       id: 'msc',
       code: 'MSC',
-      name: 'Masterclass Spécialisées',
-      description: 'Sessions intensives sur des sujets spécialisés de l\'expérience client et des technologies émergentes.',
+      name: t('formations_page.programs.msc.name'),
+      description: t('formations_page.programs.msc.description'),
       icon: Star,
       color: 'bg-orange-100 text-orange-600',
-      duration: '1-2 jours',
-      level: 'Spécialisé',
-      target: 'Experts, Consultants, Formateurs',
+      duration: t('formations_page.programs.msc.duration'),
+      level: t('formations_page.programs.msc.level'),
+      target: t('formations_page.programs.msc.target'),
       benefits: [
-        'Sujets d\'actualité',
-        'Technologies émergentes',
-        'Cas d\'étude avancés',
-        'Réseau d\'experts'
+        t('formations_page.programs.msc.benefits.current_topics'),
+        t('formations_page.programs.msc.benefits.emerging_technologies'),
+        t('formations_page.programs.msc.benefits.advanced_case_studies'),
+        t('formations_page.programs.msc.benefits.expert_network')
       ],
       status: 'coming-soon',
-      price: 'Sur devis'
+      price: t('formations_page.programs.msc.price')
     }
   ];
 
@@ -100,14 +100,14 @@ const FormationPrograms = () => {
         return (
           <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
             <Clock className="w-3 h-3 mr-1" />
-            Bientôt disponible
+            {t('formations_page.programs.status.coming_soon')}
           </span>
         );
       case 'available':
         return (
           <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
             <CheckCircle className="w-3 h-3 mr-1" />
-            Disponible
+            {t('formations_page.programs.status.available')}
           </span>
         );
       default:
@@ -116,17 +116,17 @@ const FormationPrograms = () => {
   };
 
   const getLevelColor = (level: string) => {
-    switch (level) {
-      case 'Fondamental':
-        return 'bg-blue-100 text-blue-800';
-      case 'Avancé':
-        return 'bg-green-100 text-green-800';
-      case 'Expert':
-        return 'bg-purple-100 text-purple-800';
-      case 'Spécialisé':
-        return 'bg-orange-100 text-orange-800';
-      default:
-        return 'bg-gray-100 text-gray-800';
+    // Comparer avec les valeurs traduites
+    if (level === t('formations_page.programs.levels.fundamental')) {
+      return 'bg-blue-100 text-blue-800';
+    } else if (level === t('formations_page.programs.levels.advanced')) {
+      return 'bg-green-100 text-green-800';
+    } else if (level === t('formations_page.programs.levels.expert')) {
+      return 'bg-purple-100 text-purple-800';
+    } else if (level === t('formations_page.programs.levels.specialized')) {
+      return 'bg-orange-100 text-orange-800';
+    } else {
+      return 'bg-gray-100 text-gray-800';
     }
   };
 
@@ -140,7 +140,7 @@ const FormationPrograms = () => {
             data-aos="fade-up"
             data-aos-duration="600"
           >
-            Nos Programmes de Formation
+            {t('formations_page.programs.title')}
           </h2>
           <p 
             className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
@@ -148,8 +148,7 @@ const FormationPrograms = () => {
             data-aos-duration="600"
             data-aos-delay="200"
           >
-            Découvrez notre gamme complète de programmes de formation en Customer Experience, 
-            conçus pour répondre aux besoins de tous les niveaux professionnels.
+            {t('formations_page.programs.description')}
           </p>
         </div>
 
@@ -190,15 +189,15 @@ const FormationPrograms = () => {
                 <div className="grid md:grid-cols-3 gap-4 mb-6">
                   <div className="flex items-center gap-2 text-sm text-gray-600">
                     <Clock className="w-4 h-4 text-gray-400" />
-                    <span><strong>Durée:</strong> {program.duration}</span>
+                    <span><strong>{t('formations_page.programs.labels.duration')}:</strong> {program.duration}</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm text-gray-600">
                     <Target className="w-4 h-4 text-gray-400" />
-                    <span><strong>Niveau:</strong> {program.level}</span>
+                    <span><strong>{t('formations_page.programs.labels.level')}:</strong> {program.level}</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm text-gray-600">
                     <Users className="w-4 h-4 text-gray-400" />
-                    <span><strong>Public:</strong> {program.target}</span>
+                    <span><strong>{t('formations_page.programs.labels.target')}:</strong> {program.target}</span>
                   </div>
                 </div>
 
@@ -211,7 +210,7 @@ const FormationPrograms = () => {
 
                 {/* Bénéfices */}
                 <div className="mb-6">
-                  <h5 className="text-lg font-semibold text-gray-900 mb-4">Ce que vous apprendrez :</h5>
+                  <h5 className="text-lg font-semibold text-gray-900 mb-4">{t('formations_page.programs.what_you_will_learn')}:</h5>
                   <ul className="space-y-2">
                     {program.benefits.map((benefit, benefitIndex) => (
                       <li key={benefitIndex} className="flex items-start gap-3">
@@ -236,7 +235,7 @@ const FormationPrograms = () => {
                     }`}
                   >
                     <span>
-                      {program.status === 'coming-soon' ? 'Bientôt disponible' : 'S\'inscrire'}
+                      {program.status === 'coming-soon' ? t('formations_page.programs.coming_soon') : t('formations_page.programs.register')}
                     </span>
                     {program.status !== 'coming-soon' && (
                       <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-200" />
@@ -256,18 +255,17 @@ const FormationPrograms = () => {
           data-aos-delay="400"
         >
           <h3 className="text-3xl font-bold mb-6">
-            Programmes en cours de finalisation
+            {t('formations_page.programs.finalization.title')}
           </h3>
           <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
-            Nos équipes d'experts travaillent actuellement sur le contenu détaillé de chaque programme. 
-            Inscrivez-vous à notre liste d'attente pour être informé dès le lancement.
+            {t('formations_page.programs.finalization.description')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button onClick={() => window.location.href = '/contact'} className="px-8 py-4 bg-yellow-600 text-white font-semibold rounded-lg hover:bg-yellow-700 transition-colors duration-200">
-              Nous contacter
+              {t('formations_page.programs.finalization.contact_us')}
             </button>
             <button onClick={() => window.location.href = '/contact'} className="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-brand-blue transition-colors duration-200">
-              Obtenir le prospectus
+              {t('formations_page.programs.finalization.get_prospectus')}
             </button>
           </div>
         </div>

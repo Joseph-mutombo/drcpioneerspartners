@@ -19,78 +19,78 @@ const CertificationPrograms = () => {
     {
       id: 'tisse',
       name: 'TISSE',
-      fullName: 'Standards d\'Excellence de Service',
-      description: 'Certification qui établit les standards d\'excellence dans la prestation de services, garantissant une qualité supérieure et une satisfaction client optimale.',
+      fullName: t('certifications_page.programs.tisse.full_name'),
+      description: t('certifications_page.programs.tisse.description'),
       icon: Star,
       color: 'bg-yellow-100 text-yellow-600',
-      duration: '3-6 mois',
-      level: 'Intermédiaire',
-      target: 'Professionnels du service client',
+      duration: t('certifications_page.programs.tisse.duration'),
+      level: t('certifications_page.programs.tisse.level'),
+      target: t('certifications_page.programs.tisse.target'),
       benefits: [
-        'Amélioration de la satisfaction client',
-        'Standardisation des processus de service',
-        'Reconnaissance internationale',
-        'Accès à un réseau de professionnels certifiés'
+        t('certifications_page.programs.tisse.benefits.client_satisfaction'),
+        t('certifications_page.programs.tisse.benefits.process_standardization'),
+        t('certifications_page.programs.tisse.benefits.international_recognition'),
+        t('certifications_page.programs.tisse.benefits.professional_network')
       ],
       status: 'coming-soon',
-      price: 'Sur devis'
+      price: t('certifications_page.programs.tisse.price')
     },
     {
       id: 'icxs',
       name: 'ICXS',
-      fullName: 'Certification Expérience Client',
-      description: 'Programme spécialisé dans l\'optimisation de l\'expérience client à travers tous les points de contact et canaux de communication.',
+      fullName: t('certifications_page.programs.icxs.full_name'),
+      description: t('certifications_page.programs.icxs.description'),
       icon: Users,
       color: 'bg-blue-100 text-blue-600',
-      duration: '4-8 mois',
-      level: 'Avancé',
-      target: 'Gestionnaires CX, Chefs de projet',
+      duration: t('certifications_page.programs.icxs.duration'),
+      level: t('certifications_page.programs.icxs.level'),
+      target: t('certifications_page.programs.icxs.target'),
       benefits: [
-        'Optimisation de l\'expérience client',
-        'Mesure et analyse des métriques CX',
-        'Stratégies de fidélisation',
-        'Certification reconnue par les employeurs'
+        t('certifications_page.programs.icxs.benefits.cx_optimization'),
+        t('certifications_page.programs.icxs.benefits.metrics_analysis'),
+        t('certifications_page.programs.icxs.benefits.loyalty_strategies'),
+        t('certifications_page.programs.icxs.benefits.employer_recognition')
       ],
       status: 'coming-soon',
-      price: 'Sur devis'
+      price: t('certifications_page.programs.icxs.price')
     },
     {
       id: 'idcxs',
       name: 'IDCXS',
-      fullName: 'Certification Expérience Digitale',
-      description: 'Certification axée sur l\'excellence de l\'expérience digitale, couvrant les plateformes numériques, l\'UX/UI et les technologies émergentes.',
+      fullName: t('certifications_page.programs.idcxs.full_name'),
+      description: t('certifications_page.programs.idcxs.description'),
       icon: Globe,
       color: 'bg-green-100 text-green-600',
-      duration: '5-10 mois',
-      level: 'Expert',
-      target: 'Développeurs, Designers UX/UI, Product Managers',
+      duration: t('certifications_page.programs.idcxs.duration'),
+      level: t('certifications_page.programs.idcxs.level'),
+      target: t('certifications_page.programs.idcxs.target'),
       benefits: [
-        'Maîtrise des technologies digitales',
-        'Design d\'expériences utilisateur optimales',
-        'Intégration des dernières tendances',
-        'Certification tech reconnue'
+        t('certifications_page.programs.idcxs.benefits.digital_mastery'),
+        t('certifications_page.programs.idcxs.benefits.ux_design'),
+        t('certifications_page.programs.idcxs.benefits.trend_integration'),
+        t('certifications_page.programs.idcxs.benefits.tech_certification')
       ],
       status: 'coming-soon',
-      price: 'Sur devis'
+      price: t('certifications_page.programs.idcxs.price')
     },
     {
       id: 'iehws',
       name: 'IEHWS',
-      fullName: 'Standards Bien-être Employé',
-      description: 'Programme dédié à l\'amélioration du bien-être et de l\'engagement des employés, créant un environnement de travail sain et productif.',
+      fullName: t('certifications_page.programs.iehws.full_name'),
+      description: t('certifications_page.programs.iehws.description'),
       icon: Heart,
       color: 'bg-red-100 text-red-600',
-      duration: '3-6 mois',
-      level: 'Intermédiaire',
-      target: 'RH, Managers, Responsables d\'équipe',
+      duration: t('certifications_page.programs.iehws.duration'),
+      level: t('certifications_page.programs.iehws.level'),
+      target: t('certifications_page.programs.iehws.target'),
       benefits: [
-        'Amélioration du bien-être au travail',
-        'Réduction du turnover',
-        'Augmentation de la productivité',
-        'Culture d\'entreprise positive'
+        t('certifications_page.programs.iehws.benefits.workplace_wellbeing'),
+        t('certifications_page.programs.iehws.benefits.turnover_reduction'),
+        t('certifications_page.programs.iehws.benefits.productivity_increase'),
+        t('certifications_page.programs.iehws.benefits.positive_culture')
       ],
       status: 'coming-soon',
-      price: 'Sur devis'
+      price: t('certifications_page.programs.iehws.price')
     }
   ];
 
@@ -100,14 +100,14 @@ const CertificationPrograms = () => {
         return (
           <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
             <Clock className="w-3 h-3 mr-1" />
-            Bientôt disponible
+            {t('certifications_page.programs.status.coming_soon')}
           </span>
         );
       case 'available':
         return (
           <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
             <CheckCircle className="w-3 h-3 mr-1" />
-            Disponible
+            {t('certifications_page.programs.status.available')}
           </span>
         );
       default:
@@ -125,7 +125,7 @@ const CertificationPrograms = () => {
             data-aos="fade-up"
             data-aos-duration="600"
           >
-            Nos Programmes de Certification
+            {t('certifications_page.programs.title')}
           </h2>
           <p 
             className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
@@ -133,8 +133,7 @@ const CertificationPrograms = () => {
             data-aos-duration="600"
             data-aos-delay="200"
           >
-            Découvrez nos programmes de certification professionnels conçus pour développer 
-            vos compétences et valoriser votre expertise dans différents domaines.
+            {t('certifications_page.programs.description')}
           </p>
         </div>
 
@@ -214,7 +213,7 @@ const CertificationPrograms = () => {
                     }`}
                   >
                     <span>
-                      {program.status === 'coming-soon' ? 'Bientôt disponible' : 'S\'inscrire'}
+                      {program.status === 'coming-soon' ? t('certifications_page.programs.status.coming_soon') : t('certifications_page.programs.register')}
                     </span>
                     {program.status !== 'coming-soon' && (
                       <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-200" />
@@ -234,18 +233,17 @@ const CertificationPrograms = () => {
           data-aos-delay="400"
         >
           <h3 className="text-3xl font-bold mb-6">
-            Programmes en cours de finalisation
+            {t('certifications_page.programs.finalization.title')}
           </h3>
           <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
-            Nos équipes d'experts travaillent actuellement sur le contenu détaillé de chaque programme. 
-            Inscrivez-vous à notre liste d'attente pour être informé dès le lancement.
+            {t('certifications_page.programs.finalization.description')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="px-8 py-4 bg-yellow-600 text-white font-semibold rounded-lg hover:bg-yellow-700 transition-colors duration-200">
-              S'inscrire à la liste d'attente
+              {t('certifications_page.programs.finalization.waitlist')}
             </button>
             <button className="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-brand-blue transition-colors duration-200">
-              Télécharger le prospectus
+              {t('certifications_page.programs.finalization.download_prospectus')}
             </button>
           </div>
         </div>

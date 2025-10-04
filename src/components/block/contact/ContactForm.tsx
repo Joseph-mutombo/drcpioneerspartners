@@ -56,12 +56,17 @@ const ContactForm = () => {
   const services = [
     { value: "certifications", label: t('contact_form.service_certifications') },
     { value: "formations", label: t('contact_form.service_formations') },
+    { value: "audit", label: t('contact_form.service_audit') },
+    { value: "pme", label: t('contact_form.service_pme') },
     { value: "other", label: t('contact_form.service_other') },
   ];
 
   return (
-    <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
-      <h2 className="text-2xl font-bold mb-6">{t('contact_form.title')}</h2>
+    <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300">
+      <div className="text-center mb-8">
+        <h2 className="text-3xl font-bold text-brand-blue mb-2">{t('contact_form.title')}</h2>
+        <p className="text-gray-600">{t('contact_page.form_section.form_description')}</p>
+      </div>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
           <FormField
@@ -144,7 +149,12 @@ const ContactForm = () => {
               </FormItem>
             )}
           />
-          <Button type="submit">{t('contact_form.submit')}</Button>
+          <Button 
+            type="submit" 
+            className="w-full bg-gradient-to-r from-brand-blue to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold py-3 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+          >
+            {t('contact_form.submit')}
+          </Button>
         </form>
       </Form>
     </div>

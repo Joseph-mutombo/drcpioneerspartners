@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { SlideData } from './slides/SlideInterface';
 import CertificationSlide from './slides/CertificationSlide';
@@ -11,46 +12,47 @@ import experts from '@/assets/images/employers.png';
 import GlobalSlide from './slides/GlobalSlide';
 
 const HeroSlider = () => {
+  const { t } = useTranslation();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlay, setIsAutoPlay] = useState(true);
 
   const slides: SlideData[] = [
     {
       id: 0,
-      title: "Certifications ICXI : L'Excellence Mondiale en RDC",
-      subtitle: "Obtenez les certifications reconnues mondialement (TISSE, ICXS, IDCXS, IEHWS) pour élever vos standards de service client et d'expérience employé aux meilleures pratiques internationales.",
+      title: t('slides.certification.title'),
+      subtitle: t('slides.certification.description'),
       imageUrl: heroImage,
       imageAlt: "Professionnels africains tenant des certificats de formation",
       component: GlobalSlide
     },
     {
       id: 1,
-      title: "Certifications ICXI : L'Excellence Mondiale en RDC",
-      subtitle: "Obtenez les certifications reconnues mondialement (TISSE, ICXS, IDCXS, IEHWS) pour élever vos standards de service client et d'expérience employé aux meilleures pratiques internationales.",
+      title: t('slides.certification.title'),
+      subtitle: t('slides.certification.description'),
       imageUrl: heroImage,
       imageAlt: "Professionnels africains tenant des certificats de formation",
       component: CertificationSlide
     },
     {
       id: 2,
-      title: "Formations ICXI : Développez Vos Talents en CX & EX",
-      subtitle: "Maîtrisez l'expérience client et le bien-être employé avec nos programmes certifiés (CXOP, CXMP, CXLP, Masterclass, MSc) dispensés localement en RDC.",
+      title: t('slides.formation.title'),
+      subtitle: t('slides.formation.description'),
       imageUrl: callCenter,
       imageAlt: "Formation en salle avec participants engagés",
       component: FormationSlide
     },
     {
       id: 3,
-      title: "Audits et Stratégies d'Amélioration CX/EX",
-      subtitle: "Évaluez objectivement et optimisez vos performances en expérience client et bien-être employé grâce aux cadres d'audit et de conseil de l'ICXI.",
+      title: t('slides.audit.title'),
+      subtitle: t('slides.audit.description'),
       imageUrl: "https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1926&q=80",
       imageAlt: "Équipe d'experts analysant des données de performance",
       component: AuditSlide
     },
     {
       id: 4,
-      title: "ICXI Navigators : CX & EX sur Mesure pour PME",
-      subtitle: "Des outils d'évaluation et d'amélioration accessibles et innovants, comme les ICXI Navigators, conçus spécifiquement pour les petites et moyennes entreprises de la RDC.",
+      title: t('slides.navigator.title'),
+      subtitle: t('slides.navigator.description'),
       imageUrl: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1926&q=80",
       imageAlt: "Entrepreneurs travaillant ensemble dans un environnement moderne",
       component: NavigatorSlide
