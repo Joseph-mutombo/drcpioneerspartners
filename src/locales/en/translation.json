@@ -778,6 +778,8 @@
     },
     "services": {
       "title": "Our Audit & Consulting Services",
+      "included_features": "What's included:",
+      "request_service": "Request this service",
       "description": "Discover our complete range of audit and consulting services adapted to the specific needs of your company.",
       "quality": {
         "title": "Quality Audit",
@@ -826,7 +828,58 @@
         },
         "duration": "Variable",
         "price": "On quote"
-      }
+      },
+      "cx_audit": {
+        "title": "Customer Experience Audit",
+        "description": "Evaluate and optimize customer experience across all touchpoints to maximize satisfaction.",
+        "features": {
+          "customer_journey": "Customer journey mapping",
+          "touchpoint_analysis": "Touchpoint analysis",
+          "satisfaction_measurement": "Customer satisfaction measurement",
+          "improvement_roadmap": "Improvement roadmap"
+        },
+        "duration": "3-5 days",
+        "price": "On quote"
+      },
+      "service_excellence": {
+        "title": "Service Excellence Audit",
+        "description": "Elevate your service standards according to TISSE standards for internationally recognized excellence.",
+        "features": {
+          "tisse_standards": "TISSE standards compliance",
+          "process_evaluation": "Service process evaluation",
+          "benchmarking": "Competitive benchmarking",
+          "best_practices": "Best practices integration"
+        },
+        "duration": "4-6 days",
+        "price": "On quote"
+      },
+      "digital_experience": {
+        "title": "Digital Experience Audit",
+        "description": "Optimize your digital presence with comprehensive UX/UI audits and accessibility testing.",
+        "features": {
+          "ux_evaluation": "User experience evaluation",
+          "usability_testing": "Usability testing",
+          "accessibility_audit": "Accessibility audit",
+          "performance_analysis": "Performance analysis"
+        },
+        "duration": "2-4 days",
+        "price": "On quote"
+      },
+      "employee_wellbeing": {
+        "title": "Employee Wellbeing Audit",
+        "description": "Improve employee engagement and wellbeing according to IEHWS standards.",
+        "features": {
+          "engagement_survey": "Employee engagement survey",
+          "culture_analysis": "Corporate culture analysis",
+          "workplace_assessment": "Workplace conditions assessment",
+          "improvement_plan": "Wellbeing improvement plan"
+        },
+        "duration": "3-5 days",
+        "price": "On quote"
+      },
+      "custom_service_title": "Need a customized service?",
+      "custom_service_description": "Our experts can adapt our services to your specific needs. Contact us to discuss your project.",
+      "request_custom_consultation": "Request a personalized consultation"
     },
     "process": {
       "title": "Our Audit Process",
@@ -874,6 +927,19 @@
           "personalized_recommendations": "Personalized recommendations"
         },
         "duration": "3-5 days"
+      },
+      "why_choose_title": "Why choose our process?",
+      "rigorous_planning": {
+        "title": "Rigorous planning",
+        "description": "Each step is carefully planned to optimize your time and our resources."
+      },
+      "expert_team": {
+        "title": "Expert team",
+        "description": "Our certified auditors have recognized expertise in their field."
+      },
+      "guaranteed_results": {
+        "title": "Guaranteed results",
+        "description": "We commit to providing you with concrete and applicable recommendations."
       }
     },
     "benefits": {
@@ -888,6 +954,28 @@
           "current_compliance_verification": "Current compliance verification",
           "action_plan": "Action plan for identified gaps",
           "follow_up": "Follow-up and compliance maintenance"
+        }
+      },
+      "customer_satisfaction": {
+        "title": "Customer Satisfaction",
+        "description": "Improve customer experience and increase satisfaction through our specialized audits.",
+        "stats": "40% improvement",
+        "details": {
+          "journey_mapping": "Customer journey mapping",
+          "touchpoint_analysis": "Touchpoint analysis",
+          "satisfaction_measurement": "Satisfaction measurement",
+          "improvement_roadmap": "Improvement roadmap"
+        }
+      },
+      "service_excellence": {
+        "title": "Service Excellence",
+        "description": "Elevate your service standards according to TISSE standards for recognized excellence.",
+        "stats": "TISSE Standards",
+        "details": {
+          "tisse_standards": "International TISSE standards",
+          "process_evaluation": "Process evaluation",
+          "benchmarking": "Competitive benchmarking",
+          "best_practices": "Best practices"
         }
       },
       "digital_transformation": {
@@ -910,6 +998,28 @@
           "culture_analysis": "Corporate culture analysis",
           "workplace_assessment": "Workplace conditions assessment",
           "improvement_plan": "Wellbeing improvement plan"
+        }
+      },
+      "operational_efficiency": {
+        "title": "Operational Efficiency",
+        "description": "Optimize your processes to increase efficiency and reduce costs.",
+        "stats": "Up to 30% improvement",
+        "details": {
+          "process_analysis": "Analysis of existing processes",
+          "bottleneck_identification": "Bottleneck identification",
+          "optimization_recommendations": "Optimization recommendations",
+          "performance_measurement": "Performance gain measurement"
+        }
+      },
+      "competitive_advantage": {
+        "title": "Competitive Advantage",
+        "description": "Stand out from the competition with recognized certifications and standardized processes.",
+        "stats": "Recognized certifications",
+        "details": {
+          "recognized_certifications": "Internationally recognized certifications",
+          "standardized_processes": "Standardized processes",
+          "brand_improvement": "Brand image improvement",
+          "new_markets": "Access to new markets"
         }
       },
       "efficiency": {
@@ -1072,37 +1182,37 @@
         }
       },
       "industries": {
-          "manufacturing": "Manufacturing",
-          "services": "Services",
-          "construction": "Construction",
-          "healthcare": "Healthcare",
-          "food": "Food",
-          "technology": "Technology",
-          "retail": "Retail",
-          "other": "Other"
-        },
-        "timelines": {
-          "immediate": "Immediate",
-          "1_month": "1 month",
-          "3_months": "3 months",
-          "6_months": "6 months",
-          "flexible": "Flexible",
-          "asap": "As soon as possible",
-          "1_3_months": "1-3 months",
-          "3_6_months": "3-6 months",
-          "6_12_months": "6-12 months"
-        },
-        "budgets": {
-          "under_5k": "Under $5,000",
-          "5k_10k": "$5,000 - $10,000",
-          "10k_25k": "$10,000 - $25,000",
-          "25k_50k": "$25,000 - $50,000",
-          "over_50k": "Over $50,000",
-          "under_1k": "Under $1,000",
-          "1k_5k": "$1,000 - $5,000",
-          "over_25k": "Over $25,000",
-          "discuss": "To discuss"
-        },
+        "manufacturing": "Manufacturing",
+        "services": "Services",
+        "construction": "Construction",
+        "healthcare": "Healthcare",
+        "food": "Food",
+        "technology": "Technology",
+        "retail": "Retail",
+        "other": "Other"
+      },
+      "timelines": {
+        "immediate": "Immediate",
+        "1_month": "1 month",
+        "3_months": "3 months",
+        "6_months": "6 months",
+        "flexible": "Flexible",
+        "asap": "As soon as possible",
+        "1_3_months": "1-3 months",
+        "3_6_months": "3-6 months",
+        "6_12_months": "6-12 months"
+      },
+      "budgets": {
+        "under_5k": "Under $5,000",
+        "5k_10k": "$5,000 - $10,000",
+        "10k_25k": "$10,000 - $25,000",
+        "25k_50k": "$25,000 - $50,000",
+        "over_50k": "Over $50,000",
+        "under_1k": "Under $1,000",
+        "1k_5k": "$1,000 - $5,000",
+        "over_25k": "Over $25,000",
+        "discuss": "To discuss"
+      },
       "validation": {
         "agree_terms_required": "You must accept the terms and conditions",
         "company_name_required": "Company name is required",
@@ -1861,6 +1971,143 @@
         }
       },
       "start_training_button": "Start my training"
+    }
+  },
+  "navigators_page": {
+    "hero": {
+      "title": "ICXI Navigators",
+      "description": "AI-based evaluation tools to revolutionize how organizations measure and improve their performance in customer experience, employee well-being and organizational efficiency.",
+      "cta_order": "Order now",
+      "cta_demo": "See demo",
+      "cta_brochure": "Download brochure"
+    },
+    "features": {
+      "title": "Why choose our Navigators?",
+      "subtitle": "Powerful tools designed to transform your organization with artificial intelligence",
+      "ai_intelligence": {
+        "title": "AI Intelligence",
+        "description": "Automated diagnostics based on artificial intelligence for instant insights"
+      },
+      "dashboards": {
+        "title": "Dashboards",
+        "description": "Clear performance visualization with real-time metrics"
+      },
+      "targeted_solutions": {
+        "title": "Targeted Solutions",
+        "description": "Strategies adapted to your sector and specific needs"
+      },
+      "sustainable_growth": {
+        "title": "Sustainable Growth",
+        "description": "Concrete improvement plans for measurable results"
+      }
+    },
+    "types": {
+      "title": "Our Navigators",
+      "subtitle": "Three specialized tools to cover all aspects of your organization",
+      "icxn2025": {
+        "name": "ICXN2025",
+        "full_name": "International Customer Experience Navigator",
+        "description": "Optimize customer experience with AI-based insights",
+        "features": {
+          "customer_journey": "Customer journey mapping",
+          "touchpoint_analysis": "Touchpoint analysis",
+          "satisfaction_measurement": "Satisfaction measurement",
+          "personalized_recommendations": "Personalized recommendations"
+        },
+        "cta": "Order ICXN2025"
+      },
+      "ibdn2025": {
+        "name": "IBDN2025",
+        "full_name": "International Business Director Navigator",
+        "description": "Improve organizational efficiency and performance",
+        "features": {
+          "organizational_maturity": "Organizational maturity assessment",
+          "business_process_analysis": "Business process analysis",
+          "competitive_benchmarking": "Competitive benchmarking",
+          "improvement_strategies": "Improvement strategies"
+        },
+        "cta": "Order IBDN2025"
+      },
+      "iehwn2025": {
+        "name": "IEHWN2025",
+        "full_name": "International Employee Happiness and Wellbeing Navigator",
+        "description": "Strengthen the well-being and engagement of your teams",
+        "features": {
+          "employee_engagement_survey": "Employee engagement survey",
+          "corporate_culture_analysis": "Corporate culture analysis",
+          "wellbeing_assessment": "Well-being assessment",
+          "personalized_improvement_plan": "Personalized improvement plan"
+        },
+        "cta": "Order IEHWN2025"
+      }
+    },
+    "industries": {
+      "title": "Adapted to all sectors",
+      "subtitle": "Our Navigators are designed to work in all types of organizations",
+      "list": [
+        "Healthcare",
+        "Education",
+        "Banking & Finance",
+        "Retail",
+        "Hospitality & Travel",
+        "Telecommunications",
+        "Government",
+        "Manufacturing",
+        "Professional Services",
+        "Real Estate",
+        "Energy & Utilities",
+        "Fitness & Wellness",
+        "Transport & Logistics",
+        "NGOs & Associations",
+        "Event Management"
+      ]
+    },
+    "implementation": {
+      "title": "Implementation methods",
+      "subtitle": "Choose the method that best suits your needs and resources",
+      "self_assessment": {
+        "title": "Self-assessment",
+        "description": "The organization completes the Navigator evaluation independently",
+        "benefits": {
+          "total_autonomy": "Total autonomy",
+          "reduced_cost": "Reduced cost",
+          "schedule_flexibility": "Schedule flexibility"
+        }
+      },
+      "assisted_evaluation": {
+        "title": "Assisted Evaluation",
+        "description": "A consultant guides and accompanies the team throughout the process",
+        "benefits": {
+          "expert_support": "Expert support",
+          "training_included": "Training included",
+          "optimized_results": "Optimized results"
+        }
+      },
+      "outsourced_evaluation": {
+        "title": "Outsourced Evaluation",
+        "description": "The consultant manages the entire evaluation for the organization",
+        "benefits": {
+          "time_saving": "Time saving",
+          "complete_expertise": "Complete expertise",
+          "detailed_report": "Detailed report"
+        }
+      }
+    },
+    "benefits": {
+      "title": "Navigator Benefits",
+      "subtitle": "Discover why our Navigators are the ideal choice for your organization",
+      "affordable_sme": "Affordable for SMEs",
+      "adapted_drc_market": "Adapted to DRC market",
+      "fast_results": "Fast results",
+      "continuous_support": "Continuous support",
+      "international_certification": "International certification",
+      "detailed_reports": "Detailed reports"
+    },
+    "cta": {
+      "title": "Ready to transform your organization?",
+      "description": "Start today with our Navigators and discover your organization's potential",
+      "order_now": "Order now",
+      "download_brochure": "Download brochure"
     }
   }
 }

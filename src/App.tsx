@@ -17,6 +17,7 @@ import Blog from "./pages/Blog";
 import Audit from "./pages/Audit";
 import Chatbot from "./components/block/chatbot";
 import GoToTopProvider from "./components/GoToTopProvider";
+import Navigators from "./pages/Navigators";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +32,7 @@ const App = () => (
         <Layout>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/navigators" element={<Navigators />} />
             <Route path="/audit-consultation" element={<Audit />} />
             <Route path="/formations" element={<Formations />} />
             <Route path="/certifications" element={<Certifications />} />

@@ -778,6 +778,8 @@
     },
     "services": {
       "title": "Nos Services d'Audit & Consultation",
+      "included_features": "Ce qui est inclus :",
+      "request_service": "Demander ce service",
       "description": "Découvrez notre gamme complète de services d'audit et de consultation adaptés aux besoins spécifiques de votre entreprise.",
       "quality": {
         "title": "Audit de Qualité",
@@ -826,7 +828,58 @@
         },
         "duration": "Variable",
         "price": "Sur devis"
-      }
+      },
+      "cx_audit": {
+        "title": "Audit Expérience Client",
+        "description": "Évaluez et optimisez l'expérience client à travers tous les points de contact pour maximiser la satisfaction.",
+        "features": {
+          "customer_journey": "Cartographie du parcours client",
+          "touchpoint_analysis": "Analyse des points de contact",
+          "satisfaction_measurement": "Mesure de la satisfaction client",
+          "improvement_roadmap": "Feuille de route d'amélioration"
+        },
+        "duration": "3-5 jours",
+        "price": "Sur devis"
+      },
+      "service_excellence": {
+        "title": "Audit Excellence de Service",
+        "description": "Élevez vos standards de service selon les normes TISSE pour une excellence reconnue internationalement.",
+        "features": {
+          "tisse_standards": "Conformité aux standards TISSE",
+          "process_evaluation": "Évaluation des processus de service",
+          "benchmarking": "Benchmarking concurrentiel",
+          "best_practices": "Intégration des meilleures pratiques"
+        },
+        "duration": "4-6 jours",
+        "price": "Sur devis"
+      },
+      "digital_experience": {
+        "title": "Audit Expérience Digitale",
+        "description": "Optimisez votre présence digitale avec des audits UX/UI et des tests d'accessibilité complets.",
+        "features": {
+          "ux_evaluation": "Évaluation de l'expérience utilisateur",
+          "usability_testing": "Tests d'utilisabilité",
+          "accessibility_audit": "Audit d'accessibilité",
+          "performance_analysis": "Analyse des performances"
+        },
+        "duration": "2-4 jours",
+        "price": "Sur devis"
+      },
+      "employee_wellbeing": {
+        "title": "Audit Bien-être Employé",
+        "description": "Améliorez l'engagement et le bien-être de vos équipes selon les standards IEHWS.",
+        "features": {
+          "engagement_survey": "Enquête d'engagement des employés",
+          "culture_analysis": "Analyse de la culture d'entreprise",
+          "workplace_assessment": "Évaluation des conditions de travail",
+          "improvement_plan": "Plan d'amélioration du bien-être"
+        },
+        "duration": "3-5 jours",
+        "price": "Sur devis"
+      },
+      "custom_service_title": "Besoin d'un service personnalisé ?",
+      "custom_service_description": "Nos experts peuvent adapter nos services à vos besoins spécifiques. Contactez-nous pour discuter de votre projet.",
+      "request_custom_consultation": "Demander une consultation personnalisée"
     },
     "process": {
       "title": "Notre Processus d'Audit",
@@ -874,6 +927,19 @@
           "personalized_recommendations": "Recommandations personnalisées"
         },
         "duration": "3-5 jours"
+      },
+      "why_choose_title": "Pourquoi choisir notre processus ?",
+      "rigorous_planning": {
+        "title": "Planification rigoureuse",
+        "description": "Chaque étape est soigneusement planifiée pour optimiser votre temps et nos ressources."
+      },
+      "expert_team": {
+        "title": "Équipe experte",
+        "description": "Nos auditeurs certifiés possèdent une expertise reconnue dans leur domaine."
+      },
+      "guaranteed_results": {
+        "title": "Résultats garantis",
+        "description": "Nous nous engageons à vous fournir des recommandations concrètes et applicables."
       }
     },
     "benefits": {
@@ -975,6 +1041,28 @@
           "company": "Eco Solutions"
         }
       },
+      "customer_satisfaction": {
+        "title": "Satisfaction Client",
+        "description": "Améliorez l'expérience client et augmentez la satisfaction grâce à nos audits spécialisés.",
+        "stats": "40% d'amélioration",
+        "details": {
+          "journey_mapping": "Cartographie du parcours client",
+          "touchpoint_analysis": "Analyse des points de contact",
+          "satisfaction_measurement": "Mesure de la satisfaction",
+          "improvement_roadmap": "Feuille de route d'amélioration"
+        }
+      },
+      "service_excellence": {
+        "title": "Excellence de Service",
+        "description": "Élevez vos standards de service selon les normes TISSE pour une excellence reconnue.",
+        "stats": "Standards TISSE",
+        "details": {
+          "tisse_standards": "Standards TISSE internationaux",
+          "process_evaluation": "Évaluation des processus",
+          "benchmarking": "Benchmarking concurrentiel",
+          "best_practices": "Meilleures pratiques"
+        }
+      },
       "digital_transformation": {
         "title": "Transformation Digitale",
         "description": "Optimisez votre expérience digitale avec des audits UX/UI et des tests d'accessibilité.",
@@ -995,6 +1083,28 @@
           "culture_analysis": "Analyse de la culture d'entreprise",
           "workplace_assessment": "Évaluation des conditions de travail",
           "improvement_plan": "Plan d'amélioration du bien-être"
+        }
+      },
+      "operational_efficiency": {
+        "title": "Efficacité Opérationnelle",
+        "description": "Optimisez vos processus pour augmenter l'efficacité et réduire les coûts.",
+        "stats": "Jusqu'à 30% d'amélioration",
+        "details": {
+          "process_analysis": "Analyse des processus existants",
+          "bottleneck_identification": "Identification des goulots d'étranglement",
+          "optimization_recommendations": "Recommandations d'optimisation",
+          "performance_measurement": "Mesure des gains de performance"
+        }
+      },
+      "competitive_advantage": {
+        "title": "Avantage Concurrentiel",
+        "description": "Distinguez-vous de la concurrence avec des certifications reconnues et des processus standardisés.",
+        "stats": "Certifications reconnues",
+        "details": {
+          "recognized_certifications": "Certifications reconnues internationalement",
+          "standardized_processes": "Processus standardisés",
+          "brand_improvement": "Amélioration de l'image de marque",
+          "new_markets": "Accès à de nouveaux marchés"
         }
       }
     },
@@ -1066,37 +1176,37 @@
         }
       },
       "industries": {
-          "manufacturing": "Manufacture",
-          "services": "Services",
-          "construction": "Construction",
-          "healthcare": "Santé",
-          "food": "Alimentaire",
-          "technology": "Technologie",
-          "retail": "Commerce de détail",
-          "other": "Autre"
-        },
-        "timelines": {
-          "immediate": "Immédiat",
-          "1_month": "1 mois",
-          "3_months": "3 mois",
-          "6_months": "6 mois",
-          "asap": "Dès que possible",
-          "1_3_months": "1-3 mois",
-          "3_6_months": "3-6 mois",
-          "6_12_months": "6-12 mois",
-          "flexible": "Flexible"
-        },
-        "budgets": {
-          "under_1k": "Moins de 1 000 $",
-          "1k_5k": "1 000 - 5 000 $",
-          "over_25k": "Plus de 25 000 $",
-          "under_5k": "Moins de 5 000 $",
-          "5k_10k": "5 000 - 10 000 $",
-          "10k_25k": "10 000 - 25 000 $",
-          "25k_50k": "25 000 - 50 000 $",
-          "over_50k": "Plus de 50 000 $",
-          "discuss": "À discuter"
-        },
+        "manufacturing": "Manufacture",
+        "services": "Services",
+        "construction": "Construction",
+        "healthcare": "Santé",
+        "food": "Alimentaire",
+        "technology": "Technologie",
+        "retail": "Commerce de détail",
+        "other": "Autre"
+      },
+      "timelines": {
+        "immediate": "Immédiat",
+        "1_month": "1 mois",
+        "3_months": "3 mois",
+        "6_months": "6 mois",
+        "asap": "Dès que possible",
+        "1_3_months": "1-3 mois",
+        "3_6_months": "3-6 mois",
+        "6_12_months": "6-12 mois",
+        "flexible": "Flexible"
+      },
+      "budgets": {
+        "under_1k": "Moins de 1 000 $",
+        "1k_5k": "1 000 - 5 000 $",
+        "over_25k": "Plus de 25 000 $",
+        "under_5k": "Moins de 5 000 $",
+        "5k_10k": "5 000 - 10 000 $",
+        "10k_25k": "10 000 - 25 000 $",
+        "25k_50k": "25 000 - 50 000 $",
+        "over_50k": "Plus de 50 000 $",
+        "discuss": "À discuter"
+      },
       "validation": {
         "company_name_required": "Le nom de l'entreprise est requis",
         "contact_person_required": "Le nom du contact est requis",
@@ -1554,6 +1664,143 @@
         "contact_us": "Nous contacter",
         "get_prospectus": "Obtenir le prospectus"
       }
+    }
+  },
+  "navigators_page": {
+    "hero": {
+      "title": "ICXI Navigators",
+      "description": "Des outils d'évaluation basés sur l'IA pour révolutionner la façon dont les organisations mesurent et améliorent leurs performances en expérience client, bien-être employé et efficacité organisationnelle.",
+      "cta_order": "Commander maintenant",
+      "cta_demo": "Voir la démo",
+      "cta_brochure": "Télécharger la brochure"
+    },
+    "features": {
+      "title": "Pourquoi choisir nos Navigators ?",
+      "subtitle": "Des outils puissants conçus pour transformer votre organisation avec l'intelligence artificielle",
+      "ai_intelligence": {
+        "title": "IA Intelligente",
+        "description": "Diagnostics automatisés basés sur l'intelligence artificielle pour des insights instantanés"
+      },
+      "dashboards": {
+        "title": "Tableaux de Bord",
+        "description": "Visualisation claire des performances avec des métriques en temps réel"
+      },
+      "targeted_solutions": {
+        "title": "Solutions Ciblées",
+        "description": "Stratégies adaptées à votre secteur et à vos besoins spécifiques"
+      },
+      "sustainable_growth": {
+        "title": "Croissance Durable",
+        "description": "Plans d'amélioration concrets pour des résultats mesurables"
+      }
+    },
+    "types": {
+      "title": "Nos Navigators",
+      "subtitle": "Trois outils spécialisés pour couvrir tous les aspects de votre organisation",
+      "icxn2025": {
+        "name": "ICXN2025",
+        "full_name": "International Customer Experience Navigator",
+        "description": "Optimisez l'expérience client avec des insights basés sur l'IA",
+        "features": {
+          "customer_journey": "Cartographie du parcours client",
+          "touchpoint_analysis": "Analyse des points de contact",
+          "satisfaction_measurement": "Mesure de la satisfaction",
+          "personalized_recommendations": "Recommandations personnalisées"
+        },
+        "cta": "Commander ICXN2025"
+      },
+      "ibdn2025": {
+        "name": "IBDN2025",
+        "full_name": "International Business Director Navigator",
+        "description": "Améliorez l'efficacité organisationnelle et la performance",
+        "features": {
+          "organizational_maturity": "Évaluation de la maturité organisationnelle",
+          "business_process_analysis": "Analyse des processus métier",
+          "competitive_benchmarking": "Benchmarking concurrentiel",
+          "improvement_strategies": "Stratégies d'amélioration"
+        },
+        "cta": "Commander IBDN2025"
+      },
+      "iehwn2025": {
+        "name": "IEHWN2025",
+        "full_name": "International Employee Happiness and Wellbeing Navigator",
+        "description": "Renforcez le bien-être et l'engagement de vos équipes",
+        "features": {
+          "employee_engagement_survey": "Enquête d'engagement employé",
+          "corporate_culture_analysis": "Analyse de la culture d'entreprise",
+          "wellbeing_assessment": "Évaluation du bien-être",
+          "personalized_improvement_plan": "Plan d'amélioration personnalisé"
+        },
+        "cta": "Commander IEHWN2025"
+      }
+    },
+    "industries": {
+      "title": "Adapté à tous les secteurs",
+      "subtitle": "Nos Navigators sont conçus pour fonctionner dans tous les types d'organisations",
+      "list": [
+        "Santé",
+        "Éducation",
+        "Banque & Finance",
+        "Commerce de détail",
+        "Hôtellerie & Voyage",
+        "Télécommunications",
+        "Gouvernement",
+        "Manufacture",
+        "Services professionnels",
+        "Immobilier",
+        "Énergie & Utilitaires",
+        "Fitness & Bien-être",
+        "Transport & Logistique",
+        "ONG & Associations",
+        "Gestion d'événements"
+      ]
+    },
+    "implementation": {
+      "title": "Méthodes d'implémentation",
+      "subtitle": "Choisissez la méthode qui correspond le mieux à vos besoins et ressources",
+      "self_assessment": {
+        "title": "Auto-évaluation",
+        "description": "L'organisation complète l'évaluation Navigator de manière indépendante",
+        "benefits": {
+          "total_autonomy": "Autonomie totale",
+          "reduced_cost": "Coût réduit",
+          "schedule_flexibility": "Flexibilité horaire"
+        }
+      },
+      "assisted_evaluation": {
+        "title": "Évaluation Assistée",
+        "description": "Un consultant guide et accompagne l'équipe tout au long du processus",
+        "benefits": {
+          "expert_support": "Support expert",
+          "training_included": "Formation incluse",
+          "optimized_results": "Résultats optimisés"
+        }
+      },
+      "outsourced_evaluation": {
+        "title": "Évaluation Externalisée",
+        "description": "Le consultant gère entièrement l'évaluation pour l'organisation",
+        "benefits": {
+          "time_saving": "Gain de temps",
+          "complete_expertise": "Expertise complète",
+          "detailed_report": "Rapport détaillé"
+        }
+      }
+    },
+    "benefits": {
+      "title": "Avantages des Navigators",
+      "subtitle": "Découvrez pourquoi nos Navigators sont le choix idéal pour votre organisation",
+      "affordable_sme": "Abordable pour PME",
+      "adapted_drc_market": "Adapté au marché RDC",
+      "fast_results": "Résultats rapides",
+      "continuous_support": "Support continu",
+      "international_certification": "Certification internationale",
+      "detailed_reports": "Rapports détaillés"
+    },
+    "cta": {
+      "title": "Prêt à transformer votre organisation ?",
+      "description": "Commencez dès aujourd'hui avec nos Navigators et découvrez le potentiel de votre organisation",
+      "order_now": "Commander maintenant",
+      "download_brochure": "Télécharger la brochure"
     }
   },
   "types": {

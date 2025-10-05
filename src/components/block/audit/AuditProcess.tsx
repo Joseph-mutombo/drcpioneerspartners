@@ -168,7 +168,7 @@ const AuditProcess = () => {
         >
           <div className="max-w-4xl mx-auto text-center">
             <h3 className="text-3xl font-bold mb-6">
-              Pourquoi choisir notre processus ?
+              {t('audit_page.process.why_choose_title')}
             </h3>
             
             <div className="grid md:grid-cols-3 gap-8 mt-8">
@@ -176,9 +176,9 @@ const AuditProcess = () => {
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-white/10 backdrop-blur-sm rounded-full mb-4">
                   <Calendar className="w-8 h-8 text-yellow-400" />
                 </div>
-                <h4 className="text-xl font-semibold mb-2">Planification rigoureuse</h4>
+                <h4 className="text-xl font-semibold mb-2">{t('audit_page.process.rigorous_planning.title')}</h4>
                 <p className="text-white/90">
-                  Chaque étape est soigneusement planifiée pour optimiser votre temps et nos ressources.
+                  {t('audit_page.process.rigorous_planning.description')}
                 </p>
               </div>
 
@@ -186,9 +186,9 @@ const AuditProcess = () => {
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-white/10 backdrop-blur-sm rounded-full mb-4">
                   <Users className="w-8 h-8 text-yellow-400" />
                 </div>
-                <h4 className="text-xl font-semibold mb-2">Équipe experte</h4>
+                <h4 className="text-xl font-semibold mb-2">{t('audit_page.process.expert_team.title')}</h4>
                 <p className="text-white/90">
-                  Nos auditeurs certifiés possèdent une expertise reconnue dans leur domaine.
+                  {t('audit_page.process.expert_team.description')}
                 </p>
               </div>
 
@@ -196,9 +196,9 @@ const AuditProcess = () => {
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-white/10 backdrop-blur-sm rounded-full mb-4">
                   <CheckCircle className="w-8 h-8 text-yellow-400" />
                 </div>
-                <h4 className="text-xl font-semibold mb-2">Résultats garantis</h4>
+                <h4 className="text-xl font-semibold mb-2">{t('audit_page.process.guaranteed_results.title')}</h4>
                 <p className="text-white/90">
-                  Nous nous engageons à vous fournir des recommandations concrètes et applicables.
+                  {t('audit_page.process.guaranteed_results.description')}
                 </p>
               </div>
             </div>

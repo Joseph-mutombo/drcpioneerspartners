@@ -156,7 +156,7 @@ const HeroSlider = () => {
             data-aos-delay="600"
           >
             <div className="relative">
-              <img src={experts} alt={slides[currentSlide].imageAlt} style={{ width: '130%', height: '130%' }} className="object-cover" />
+              <img src={experts} alt={slides[currentSlide].imageAlt} style={{ width: '130%', height: '130%' }} className="object-cover mt-10" />
               
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-blue-300/30 rounded-full animate-pulse"></div>
               <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-blue-400/20 rounded-full animate-pulse delay-1000"></div>

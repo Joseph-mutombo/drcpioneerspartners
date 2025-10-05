@@ -8,6 +8,7 @@ import {
   Clock,
   ArrowRight
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const AuditServices = () => {
   const { t } = useTranslation();
@@ -126,7 +127,7 @@ const AuditServices = () => {
 
                 {/* Fonctionnalités */}
                 <div className="mb-6">
-                  <h4 className="text-lg font-semibold text-gray-900 mb-4">Ce qui est inclus :</h4>
+                  <h4 className="text-lg font-semibold text-gray-900 mb-4">{t('audit_page.services.included_features')}</h4>
                   <ul className="space-y-3">
                     {service.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-center gap-3">
@@ -151,8 +152,13 @@ const AuditServices = () => {
                 </div>
 
                 {/* CTA */}
-                <button className="w-full group/btn flex items-center justify-center gap-2 px-6 py-3 bg-brand-blue text-white font-semibold rounded-lg hover:bg-yellow-600 transition-colors duration-200">
-                  <span>Demander ce service</span>
+                <button onClick={() => {
+                const element = document.getElementById('audit-form');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth' });
+                }
+              }} className="w-full group/btn flex items-center justify-center gap-2 px-6 py-3 bg-brand-blue text-white font-semibold rounded-lg hover:bg-yellow-600 transition-colors duration-200">
+                  <span>{t('audit_page.services.request_service')}</span>
                   <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-200" />
                 </button>
               </div>
@@ -169,14 +175,21 @@ const AuditServices = () => {
         >
           <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Besoin d'un service personnalisé ?
+              {t('audit_page.services.custom_service_title')}
             </h3>
             <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-              Nos experts peuvent adapter nos services à vos besoins spécifiques. 
-              Contactez-nous pour discuter de votre projet.
+              {t('audit_page.services.custom_service_description')}
             </p>
-            <button className="px-8 py-4 bg-gradient-to-r from-brand-blue to-blue-600 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-200 shadow-lg hover:shadow-xl">
-              Demander une consultation personnalisée
+            <button 
+              onClick={() => {
+                const element = document.getElementById('audit-form');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+              className="px-8 py-4 bg-gradient-to-r from-brand-blue to-blue-600 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-200 shadow-lg hover:shadow-xl"
+            >
+              {t('audit_page.services.request_custom_consultation')}
             </button>
           </div>
         </div>

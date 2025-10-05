@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { BookOpen, Users, Award, Clock, TrendingUp, Monitor, CheckCircle } from 'lucide-react';
+import formationHero from '@/assets/images/professor.png';
 
 const FormationHero = () => {
   const { t } = useTranslation();
@@ -42,7 +43,7 @@ const FormationHero = () => {
     <div 
       className="text-white overflow-hidden relative"
       style={{
-        backgroundImage: 'linear-gradient(rgba(13, 27, 62, 0.9), rgba(13, 27, 62, 0.8)), url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80")',
+        backgroundImage: 'linear-gradient(rgba(13, 27, 62, 0.9), rgba(13, 27, 62, 0.8)), url("' + formationHero + '")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'
@@ -72,7 +73,7 @@ const FormationHero = () => {
             </h1>
             
             <p 
-              className="text-xl text-white/90 mb-8 max-w-4xl leading-relaxed"
+              className=" text-white/90 mb-8 max-w-4xl leading-relaxed"
               data-aos="fade-up"
               data-aos-duration="800"
               data-aos-delay="400"
@@ -154,7 +155,7 @@ const FormationHero = () => {
           </div> */}
 
           {/* Avantages */}
-          <div 
+          {/* <div 
             className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
             data-aos="fade-up"
             data-aos-duration="800"
@@ -172,7 +173,7 @@ const FormationHero = () => {
                 </div>
               );
             })}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

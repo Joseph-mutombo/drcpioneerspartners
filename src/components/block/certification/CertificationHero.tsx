@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Award, Globe, CheckCircle, Building2, Users, Star } from 'lucide-react';
+import certificationHero from '@/assets/images/certification.png';
 
 const CertificationHero = () => {
   const { t } = useTranslation();
@@ -15,7 +16,7 @@ const CertificationHero = () => {
     <div 
       className="text-white overflow-hidden relative"
       style={{
-        backgroundImage: 'linear-gradient(rgba(13, 27, 62, 0.9), rgba(13, 27, 62, 0.8)), url("https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80")',
+        backgroundImage: 'linear-gradient(rgba(13, 27, 62, 0.9), rgba(13, 27, 62, 0.8)), url("' + certificationHero + '")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'
@@ -77,7 +78,7 @@ const CertificationHero = () => {
           </div>
 
           {/* Statistiques */}
-          <div 
+          {/* <div 
             className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16"
             data-aos="fade-up"
             data-aos-duration="800"
@@ -114,7 +115,7 @@ const CertificationHero = () => {
               <div className="text-4xl font-bold text-yellow-500 mb-2">5000+</div>
               <div className="text-white/90">{t('certifications_page.hero.stats.professionals')}</div>
             </div>
-          </div>
+          </div> */}
 
           {/* Types de certification */}
           {/* <div 

@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Shield, CheckCircle, Building2, Users } from 'lucide-react';
+import auditHero from '@/assets/images/audit.jpg';
 
 const AuditHero = () => {
   const { t } = useTranslation();
@@ -8,7 +9,7 @@ const AuditHero = () => {
     <div 
       className="text-white overflow-hidden relative"
       style={{
-        backgroundImage: 'linear-gradient(rgba(13, 27, 62, 0.9), rgba(13, 27, 62, 0.8)), url("https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=2126&q=80")',
+        backgroundImage: 'linear-gradient(rgba(13, 27, 62, 0.9), rgba(13, 27, 62, 0.8)), url("' + auditHero + '")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'

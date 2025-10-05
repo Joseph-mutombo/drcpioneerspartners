@@ -106,7 +106,7 @@ const PMECall = () => {
           {/* CTA */}
           <div className="text-center">
             <Link
-              to="/services#navigators"
+              to="/navigators"
               className="inline-flex items-center bg-yellow-500 hover:bg-yellow-600 text-brand-blue px-8 py-3 rounded-lg font-semibold transition-colors duration-300"
             >
                 <span>{t('services.pme_solutions.cta')}</span>

@@ -84,7 +84,7 @@ const Services = () => {
       case 'certifications':
         return '/certifications';
       case 'navigators':
-        return '/services#navigators';
+        return '/navigators';
       case 'msc':
         return '/formations#msc';
       default:

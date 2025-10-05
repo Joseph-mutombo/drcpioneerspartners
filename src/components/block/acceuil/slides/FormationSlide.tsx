@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Users, ChevronRight, Award } from 'lucide-react';
 import { SlideProps } from './SlideInterface';
+import { Link } from 'react-router-dom';
 
 const FormationSlide: React.FC<SlideProps> = ({ 
   isActive, 
@@ -52,19 +53,19 @@ const FormationSlide: React.FC<SlideProps> = ({
         data-aos-duration="800"
         data-aos-delay="500"
       >
-        <button 
-          onClick={onActionClick}
+        <Link 
+          to="/formations"
           className="bg-yellow-500 hover:bg-yellow-600 text-brand-blue px-8 py-2 rounded-lg font-semibold flex items-center justify-center gap-2 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-        >
+                >
           {t('slides.formation.cta_explore')}
           <ChevronRight className="w-5 h-5" />
-        </button>
-        <button 
-          onClick={onContactClick}
+        </Link>
+        <Link 
+          to="/contact"
           className="border-2 border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-brand-blue px-8 py-2 rounded-lg font-semibold transition-all duration-300"
-        >
+          >
           {t('slides.formation.cta_contact')}
-        </button>
+        </Link>
       </div>
     </div>
   );
