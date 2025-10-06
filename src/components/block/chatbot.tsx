@@ -9,6 +9,7 @@ import {
   Maximize2,
   Loader2
 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 interface Message {
   id: number;
@@ -25,6 +26,7 @@ const Chatbot = () => {
   const [isTyping, setIsTyping] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const { t } = useTranslation();
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -46,7 +48,7 @@ const Chatbot = () => {
     if (messages.length === 0) {
       // Message de bienvenue automatique
       setTimeout(() => {
-        addBotMessage("Bonjour ! Je suis l'assistant virtuel de DRC Pioneers. Comment puis-je vous aider aujourd'hui ?");
+        addBotMessage(t('chatbot.welcome_message'));
       }, 500);
     }
   };
@@ -99,16 +101,16 @@ const Chatbot = () => {
           userMessage.toLowerCase().includes('salut') || 
           userMessage.toLowerCase().includes('hello') ||
           userMessage.toLowerCase().includes('bonsoir')) {
-        response = "Bonjour ! Je suis ravi de vous accueillir. Comment puis-je vous aider aujourd'hui ?";
+        response = t('chatbot.responses.greeting');
       } else if (userMessage.toLowerCase().includes('merci') || 
                  userMessage.toLowerCase().includes('thanks')) {
-        response = "De rien ! C'est un plaisir de vous aider. Y a-t-il autre chose que je puisse faire pour vous ?";
+        response = t('chatbot.responses.thanks');
       } else if (userMessage.toLowerCase().includes('au revoir') || 
                  userMessage.toLowerCase().includes('bye') ||
                  userMessage.toLowerCase().includes('à bientôt')) {
-        response = "Au revoir ! N'hésitez pas à revenir si vous avez d'autres questions. Bonne journée !";
+        response = t('chatbot.responses.goodbye');
       } else {
-        response = "Merci pour votre message ! Je suis encore en cours de développement et ne peux pas répondre à toutes les questions pour le moment. Pour toute information spécifique, n'hésitez pas à nous contacter directement via notre formulaire de contact ou par téléphone au +243 978 847 886.";
+        response = t('chatbot.responses.default');
       }
       
       addBotMessage(response);
@@ -116,7 +118,7 @@ const Chatbot = () => {
   };
 
   const formatTime = (date: Date) => {
-    return date.toLocaleTimeString('fr-FR', { 
+    return date.toLocaleTimeString(t('common.locale', { defaultValue: 'fr-FR' }), { 
       hour: '2-digit', 
       minute: '2-digit' 
     });
@@ -149,8 +151,8 @@ const Chatbot = () => {
                 <Bot className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="font-semibold">Assistant DRC Pioneers</h3>
-                <p className="text-xs text-white/80">En ligne</p>
+                <h3 className="font-semibold">{t('chatbot.title')}</h3>
+                <p className="text-xs text-white/80">{t('chatbot.status_online')}</p>
               </div>
             </div>
             <div className="flex items-center gap-2">
@@ -231,7 +233,7 @@ const Chatbot = () => {
                     type="text"
                     value={inputValue}
                     onChange={(e) => setInputValue(e.target.value)}
-                    placeholder="Tapez votre message..."
+                    placeholder={t('chatbot.placeholder')}
                     className="flex-1 px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-blue focus:border-transparent text-sm"
                     disabled={isTyping}
                   />

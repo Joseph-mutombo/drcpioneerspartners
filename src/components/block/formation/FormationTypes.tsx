@@ -11,6 +11,7 @@ import {
   Monitor,
   Globe
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const FormationTypes = () => {
   const { t } = useTranslation();
@@ -120,6 +121,13 @@ const FormationTypes = () => {
     }
   ];
 
+  const handleRequestFormation = () => {
+    const element = document.getElementById('formation-request-form');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
@@ -186,11 +194,13 @@ const FormationTypes = () => {
                 );
               })}
             </div>
-
-            <button className="w-full group flex items-center justify-center gap-2 px-8 py-4 bg-yellow-500 text-brand-blue font-semibold rounded-lg hover:bg-yellow-600 transition-all duration-200">
+            <Link 
+              to="/audit-consultation#audit-request-form" 
+              className="w-full group flex items-center justify-center gap-2 px-8 py-4 bg-yellow-500 text-brand-blue font-semibold rounded-lg hover:bg-yellow-600 transition-all duration-200"
+            >
               <span>{t('formations_page.types.enterprise.request_quote_button')}</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
-            </button>
+            </Link>
           </div>
 
           {/* Particuliers */}
@@ -236,7 +246,7 @@ const FormationTypes = () => {
               })}
             </div>
 
-            <button className="w-full group flex items-center justify-center gap-2 px-8 py-4 bg-brand-blue text-white font-semibold rounded-lg hover:bg-yellow-600 transition-all duration-200">
+            <button onClick={handleRequestFormation} className="w-full group flex items-center justify-center gap-2 px-8 py-4 bg-brand-blue text-white font-semibold rounded-lg hover:bg-yellow-600 transition-all duration-200">
               <span>{t('formations_page.types.individual.register_button')}</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
             </button>

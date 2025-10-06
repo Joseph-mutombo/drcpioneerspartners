@@ -1977,6 +1977,25 @@
     "start_training_button": "Commencer ma formation"
   }
   },
+  "common": {
+    "locale": "fr-FR"
+  },
+  "totop": {
+    "aria_label": "Retour en haut de la page",
+    "tooltip": "Retour en haut"
+  },
+  "chatbot": {
+    "welcome_message": "Bonjour ! Je suis l'assistant virtuel de DRC Pioneers. Comment puis-je vous aider aujourd'hui ?",
+    "title": "Assistant DRC Pioneers",
+    "status_online": "En ligne",
+    "placeholder": "Tapez votre message...",
+    "responses": {
+      "greeting": "Bonjour ! Je suis ravi de vous accueillir. Comment puis-je vous aider aujourd'hui ?",
+      "thanks": "De rien ! C'est un plaisir de vous aider. Y a-t-il autre chose que je puisse faire pour vous ?",
+      "goodbye": "Au revoir ! N'hésitez pas à revenir si vous avez d'autres questions. Bonne journée !",
+      "default": "Merci pour votre message ! Je suis encore en cours de développement et ne peux pas répondre à toutes les questions pour le moment. Pour toute information spécifique, n'hésitez pas à nous contacter directement via notre formulaire de contact ou par téléphone au +243 978 847 886."
+    }
+  },
   "navigators_page": {
     "hero": {
       "title": "ICXI Navigators",

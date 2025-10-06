@@ -126,7 +126,7 @@ const FormationRequestForm = () => {
   ];
 
   return (
-    <div className="py-20 bg-gray-50">
+    <div className="py-20 bg-gray-50" id="formation-request-form">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-16">
         {/* En-tête */}
         <div className="text-center mb-12">
