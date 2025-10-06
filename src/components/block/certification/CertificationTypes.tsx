@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import { 
   Building2, 
   Users, 
@@ -120,6 +121,13 @@ const CertificationTypes = () => {
     }
   ];
 
+  const handleRequestCertification = () => {
+    const element = document.getElementById('certification-request-form');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
@@ -187,10 +195,13 @@ const CertificationTypes = () => {
               })}
             </div>
 
-            <button className="w-full group flex items-center justify-center gap-2 px-8 py-4 bg-yellow-500 text-brand-blue font-semibold rounded-lg hover:bg-yellow-600 transition-all duration-200">
+            <Link 
+              to="/audit-consultation#audit-request-form" 
+              className="w-full group flex items-center justify-center gap-2 px-8 py-4 bg-yellow-500 text-brand-blue font-semibold rounded-lg hover:bg-yellow-600 transition-all duration-200"
+            >
               <span>{t('certifications_page.types.enterprise.request_quote')}</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
-            </button>
+            </Link>
           </div>
 
           {/* Particuliers */}
@@ -236,7 +247,7 @@ const CertificationTypes = () => {
               })}
             </div>
 
-            <button className="w-full group flex items-center justify-center gap-2 px-8 py-4 bg-brand-blue text-white font-semibold rounded-lg hover:bg-yellow-600 transition-all duration-200">
+            <button onClick={handleRequestCertification} className="w-full group flex items-center justify-center gap-2 px-8 py-4 bg-brand-blue text-white font-semibold rounded-lg hover:bg-yellow-600 transition-all duration-200">
               <span>{t('certifications_page.types.individual.register')}</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
             </button>

@@ -22,15 +22,14 @@ const ContactHero = () => {
         >
           <h1 className="text-5xl font-bold">{t('pages.contact_title')}</h1>
           <p className="mt-4 text-lg text-white/90">
-            Pour toute question ou demande de service, n'hésitez pas à nous contacter. 
-            Notre équipe est à votre disposition pour vous aider.
+            {t('contact_page.hero.description')}
           </p>
         </div>
         <img 
           src={callCenter} 
           data-aos="fade-left" 
           alt="call center" 
-          style={{ width: '41%', height: '41%' }} 
+          style={{ width: '45%', height: '45%' }} 
           className="hidden lg:flex object-cover" 
         />
       </div>

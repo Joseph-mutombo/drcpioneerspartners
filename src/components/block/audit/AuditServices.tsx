@@ -13,6 +13,13 @@ import { Link } from 'react-router-dom';
 const AuditServices = () => {
   const { t } = useTranslation();
 
+  const handleRequestService = () => {
+    const element = document.getElementById('audit-request-form');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const services = [
     {
       id: 'audit-cx',
@@ -152,12 +159,7 @@ const AuditServices = () => {
                 </div>
 
                 {/* CTA */}
-                <button onClick={() => {
-                const element = document.getElementById('audit-form');
-                if (element) {
-                  element.scrollIntoView({ behavior: 'smooth' });
-                }
-              }} className="w-full group/btn flex items-center justify-center gap-2 px-6 py-3 bg-brand-blue text-white font-semibold rounded-lg hover:bg-yellow-600 transition-colors duration-200">
+                <button onClick={handleRequestService} className="w-full group/btn flex items-center justify-center gap-2 px-6 py-3 bg-brand-blue text-white font-semibold rounded-lg hover:bg-yellow-600 transition-colors duration-200">
                   <span>{t('audit_page.services.request_service')}</span>
                   <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-200" />
                 </button>

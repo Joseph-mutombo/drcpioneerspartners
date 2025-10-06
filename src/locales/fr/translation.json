@@ -1664,146 +1664,8 @@
         "contact_us": "Nous contacter",
         "get_prospectus": "Obtenir le prospectus"
       }
-    }
-  },
-  "navigators_page": {
-    "hero": {
-      "title": "ICXI Navigators",
-      "description": "Des outils d'évaluation basés sur l'IA pour révolutionner la façon dont les organisations mesurent et améliorent leurs performances en expérience client, bien-être employé et efficacité organisationnelle.",
-      "cta_order": "Commander maintenant",
-      "cta_demo": "Voir la démo",
-      "cta_brochure": "Télécharger la brochure"
-    },
-    "features": {
-      "title": "Pourquoi choisir nos Navigators ?",
-      "subtitle": "Des outils puissants conçus pour transformer votre organisation avec l'intelligence artificielle",
-      "ai_intelligence": {
-        "title": "IA Intelligente",
-        "description": "Diagnostics automatisés basés sur l'intelligence artificielle pour des insights instantanés"
-      },
-      "dashboards": {
-        "title": "Tableaux de Bord",
-        "description": "Visualisation claire des performances avec des métriques en temps réel"
-      },
-      "targeted_solutions": {
-        "title": "Solutions Ciblées",
-        "description": "Stratégies adaptées à votre secteur et à vos besoins spécifiques"
-      },
-      "sustainable_growth": {
-        "title": "Croissance Durable",
-        "description": "Plans d'amélioration concrets pour des résultats mesurables"
-      }
     },
     "types": {
-      "title": "Nos Navigators",
-      "subtitle": "Trois outils spécialisés pour couvrir tous les aspects de votre organisation",
-      "icxn2025": {
-        "name": "ICXN2025",
-        "full_name": "International Customer Experience Navigator",
-        "description": "Optimisez l'expérience client avec des insights basés sur l'IA",
-        "features": {
-          "customer_journey": "Cartographie du parcours client",
-          "touchpoint_analysis": "Analyse des points de contact",
-          "satisfaction_measurement": "Mesure de la satisfaction",
-          "personalized_recommendations": "Recommandations personnalisées"
-        },
-        "cta": "Commander ICXN2025"
-      },
-      "ibdn2025": {
-        "name": "IBDN2025",
-        "full_name": "International Business Director Navigator",
-        "description": "Améliorez l'efficacité organisationnelle et la performance",
-        "features": {
-          "organizational_maturity": "Évaluation de la maturité organisationnelle",
-          "business_process_analysis": "Analyse des processus métier",
-          "competitive_benchmarking": "Benchmarking concurrentiel",
-          "improvement_strategies": "Stratégies d'amélioration"
-        },
-        "cta": "Commander IBDN2025"
-      },
-      "iehwn2025": {
-        "name": "IEHWN2025",
-        "full_name": "International Employee Happiness and Wellbeing Navigator",
-        "description": "Renforcez le bien-être et l'engagement de vos équipes",
-        "features": {
-          "employee_engagement_survey": "Enquête d'engagement employé",
-          "corporate_culture_analysis": "Analyse de la culture d'entreprise",
-          "wellbeing_assessment": "Évaluation du bien-être",
-          "personalized_improvement_plan": "Plan d'amélioration personnalisé"
-        },
-        "cta": "Commander IEHWN2025"
-      }
-    },
-    "industries": {
-      "title": "Adapté à tous les secteurs",
-      "subtitle": "Nos Navigators sont conçus pour fonctionner dans tous les types d'organisations",
-      "list": [
-        "Santé",
-        "Éducation",
-        "Banque & Finance",
-        "Commerce de détail",
-        "Hôtellerie & Voyage",
-        "Télécommunications",
-        "Gouvernement",
-        "Manufacture",
-        "Services professionnels",
-        "Immobilier",
-        "Énergie & Utilitaires",
-        "Fitness & Bien-être",
-        "Transport & Logistique",
-        "ONG & Associations",
-        "Gestion d'événements"
-      ]
-    },
-    "implementation": {
-      "title": "Méthodes d'implémentation",
-      "subtitle": "Choisissez la méthode qui correspond le mieux à vos besoins et ressources",
-      "self_assessment": {
-        "title": "Auto-évaluation",
-        "description": "L'organisation complète l'évaluation Navigator de manière indépendante",
-        "benefits": {
-          "total_autonomy": "Autonomie totale",
-          "reduced_cost": "Coût réduit",
-          "schedule_flexibility": "Flexibilité horaire"
-        }
-      },
-      "assisted_evaluation": {
-        "title": "Évaluation Assistée",
-        "description": "Un consultant guide et accompagne l'équipe tout au long du processus",
-        "benefits": {
-          "expert_support": "Support expert",
-          "training_included": "Formation incluse",
-          "optimized_results": "Résultats optimisés"
-        }
-      },
-      "outsourced_evaluation": {
-        "title": "Évaluation Externalisée",
-        "description": "Le consultant gère entièrement l'évaluation pour l'organisation",
-        "benefits": {
-          "time_saving": "Gain de temps",
-          "complete_expertise": "Expertise complète",
-          "detailed_report": "Rapport détaillé"
-        }
-      }
-    },
-    "benefits": {
-      "title": "Avantages des Navigators",
-      "subtitle": "Découvrez pourquoi nos Navigators sont le choix idéal pour votre organisation",
-      "affordable_sme": "Abordable pour PME",
-      "adapted_drc_market": "Adapté au marché RDC",
-      "fast_results": "Résultats rapides",
-      "continuous_support": "Support continu",
-      "international_certification": "Certification internationale",
-      "detailed_reports": "Rapports détaillés"
-    },
-    "cta": {
-      "title": "Prêt à transformer votre organisation ?",
-      "description": "Commencez dès aujourd'hui avec nos Navigators et découvrez le potentiel de votre organisation",
-      "order_now": "Commander maintenant",
-      "download_brochure": "Télécharger la brochure"
-    }
-  },
-  "types": {
     "title": "Formation pour Tous",
     "description": "Que vous soyez un particulier souhaitant développer vos compétences ou une entreprise cherchant à former vos équipes, nous avons la solution adaptée à vos besoins.",
     "enterprise": {
@@ -2114,4 +1976,143 @@
     },
     "start_training_button": "Commencer ma formation"
   }
+  },
+  "navigators_page": {
+    "hero": {
+      "title": "ICXI Navigators",
+      "description": "Des outils d'évaluation basés sur l'IA pour révolutionner la façon dont les organisations mesurent et améliorent leurs performances en expérience client, bien-être employé et efficacité organisationnelle.",
+      "cta_order": "Commander maintenant",
+      "cta_demo": "Voir la démo",
+      "cta_brochure": "Télécharger la brochure"
+    },
+    "features": {
+      "title": "Pourquoi choisir nos Navigators ?",
+      "subtitle": "Des outils puissants conçus pour transformer votre organisation avec l'intelligence artificielle",
+      "ai_intelligence": {
+        "title": "IA Intelligente",
+        "description": "Diagnostics automatisés basés sur l'intelligence artificielle pour des insights instantanés"
+      },
+      "dashboards": {
+        "title": "Tableaux de Bord",
+        "description": "Visualisation claire des performances avec des métriques en temps réel"
+      },
+      "targeted_solutions": {
+        "title": "Solutions Ciblées",
+        "description": "Stratégies adaptées à votre secteur et à vos besoins spécifiques"
+      },
+      "sustainable_growth": {
+        "title": "Croissance Durable",
+        "description": "Plans d'amélioration concrets pour des résultats mesurables"
+      }
+    },
+    "types": {
+      "title": "Nos Navigators",
+      "subtitle": "Trois outils spécialisés pour couvrir tous les aspects de votre organisation",
+      "icxn2025": {
+        "name": "ICXN2025",
+        "full_name": "International Customer Experience Navigator",
+        "description": "Optimisez l'expérience client avec des insights basés sur l'IA",
+        "features": {
+          "customer_journey": "Cartographie du parcours client",
+          "touchpoint_analysis": "Analyse des points de contact",
+          "satisfaction_measurement": "Mesure de la satisfaction",
+          "personalized_recommendations": "Recommandations personnalisées"
+        },
+        "cta": "Commander ICXN2025"
+      },
+      "ibdn2025": {
+        "name": "IBDN2025",
+        "full_name": "International Business Director Navigator",
+        "description": "Améliorez l'efficacité organisationnelle et la performance",
+        "features": {
+          "organizational_maturity": "Évaluation de la maturité organisationnelle",
+          "business_process_analysis": "Analyse des processus métier",
+          "competitive_benchmarking": "Benchmarking concurrentiel",
+          "improvement_strategies": "Stratégies d'amélioration"
+        },
+        "cta": "Commander IBDN2025"
+      },
+      "iehwn2025": {
+        "name": "IEHWN2025",
+        "full_name": "International Employee Happiness and Wellbeing Navigator",
+        "description": "Renforcez le bien-être et l'engagement de vos équipes",
+        "features": {
+          "employee_engagement_survey": "Enquête d'engagement employé",
+          "corporate_culture_analysis": "Analyse de la culture d'entreprise",
+          "wellbeing_assessment": "Évaluation du bien-être",
+          "personalized_improvement_plan": "Plan d'amélioration personnalisé"
+        },
+        "cta": "Commander IEHWN2025"
+      }
+    },
+    "industries": {
+      "title": "Adapté à tous les secteurs",
+      "subtitle": "Nos Navigators sont conçus pour fonctionner dans tous les types d'organisations",
+      "list": [
+        "Santé",
+        "Éducation",
+        "Banque & Finance",
+        "Commerce de détail",
+        "Hôtellerie & Voyage",
+        "Télécommunications",
+        "Gouvernement",
+        "Manufacture",
+        "Services professionnels",
+        "Immobilier",
+        "Énergie & Utilitaires",
+        "Fitness & Bien-être",
+        "Transport & Logistique",
+        "ONG & Associations",
+        "Gestion d'événements"
+      ]
+    },
+    "implementation": {
+      "title": "Méthodes d'implémentation",
+      "subtitle": "Choisissez la méthode qui correspond le mieux à vos besoins et ressources",
+      "self_assessment": {
+        "title": "Auto-évaluation",
+        "description": "L'organisation complète l'évaluation Navigator de manière indépendante",
+        "benefits": {
+          "total_autonomy": "Autonomie totale",
+          "reduced_cost": "Coût réduit",
+          "schedule_flexibility": "Flexibilité horaire"
+        }
+      },
+      "assisted_evaluation": {
+        "title": "Évaluation Assistée",
+        "description": "Un consultant guide et accompagne l'équipe tout au long du processus",
+        "benefits": {
+          "expert_support": "Support expert",
+          "training_included": "Formation incluse",
+          "optimized_results": "Résultats optimisés"
+        }
+      },
+      "outsourced_evaluation": {
+        "title": "Évaluation Externalisée",
+        "description": "Le consultant gère entièrement l'évaluation pour l'organisation",
+        "benefits": {
+          "time_saving": "Gain de temps",
+          "complete_expertise": "Expertise complète",
+          "detailed_report": "Rapport détaillé"
+        }
+      }
+    },
+    "benefits": {
+      "title": "Avantages des Navigators",
+      "subtitle": "Découvrez pourquoi nos Navigators sont le choix idéal pour votre organisation",
+      "affordable_sme": "Abordable pour PME",
+      "adapted_drc_market": "Adapté au marché RDC",
+      "fast_results": "Résultats rapides",
+      "continuous_support": "Support continu",
+      "international_certification": "Certification internationale",
+      "detailed_reports": "Rapports détaillés"
+    },
+    "cta": {
+      "title": "Prêt à transformer votre organisation ?",
+      "description": "Commencez dès aujourd'hui avec nos Navigators et découvrez le potentiel de votre organisation",
+      "order_now": "Commander maintenant",
+      "download_brochure": "Télécharger la brochure"
+    }
+  }
+  
 }
