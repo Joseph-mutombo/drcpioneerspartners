@@ -11,6 +11,7 @@ import {
   TrendingUp,
   Monitor
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const FormationPrograms = () => {
   const { t } = useTranslation();
@@ -261,12 +262,15 @@ const FormationPrograms = () => {
             {t('formations_page.programs.finalization.description')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button onClick={() => window.location.href = '/contact'} className="px-8 py-4 bg-yellow-600 text-white font-semibold rounded-lg hover:bg-yellow-700 transition-colors duration-200">
+            {/* <button onClick={() => window.location.href = '/contact'} className="px-8 py-4 bg-yellow-600 text-white font-semibold rounded-lg hover:bg-yellow-700 transition-colors duration-200">
               {t('formations_page.programs.finalization.contact_us')}
-            </button>
-            <button onClick={() => window.location.href = '/contact'} className="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-brand-blue transition-colors duration-200">
+            </button> */}
+            <Link to="/contact#contact-form" className="px-8 py-4 bg-yellow-600 text-white font-semibold rounded-lg hover:bg-yellow-700 transition-colors duration-200">
+              {t('formations_page.programs.finalization.contact_us')}
+            </Link>
+            {/* <button onClick={() => window.location.href = '/contact'} className="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-brand-blue transition-colors duration-200">
               {t('formations_page.programs.finalization.get_prospectus')}
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

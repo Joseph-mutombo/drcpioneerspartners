@@ -11,6 +11,7 @@ import {
   Target,
   Heart
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const CertificationPrograms = () => {
   const { t } = useTranslation();
@@ -239,12 +240,12 @@ const CertificationPrograms = () => {
             {t('certifications_page.programs.finalization.description')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-4 bg-yellow-600 text-white font-semibold rounded-lg hover:bg-yellow-700 transition-colors duration-200">
+            <Link to="/contact#contact-form" className="px-8 py-4 bg-yellow-600 text-white font-semibold rounded-lg hover:bg-yellow-700 transition-colors duration-200">
               {t('certifications_page.programs.finalization.waitlist')}
-            </button>
-            <button className="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-brand-blue transition-colors duration-200">
+            </Link>
+            <Link to="/contact#contact-form" className="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-brand-blue transition-colors duration-200">
               {t('certifications_page.programs.finalization.download_prospectus')}
-            </button>
+            </Link>
           </div>
         </div>
       </div>
