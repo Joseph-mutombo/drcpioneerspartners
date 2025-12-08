@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Award, Globe, CheckCircle, Building2, Users, Star } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import certificationHero from '@/assets/images/certification.png';
 
 const CertificationHero = () => {
@@ -62,19 +63,76 @@ const CertificationHero = () => {
             data-aos-duration="800"
             data-aos-delay="600"
           >
-            {certifications.map((cert, index) => (
-              <div 
-                key={cert.name}
-                className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 text-center hover:bg-white/20 transition-all duration-300 group"
-                data-aos="fade-up"
-                data-aos-duration="600"
-                data-aos-delay={800 + index * 100}
-              >
-                <Award className="w-12 h-12 text-yellow-400 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
-                <h3 className="font-bold text-white text-xl mb-2">{cert.name}</h3>
-                <p className="text-white/80 text-sm leading-relaxed">{cert.description}</p>
-              </div>
-            ))}
+            {certifications.map((cert, index) => {
+              const isICXS = cert.name === 'ICXS';
+              const isIDCXS = cert.name === 'IDCXS';
+              const isIEHWS = cert.name === 'IEHWS';
+              const CardContent = (
+                <>
+                  <Award className="w-12 h-12 text-yellow-400 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
+                  <h3 className="font-bold text-white text-xl mb-2">{cert.name}</h3>
+                  <p className="text-white/80 text-sm leading-relaxed">{cert.description}</p>
+                </>
+              );
+
+              if (isICXS) {
+                return (
+                  <Link
+                    key={cert.name}
+                    to="/certifications/icxs"
+                    className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 text-center hover:bg-white/20 transition-all duration-300 group cursor-pointer block"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-delay={800 + index * 100}
+                  >
+                    {CardContent}
+                  </Link>
+                );
+              }
+
+              if (isIDCXS) {
+                return (
+                  <Link
+                    key={cert.name}
+                    to="/certifications/idcxs"
+                    className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 text-center hover:bg-white/20 transition-all duration-300 group cursor-pointer block"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-delay={800 + index * 100}
+                  >
+                    {CardContent}
+                  </Link>
+                );
+              }
+
+              if (isIEHWS) {
+                return (
+                  <Link
+                    key={cert.name}
+                    to="/certifications/iehws"
+                    className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 text-center hover:bg-white/20 transition-all duration-300 group cursor-pointer block"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-delay={800 + index * 100}
+                  >
+                    {CardContent}
+                  </Link>
+                );
+              }
+
+              return (
+                <Link 
+                  key={cert.name}
+                  to="/certifications/tisse"
+                  className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 text-center hover:bg-white/20 transition-all duration-300 group"
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                  data-aos-delay={800 + index * 100}
+                >
+                  {CardContent}
+                </Link>
+              );
+            })}
           </div>
 
           {/* Statistiques */}

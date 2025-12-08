@@ -24,13 +24,6 @@ const Header = () => {
     { to: '/contact', text: t('header.contact') },
   ];
 
-  // const servicesLinks = [
-  //   { to: '/services#creation-agents', text: t('header.services_agent') },
-  //   { to: '/services#integration-ia', text: t('header.services_integration') },
-  //   { to: '/services#developpement-logiciels', text: t('header.services_dev') },
-  //   { to: '/services/chatbots', text: t('header.services_chatbot') },
-  // ];
-
   const NavMenu = () => (
     <>
       {navLinks.map((link) => (
@@ -49,25 +42,13 @@ const Header = () => {
           {link.text}
         </NavLink>
       ))}
-      {/* <DropdownMenu>
-        <DropdownMenuTrigger className="flex items-center px-3 py-2 text-sm font-medium text-brand-blue hover:text-brand-blue-light transition-colors outline-none">
-          {t('header.services')} <ChevronDown className="w-4 h-4 ml-1" />
-        </DropdownMenuTrigger>
-        <DropdownMenuContent>
-          {servicesLinks.map((link) => (
-            <DropdownMenuItem key={link.to} asChild>
-              <Link to={link.to} onClick={() => setIsMobileMenuOpen(false)}>{link.text}</Link>
-            </DropdownMenuItem>
-          ))}
-        </DropdownMenuContent>
-      </DropdownMenu> */}
     </>
   );
 
   return (
     <header className="bg-white/80 backdrop-blur-sm sticky top-0 z-50 border-b border-brand-gray-dark">
       <div className="mx-auto px-4 sm:px-6 lg:px-16">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center space-x-2">
               <img src="/icon.png" alt="drcpioneers" className="h-14" />

@@ -1,0 +1,109 @@
+import { useTranslation } from 'react-i18next';
+import { Heart, TrendingUp, Users, Target, ArrowRight } from 'lucide-react';
+
+const IEHWSOverview = () => {
+  const { t } = useTranslation();
+
+  return (
+    <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
+        <div className="text-center mb-16">
+          <h2 
+            className="text-4xl md:text-5xl font-bold text-brand-blue mb-6"
+            data-aos="fade-up"
+            data-aos-duration="600"
+          >
+            {t('iehws_page.overview.title')}
+          </h2>
+          <p 
+            className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="200"
+          >
+            {t('iehws_page.overview.description')}
+          </p>
+        </div>
+
+        {/* Objectifs principaux */}
+        <div 
+          className="bg-gradient-to-r from-brand-blue to-blue-700 rounded-2xl p-8 md:p-12 text-white mb-16"
+          data-aos="fade-up"
+          data-aos-duration="600"
+          data-aos-delay="400"
+        >
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center">
+                <Target className="w-7 h-7" />
+              </div>
+              <h3 className="text-3xl font-bold">{t('iehws_page.overview.primary_aim.title')}</h3>
+            </div>
+            <p className="text-white/90 text-lg leading-relaxed mb-8">
+              {t('iehws_page.overview.primary_aim.description')}
+            </p>
+            
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                <div className="flex items-center gap-3 mb-4">
+                  <Heart className="w-6 h-6 text-yellow-400" />
+                  <h4 className="text-xl font-semibold">{t('iehws_page.overview.primary_aim.focus.title')}</h4>
+                </div>
+                <p className="text-white/80">{t('iehws_page.overview.primary_aim.focus.description')}</p>
+              </div>
+              
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                <div className="flex items-center gap-3 mb-4">
+                  <Users className="w-6 h-6 text-yellow-400" />
+                  <h4 className="text-xl font-semibold">{t('iehws_page.overview.primary_aim.framework.title')}</h4>
+                </div>
+                <p className="text-white/80">{t('iehws_page.overview.primary_aim.framework.description')}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Vector 6 Model */}
+        <div 
+          className="bg-white rounded-2xl p-8 md:p-12 shadow-xl mb-16"
+          data-aos="fade-up"
+          data-aos-duration="600"
+          data-aos-delay="600"
+        >
+          <div className="flex items-center gap-4 mb-8">
+            <div className="w-12 h-12 bg-brand-blue/10 rounded-lg flex items-center justify-center">
+              <TrendingUp className="w-7 h-7 text-brand-blue" />
+            </div>
+            <h3 className="text-3xl font-bold text-brand-blue">
+              {t('iehws_page.overview.vector6.title')}
+            </h3>
+          </div>
+          
+          <p className="text-gray-600 text-lg leading-relaxed mb-8 max-w-4xl">
+            {t('iehws_page.overview.vector6.description')}
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+              <h4 className="font-bold text-brand-blue mb-3">{t('iehws_page.overview.vector6.measurement.title')}</h4>
+              <p className="text-gray-600 text-sm">{t('iehws_page.overview.vector6.measurement.description')}</p>
+            </div>
+            
+            <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+              <h4 className="font-bold text-brand-blue mb-3">{t('iehws_page.overview.vector6.analysis.title')}</h4>
+              <p className="text-gray-600 text-sm">{t('iehws_page.overview.vector6.analysis.description')}</p>
+            </div>
+            
+            <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+              <h4 className="font-bold text-brand-blue mb-3">{t('iehws_page.overview.vector6.improvement.title')}</h4>
+              <p className="text-gray-600 text-sm">{t('iehws_page.overview.vector6.improvement.description')}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default IEHWSOverview;
+

@@ -1996,6 +1996,595 @@
       "default": "Merci pour votre message ! Je suis encore en cours de développement et ne peux pas répondre à toutes les questions pour le moment. Pour toute information spécifique, n'hésitez pas à nous contacter directement via notre formulaire de contact ou par téléphone au +243 978 847 886."
     }
   },
+  "icxs_page": {
+    "hero": {
+      "badge": "Certification Internationale ICXI",
+      "title": "ICXS 2019",
+      "subtitle": "International Customer Experience Standard",
+      "description": "La norme internationale qui établit les standards d'excellence en expérience client. Comprenez, mesurez et améliorez l'expérience client à travers tous les canaux pour maximiser la satisfaction et la fidélité.",
+      "key_points": {
+        "customer_journey": "Parcours client",
+        "experience_analysis": "Analyse de l'expérience",
+        "improvement": "Amélioration continue",
+        "measurement": "Mesure des performances"
+      },
+      "stats": {
+        "scoring_points": "Points de scoring",
+        "sections": "Sections",
+        "countries": "Pays",
+        "companies": "Entreprises certifiées"
+      }
+    },
+    "overview": {
+      "title": "Comprendre l'Expérience Client",
+      "description": "L'expérience client influence directement la fidélité à votre marque. Il est essentiel pour une organisation de comprendre les éléments clés qui façonnent cette expérience.",
+      "questions": {
+        "customer_journey": "À quoi ressemble le parcours client à travers chaque canal ?",
+        "negative_positive": "Quelles parties contribuent négativement ou positivement à l'expérience ?",
+        "experience_creation": "Comment l'expérience client réelle est-elle créée ?",
+        "important_elements": "Quels sont les éléments du parcours client les plus importants pour le client ?",
+        "improvement": "Comment pouvez-vous améliorer positivement l'expérience client ?"
+      },
+      "model": {
+        "title": "Le Modèle d'Excellence de Service",
+        "description": "Les facteurs qui influencent directement l'expérience client sont les 5 piliers du Modèle d'Excellence de Service. Ces piliers mettent l'accent sur l'importance des éléments clés qui doivent être gérés efficacement.",
+        "private_sector": {
+          "title": "Secteur Privé",
+          "description": "Pour les organisations du secteur privé dans un monde concurrentiel, un haut standard de service client et d'expérience est souvent le différenciateur clé."
+        },
+        "public_sector": {
+          "title": "Secteur Public",
+          "description": "Les organisations du secteur public doivent également montrer qu'elles sont réactives, fiables et respectueuses des besoins des consommateurs."
+        }
+      }
+    },
+    "elements": {
+      "title": "Les 7 Éléments de l'ICXS 2019",
+      "description": "Chaque élément de l'ICXS 2019 contient plusieurs critères/clauses qui fournissent des directives claires sur la façon d'améliorer l'expérience client et l'excellence du service.",
+      "policies": {
+        "title": "Politiques",
+        "description": "Comment vos objectifs et stratégies facilitent-ils la meilleure expérience client ?",
+        "point1": "Définition d'objectifs alignés sur l'expérience client",
+        "point2": "Stratégies orientées client",
+        "point3": "Politiques de service claires et cohérentes"
+      },
+      "places": {
+        "title": "Lieux",
+        "description": "Tous les canaux de livraison facilitent-ils l'excellence du service client ?",
+        "point1": "Optimisation de tous les points de contact",
+        "point2": "Expérience multi-canal cohérente",
+        "point3": "Accessibilité et facilité d'utilisation"
+      },
+      "products": {
+        "title": "Produits / Services",
+        "description": "Les produits/services sont-ils conçus selon la qualité, les besoins et les attentes du client ?",
+        "point1": "Conception centrée sur le client",
+        "point2": "Qualité et fiabilité",
+        "point3": "Réponse aux besoins réels des clients"
+      },
+      "processes": {
+        "title": "Processus & Cartes de Parcours Client",
+        "description": "Vos processus sont-ils efficaces pour fournir les résultats souhaités aux clients à travers tous les canaux ?",
+        "point1": "Cartographie du parcours client",
+        "point2": "Optimisation des processus",
+        "point3": "Mesure de l'efficacité"
+      },
+      "people": {
+        "title": "Personnes",
+        "description": "Les employés sont-ils compétents et motivés pour satisfaire les besoins des clients ?",
+        "point1": "Formation et développement des compétences",
+        "point2": "Motivation et engagement",
+        "point3": "Culture orientée client"
+      },
+      "measurement": {
+        "title": "Mesure de la Performance",
+        "description": "Avez-vous un moyen de définir les fondations pour l'expérience client, l'excellence du service et le bonheur des employés ?",
+        "point1": "Systèmes de mesure établis",
+        "point2": "Indicateurs clés de performance",
+        "point3": "Analyse et reporting réguliers"
+      },
+      "results": {
+        "title": "Résultats de Performance",
+        "description": "Quel est le niveau de satisfaction et de bonheur des clients et des employés ?",
+        "point1": "Mesure de la satisfaction client",
+        "point2": "Mesure de l'engagement employé",
+        "point3": "Résultats et améliorations continues"
+      }
+    },
+    "scoring": {
+      "title": "Système de Scoring ICXS 2019",
+      "description": "Le système de scoring de l'ICXS 2019 se compose de 1000 points répartis entre les 7 sections selon leur contribution à la livraison de l'excellence du service.",
+      "system": {
+        "title": "Distribution des Points",
+        "of_total": "du total",
+        "total": "Total : 1000 Points",
+        "total_description": "En examinant les résultats, votre organisation peut développer une liste de priorités précise, garantissant que les ressources sont utilisées efficacement pour améliorer les standards dans tous les domaines."
+      },
+      "sections": {
+        "policies": "Politiques",
+        "places": "Lieux",
+        "products": "Produits / Services",
+        "processes": "Processus & Cartes de Parcours",
+        "people": "Personnes",
+        "measurement": "Mesure de la Performance",
+        "results": "Résultats de Performance"
+      },
+      "performance": {
+        "title": "Niveaux de Performance",
+        "zero": {
+          "title": "Aucune Preuve",
+          "description": "Aucune preuve que les exigences ont été atteintes."
+        },
+        "documentation": {
+          "title": "Documentation",
+          "description": "Preuve des exigences obtenue par la DOCUMENTATION."
+        },
+        "communication": {
+          "title": "Communication",
+          "description": "Preuve de COMMUNICATION avec les employés et autres parties prenantes pertinentes."
+        },
+        "implementation": {
+          "title": "Implémentation",
+          "description": "Preuve d'IMPLÉMENTATION des exigences."
+        },
+        "adoption": {
+          "title": "Adoption",
+          "description": "Preuve que les employés ADOPTENT les exigences."
+        },
+        "consistency": {
+          "title": "Cohérence Avant Tout",
+          "description": "Ce concept de scoring permet une évaluation précise de votre performance contre l'ICXS 2019 et est conçu pour garantir la cohérence avant tout."
+        }
+      }
+    },
+    "benefits": {
+      "title": "Les Avantages de la Certification ICXS",
+      "description": "Découvrez comment la certification ICXS peut transformer votre organisation et générer des résultats mesurables.",
+      "improved_cx": {
+        "title": "Expérience Client Améliorée",
+        "description": "Optimisez l'expérience client à travers tous les canaux et points de contact pour maximiser la satisfaction."
+      },
+      "customer_loyalty": {
+        "title": "Fidélité Client Renforcée",
+        "description": "L'expérience client influence directement la fidélité à votre marque, créant des clients fidèles à long terme."
+      },
+      "competitive_advantage": {
+        "title": "Avantage Concurrentiel",
+        "description": "Distinguez-vous de la concurrence avec des standards d'excellence reconnus internationalement."
+      },
+      "measurable_results": {
+        "title": "Résultats Mesurables",
+        "description": "Système de scoring de 1000 points pour évaluer précisément votre performance et identifier les priorités."
+      },
+      "employee_satisfaction": {
+        "title": "Satisfaction Employé",
+        "description": "Améliorez le bien-être et l'engagement des employés, créant un environnement de travail productif."
+      },
+      "data_driven": {
+        "title": "Décisions Basées sur les Données",
+        "description": "Prenez des décisions éclairées basées sur des mesures précises et des analyses approfondies."
+      },
+      "cta": {
+        "title": "Prêt à Améliorer Votre Expérience Client ?",
+        "description": "Rejoignez les milliers d'organisations qui ont transformé leur service client grâce à la certification ICXS.",
+        "request_certification": "Demander la Certification",
+        "contact_us": "Nous Contacter"
+      }
+    }
+  },
+  "idcxs_page": {
+    "hero": {
+      "badge": "Certification Internationale ICXI",
+      "title": "IDCXS 2022",
+      "subtitle": "International Digital Customer Experience Standard",
+      "description": "La première norme internationale dédiée à l'expérience client digitale. Optimisez vos canaux digitaux, applications mobiles et services en ligne pour offrir une expérience utilisateur exceptionnelle.",
+      "key_points": {
+        "digital_channels": "Canaux digitaux",
+        "user_experience": "Expérience utilisateur",
+        "digital_transformation": "Transformation digitale",
+        "performance": "Performance digitale"
+      },
+      "stats": {
+        "scoring_points": "Points de scoring",
+        "sections": "Sections",
+        "countries": "Pays",
+        "companies": "Entreprises certifiées"
+      }
+    },
+    "overview": {
+      "title": "La Norme Digitale d'Excellence",
+      "description": "Au cœur de la nouvelle norme IDCXS se trouve le modèle original 5Ps d'Excellence de Service, adapté et développé pour l'ère digitale. Avec 3 ans de développement, d'essais et d'améliorations, IDCXS est la première norme mondiale d'expérience client digitale.",
+      "model": {
+        "title": "Le Modèle 5Ps",
+        "description": "Le modèle 5Ps est accepté mondialement comme principe fondamental pour assurer l'excellence de l'expérience client dans tout type d'organisation. Il fournit maintenant un outil de diagnostic puissant et infaillible pour analyser vos systèmes, processus et communications d'expérience client.",
+        "development": {
+          "title": "3 Ans de Développement",
+          "description": "Développé avec de nombreux experts mondiaux dans tous les aspects de la livraison digitale, incluant des essais, des améliorations et un cycle de révision complet."
+        },
+        "experts": {
+          "title": "Experts Mondiaux",
+          "description": "Développé avec la participation de nombreux experts mondiaux dans tous les aspects de la livraison digitale pour garantir une norme complète et pertinente."
+        }
+      },
+      "benefits": {
+        "diagnostic": {
+          "title": "Outil de Diagnostic",
+          "description": "Un outil de diagnostic puissant et infaillible pour analyser vos systèmes d'expérience client, processus, communications et bien plus."
+        },
+        "analysis": {
+          "title": "Analyse Approfondie",
+          "description": "Permet aux organisations d'analyser en détail, comprenant plus clairement où des améliorations peuvent être apportées."
+        },
+        "management": {
+          "title": "Gestion Simplifiée",
+          "description": "Peut rationaliser les facteurs clés en plusieurs éléments composants, rendant l'analyse de performance plus gérable pour les organisations."
+        }
+      }
+    },
+    "elements": {
+      "title": "Les 7 Éléments de l'IDCXS 2022",
+      "description": "Chaque élément de l'IDCXS 2022 contient plusieurs critères/clauses qui fournissent des directives claires sur la façon d'améliorer l'expérience client digitale et l'excellence du service.",
+      "policies": {
+        "title": "Politiques",
+        "description": "Les politiques de votre organisation définissent-elles les paramètres pour les produits/services digitaux, canaux digitaux, processus et personnes ?",
+        "point1": "Politiques pour produits/services digitaux",
+        "point2": "Politiques pour canaux digitaux",
+        "point3": "Détermination des priorités d'allocation des ressources"
+      },
+      "channels": {
+        "title": "Lieux – Canaux Digitaux",
+        "description": "Les portails digitaux, applications mobiles, services en ligne sont-ils conçus selon les besoins de qualité, résilience et robustesse du client ?",
+        "point1": "Portails digitaux optimisés",
+        "point2": "Applications mobiles performantes",
+        "point3": "Services en ligne accessibles et fiables"
+      },
+      "products": {
+        "title": "Produits / Services",
+        "description": "La performance de vos produits/services est-elle adaptée à l'usage et cohérente avec les attentes de performance digitale existantes ?",
+        "point1": "Performance adaptée à l'usage",
+        "point2": "Cohérence avec les attentes digitales",
+        "point3": "Qualité et fiabilité des services digitaux"
+      },
+      "processes": {
+        "title": "Processus & Cartes de Parcours Client",
+        "description": "Vos processus sont-ils efficaces pour fournir les résultats souhaités aux clients et utilisateurs à travers tous les services ?",
+        "point1": "Efficacité des processus digitaux",
+        "point2": "Cartographie du parcours client end-to-end",
+        "point3": "Mesure et optimisation continue"
+      },
+      "people": {
+        "title": "Personnes",
+        "description": "Vos employés sont-ils suffisamment compétents et motivés pour assurer que les produits et services sont livrés pour satisfaire les besoins des clients et utilisateurs ?",
+        "point1": "Compétences digitales des employés",
+        "point2": "Motivation et engagement",
+        "point3": "Prise en compte du bonheur des employés"
+      },
+      "measurement": {
+        "title": "Mesure de la Performance",
+        "description": "La définition et l'implémentation de la mesure de performance à travers tous les services digitaux fourniront les fondations pour l'excellence de l'expérience client et le bonheur des employés.",
+        "point1": "Systèmes de mesure établis",
+        "point2": "Indicateurs clés de performance digitaux",
+        "point3": "Analyse et reporting réguliers"
+      },
+      "results": {
+        "title": "Résultats de Performance",
+        "description": "Comment la recherche et autres mesures de performance connexes peuvent-elles identifier les niveaux de bonheur et de satisfaction chez les clients et les employés ?",
+        "point1": "Mesure de la satisfaction client digitale",
+        "point2": "Mesure de l'engagement employé",
+        "point3": "Résultats et améliorations continues"
+      }
+    },
+    "scoring": {
+      "title": "Système de Scoring IDCXS 2022",
+      "description": "Le système de scoring de l'IDCXS 2022 se compose de 1000 points répartis entre les 7 sections selon leur contribution à la livraison de l'excellence du service digital.",
+      "system": {
+        "title": "Distribution des Points",
+        "of_total": "du total",
+        "total": "Total : 1000 Points",
+        "total_description": "En examinant les résultats, votre organisation peut développer une liste de priorités précise, garantissant que les ressources sont utilisées efficacement pour améliorer les standards digitaux dans tous les domaines."
+      },
+      "sections": {
+        "policies": "Politiques",
+        "channels": "Canaux Digitaux",
+        "products": "Produits / Services",
+        "processes": "Processus & Cartes de Parcours",
+        "people": "Personnes",
+        "measurement": "Mesure de la Performance",
+        "results": "Résultats de Performance"
+      },
+      "note": {
+        "title": "Note Importante",
+        "description": "La distribution des points reflète l'importance accrue de la mesure de performance (25%) et des processus digitaux (20%) dans l'expérience client digitale moderne."
+      }
+    },
+    "benefits": {
+      "title": "Les Avantages de la Certification IDCXS",
+      "description": "Découvrez comment la certification IDCXS peut transformer votre organisation digitale et générer des résultats mesurables.",
+      "digital_excellence": {
+        "title": "Excellence Digitale",
+        "description": "Optimisez tous vos canaux digitaux, applications mobiles et services en ligne pour offrir une expérience utilisateur exceptionnelle."
+      },
+      "user_experience": {
+        "title": "Expérience Utilisateur Optimale",
+        "description": "Créez des expériences utilisateur intuitives et engageantes qui maximisent la satisfaction et la fidélité des clients digitaux."
+      },
+      "competitive_advantage": {
+        "title": "Avantage Concurrentiel Digital",
+        "description": "Distinguez-vous de la concurrence avec des standards d'excellence digitale reconnus internationalement."
+      },
+      "measurable_results": {
+        "title": "Résultats Mesurables",
+        "description": "Système de scoring de 1000 points pour évaluer précisément votre performance digitale et identifier les priorités d'amélioration."
+      },
+      "employee_satisfaction": {
+        "title": "Satisfaction Employé",
+        "description": "Améliorez le bien-être et l'engagement des employés dans l'environnement digital, créant une main-d'œuvre productive et satisfaite."
+      },
+      "data_driven": {
+        "title": "Décisions Basées sur les Données",
+        "description": "Prenez des décisions éclairées basées sur des mesures précises et des analyses approfondies de vos performances digitales."
+      },
+      "cta": {
+        "title": "Prêt à Transformer Votre Expérience Client Digitale ?",
+        "description": "Rejoignez les milliers d'organisations qui ont transformé leur service client digital grâce à la certification IDCXS.",
+        "request_certification": "Demander la Certification",
+        "contact_us": "Nous Contacter"
+      }
+    }
+  },
+  "iehws_page": {
+    "hero": {
+      "badge": "Certification Internationale ICXI",
+      "title": "IEHWS 2023",
+      "subtitle": "International Employee Happiness and Wellbeing Standard",
+      "description": "La norme internationale qui reflète la croissance dramatique du besoin pour les employeurs de développer des pratiques qui délivrent des niveaux de bonheur et promeuvent activement le bien-être de leurs employés comme facteur clé contribuant à l'excellence du service client.",
+      "key_points": {
+        "employee_happiness": "Bonheur des employés",
+        "wellbeing": "Bien-être au travail",
+        "engagement": "Engagement employé",
+        "productivity": "Productivité"
+      },
+      "stats": {
+        "scoring_points": "Points de scoring",
+        "criteria": "Critères",
+        "countries": "Pays",
+        "companies": "Entreprises certifiées"
+      }
+    },
+    "overview": {
+      "title": "La Norme du Bonheur et Bien-être Employé",
+      "description": "IEHWS 2023 reflète la croissance internationale dramatique en échelle, portée et portée du besoin pour les employeurs de développer des pratiques qui délivrent des niveaux de bonheur et promeuvent activement le bien-être de leurs employés.",
+      "primary_aim": {
+        "title": "Objectif Principal",
+        "description": "L'objectif principal d'IEHWS 2023 est de motiver les organisations à concentrer leur attention sur leur plus grand atout « leurs Employés » à travers la livraison de techniques de promotion du bonheur et du bien-être des employés.",
+        "focus": {
+          "title": "Focus sur les Employés",
+          "description": "Concentrer l'attention sur le plus grand atout de l'organisation : les employés."
+        },
+        "framework": {
+          "title": "Cadre Flexible",
+          "description": "Contient les principes fondamentaux éprouvés et les pratiques évolutives de livraison du bonheur des employés pour créer un cadre flexible mais quantifiable."
+        }
+      },
+      "vector6": {
+        "title": "Le Modèle Vector 6",
+        "description": "IEHWS 2023 utilise la plateforme du Modèle Vector 6 Employee Happiness and Wellbeing qui est basé sur 6 critères PLUS deux critères supplémentaires : Mesure de la Performance et Résultats de Performance.",
+        "measurement": {
+          "title": "Capable de Mesure",
+          "description": "Le modèle est capable de mesure et les résultats peuvent être analysés par tout secteur organisationnel vertical ou horizontal."
+        },
+        "analysis": {
+          "title": "Analyse de Performance",
+          "description": "Fournit des orientations pour l'analyse de performance et l'amélioration continue conséquente pour toutes les parties."
+        },
+        "improvement": {
+          "title": "Amélioration Continue",
+          "description": "Identifie les critères critiques pour maintenir des relations positives, énergisées, efficaces et respectueuses entre employeur et employé."
+        }
+      }
+    },
+    "elements": {
+      "title": "Les 8 Critères de l'IEHWS 2023",
+      "description": "Chaque section de l'IEHWS 2023 contient un certain nombre de critères. Chaque critère a un titre descriptif bref pour aider à identifier le critère tout au long du processus d'évaluation, d'implémentation et de reporting.",
+      "leadership": {
+        "title": "Leadership Orienté Valeurs",
+        "description": "Le leadership qui guide l'organisation selon des valeurs claires et cohérentes.",
+        "point1": "Vision et valeurs alignées",
+        "point2": "Leadership exemplaire",
+        "point3": "Culture organisationnelle positive"
+      },
+      "environment": {
+        "title": "Environnement et Climat",
+        "description": "Création d'un environnement de travail positif et favorable au bien-être.",
+        "point1": "Environnement physique optimal",
+        "point2": "Climat organisationnel positif",
+        "point3": "Soutien et ressources appropriés"
+      },
+      "career": {
+        "title": "Contrôle de Carrière",
+        "description": "Opportunités de développement et contrôle sur le parcours professionnel.",
+        "point1": "Opportunités de développement",
+        "point2": "Contrôle sur le parcours professionnel",
+        "point3": "Planification de carrière"
+      },
+      "teamwork": {
+        "title": "Supervision Orientée Équipe",
+        "description": "Supervision qui favorise le travail d'équipe et la collaboration.",
+        "point1": "Supervision collaborative",
+        "point2": "Travail d'équipe efficace",
+        "point3": "Communication ouverte"
+      },
+      "effectiveness": {
+        "title": "Efficacité Organisationnelle",
+        "description": "Processus et systèmes organisationnels efficaces qui soutiennent les employés.",
+        "point1": "Processus optimisés",
+        "point2": "Systèmes efficaces",
+        "point3": "Ressources adéquates"
+      },
+      "reward": {
+        "title": "Récompense et Reconnaissance",
+        "description": "Systèmes de récompense et de reconnaissance qui valorisent les contributions.",
+        "point1": "Reconnaissance des contributions",
+        "point2": "Systèmes de récompense équitables",
+        "point3": "Valorisation des performances"
+      },
+      "measurement": {
+        "title": "Mesure de la Performance",
+        "description": "Définition et implémentation de la mesure de performance pour conduire un cycle complet de mesure du bonheur et du bien-être des employés.",
+        "point1": "Systèmes de mesure établis",
+        "point2": "Indicateurs clés de performance",
+        "point3": "Analyse et reporting réguliers"
+      },
+      "results": {
+        "title": "Résultats de Performance",
+        "description": "Documentation et preuve des résultats de recherche des mesures requises de bonheur et de bien-être des employés.",
+        "point1": "Résultats de recherche documentés",
+        "point2": "Preuve des mesures",
+        "point3": "Analyse des résultats"
+      }
+    },
+    "scoring": {
+      "title": "Système de Scoring IEHWS 2023",
+      "description": "L'Institut a développé un modèle et un concept de scoring pour la norme afin de fournir une évaluation précise de la performance de l'organisation contre chacun des critères de l'IEHWS 2023.",
+      "system": {
+        "title": "Distribution des Points",
+        "of_total": "du total",
+        "total": "Total : 1000 Points",
+        "total_description": "Le système de scoring permet d'assurer la cohérence des résultats, permettant, à des fins de recherche, le benchmarking et les comparaisons inter-organisationnelles."
+      },
+      "sections": {
+        "leadership": "Leadership Orienté Valeurs",
+        "environment": "Environnement et Climat",
+        "career": "Contrôle de Carrière",
+        "teamwork": "Supervision Orientée Équipe",
+        "effectiveness": "Efficacité Organisationnelle",
+        "reward": "Récompense et Reconnaissance",
+        "measurement": "Mesure de la Performance",
+        "results": "Résultats de Performance"
+      },
+      "performance": {
+        "title": "Niveaux de Performance pour l'Accréditation",
+        "transformational": {
+          "title": "Organisation Leader Transformationnelle",
+          "description": "Atteint 90%+ des exigences"
+        },
+        "expert": {
+          "title": "Organisation Expert en Pratique",
+          "description": "Atteint 75% à 89.9% des exigences"
+        },
+        "pioneering": {
+          "title": "Organisation Professionnelle Pionnière",
+          "description": "Atteint 55% à 74.9% des exigences"
+        },
+        "note": {
+          "title": "Trois Niveaux Disponibles",
+          "description": "Trois niveaux peuvent être atteints en fonction de la performance de l'organisation contre les critères de la norme."
+        }
+      }
+    },
+    "pledge": {
+      "title": "L'Engagement Bonheur et Bien-être Employé",
+      "description": "Nous croyons que c'est le premier du genre dans le monde et vise à créer un mouvement mondial et un engagement des propriétaires, directeurs, leaders et managers à S'ENGAGER à faire tout en leur pouvoir pour rendre leurs lieux de travail respectifs non seulement de grands endroits pour travailler mais aussi maintenir leur engagement à agir conformément aux principes et fondations inclus dans le Cadre Vector 6.",
+      "what_is": {
+        "title": "Qu'est-ce que l'Engagement ?"
+      },
+      "points": {
+        "formal_promise": "L'Engagement est une promesse ou un engagement formel fait par une organisation et ses employés pour maintenir certains principes, valeurs et responsabilités en relation avec le Bonheur et le Bien-être des Employés.",
+        "declaration": "L'Engagement est une déclaration d'intention d'agir et de se comporter d'une manière spécifique en relation avec tout ce qui concerne le Bonheur et le Bien-être des Employés.",
+        "dedication": "L'Engagement est utilisé pour démontrer le dévouement et la responsabilité envers le Bonheur et le Bien-être des Employés dans toute l'organisation.",
+        "commitment": "L'Engagement est un moyen d'exprimer l'engagement de l'Organisation envers les croyances et actions de Bonheur et Bien-être des Employés et peut être un outil puissant pour créer un changement positif."
+      },
+      "goal": {
+        "title": "Objectif Principal",
+        "description": "Prendre l'Engagement signifie un engagement pris par l'organisation pour prioriser le bonheur et le bien-être de tous les employés. L'objectif principal de l'Engagement est d'améliorer la culture du lieu de travail en soutenant les employés non seulement professionnellement mais aussi personnellement."
+      },
+      "benefits": {
+        "workplace": {
+          "title": "Environnement de Travail",
+          "description": "Les organisations peuvent améliorer un environnement de travail sain et favorable."
+        },
+        "morale": {
+          "title": "Morale et Engagement",
+          "description": "Améliorer le moral, améliorer l'engagement des employés et la productivité."
+        },
+        "culture": {
+          "title": "Culture Positive",
+          "description": "Favoriser un sens de la responsabilité et créer un changement positif dans l'organisation."
+        }
+      },
+      "cta": {
+        "title": "Rejoignez le Mouvement Mondial",
+        "description": "Prenez l'Engagement et montrez votre engagement envers le bonheur et le bien-être de vos employés."
+      }
+    },
+    "pathfinder": {
+      "title": "Enquêtes Pathfinder",
+      "description": "Les enquêtes Pathfinder sont une solution stratégique de feedback des employés développée pour permettre aux organisations d'identifier les problèmes qui impactent négativement le Bonheur et le Bien-être des Employés, tout en permettant aux organisations de 'Benchmarker' leur performance avec d'autres organisations, globalement.",
+      "p18": {
+        "name": "P18 - Température de l'Organisation",
+        "description": "Produira des résultats de première impression relatifs à tous les aspects du modèle Vector 6."
+      },
+      "p30": {
+        "name": "P30 - Pulsation de l'Organisation",
+        "description": "Produira des résultats relatifs à la pulsation de votre organisation, 30 questions cruciales liées directement au modèle Vector 6."
+      },
+      "p60": {
+        "name": "P60 - Force de l'Organisation",
+        "description": "Produira des résultats relatifs à la force de votre organisation, 60 questions détaillées et complètes couvrant tous les aspects et liées directement au modèle Vector 6."
+      },
+      "questions": "Questions",
+      "vectors": {
+        "leadership": "Leadership Orienté Valeurs",
+        "environment": "Environnement et Climat",
+        "career": "Contrôle de Carrière",
+        "teamwork": "Travail d'Équipe et Supervision",
+        "effectiveness": "Efficacité Organisationnelle",
+        "reward": "Récompense et Reconnaissance"
+      }
+    },
+    "benefits": {
+      "title": "Les Avantages Attendus de l'IEHWS 2023",
+      "description": "Découvrez les bénéfices potentiels attendus pour une organisation implémentant la norme IEHWS 2023.",
+      "confidence": {
+        "title": "Confiance des Employés",
+        "description": "Fournir aux employés la confiance dans les intentions de bonheur et de bien-être de l'organisation grâce à une certification indépendante internationalement reconnue par BSI."
+      },
+      "happiness": {
+        "title": "Amélioration du Bonheur",
+        "description": "Améliorer les expériences de bonheur et de bien-être des employés, la satisfaction des employés, la confiance employé-employeur, conduisant au bonheur client et améliorant les résultats de feedback client."
+      },
+      "experience": {
+        "title": "Expérience Employé Améliorée",
+        "description": "Augmenter l'expérience de bonheur et de bien-être des employés grâce à des améliorations opérationnelles dans toutes les parties de l'organisation."
+      },
+      "measurable": {
+        "title": "Plateforme Mesurable",
+        "description": "Fournir aux organisations une plateforme mesurable pour délivrer constamment les plus hauts niveaux d'expérience de bonheur et de bien-être des employés."
+      },
+      "engagement": {
+        "title": "Engagement Amélioré",
+        "description": "Améliorer l'engagement, le focus et la compréhension des employés du rôle qu'ils jouent dans la livraison d'une amélioration continue de l'expérience client."
+      },
+      "stability": {
+        "title": "Stabilité de la Main-d'œuvre",
+        "description": "Maintenir la stabilité, la productivité et la fidélité de la main-d'œuvre dans toute l'organisation grâce à l'amélioration du bonheur et du bien-être des employés."
+      },
+      "voice": {
+        "title": "Voice of Employee",
+        "description": "Identifier les améliorations qui améliorent l'expérience employé et client en implémentant la mesure Voice of Employee (VoE) dans toute l'organisation."
+      },
+      "reputation": {
+        "title": "Réputation Améliorée",
+        "description": "Améliorer la réputation de l'organisation et de la marque comme employeur attractif pour des employés de haute qualité."
+      },
+      "cta": {
+        "title": "Prêt à Améliorer le Bonheur et le Bien-être de Vos Employés ?",
+        "description": "Rejoignez les milliers d'organisations qui ont transformé leur culture organisationnelle grâce à la certification IEHWS.",
+        "request_certification": "Demander la Certification",
+        "contact_us": "Nous Contacter"
+      }
+    }
+  },
   "navigators_page": {
     "hero": {
       "title": "ICXI Navigators",
@@ -2131,6 +2720,399 @@
       "description": "Commencez dès aujourd'hui avec nos Navigators et découvrez le potentiel de votre organisation",
       "order_now": "Commander maintenant",
       "download_brochure": "Télécharger la brochure"
+    }
+  },
+  "tisse_page": {
+    "hero": {
+      "badge": "Norme Internationale",
+      "title": "Comprendre TISSE",
+      "subtitle": "Norme Internationale d'Excellence de Service",
+      "description": "Le TISSE (The International Service Excellence Standard) est le cadre principal de l'ICXI pour évaluer et améliorer la qualité du service à la clientèle. Il sert de référence mondiale pour instaurer une culture centrée sur le client et produire des résultats mesurables.",
+      "key_points": {
+        "definition": "Cadre principal de l'ICXI",
+        "global_reference": "Référence mondiale",
+        "culture": "Culture centrée client",
+        "results": "Résultats mesurables"
+      },
+      "cta_primary": "Demander une Certification",
+      "cta_secondary": "Télécharger la Brochure"
+    },
+    "definition": {
+      "title": "Qu'est-ce que le TISSE ?",
+      "subtitle": "Le cadre de référence mondiale pour l'excellence de service",
+      "main_description": "Le TISSE est bien plus qu'une simple norme. C'est un système complet qui transforme la façon dont les organisations conçoivent, délivrent et améliorent continuellement leur service client.",
+      "points": {
+        "icxi_framework": {
+          "title": "Cadre Principal de l'ICXI",
+          "description": "Le TISSE constitue le socle des standards de l'International Customer Experience Institute, reconnu mondialement pour son excellence."
+        },
+        "global_reference": {
+          "title": "Référence Mondiale",
+          "description": "Utilisé dans plus de 50 pays, le TISSE établit les meilleures pratiques internationales en matière de service client."
+        },
+        "measurable_results": {
+          "title": "Résultats Mesurables",
+          "description": "Le TISSE fournit des KPI précis et des outils de mesure pour quantifier l'amélioration du service et son impact sur la performance."
+        },
+        "customer_centric": {
+          "title": "Culture Centrée Client",
+          "description": "Il aide les organisations publiques et privées à instaurer une véritable culture où le client est au cœur de toutes les décisions."
+        }
+      },
+      "stats": {
+        "countries": {
+          "value": "50+",
+          "label": "Pays d'Application"
+        },
+        "organizations": {
+          "value": "10,000+",
+          "label": "Organisations Certifiées"
+        },
+        "satisfaction": {
+          "value": "92%",
+          "label": "Satisfaction Client Moyenne"
+        },
+        "improvement": {
+          "value": "40%",
+          "label": "Amélioration Moyenne"
+        }
+      }
+    },
+    "eight_domains": {
+      "title": "Les 8 Domaines Clés du TISSE",
+      "subtitle": "Un cadre structuré pour l'excellence de service",
+      "description": "Le TISSE repose sur huit domaines fondamentaux qui couvrent l'ensemble du cycle de vie du service client. Chaque domaine est essentiel pour construire une expérience client exceptionnelle et durable.",
+      "domains": {
+        "customer_knowledge": {
+          "number": "1",
+          "title": "Connaissance et Compréhension du Client",
+          "description": "Développez une compréhension approfondie de vos clients à travers des recherches, des données et des insights pour anticiper leurs besoins et attentes.",
+          "key_elements": [
+            "Segmentation client avancée",
+            "Analyse des comportements et préférences",
+            "Cartographie des personas",
+            "Veille et écoute client continue"
+          ]
+        },
+        "customer_experience": {
+          "number": "2",
+          "title": "Expérience Client",
+          "description": "Concevez et délivrez des expériences mémorables à chaque point de contact, en créant des moments qui fidélisent et enchantent vos clients.",
+          "key_elements": [
+            "Cartographie du parcours client",
+            "Optimisation des points de contact",
+            "Gestion des moments de vérité",
+            "Expériences personnalisées"
+          ]
+        },
+        "service_design": {
+          "number": "3",
+          "title": "Conception du Service",
+          "description": "Créez des services innovants et centrés client en utilisant des méthodologies de design thinking et en impliquant toutes les parties prenantes.",
+          "key_elements": [
+            "Méthodologies de design de service",
+            "Innovation centrée utilisateur",
+            "Prototypage et tests",
+            "Architecture de service optimale"
+          ]
+        },
+        "customer_satisfaction": {
+          "number": "4",
+          "title": "Satisfaction Client et Retour d'Information",
+          "description": "Mesurez systématiquement la satisfaction client et exploitez les retours pour améliorer continuellement vos services.",
+          "key_elements": [
+            "Systèmes de mesure de satisfaction",
+            "Gestion des feedbacks",
+            "Net Promoter Score (NPS)",
+            "Analyse des réclamations"
+          ]
+        },
+        "performance_management": {
+          "number": "5",
+          "title": "Gestion de la Performance du Service",
+          "description": "Établissez des indicateurs de performance clairs et pilotez votre service avec des données pour garantir une excellence constante.",
+          "key_elements": [
+            "KPI de service définis",
+            "Tableaux de bord de performance",
+            "Analyse des tendances",
+            "Benchmarking concurrentiel"
+          ]
+        },
+        "staff_development": {
+          "number": "6",
+          "title": "Développement et Engagement du Personnel",
+          "description": "Investissez dans vos équipes en développant leurs compétences et en créant un environnement qui favorise l'engagement et la motivation.",
+          "key_elements": [
+            "Programmes de formation continue",
+            "Développement des compétences",
+            "Culture de reconnaissance",
+            "Empowerment des équipes"
+          ]
+        },
+        "service_culture": {
+          "number": "7",
+          "title": "Culture de Service et Leadership",
+          "description": "Établissez une culture organisationnelle forte où le leadership à tous les niveaux inspire et soutient l'excellence de service.",
+          "key_elements": [
+            "Leadership exemplaire",
+            "Valeurs centrées client",
+            "Communication interne efficace",
+            "Responsabilisation à tous les niveaux"
+          ]
+        },
+        "continuous_improvement": {
+          "number": "8",
+          "title": "Amélioration Continue",
+          "description": "Instaurez une culture d'innovation et d'amélioration permanente qui s'adapte aux évolutions du marché et aux attentes changeantes des clients.",
+          "key_elements": [
+            "Cycles d'amélioration PDCA",
+            "Innovation incrémentale",
+            "Gestion du changement",
+            "Apprentissage organisationnel"
+          ]
+        }
+      }
+    },
+    "strategic_value": {
+      "title": "Valeur Stratégique du TISSE",
+      "subtitle": "Au-delà des simples interactions transactionnelles",
+      "description": "Le TISSE transforme fondamentalement la manière dont votre organisation appréhende le service client, en passant d'une approche réactive à une stratégie proactive et mesurable.",
+      "values": {
+        "beyond_transactions": {
+          "title": "Au-Delà des Transactions",
+          "description": "Le TISSE élève votre service au-delà des simples échanges transactionnels pour créer des relations durables et significatives avec vos clients.",
+          "benefits": [
+            "Fidélisation client accrue",
+            "Valeur vie client (CLV) augmentée",
+            "Recommandations et bouche-à-oreille positifs",
+            "Différenciation concurrentielle forte"
+          ]
+        },
+        "consistent_service": {
+          "title": "Service Cohérent et Intentionnel",
+          "description": "Assurez une expérience client uniforme et de qualité à travers tous vos canaux et points de contact, éliminant les variations et incohérences.",
+          "benefits": [
+            "Standardisation des processus",
+            "Qualité constante du service",
+            "Expérience omnicanale fluide",
+            "Réduction des erreurs et incidents"
+          ]
+        },
+        "international_best_practices": {
+          "title": "Alignement sur les Meilleures Pratiques Internationales",
+          "description": "Le TISSE s'appuie sur les standards reconnus mondialement et intègre les dernières innovations en matière d'expérience client.",
+          "benefits": [
+            "Crédibilité internationale renforcée",
+            "Accès à un réseau mondial d'experts",
+            "Veille sur les tendances CX",
+            "Reconnaissance par les parties prenantes"
+          ]
+        },
+        "iso_integration": {
+          "title": "Intégration Facile avec l'ISO 9001",
+          "description": "Le TISSE s'intègre naturellement dans les systèmes de management de la qualité existants, notamment l'ISO 9001, pour une synergie maximale.",
+          "benefits": [
+            "Complémentarité avec ISO 9001",
+            "Simplification des audits",
+            "Optimisation des ressources",
+            "Approche qualité globale"
+          ]
+        }
+      },
+      "integration_diagram": {
+        "title": "Intégration du TISSE dans votre Écosystème Qualité",
+        "iso_9001": "ISO 9001 - Management de la Qualité",
+        "tisse": "TISSE - Excellence de Service",
+        "result": "Système de Management Intégré"
+      }
+    },
+    "emerging_markets": {
+      "title": "Le TISSE dans les Marchés Émergents",
+      "subtitle": "Une opportunité unique pour la RDC et l'Afrique",
+      "description": "Dans les marchés émergents comme la RDC, où la formation et l'évaluation formelles du service client sont souvent limitées, le TISSE apporte une structure éprouvée et reconnue internationalement.",
+      "challenges": {
+        "title": "Défis des Marchés Émergents",
+        "limited_training": {
+          "title": "Formation Limitée",
+          "description": "Peu de programmes structurés de formation en service client"
+        },
+        "lack_standards": {
+          "title": "Absence de Standards",
+          "description": "Manque de référentiels reconnus et adoptés localement"
+        },
+        "inconsistent_service": {
+          "title": "Service Incohérent",
+          "description": "Grandes variations de qualité entre organisations et secteurs"
+        },
+        "low_professionalism": {
+          "title": "Professionnalisme Variable",
+          "description": "Compétences techniques inégales dans le domaine du service"
+        }
+      },
+      "tisse_solutions": {
+        "title": "Les Solutions Apportées par le TISSE",
+        "reliable_structure": {
+          "title": "Structure Fiable et Éprouvée",
+          "description": "Le TISSE fournit un cadre complet, testé dans plus de 50 pays, qui élimine les incertitudes et offre une feuille de route claire pour l'excellence.",
+          "benefits": [
+            "Méthodologie éprouvée internationalement",
+            "Adaptabilité aux contextes locaux",
+            "Support et documentation complets",
+            "Communauté mondiale d'experts"
+          ]
+        },
+        "professionalism_boost": {
+          "title": "Élévation du Professionnalisme",
+          "description": "En adoptant le TISSE, les organisations de la RDC se positionnent au niveau des meilleurs acteurs internationaux et attirent talents et investissements.",
+          "benefits": [
+            "Crédibilité auprès des investisseurs",
+            "Attraction des meilleurs talents",
+            "Image de marque renforcée",
+            "Compétitivité accrue"
+          ]
+        },
+        "sectoral_relevance": {
+          "title": "Pertinence Sectorielle",
+          "description": "Le TISSE s'adapte parfaitement aux secteurs clés de la RDC qui cherchent à s'aligner sur les normes internationales.",
+          "sectors": {
+            "banking": {
+              "title": "Banques",
+              "description": "Amélioration de l'expérience bancaire et fidélisation de la clientèle"
+            },
+            "telecom": {
+              "title": "Télécommunications",
+              "description": "Optimisation du service client dans un marché hautement concurrentiel"
+            },
+            "healthcare": {
+              "title": "Santé",
+              "description": "Qualité des soins et satisfaction des patients"
+            },
+            "public_institutions": {
+              "title": "Institutions Publiques",
+              "description": "Modernisation du service public et satisfaction citoyenne"
+            },
+            "hospitality": {
+              "title": "Hôtellerie & Tourisme",
+              "description": "Excellence de service pour attirer touristes et investisseurs"
+            },
+            "retail": {
+              "title": "Commerce de Détail",
+              "description": "Expérience client supérieure et différenciation concurrentielle"
+            }
+          }
+        }
+      },
+      "success_stories": {
+        "title": "Témoignages de Réussite",
+        "description": "Des organisations de marchés émergents ont déjà transformé leur service grâce au TISSE",
+        "bank_quote": "Le TISSE nous a permis de passer d'une banque traditionnelle à un partenaire de confiance pour nos clients. La satisfaction client a augmenté de 45% en 18 mois.",
+        "bank_author": "Directeur Expérience Client, Grande Banque RDC",
+        "telecom_quote": "Grâce au TISSE, nous avons réduit nos réclamations de 60% et amélioré notre NPS de 35 points. C'est un investissement qui se paie rapidement.",
+        "telecom_author": "DG Adjoint, Opérateur Télécom",
+        "hospital_quote": "Le TISSE a transformé notre approche du patient. Nous ne sommes plus seulement un hôpital, mais un lieu de soin centré sur l'humain.",
+        "hospital_author": "Directrice Qualité, Hôpital Privé"
+      }
+    },
+    "certification_process": {
+      "title": "Le Processus de Certification TISSE",
+      "subtitle": "Un parcours structuré vers l'excellence",
+      "description": "Découvrez les étapes pour obtenir votre certification TISSE et rejoindre l'élite mondiale du service client.",
+      "steps": {
+        "assessment": {
+          "number": "1",
+          "title": "Évaluation Initiale",
+          "description": "Audit complet de vos pratiques actuelles par rapport aux 8 domaines du TISSE",
+          "duration": "2-3 semaines"
+        },
+        "gap_analysis": {
+          "number": "2",
+          "title": "Analyse des Écarts",
+          "description": "Identification des points d'amélioration et élaboration d'un plan d'action personnalisé",
+          "duration": "1 semaine"
+        },
+        "implementation": {
+          "number": "3",
+          "title": "Mise en Œuvre",
+          "description": "Accompagnement dans l'implémentation des améliorations et formation de vos équipes",
+          "duration": "3-6 mois"
+        },
+        "certification_audit": {
+          "number": "4",
+          "title": "Audit de Certification",
+          "description": "Audit formel par un organisme indépendant (comme BSI) pour valider la conformité",
+          "duration": "1-2 semaines"
+        },
+        "certification": {
+          "number": "5",
+          "title": "Certification",
+          "description": "Obtention de la certification TISSE, valable 3 ans avec audits de suivi annuels",
+          "duration": "Certification obtenue"
+        }
+      },
+      "total_duration": "Durée totale : 4-8 mois selon la maturité de l'organisation",
+      "investment": {
+        "title": "Investissement et Retour",
+        "description": "La certification TISSE représente un investissement stratégique avec un ROI mesurable",
+        "roi_stats": {
+          "payback": {
+            "value": "6-12 mois",
+            "label": "Retour sur Investissement"
+          },
+          "satisfaction_increase": {
+            "value": "+40%",
+            "label": "Amélioration Satisfaction"
+          },
+          "revenue_impact": {
+            "value": "+25%",
+            "label": "Impact sur le Revenu"
+          },
+          "retention": {
+            "value": "+35%",
+            "label": "Rétention Client"
+          }
+        }
+      }
+    },
+    "cta": {
+      "title": "Prêt à Transformer Votre Service Client ?",
+      "description": "Rejoignez les milliers d'organisations qui ont fait le choix de l'excellence avec le TISSE. Nos experts sont là pour vous accompagner à chaque étape de votre parcours.",
+      "primary_button": "Demander un Audit Gratuit",
+      "secondary_button": "Télécharger le Guide TISSE",
+      "contact_info": {
+        "title": "Parlons de votre Projet",
+        "phone": "+243 978 847 886",
+        "email": "info@drcpioneers.com",
+        "response_time": "Réponse sous 24h garantie"
+      }
+    },
+    "faq": {
+      "title": "Questions Fréquentes sur le TISSE",
+      "questions": {
+        "duration": {
+          "question": "Combien de temps faut-il pour obtenir la certification TISSE ?",
+          "answer": "La durée varie selon la maturité actuelle de votre organisation, mais en moyenne, le processus complet prend entre 4 et 8 mois. Cela inclut l'évaluation initiale, la mise en œuvre des améliorations, et l'audit de certification."
+        },
+        "cost": {
+          "question": "Quel est le coût de la certification TISSE ?",
+          "answer": "Le coût dépend de la taille de votre organisation, du nombre de sites à certifier, et de votre niveau de préparation actuel. Contactez-nous pour une évaluation personnalisée et un devis détaillé. Le ROI moyen est atteint en 6-12 mois."
+        },
+        "validity": {
+          "question": "Quelle est la durée de validité de la certification ?",
+          "answer": "La certification TISSE est valable 3 ans. Des audits de surveillance annuels sont effectués pour garantir le maintien des standards d'excellence tout au long de cette période."
+        },
+        "vs_iso": {
+          "question": "Quelle est la différence entre TISSE et ISO 9001 ?",
+          "answer": "L'ISO 9001 se concentre sur le management de la qualité en général, tandis que le TISSE est spécifiquement dédié à l'excellence du service client. Les deux normes sont complémentaires et peuvent être intégrées pour créer un système de management holistique."
+        },
+        "prerequisites": {
+          "question": "Y a-t-il des prérequis pour commencer le processus TISSE ?",
+          "answer": "Il n'y a pas de prérequis formels. Le TISSE s'adapte à tout niveau de maturité. Nous commençons par une évaluation pour identifier votre point de départ et construire un plan personnalisé."
+        },
+        "support": {
+          "question": "Quel accompagnement proposez-vous durant le processus ?",
+          "answer": "Nous offrons un accompagnement complet : audit initial, formation de vos équipes, assistance à la mise en œuvre, préparation à l'audit de certification, et support post-certification. Nos experts sont à vos côtés à chaque étape."
+        }
+      }
     }
   }
   

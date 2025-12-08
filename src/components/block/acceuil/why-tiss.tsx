@@ -22,32 +22,25 @@ export const WhyTiss = () => {
               icon={<Globe className=" w-6 h-6 text-white" />} 
               title={t('why_tiss.alignment.title')}
               description={t('why_tiss.alignment.description')}
-              link="/services"
+              link="/certifications/tisse"
                 color="from-yellow-500 to-yellow-600"
             />
             <ServiceCard 
               icon={<ShieldCheck className="w-6 h-6 text-white" />}
               title={t('why_tiss.credibility.title')}
               description={t('why_tiss.credibility.description')}
-              link="/services"
+              link="/certifications/tisse"
               color="from-brand-blue to-brand-blue-light"
             />
             <ServiceCard 
               icon={<ChartNoAxesCombined className="w-6 h-6 text-white" />}
               title={t('why_tiss.results.title')}
               description={t('why_tiss.results.description')}
-              link="/services"
+              link="/certifications/tisse"
               color="from-yellow-500 to-yellow-600"
             />
           </div>
 
-          {/* <div className="text-center mt-16">
-            <Link to="/services">
-              <Button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-                Voir Tous Nos Services
-              </Button>
-            </Link>
-          </div> */}
         </div>
       </section>
     </>

@@ -18,6 +18,10 @@ import Audit from "./pages/Audit";
 import Chatbot from "./components/block/chatbot";
 import GoToTopProvider from "./components/GoToTopProvider";
 import Navigators from "./pages/Navigators";
+import ICXS from "./pages/ICXS";
+import IDCXS from "./pages/IDCXS";
+import IEHWS from "./pages/IEHWS";
+import Tisse from "./pages/Tisse";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +40,10 @@ const App = () => (
             <Route path="/audit-consultation" element={<Audit />} />
             <Route path="/formations" element={<Formations />} />
             <Route path="/certifications" element={<Certifications />} />
+            <Route path="/certifications/icxs" element={<ICXS />} />
+            <Route path="/certifications/idcxs" element={<IDCXS />} />
+            <Route path="/certifications/iehws" element={<IEHWS />} />
+            <Route path="/certifications/tisse" element={<Tisse />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
