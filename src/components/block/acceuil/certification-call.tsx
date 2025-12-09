@@ -12,10 +12,10 @@ const CertificationCall = () => {
   // };
 
   const certifications = [
-    { name: 'TISSE', description: 'Standards d\'Excellence de Service' },
-    { name: 'ICXS', description: 'Certification Expérience Client' },
-    { name: 'IDCXS', description: 'Certification Expérience Digitale' },
-    { name: 'IEHWS', description: 'Standards Bien-être Employé' }
+    { name: 'TISSE', description: 'Standards d\'Excellence de Service', link: '/certifications/tisse' },
+    { name: 'ICXS', description: 'Certification Expérience Client', link: '/certifications/icxs' },
+    { name: 'IDCXS', description: 'Certification Expérience Digitale', link: '/certifications/idcxs' },
+    { name: 'IEHWS', description: 'Standards Bien-être Employé', link: '/certifications/iehws' }
   ];
 
   return (
@@ -36,14 +36,15 @@ const CertificationCall = () => {
             {/* Certifications Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
               {certifications.map((cert, index) => (
-                <div 
+                <Link 
                   key={cert.name}
-                className="bg-white/10 rounded-lg p-6 border border-white/20 text-center"
-              >
-                <Award className="w-8 h-8 text-yellow-500 mx-auto mb-3" />
-                <h3 className="font-bold text-white text-lg mb-2">{cert.name}</h3>
-                <p className="text-white/80 text-sm">{cert.description}</p>
-                </div>
+                  to={cert.link}
+                  className="bg-white/10 rounded-lg p-6 border border-white/20 text-center hover:bg-white/20 hover:border-yellow-500/50 transition-all duration-300 hover:shadow-lg"
+                >
+                  <Award className="w-8 h-8 text-yellow-500 mx-auto mb-3" />
+                  <h3 className="font-bold text-white text-lg mb-2">{cert.name}</h3>
+                  <p className="text-white/80 text-sm">{cert.description}</p>
+                </Link>
               ))}
             </div>
 

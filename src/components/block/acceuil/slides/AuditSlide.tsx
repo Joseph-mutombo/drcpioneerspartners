@@ -63,7 +63,7 @@ const AuditSlide: React.FC<SlideProps> = ({
         </Link>
         <Link 
           to="/contact"
-          className="border-2 border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-brand-blue px-8 py-2 rounded-lg font-semibold transition-all duration-300"
+          className="border-2 border-yellow-500 bg-blue-900/20 text-yellow-500 hover:bg-yellow-500 hover:text-brand-blue px-8 py-2 rounded-lg font-semibold transition-all duration-300"
           >
           {t('slides.audit.cta_contact')}
         </Link>
