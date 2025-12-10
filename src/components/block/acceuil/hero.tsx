@@ -1,171 +1,372 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { SlideData } from './slides/SlideInterface';
-import CertificationSlide from './slides/CertificationSlide';
-import FormationSlide from './slides/FormationSlide';
-import AuditSlide from './slides/AuditSlide';
-import NavigatorSlide from './slides/NavigatorSlide';
+import { Link } from 'react-router-dom';
+import { ArrowLeft, ArrowRight, TrendingUp, Award, BookOpen, BarChart3, Compass, ChevronDown } from 'lucide-react';
+import AOS from 'aos';
 import heroImage from '@/assets/images/hero.png';
-import callCenter from '@/assets/images/call-center.png';
-import experts from '@/assets/images/employers.png';
-import GlobalSlide from './slides/GlobalSlide';
+import employers from '@/assets/images/employers.png';
+import professional from '@/assets/images/professional.png';
+import groupe1 from '@/assets/images/groupe1.png';
+import pro3 from '@/assets/images/pro3.png';
+import pro4 from '@/assets/images/pro4.png';
+import audit from '@/assets/images/audit.png';
+import navigators from '@/assets/images/navigators.jpg';
 
-const HeroSlider = () => {
+interface HeroSlide {
+  id: number;
+  titleKey: string;
+  subtitleKey: string;
+  descriptionKey: string;
+  icon: React.ReactNode;
+  backgroundImage: string;
+  visualImage?: string;
+  imageAlt: string;
+  primaryCtaLabel: string;
+  primaryCtaLink?: string;
+  primaryCtaOnClick?: () => void;
+  secondaryCtaLabel: string;
+  secondaryCtaLink?: string;
+  secondaryCtaOnClick?: () => void;
+  badges?: string[];
+}
+
+const HeroSlider: React.FC = () => {
   const { t } = useTranslation();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlay, setIsAutoPlay] = useState(true);
+  const [isPaused, setIsPaused] = useState(false);
+  const [isFading, setIsFading] = useState(false);
+  const [animationKey, setAnimationKey] = useState(0);
 
-  const slides: SlideData[] = [
+  // Définition des slides
+  const slides: HeroSlide[] = [
     {
       id: 0,
-      title: t('slides.certification.title'),
-      subtitle: t('slides.certification.description'),
-      imageUrl: heroImage,
-      imageAlt: "Professionnels africains tenant des certificats de formation",
-      component: GlobalSlide
+      titleKey: 'hero.slides.global.title',
+      subtitleKey: 'hero.slides.global.subtitle',
+      descriptionKey: 'hero.slides.global.description',
+      icon: <TrendingUp className="w-8 h-8" />,
+      backgroundImage: heroImage,
+      visualImage: professional,
+      imageAlt: 'Global Services',
+      primaryCtaLabel: t('hero.slides.global.cta_primary') || 'Découvrir',
+      primaryCtaLink: '/about',
+      secondaryCtaLabel: t('hero.slides.global.cta_secondary') || 'Nous Contacter',
+      secondaryCtaLink: '/contact',
+      badges: [t('hero.slides.global.badge') || 'Partenaire Régional ICXI']
     },
     {
       id: 1,
-      title: t('slides.certification.title'),
-      subtitle: t('slides.certification.description'),
-      imageUrl: heroImage,
-      imageAlt: "Professionnels africains tenant des certificats de formation",
-      component: CertificationSlide
+      titleKey: 'hero.slides.certification.title',
+      subtitleKey: 'hero.slides.certification.subtitle',
+      descriptionKey: 'hero.slides.certification.description',
+      icon: <Award className="w-8 h-8" />,
+      backgroundImage: groupe1,
+      visualImage: pro3,
+      imageAlt: 'Certifications',
+      primaryCtaLabel: t('hero.slides.certification.cta_primary') || 'Voir Certifications',
+      primaryCtaLink: '/certifications',
+      secondaryCtaLabel: t('hero.slides.certification.cta_secondary') || 'Nous Contacter',
+      secondaryCtaLink: '/contact',
+      badges: [t('hero.slides.certification.badge') || 'Certifications Internationales ICXI']
     },
     {
       id: 2,
-      title: t('slides.formation.title'),
-      subtitle: t('slides.formation.description'),
-      imageUrl: callCenter,
-      imageAlt: "Formation en salle avec participants engagés",
-      component: FormationSlide
+      titleKey: 'hero.slides.formation.title',
+      subtitleKey: 'hero.slides.formation.subtitle',
+      descriptionKey: 'hero.slides.formation.description',
+      icon: <BookOpen className="w-8 h-8" />,
+      backgroundImage: heroImage,
+      visualImage: employers,
+      imageAlt: 'Formations',
+      primaryCtaLabel: t('hero.slides.formation.cta_primary') || 'Voir Formations',
+      primaryCtaLink: '/formations',
+      secondaryCtaLabel: t('hero.slides.formation.cta_secondary') || 'Contact',
+      secondaryCtaLink: '/contact',
+      badges: [t('hero.slides.formation.badge') || 'Programmes de Formation']
     },
     {
       id: 3,
-      title: t('slides.audit.title'),
-      subtitle: t('slides.audit.description'),
-      imageUrl: "https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1926&q=80",
-      imageAlt: "Équipe d'experts analysant des données de performance",
-      component: AuditSlide
+      titleKey: 'hero.slides.audit.title',
+      subtitleKey: 'hero.slides.audit.subtitle',
+      descriptionKey: 'hero.slides.audit.description',
+      icon: <BarChart3 className="w-8 h-8" />,
+      backgroundImage: audit,
+      visualImage: pro4,
+      imageAlt: 'Audit & Consultation',
+      primaryCtaLabel: t('hero.slides.audit.cta_primary') || 'Découvrir',
+      primaryCtaLink: '/audit-consultation',
+      secondaryCtaLabel: t('hero.slides.audit.cta_secondary') || 'Contact',
+      secondaryCtaLink: '/contact',
+      badges: [t('hero.slides.audit.badge') || 'Services d\'Audit']
     },
     {
       id: 4,
-      title: t('slides.navigator.title'),
-      subtitle: t('slides.navigator.description'),
-      imageUrl: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1926&q=80",
-      imageAlt: "Entrepreneurs travaillant ensemble dans un environnement moderne",
-      component: NavigatorSlide
+      titleKey: 'hero.slides.navigator.title',
+      subtitleKey: 'hero.slides.navigator.subtitle',
+      descriptionKey: 'hero.slides.navigator.description',
+      icon: <Compass className="w-8 h-8" />,
+      backgroundImage: navigators,
+      visualImage: employers,
+      imageAlt: 'ICXI Navigators',
+      primaryCtaLabel: t('hero.slides.navigator.cta_primary') || 'Explorer',
+      primaryCtaLink: '/navigators',
+      secondaryCtaLabel: t('hero.slides.navigator.cta_secondary') || 'Contact',
+      secondaryCtaLink: '/contact',
+      badges: [t('hero.slides.navigator.badge') || 'Solutions ICXI Navigators']
     }
   ];
 
-  // Auto-scroll functionality
-  useEffect(() => {
-    if (!isAutoPlay) return;
-
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 7000); // 6 seconds
-
-    return () => clearInterval(interval);
-  }, [isAutoPlay, slides.length]);
-
-  // Pause auto-play on hover
-  const handleMouseEnter = () => setIsAutoPlay(false);
-  const handleMouseLeave = () => {
-    setTimeout(() => setIsAutoPlay(true), 2000); // Resume after 2s
-  };
-
-  // Navigation functions
-  const goToSlide = (index: number) => {
-    setCurrentSlide(index);
-    setIsAutoPlay(false);
-    setTimeout(() => setIsAutoPlay(true), 3000);
-  };
-
+  // Navigation
   const goToPrevious = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+    setIsFading(true);
+    setTimeout(() => {
+      setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+      setAnimationKey((prev) => prev + 1);
+      setIsFading(false);
+    }, 300);
     setIsAutoPlay(false);
-    setTimeout(() => setIsAutoPlay(true), 3000);
+    setTimeout(() => setIsAutoPlay(true), 5000);
   };
 
   const goToNext = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
+    setIsFading(true);
+    setTimeout(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+      setAnimationKey((prev) => prev + 1);
+      setIsFading(false);
+    }, 300);
     setIsAutoPlay(false);
-    setTimeout(() => setIsAutoPlay(true), 3000);
+    setTimeout(() => setIsAutoPlay(true), 5000);
   };
 
-  // Keyboard navigation
+  const goToSlide = (index: number) => {
+    setIsFading(true);
+    setTimeout(() => {
+      setCurrentSlide(index);
+      setAnimationKey((prev) => prev + 1);
+      setIsFading(false);
+    }, 300);
+    setIsAutoPlay(false);
+    setTimeout(() => setIsAutoPlay(true), 5000);
+  };
+
+  // Auto-play effect
+  useEffect(() => {
+    if (!isAutoPlay || isPaused) return;
+
+    const interval = setInterval(() => {
+      setIsFading(true);
+      setTimeout(() => {
+        setCurrentSlide((prev) => (prev + 1) % slides.length);
+        setAnimationKey((prev) => prev + 1);
+        setIsFading(false);
+      }, 300);
+    }, 7000); // Change slide toutes les 7 secondes
+
+    return () => clearInterval(interval);
+  }, [isAutoPlay, isPaused, slides.length]);
+
+  // Gestion du clavier
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'ArrowLeft') {
-        goToPrevious();
-      } else if (event.key === 'ArrowRight') {
-        goToNext();
-      }
+      if (event.key === 'ArrowLeft') goToPrevious();
+      if (event.key === 'ArrowRight') goToNext();
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
-  // Action handlers
-  const handleActionClick = () => {
-    // Navigate to specific service page based on current slide
-    console.log(`Action clicked for slide ${currentSlide + 1}`);
-  };
+  // Réinitialiser AOS à chaque changement de slide
+  useEffect(() => {
+    AOS.refresh();
+  }, [animationKey]);
 
-  const handleContactClick = () => {
-    // Navigate to contact page
-    console.log('Contact clicked');
-  };
+  const activeSlide = slides[currentSlide];
 
   return (
-    <section 
-    id="accueil" 
-    style={{
-      backgroundImage: 'linear-gradient(rgba(13, 27, 62, 0.9), rgba(13, 27, 62, 0.7)), url("' + heroImage + '")',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundAttachment: 'fixed'
-    }}
-      className=" sm:min-h-[100%] lg:h-auto flex items-center overflow-hidden bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
+    <section
       role="region"
-      aria-label="Services Hero Slider hero-slider"
+      aria-label="Services Hero Slider"
       aria-live="polite"
+      className="relative w-full"
+      id="accueil"
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => {
+        setIsPaused(false);
+      }}
     >
-      {/* Content */}
-      <div className="mx-auto px-4 sm:px-6 lg:px-16 grid grid-cols-1 lg:grid-cols-2 items-center">
-          
-          {/* Left Column - Content */}
-          <div key={`slide-content-${currentSlide}`} className='py-3'>
-            {React.createElement(slides[currentSlide].component, {
-              isActive: true,
-              onActionClick: handleActionClick,
-              onContactClick: handleContactClick
-            })}
-          </div>
-
-          {/* Right Column - Visual Indicator */}
-          <div 
-            className="hidden lg:flex items-center justify-center"
-            data-aos="fade-left"
-            data-aos-duration="800"
-            data-aos-delay="600"
-          >
-            <div className="relative">
-              <img src={experts} alt={slides[currentSlide].imageAlt} style={{ width: '130%', height: '130%' }} className="object-cover mt-10" />
+      {/* Hero Section Background */}
+      <div
+        className={`relative w-full h-screen overflow-hidden transition-opacity duration-500 ${
+          isFading ? 'opacity-70' : 'opacity-100'
+        }`}
+        style={{
+          backgroundImage: `linear-gradient(rgba(13, 27, 62, 0.85), rgba(13, 27, 62, 0.75)), url("${activeSlide.backgroundImage}")`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed'
+        }}
+      >
+        {/* Grid Layout: 2 Colonnes */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center h-full py-8 lg:py-0">
+            
+            {/* Colonne Gauche: Contenu Texte */}
+            <div key={`left-${animationKey}`} className="flex flex-col justify-center z-10 text-white">
               
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-blue-300/30 rounded-full animate-pulse"></div>
-              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-blue-400/20 rounded-full animate-pulse delay-1000"></div>
+              {/* Badge */}
+              {activeSlide.badges && activeSlide.badges.length > 0 && (
+                <div
+                  className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6 w-fit"
+                  data-aos="fade-right"
+                  data-aos-duration="600"
+                >
+                  <div className="text-yellow-400">{activeSlide.icon}</div>
+                  <span className="text-sm font-medium">{activeSlide.badges[0]}</span>
+                </div>
+              )}
+
+              {/* Titre */}
+              <h1
+                className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 leading-tight"
+                data-aos="fade-right"
+                data-aos-duration="800"
+                data-aos-delay="200"
+              >
+                {t(activeSlide.titleKey)}
+              </h1>
+
+              {/* Sous-titre */}
+              <p
+                className="text-xl sm:text-2xl text-yellow-400 font-semibold mb-6"
+                data-aos="fade-right"
+                data-aos-duration="800"
+                data-aos-delay="400"
+              >
+                {t(activeSlide.subtitleKey)}
+              </p>
+
+              {/* Description */}
+              <p
+                className="text-base sm:text-lg text-white/90 mb-8 leading-relaxed max-w-2xl"
+                data-aos="fade-right"
+                data-aos-duration="800"
+                data-aos-delay="600"
+              >
+                {t(activeSlide.descriptionKey)}
+              </p>
+
+              {/* CTAs */}
+              <div
+                className="flex flex-col sm:flex-row gap-4 mb-12"
+                data-aos="fade-right"
+                data-aos-duration="800"
+                data-aos-delay="800"
+              >
+                <Link
+                  to={activeSlide.primaryCtaLink || '#'}
+                  onClick={activeSlide.primaryCtaOnClick}
+                  className="inline-flex items-center justify-center bg-yellow-500 hover:bg-yellow-600 text-brand-blue px-8 py-3 rounded-lg font-semibold transition-colors duration-300"
+                >
+                  {activeSlide.primaryCtaLabel}
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Link>
+                
+                <Link
+                  to={activeSlide.secondaryCtaLink || '#'}
+                  onClick={activeSlide.secondaryCtaOnClick}
+                  className="inline-flex items-center justify-center bg-white/10 hover:bg-white/20 text-white border border-white/30 hover:border-yellow-400/50 px-8 py-3 rounded-lg font-semibold transition-all duration-300"
+                >
+                  {activeSlide.secondaryCtaLabel}
+                </Link>
+              </div>
+
+              {/* Scroll Indicator */}
+              {/* <div
+                className="flex items-center gap-2 text-white/70 animate-bounce"
+                data-aos="fade-right"
+                data-aos-duration="800"
+                data-aos-delay="1000"
+              >
+                <span className="text-sm">{t('hero.scroll_down') || 'Scroll'}</span>
+                <ChevronDown className="w-5 h-5" />
+              </div> */}
+            </div>
+
+            {/* Colonne Droite: Image + Animations */}
+            <div key={`right-${animationKey}`} className="hidden lg:flex items-center justify-center relative h-screen">
+              <div className="relative w-full h-full flex items-center justify-center">
+                
+                {/* Image principale */}
+                <img
+                  src={activeSlide.visualImage || employers}
+                  alt={activeSlide.imageAlt}
+                  className="w-full h-full object-fill rounded-lg shadow-2xl transition-transform duration-1000 hover:scale-105"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                />
+
+                {/* Orbes animés en arrière-plan */}
+                <div
+                  className="absolute -bottom-12 -right-12 w-32 h-32 bg-yellow-400/20 rounded-full blur-3xl animate-pulse"
+                  style={{ animationDuration: '4s' }}
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-delay="400"
+                />
+                <div
+                  className="absolute -top-12 -left-12 w-40 h-40 bg-blue-400/20 rounded-full blur-3xl animate-pulse"
+                  style={{ animationDuration: '6s', animationDelay: '1s' }}
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-delay="600"
+                />
+              </div>
             </div>
           </div>
         </div>
-      {/* <div className="relative z-10 ">
-        
-      </div> */}
+
+        {/* Navigation Buttons */}
+        <button
+          onClick={goToPrevious}
+          className={`absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 z-20 bg-white/10 hover:bg-white/20 text-white p-3 rounded-full transition-all duration-300 backdrop-blur-sm border border-white/20 hover:border-yellow-400 ${
+            isPaused ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4'
+          }`}
+          aria-label="Slide précédente"
+        >
+          <ArrowLeft className="w-6 h-6" />
+        </button>
+
+        <button
+          onClick={goToNext}
+          className={`absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 z-20 bg-white/10 hover:bg-white/20 text-white p-3 rounded-full transition-all duration-300 backdrop-blur-sm border border-white/20 hover:border-yellow-400 ${
+            isPaused ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-4'
+          }`}
+          aria-label="Slide suivante"
+        >
+          <ArrowRight className="w-6 h-6" />
+        </button>
+
+        {/* Slide Indicators */}
+        {/* <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => goToSlide(index)}
+              className={`transition-all duration-300 rounded-full ${
+                index === currentSlide
+                  ? 'bg-yellow-500 w-3 h-3'
+                  : 'bg-white/40 hover:bg-white/60 w-2 h-2'
+              }`}
+              aria-label={`Aller à la slide ${index + 1}`}
+            />
+          ))}
+        </div> */}
+
+      </div>
     </section>
   );
 };

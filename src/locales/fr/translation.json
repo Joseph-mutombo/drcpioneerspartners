@@ -16,7 +16,49 @@
     "title": "Élever l'Excellence de l'Expérience Client en RDC avec les Standards ICXI",
     "subtitle": "En tant que Partenaire Régional de Certification ICXI, nous transformons le service en RDC pour un professionnalisme accru et des résultats mesurables, en s'alignant sur les meilleures pratiques internationales.",
     "cta_services": "Découvrez nos services",
-    "cta_contact": "Contactez-nous"
+    "cta_contact": "Contactez-nous",
+    "slides": {
+      "global": {
+        "badge": "Partenaire ICXI",
+        "title": "Transformer le Service en RDC",
+        "subtitle": "Avec les standards ICXI",
+        "description": "En tant que Partenaire Régional de Certification ICXI, nous transformons le service en RDC pour un professionnalisme accru et des résultats mesurables, en s'alignant sur les meilleures pratiques internationales.",
+        "cta_primary": "Découvrir notre approche",
+        "cta_secondary": "Contactez-nous"
+      },
+      "certification": {
+        "badge": "Certifications ICXI",
+        "title": "Certifications Internationales",
+        "subtitle": "Reconnues Mondialement",
+        "description": "Obtenez les certifications ICXI qui positionnent votre organisation comme leader en excellence de service. Des programmes rigoureux conçus pour transformer votre culture opérationnelle et mesurer votre impact réel.",
+        "cta_primary": "Explorer les certifications",
+        "cta_secondary": "Demander une démo"
+      },
+      "formation": {
+        "badge": "Programmes de Formation",
+        "title": "Formations Certifiées",
+        "subtitle": "Excellence de Service & Bien-Être",
+        "description": "Développez les compétences de votre équipe avec nos programmes de formation certifiés en expérience client et bien-être employé. Des formations pratiques qui créent un impact mesurable et durable dans votre organisation.",
+        "cta_primary": "Parcourir les formations",
+        "cta_secondary": "Parler à un expert"
+      },
+      "audit": {
+        "badge": "Services d'Audit",
+        "title": "Audits Complets",
+        "subtitle": "Évaluation & Recommandations",
+        "description": "Comprenez où vous en êtes et où vous devriez aller. Nos audits complets évaluent votre maturité en excellence de service et fournissent une feuille de route personnalisée pour améliorer vos opérations et satisfaction client.",
+        "cta_primary": "Demander un audit",
+        "cta_secondary": "Voir nos services"
+      },
+      "navigator": {
+        "badge": "Navigateurs ICXI",
+        "title": "Parcours de Transformation",
+        "subtitle": "De la Stratégie à l'Exécution",
+        "description": "Guidez votre organisation à travers un parcours structuré d'excellence de service. Nos Navigateurs ICXI vous accompagnent à chaque étape, de la diagnostic à la certification, avec expertise et support continu.",
+        "cta_primary": "Commencer votre parcours",
+        "cta_secondary": "Prendre un rendez-vous"
+      }
+    }
   },
   "services_overview": {
     "title": "Notre Expertise",

@@ -16,7 +16,49 @@
     "title": "Your Partner in Artificial Intelligence Solutions",
     "subtitle": "We design and integrate custom AI solutions to propel your business into the future. From intelligent agents to tailored software, we turn your challenges into opportunities.",
     "cta_services": "Discover Our Services",
-    "cta_contact": "Contact Us"
+    "cta_contact": "Contact Us",
+    "slides": {
+      "global": {
+        "badge": "ICXI Partner",
+        "title": "Transform Service Excellence in DRC",
+        "subtitle": "With ICXI Standards",
+        "description": "As a Regional ICXI Certification Partner, we transform service in DRC for increased professionalism and measurable results, aligning with international best practices.",
+        "cta_primary": "Discover Our Approach",
+        "cta_secondary": "Contact Us"
+      },
+      "certification": {
+        "badge": "ICXI Certifications",
+        "title": "International Certifications",
+        "subtitle": "Globally Recognized",
+        "description": "Earn ICXI certifications that position your organization as a leader in service excellence. Rigorous programs designed to transform your operational culture and measure your real impact.",
+        "cta_primary": "Explore Certifications",
+        "cta_secondary": "Request a Demo"
+      },
+      "formation": {
+        "badge": "Training Programs",
+        "title": "Certified Training",
+        "subtitle": "Service Excellence & Employee Well-being",
+        "description": "Develop your team's skills with our certified training programs in customer experience and employee well-being. Practical training that creates measurable and lasting impact in your organization.",
+        "cta_primary": "Browse Training",
+        "cta_secondary": "Talk to an Expert"
+      },
+      "audit": {
+        "badge": "Audit Services",
+        "title": "Comprehensive Audits",
+        "subtitle": "Assessment & Recommendations",
+        "description": "Understand where you stand and where you should go. Our comprehensive audits assess your service excellence maturity and provide a personalized roadmap to improve your operations and customer satisfaction.",
+        "cta_primary": "Request an Audit",
+        "cta_secondary": "View Our Services"
+      },
+      "navigator": {
+        "badge": "ICXI Navigators",
+        "title": "Transformation Journey",
+        "subtitle": "From Strategy to Execution",
+        "description": "Guide your organization through a structured journey of service excellence. Our ICXI Navigators support you at every step, from diagnosis to certification, with expertise and continuous support.",
+        "cta_primary": "Start Your Journey",
+        "cta_secondary": "Schedule a Meeting"
+      }
+    }
   },
   "services_overview": {
     "title": "Our Expertise",
