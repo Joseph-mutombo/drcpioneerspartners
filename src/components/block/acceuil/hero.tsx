@@ -11,6 +11,10 @@ import pro3 from '@/assets/images/pro3.png';
 import pro4 from '@/assets/images/pro4.png';
 import audit from '@/assets/images/audit.png';
 import navigators from '@/assets/images/navigators.jpg';
+import p1 from '@/assets/images/p1.png';
+import p2 from '@/assets/images/p2.png';
+import p3 from '@/assets/images/p3.png';
+import p4 from '@/assets/images/p4.png';
 
 interface HeroSlide {
   id: number;
@@ -47,7 +51,7 @@ const HeroSlider: React.FC = () => {
       descriptionKey: 'hero.slides.global.description',
       icon: <TrendingUp className="w-8 h-8" />,
       backgroundImage: heroImage,
-      visualImage: professional,
+      visualImage: p1,
       imageAlt: 'Global Services',
       primaryCtaLabel: t('hero.slides.global.cta_primary') || 'Découvrir',
       primaryCtaLink: '/about',
@@ -62,7 +66,7 @@ const HeroSlider: React.FC = () => {
       descriptionKey: 'hero.slides.certification.description',
       icon: <Award className="w-8 h-8" />,
       backgroundImage: groupe1,
-      visualImage: pro3,
+      visualImage: p4,
       imageAlt: 'Certifications',
       primaryCtaLabel: t('hero.slides.certification.cta_primary') || 'Voir Certifications',
       primaryCtaLink: '/certifications',
@@ -92,7 +96,7 @@ const HeroSlider: React.FC = () => {
       descriptionKey: 'hero.slides.audit.description',
       icon: <BarChart3 className="w-8 h-8" />,
       backgroundImage: audit,
-      visualImage: pro4,
+      visualImage: p3,
       imageAlt: 'Audit & Consultation',
       primaryCtaLabel: t('hero.slides.audit.cta_primary') || 'Découvrir',
       primaryCtaLink: '/audit-consultation',
