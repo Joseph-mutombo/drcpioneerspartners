@@ -70,7 +70,7 @@ const ContactCTASection = () => {
       icon: Phone,
       title: "Appel Direct",
       description: "Parlez à un expert maintenant",
-      value: "+243 978 847 886",
+      value: "+243 862121612",
       action: "Appeler",
       color: "text-green-600"
     },
@@ -78,7 +78,7 @@ const ContactCTASection = () => {
       icon: Mail,
       title: "Email Rapide",
       description: "Réponse garantie sous 24h",
-      value: "info@drcpioneers.com",
+      value: "contact@drcpioneers.com",
       action: "Écrire",
       color: "text-blue-600"
     },

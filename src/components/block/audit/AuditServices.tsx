@@ -8,10 +8,11 @@ import {
   Clock,
   ArrowRight
 } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const AuditServices = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   const handleRequestService = () => {
     const element = document.getElementById('audit-request-form');
@@ -183,12 +184,7 @@ const AuditServices = () => {
               {t('audit_page.services.custom_service_description')}
             </p>
             <button 
-              onClick={() => {
-                const element = document.getElementById('audit-form');
-                if (element) {
-                  element.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
+              onClick={() => navigate('/contact')} 
               className="px-8 py-4 bg-gradient-to-r from-brand-blue to-blue-600 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-200 shadow-lg hover:shadow-xl"
             >
               {t('audit_page.services.request_custom_consultation')}

@@ -13,10 +13,10 @@ const ContactInfo = () => {
           <div>
             <h3 className="font-semibold">{t('contact_form.phone')}</h3>
             <a 
-              href="tel:+243978847886" 
+              href="tel:+243862121612" 
               className="text-gray-600 hover:text-primary transition-colors"
             >
-              +243 978 847 886
+              +243 862121612
             </a>
           </div>
         </div>
@@ -25,10 +25,10 @@ const ContactInfo = () => {
           <div>
             <h3 className="font-semibold">{t('contact_form.technical_support')}</h3>
             <a 
-              href="mailto:suport@drcpioneers.com" 
+              href="mailto:contact@drcpioneers.com" 
               className="text-gray-600 hover:text-primary transition-colors"
             >
-              suport@drcpioneers.com
+              contact@drcpioneers.com
             </a>
           </div>
         </div>

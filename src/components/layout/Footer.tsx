@@ -51,7 +51,7 @@ const Footer = () => {
           <MapPin size={12} className="w-10 h-10 text-gray-400" />
           <div className=" text-gray-400">
             <p>60, Boulevard du 30 juin,  Immeuble mayumbe, niveau 6, appartement 33, C/Gombe, Kinshasa, RDC</p>
-            <p>+243 978 847 886 | suport@drcpioneers.com</p>
+            <p>+243 862121612 | contact@drcpioneers.com</p>
           </div>
         </div>
         <div className="mt-12 border-t border-gray-700 pt-8">

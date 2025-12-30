@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { 
   Building2, 
   Users, 
@@ -15,6 +15,7 @@ import {
 
 const CertificationTypes = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   const enterpriseFeatures = [
     {
@@ -290,7 +291,10 @@ const CertificationTypes = () => {
             <p className="text-gray-600 mb-6">
               {t('certifications_page.types.comparison.need_help')}
             </p>
-            <button className="px-8 py-3 bg-brand-blue text-white font-semibold rounded-lg hover:bg-yellow-600 transition-colors duration-200">
+            <button 
+              onClick={() => navigate('/contact#contact-form')}
+              className="px-8 py-3 bg-brand-blue text-white font-semibold rounded-lg hover:bg-yellow-600 transition-colors duration-200"
+            >
               {t('certifications_page.types.comparison.consult_expert')}
             </button>
           </div>

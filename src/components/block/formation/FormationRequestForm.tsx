@@ -492,18 +492,18 @@ const FormationRequestForm = () => {
             </h3>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="tel:+243978847886" 
+                href="tel:+243862121612" 
                 className="inline-flex items-center gap-2 px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition-colors duration-200"
               >
                 <Phone className="w-4 h-4" />
-                +243 978 847 886
+                +243 862121612
               </a>
               <a 
-                href="mailto:suport@drcpioneers.com" 
+                href="mailto:contact@drcpioneers.com" 
                 className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-200"
               >
                 <Mail className="w-4 h-4" />
-                suport@drcpioneers.com
+                contact@drcpioneers.com
               </a>
             </div>
           </div>

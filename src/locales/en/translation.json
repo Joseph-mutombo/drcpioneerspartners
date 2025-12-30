@@ -436,13 +436,13 @@
         "direct_call": {
           "title": "Direct Call",
           "description": "Speak directly with our experts",
-          "value": "+243 978 847 886",
+          "value": "+243 862121612",
           "action": "Call now"
         },
         "email": {
           "title": "Professional Email",
           "description": "Response guaranteed within 24h",
-          "value": "info@drcpioneers.com",
+          "value": "contact@drcpioneers.com",
           "action": "Send email"
         },
         "chat": {
@@ -503,13 +503,13 @@
         "direct_call": {
           "title": "Direct Call",
           "description": "Speak to an expert now",
-          "value": "+243 978 847 886",
+          "value": "+243 862121612",
           "action": "Call"
         },
         "email": {
           "title": "Quick Email",
           "description": "Response guaranteed within 24h",
-          "value": "info@drcpioneers.com",
+          "value": "contact@drcpioneers.com",
           "action": "Write"
         },
         "calendar": {
@@ -563,8 +563,8 @@
             "BSI Certified"
           ],
           "contact": {
-            "phone": "+243 978 847 886",
-            "email": "j.mbuyi@drcpioneers.com"
+            "phone": "+243 862121612",
+            "email": "contact@drcpioneers.com"
           }
         },
         "training_manager": {
@@ -579,8 +579,8 @@
             "Advanced Pedagogy"
           ],
           "contact": {
-            "phone": "+243 978 847 887",
-            "email": "m.kabongo@drcpioneers.com"
+            "phone": "+243 862121612",
+            "email": "contact@drcpioneers.com"
           }
         },
         "consultant": {
@@ -595,8 +595,8 @@
             "Quality Management"
           ],
           "contact": {
-            "phone": "+243 978 847 888",
-            "email": "p.mwamba@drcpioneers.com"
+            "phone": "+243 862121612",
+            "email": "contact@drcpioneers.com"
           }
         }
       },
@@ -2031,7 +2031,7 @@
       "greeting": "Hello! I'm delighted to welcome you. How can I help you today?",
       "thanks": "You're welcome! It's a pleasure to help you. Is there anything else I can do for you?",
       "goodbye": "Goodbye! Don't hesitate to come back if you have other questions. Have a great day!",
-      "default": "Thank you for your message! I'm still under development and can't answer all questions at the moment. For any specific information, please don't hesitate to contact us directly via our contact form or by phone at +243 978 847 886."
+      "default": "Thank you for your message! I'm still under development and can't answer all questions at the moment. For any specific information, please don't hesitate to contact us directly via our contact form or by phone at +243 862121612."
     }
   },
   "icxs_page": {
@@ -3118,8 +3118,8 @@
       "secondary_button": "Download TISSE Guide",
       "contact_info": {
         "title": "Let's Talk About Your Project",
-        "phone": "+243 978 847 886",
-        "email": "info@drcpioneers.com",
+        "phone": "+243 862121612",
+        "email": "contact@drcpioneers.com",
         "response_time": "Response within 24h guaranteed"
       }
     },

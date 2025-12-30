@@ -436,13 +436,13 @@
         "direct_call": {
           "title": "Appel Direct",
           "description": "Parlez directement à nos experts",
-          "value": "+243 978 847 886",
+          "value": "+243 862121612",
           "action": "Appeler maintenant"
         },
         "email": {
           "title": "Email Professionnel",
           "description": "Réponse sous 24h garantie",
-          "value": "info@drcpioneers.com",
+          "value": "contact@drcpioneers.com",
           "action": "Envoyer un email"
         },
         "chat": {
@@ -503,13 +503,13 @@
         "direct_call": {
           "title": "Appel Direct",
           "description": "Parlez à un expert maintenant",
-          "value": "+243 978 847 886",
+          "value": "+243 862121612",
           "action": "Appeler"
         },
         "email": {
           "title": "Email Rapide",
           "description": "Réponse garantie sous 24h",
-          "value": "info@drcpioneers.com",
+          "value": "contact@drcpioneers.com",
           "action": "Écrire"
         },
         "calendar": {
@@ -563,8 +563,8 @@
             "BSI Certified"
           ],
           "contact": {
-            "phone": "+243 978 847 886",
-            "email": "j.mbuyi@drcpioneers.com"
+            "phone": "+243 862121612",
+            "email": "contact@drcpioneers.com"
           }
         },
         "training_manager": {
@@ -579,8 +579,8 @@
             "Pédagogie Avancée"
           ],
           "contact": {
-            "phone": "+243 978 847 887",
-            "email": "m.kabongo@drcpioneers.com"
+            "phone": "+243 862121612",
+            "email": "contact@drcpioneers.com"
           }
         },
         "consultant": {
@@ -595,8 +595,8 @@
             "Quality Management"
           ],
           "contact": {
-            "phone": "+243 978 847 888",
-            "email": "p.mwamba@drcpioneers.com"
+            "phone": "+243 862121612",
+            "email": "contact@drcpioneers.com"
           }
         }
       },
@@ -2035,7 +2035,7 @@
       "greeting": "Bonjour ! Je suis ravi de vous accueillir. Comment puis-je vous aider aujourd'hui ?",
       "thanks": "De rien ! C'est un plaisir de vous aider. Y a-t-il autre chose que je puisse faire pour vous ?",
       "goodbye": "Au revoir ! N'hésitez pas à revenir si vous avez d'autres questions. Bonne journée !",
-      "default": "Merci pour votre message ! Je suis encore en cours de développement et ne peux pas répondre à toutes les questions pour le moment. Pour toute information spécifique, n'hésitez pas à nous contacter directement via notre formulaire de contact ou par téléphone au +243 978 847 886."
+      "default": "Merci pour votre message ! Je suis encore en cours de développement et ne peux pas répondre à toutes les questions pour le moment. Pour toute information spécifique, n'hésitez pas à nous contacter directement via notre formulaire de contact ou par téléphone au +243 862121612."
     }
   },
   "icxs_page": {
@@ -3122,8 +3122,8 @@
       "secondary_button": "Télécharger le Guide TISSE",
       "contact_info": {
         "title": "Parlons de votre Projet",
-        "phone": "+243 978 847 886",
-        "email": "info@drcpioneers.com",
+        "phone": "+243 862121612",
+        "email": "contact@drcpioneers.com",
         "response_time": "Réponse sous 24h garantie"
       }
     },

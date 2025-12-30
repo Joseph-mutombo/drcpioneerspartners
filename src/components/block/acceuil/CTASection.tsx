@@ -66,14 +66,14 @@ const CTASection = () => {
     {
       icon: Phone,
       title: "Appelez-nous",
-      description: "+243 978 847 886",
+      description: "+243 862121612",
       action: "Appeler maintenant",
       color: "text-green-600"
     },
     {
       icon: Mail,
       title: "Écrivez-nous",
-      description: "info@drcpioneers.com",
+      description: "contact@drcpioneers.com",
       action: "Envoyer un email",
       color: "text-blue-600"
     },

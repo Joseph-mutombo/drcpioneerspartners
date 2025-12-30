@@ -21,8 +21,8 @@ const ContactTeamSection = () => {
       certifications: ["TISSE Master", "ICXS Expert", "BSI Certified"],
       description: "Expert reconnu internationalement dans l'excellence de service et l'expérience client.",
       contact: {
-        phone: "+243 978 847 886",
-        email: "j.mbuyi@drcpioneers.com"
+        phone: "+243 862121612",
+        email: "contact@drcpioneers.com"
       }
     },
     {
@@ -34,8 +34,8 @@ const ContactTeamSection = () => {
       certifications: ["CXOP Master", "Formation Internationale", "Pédagogie Avancée"],
       description: "Spécialiste en développement des compétences et formation professionnelle.",
       contact: {
-        phone: "+243 978 847 887",
-        email: "m.kabongo@drcpioneers.com"
+        phone: "+243 862121612",
+        email: "contact@drcpioneers.com"
       }
     },
     {
@@ -47,8 +47,8 @@ const ContactTeamSection = () => {
       certifications: ["Audit ISO 9001", "Process Improvement", "Quality Management"],
       description: "Expert en audit de processus et optimisation des performances organisationnelles.",
       contact: {
-        phone: "+243 978 847 888",
-        email: "p.mwamba@drcpioneers.com"
+        phone: "+243 862121612",
+        email: "contact@drcpioneers.com"
       }
     }
   ];
