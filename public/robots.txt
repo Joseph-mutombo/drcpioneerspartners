@@ -1,16 +1,35 @@
+# Robots.txt for DRC Pioneers
+# https://www.drcpioneers.com
+
+# Allow all search engines
+User-agent: *
+Allow: /
+
+# Disallow admin or private routes if any
+# Disallow: /admin/
+# Disallow: /private/
+
+# Crawl-delay (optional, adjust if needed)
+# Crawl-delay: 1
+
+# Specific rules for major search engines
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 0
 
+# Social media crawlers
 User-agent: Twitterbot
 Allow: /
 
 User-agent: facebookexternalhit
 Allow: /
 
-User-agent: *
+User-agent: LinkedInBot
 Allow: /
 
+# Sitemap location
 Sitemap: https://www.drcpioneers.com/sitemap.xml
