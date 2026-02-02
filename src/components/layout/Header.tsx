@@ -31,10 +31,9 @@ const Header = () => {
           key={link.to}
           to={link.to}
           className={({ isActive }) =>
-            `px-3 py-2 font-medium transition-colors ${
-              isActive
-                ? 'text-yellow-600'
-                : 'text-brand-blue hover:text-yellow-600'
+            `px-3 py-2 font-medium transition-colors ${isActive
+              ? 'text-yellow-600'
+              : 'text-brand-blue hover:text-yellow-600'
             }`
           }
           onClick={() => setIsMobileMenuOpen(false)}
@@ -55,7 +54,7 @@ const Header = () => {
               <div className="space-y-0.5 hidden md:block">
                 <div className="flex space-x-1">
                   <span className="text-2xl font-bold text-brand-blue">DRC</span>
-                  <span className="text-2xl font-bold text-brand-blue">PIONEERS</span>
+                  <span className="text-2xl font-bold text-brand-blue">PIONEER</span>
                   <span className="text-2xl font-bold text-yellow-600">PARTNERS</span>
                 </div>
                 <span className="text-brand-blue text-xs">ICXI Regional Certification Partner</span>
