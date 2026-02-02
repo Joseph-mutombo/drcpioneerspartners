@@ -1,8 +1,8 @@
 import { useTranslation } from 'react-i18next';
-import { 
-  Building2, 
-  Users, 
-  CheckCircle, 
+import {
+  Building2,
+  Users,
+  CheckCircle,
   ArrowRight,
   BookOpen,
   Clock,
@@ -11,10 +11,11 @@ import {
   Monitor,
   Globe
 } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const FormationTypes = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   const enterpriseFeatures = [
     {
@@ -133,14 +134,14 @@ const FormationTypes = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
         {/* En-tête */}
         <div className="text-center mb-16">
-          <h2 
+          <h2
             className="text-4xl font-bold text-gray-900 mb-6"
             data-aos="fade-up"
             data-aos-duration="600"
           >
             {t('formations_page.types.title')}
           </h2>
-          <p 
+          <p
             className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
             data-aos="fade-up"
             data-aos-duration="600"
@@ -153,7 +154,7 @@ const FormationTypes = () => {
         {/* Types de formation */}
         <div className="grid lg:grid-cols-2 gap-12 mb-20">
           {/* Entreprises */}
-          <div 
+          <div
             className="bg-brand-blue rounded-2xl p-8 text-white"
             data-aos="fade-right"
             data-aos-duration="600"
@@ -194,8 +195,8 @@ const FormationTypes = () => {
                 );
               })}
             </div>
-            <Link 
-              to="/audit-consultation#audit-request-form" 
+            <Link
+              to="/audit-consultation#audit-request-form"
               className="w-full group flex items-center justify-center gap-2 px-8 py-4 bg-yellow-500 text-brand-blue font-semibold rounded-lg hover:bg-yellow-600 transition-all duration-200"
             >
               <span>{t('formations_page.types.enterprise.request_quote_button')}</span>
@@ -204,7 +205,7 @@ const FormationTypes = () => {
           </div>
 
           {/* Particuliers */}
-          <div 
+          <div
             className="bg-gray-50 rounded-2xl p-8 border border-gray-200"
             data-aos="fade-left"
             data-aos-duration="600"
@@ -254,7 +255,7 @@ const FormationTypes = () => {
         </div>
 
         {/* Tableau comparatif */}
-        <div 
+        <div
           className="bg-gray-50 rounded-2xl p-8"
           data-aos="fade-up"
           data-aos-duration="600"
@@ -263,7 +264,7 @@ const FormationTypes = () => {
           <h3 className="text-3xl font-bold text-gray-900 text-center mb-8">
             {t('formations_page.types.comparison.title')}
           </h3>
-          
+
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead>
@@ -289,7 +290,7 @@ const FormationTypes = () => {
             <p className="text-gray-600 mb-6">
               {t('formations_page.types.comparison.help_text')}
             </p>
-            <button className="px-8 py-3 bg-brand-blue text-white font-semibold rounded-lg hover:bg-yellow-600 transition-colors duration-200">
+            <button onClick={() => navigate('/contact#contact-form')} className="px-8 py-3 bg-brand-blue text-white font-semibold rounded-lg hover:bg-yellow-600 transition-colors duration-200">
               {t('formations_page.types.comparison.consult_expert_button')}
             </button>
           </div>

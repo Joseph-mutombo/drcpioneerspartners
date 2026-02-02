@@ -1,20 +1,53 @@
 import { useTranslation } from 'react-i18next';
-import { 
-  Award, 
-  Clock, 
-  Users, 
-  CheckCircle, 
+import {
+  Award,
+  Clock,
+  Users,
+  CheckCircle,
   Star,
   ArrowRight,
   Globe,
   Shield,
   Target,
-  Heart
+  Heart,
+  Loader2
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { useNewsletterSubscribeMutation } from '@/hooks/useFormMutations';
+import { toast } from '@/components/ui/use-toast';
+import { useState } from 'react';
+
 
 const CertificationPrograms = () => {
   const { t } = useTranslation();
+  const [email, setEmail] = useState('');
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const { mutate: subscribe, isPending } = useNewsletterSubscribeMutation();
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const value = email.trim();
+    if (!value) return;
+    subscribe(
+      { email: value },
+      {
+        onSuccess: () => {
+          setIsSubmitted(true);
+          toast({ title: t('footer.newsletter_success') });
+          setEmail('');
+        },
+        onError: (err: { message?: string }) => {
+          toast({
+            variant: 'destructive',
+            title: t('footer.newsletter_error'),
+            description: err?.message,
+          });
+        },
+      }
+    );
+  };
 
   const programs = [
     {
@@ -121,14 +154,14 @@ const CertificationPrograms = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
         {/* En-tête */}
         <div className="text-center mb-16">
-          <h2 
+          <h2
             className="text-4xl font-bold text-gray-900 mb-6"
             data-aos="fade-up"
             data-aos-duration="600"
           >
             {t('certifications_page.programs.title')}
           </h2>
-          <p 
+          <p
             className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
             data-aos="fade-up"
             data-aos-duration="600"
@@ -205,13 +238,12 @@ const CertificationPrograms = () => {
                   <div className="text-lg font-semibold text-brand-blue">
                     {program.price}
                   </div>
-                  <button 
+                  <button
                     disabled={program.status === 'coming-soon'}
-                    className={`group/btn flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-200 ${
-                      program.status === 'coming-soon'
-                        ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
-                        : 'bg-brand-blue text-white hover:bg-yellow-600 hover:scale-105'
-                    }`}
+                    className={`group/btn flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-200 ${program.status === 'coming-soon'
+                      ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
+                      : 'bg-brand-blue text-white hover:bg-yellow-600 hover:scale-105'
+                      }`}
                   >
                     <span>
                       {program.status === 'coming-soon' ? t('certifications_page.programs.status.coming_soon') : t('certifications_page.programs.register')}
@@ -227,26 +259,65 @@ const CertificationPrograms = () => {
         </div>
 
         {/* Section d'information */}
-        <div 
+        <div
           className="mt-16 bg-gradient-to-r from-brand-blue to-blue-600 rounded-2xl p-8 md:p-12 text-white text-center"
           data-aos="fade-up"
           data-aos-duration="600"
           data-aos-delay="400"
         >
-          <h3 className="text-3xl font-bold mb-6">
-            {t('certifications_page.programs.finalization.title')}
-          </h3>
-          <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
-            {t('certifications_page.programs.finalization.description')}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contact#contact-form" className="px-8 py-4 bg-yellow-600 text-white font-semibold rounded-lg hover:bg-yellow-700 transition-colors duration-200">
-              {t('certifications_page.programs.finalization.waitlist')}
-            </Link>
-            <Link to="/contact#contact-form" className="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-brand-blue transition-colors duration-200">
-              {t('certifications_page.programs.finalization.download_prospectus')}
-            </Link>
-          </div>
+          {isSubmitted ? (
+            <>
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/20 mb-6">
+                <CheckCircle className="w-9 h-9" />
+              </div>
+              <h2 className="text-2xl md:text-3xl font-bold mb-3">
+                {t('contact_page.newsletter_cta.success_title', { defaultValue: 'Merci pour votre inscription' })}
+              </h2>
+              <p className="text-white/90 text-lg">
+                {t('contact_page.newsletter_cta.success_description', { defaultValue: 'Vous recevrez prochainement nos actualités et offres.' })}
+              </p>
+            </>
+          ) : (
+            <>
+              <h3 className="text-3xl font-bold mb-6">
+                {t('certifications_page.programs.finalization.title')}
+              </h3>
+              <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
+                {t('certifications_page.programs.finalization.description')}
+              </p>
+
+              <div className="mx-auto sm:w-full md:w-1/2">
+                <form
+                  onSubmit={handleSubmit}
+                  className="flex flex-col sm:flex-row gap-3 w-full mx-auto"
+                >
+                  <Input
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder={t('footer.newsletter_placeholder')}
+                    className="bg-white/10 border-white/30 text-white placeholder:text-white/70 flex-1 min-w-0 py-4"
+                    disabled={isPending}
+                  />
+                  <Button
+                    type="submit"
+                    variant="secondary"
+                    disabled={isPending}
+                    className="shrink-0 whitespace-nowrap font-semibold min-w-[140px]"
+                  >
+                    {isPending ? (
+                      <>
+                        <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                        {t('footer.newsletter_submit_loading')}
+                      </>
+                    ) : (
+                      t('footer.newsletter_submit')
+                    )}
+                  </Button>
+                </form>
+              </div>
+            </>
+          )}
         </div>
       </div>
     </div>

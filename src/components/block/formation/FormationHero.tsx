@@ -4,29 +4,35 @@ import formationHero from '@/assets/images/professor.png';
 
 const FormationHero = () => {
   const { t } = useTranslation();
+  const handleRequestService = (code: string) => {
+    const element = document.getElementById(`${code.toLowerCase()}`);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   const programs = [
-    { 
-      code: 'CXOP', 
-      name: t('formations_page.hero.programs.cxop.name'), 
+    {
+      code: 'CXOP',
+      name: t('formations_page.hero.programs.cxop.name'),
       duration: t('formations_page.hero.programs.cxop.duration'),
       level: t('formations_page.hero.programs.cxop.level')
     },
-    { 
-      code: 'CXMP', 
-      name: t('formations_page.hero.programs.cxmp.name'), 
+    {
+      code: 'CXMP',
+      name: t('formations_page.hero.programs.cxmp.name'),
       duration: t('formations_page.hero.programs.cxmp.duration'),
       level: t('formations_page.hero.programs.cxmp.level')
     },
-    { 
-      code: 'CXLP', 
-      name: t('formations_page.hero.programs.cxlp.name'), 
+    {
+      code: 'CXLP',
+      name: t('formations_page.hero.programs.cxlp.name'),
       duration: t('formations_page.hero.programs.cxlp.duration'),
       level: t('formations_page.hero.programs.cxlp.level')
     },
-    { 
-      code: 'MSC', 
-      name: t('formations_page.hero.programs.msc.name'), 
+    {
+      code: 'MSC',
+      name: t('formations_page.hero.programs.msc.name'),
       duration: t('formations_page.hero.programs.msc.duration'),
       level: t('formations_page.hero.programs.msc.level')
     }
@@ -40,7 +46,7 @@ const FormationHero = () => {
   ];
 
   return (
-    <div 
+    <div
       className="text-white overflow-hidden relative"
       style={{
         backgroundImage: 'linear-gradient(rgba(13, 27, 62, 0.9), rgba(13, 27, 62, 0.8)), url("' + formationHero + '")',
@@ -62,7 +68,7 @@ const FormationHero = () => {
               <span className="text-sm font-medium">Programmes de Formation</span>
             </div> */}
 
-            <h1 
+            <h1
               className="text-5xl font-bold mb-6"
               data-aos="fade-up"
               data-aos-duration="800"
@@ -71,8 +77,8 @@ const FormationHero = () => {
               {t('formations_page.hero.title')}
               <span className="block text-yellow-400">{t('formations_page.hero.subtitle')}</span>
             </h1>
-            
-            <p 
+
+            <p
               className=" text-white/90 mb-8 max-w-4xl leading-relaxed"
               data-aos="fade-up"
               data-aos-duration="800"
@@ -83,19 +89,20 @@ const FormationHero = () => {
           </div>
 
           {/* Grille des programmes */}
-          <div 
+          <div
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="600"
           >
             {programs.map((program, index) => (
-              <div 
+              <div
                 key={program.code}
                 className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 text-center hover:bg-white/20 transition-all duration-300 group"
                 data-aos="fade-up"
                 data-aos-duration="600"
                 data-aos-delay={800 + index * 100}
+                onClick={() => handleRequestService(program.code)}
               >
                 <div className="flex items-center justify-between mb-3">
                   <span className="font-bold text-yellow-400 text-xl">{program.code}</span>

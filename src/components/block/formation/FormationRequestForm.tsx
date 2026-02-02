@@ -4,6 +4,8 @@ import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { toast } from "@/components/ui/use-toast";
 import { Button } from "@/components/ui/button";
+import { useFormationRequestMutation } from "@/hooks/useFormMutations";
+import type { FormationRequestPayload } from "@/services/api/types";
 import {
   Form,
   FormControl,
@@ -22,12 +24,12 @@ import {
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
-import { 
-  Building2, 
-  User, 
-  Mail, 
-  Phone, 
-  BookOpen, 
+import {
+  Building2,
+  User,
+  Mail,
+  Phone,
+  BookOpen,
   Send,
   CheckCircle,
   Users,
@@ -36,6 +38,7 @@ import {
 
 const FormationRequestForm = () => {
   const { t } = useTranslation();
+  const { mutate, isPending } = useFormationRequestMutation();
 
   const formSchema = z.object({
     requestType: z.string().min(1, { message: t('formations_page.form.validation.request_type_required') }),
@@ -49,6 +52,8 @@ const FormationRequestForm = () => {
     objectives: z.string().min(1, { message: t('formations_page.form.validation.objectives_required') }),
     timeline: z.string().min(1, { message: t('formations_page.form.validation.timeline_required') }),
     budget: z.string().min(1, { message: t('formations_page.form.validation.budget_required') }),
+    industry: z.string().optional(),
+    auditScope: z.string().optional(),
     additionalInfo: z.string().optional(),
     agreeTerms: z.boolean().refine((val) => val === true, {
       message: t('formations_page.form.validation.terms_required')
@@ -79,12 +84,42 @@ const FormationRequestForm = () => {
   const requestType = form.watch("requestType");
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    toast({
-      title: t('formations_page.form.success.title'),
-      description: t('formations_page.form.success.description'),
+    const payload: FormationRequestPayload = {
+      requestType: values.requestType,
+      trainingProgram: values.formationProgram,
+      company: values.companyName || "",
+      contactName: values.contactPerson,
+      email: values.email,
+      phone: values.phone,
+      currentLevel: values.currentLevel,
+      participantsNumber: values.participantCount ? parseInt(values.participantCount) : 1,
+      activity: values.industry || "",
+      timeline: values.timeline,
+      budget: values.budget,
+      scope: values.auditScope || "",
+      objectives: values.objectives,
+      more: values.additionalInfo || "",
+      privacyPolicy: values.agreeTerms,
+      keepMeInformed: values.agreeNewsletter || false,
+    };
+
+    mutate(payload, {
+      onSuccess: () => {
+        toast({
+          variant: 'success',
+          title: t('formations_page.form.success.title'),
+          description: t('formations_page.form.success.description'),
+        });
+        form.reset();
+      },
+      onError: (err: { message?: string }) => {
+        toast({
+          variant: 'destructive',
+          title: t('formations_page.form.error_title', { defaultValue: 'Error' }),
+          description: err?.message ?? t('formations_page.form.error_description', { defaultValue: 'Please try again later.' }),
+        });
+      },
     });
-    form.reset();
   }
 
   const requestTypes = [
@@ -130,14 +165,14 @@ const FormationRequestForm = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-16">
         {/* En-tête */}
         <div className="text-center mb-12">
-          <h2 
+          <h2
             className="text-4xl font-bold text-gray-900 mb-6"
             data-aos="fade-up"
             data-aos-duration="600"
           >
             {t('formations_page.form.title')}
           </h2>
-          <p 
+          <p
             className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed"
             data-aos="fade-up"
             data-aos-duration="600"
@@ -148,7 +183,7 @@ const FormationRequestForm = () => {
         </div>
 
         {/* Formulaire */}
-        <div 
+        <div
           className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200"
           data-aos="fade-up"
           data-aos-duration="600"
@@ -162,7 +197,7 @@ const FormationRequestForm = () => {
                   <BookOpen className="w-6 h-6 text-brand-blue" />
                   {t('formations_page.form.sections.request_type')}
                 </h3>
-                
+
                 <FormField
                   control={form.control}
                   name="requestType"
@@ -195,7 +230,7 @@ const FormationRequestForm = () => {
                   <User className="w-6 h-6 text-brand-blue" />
                   {t('formations_page.form.sections.contact_info')}
                 </h3>
-                
+
                 <div className="grid md:grid-cols-2 gap-6">
                   {requestType === "enterprise" && (
                     <FormField
@@ -212,7 +247,7 @@ const FormationRequestForm = () => {
                       )}
                     />
                   )}
-                  
+
                   <FormField
                     control={form.control}
                     name="contactPerson"
@@ -226,7 +261,7 @@ const FormationRequestForm = () => {
                       </FormItem>
                     )}
                   />
-                  
+
                   <FormField
                     control={form.control}
                     name="email"
@@ -240,7 +275,7 @@ const FormationRequestForm = () => {
                       </FormItem>
                     )}
                   />
-                  
+
                   <FormField
                     control={form.control}
                     name="phone"
@@ -263,7 +298,7 @@ const FormationRequestForm = () => {
                   <BookOpen className="w-6 h-6 text-brand-blue" />
                   {t('formations_page.form.sections.training_details')}
                 </h3>
-                
+
                 <div className="space-y-6">
                   <FormField
                     control={form.control}
@@ -289,7 +324,7 @@ const FormationRequestForm = () => {
                       </FormItem>
                     )}
                   />
-                  
+
                   {requestType === "enterprise" && (
                     <FormField
                       control={form.control}
@@ -305,7 +340,7 @@ const FormationRequestForm = () => {
                       )}
                     />
                   )}
-                  
+
                   <FormField
                     control={form.control}
                     name="currentLevel"
@@ -330,7 +365,7 @@ const FormationRequestForm = () => {
                       </FormItem>
                     )}
                   />
-                  
+
                   <FormField
                     control={form.control}
                     name="objectives"
@@ -348,7 +383,7 @@ const FormationRequestForm = () => {
                       </FormItem>
                     )}
                   />
-                  
+
                   <div className="grid md:grid-cols-2 gap-6">
                     <FormField
                       control={form.control}
@@ -374,7 +409,7 @@ const FormationRequestForm = () => {
                         </FormItem>
                       )}
                     />
-                    
+
                     <FormField
                       control={form.control}
                       name="budget"
@@ -400,7 +435,7 @@ const FormationRequestForm = () => {
                       )}
                     />
                   </div>
-                  
+
                   <FormField
                     control={form.control}
                     name="additionalInfo"
@@ -443,7 +478,7 @@ const FormationRequestForm = () => {
                     </FormItem>
                   )}
                 />
-                
+
                 <FormField
                   control={form.control}
                   name="agreeNewsletter"
@@ -467,12 +502,13 @@ const FormationRequestForm = () => {
 
               {/* Bouton de soumission */}
               <div className="pt-6">
-                <Button 
-                  type="submit" 
+                <Button
+                  type="submit"
+                  disabled={isPending}
                   className="w-full group flex items-center justify-center gap-2 px-8 py-4 bg-brand-blue text-white font-semibold rounded-lg hover:bg-yellow-600 transition-colors duration-200"
                 >
                   <Send className="w-5 h-5" />
-                  <span>{t('formations_page.form.submit_button')}</span>
+                  <span>{isPending ? t('formations_page.form.submitting', { defaultValue: 'Sending...' }) : t('formations_page.form.submit_button')}</span>
                 </Button>
               </div>
             </form>
@@ -480,7 +516,7 @@ const FormationRequestForm = () => {
         </div>
 
         {/* Informations de contact alternatives */}
-        <div 
+        <div
           className="mt-12 text-center"
           data-aos="fade-up"
           data-aos-duration="600"
@@ -491,15 +527,15 @@ const FormationRequestForm = () => {
               {t('formations_page.form.alternative_contact.title')}
             </h3>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
-                href="tel:+243862121612" 
+              <a
+                href="tel:+243862121612"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition-colors duration-200"
               >
                 <Phone className="w-4 h-4" />
                 +243 862121612
               </a>
-              <a 
-                href="mailto:contact@drcpioneers.com" 
+              <a
+                href="mailto:contact@drcpioneers.com"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-200"
               >
                 <Mail className="w-4 h-4" />

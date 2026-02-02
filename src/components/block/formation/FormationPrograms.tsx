@@ -1,9 +1,9 @@
 import { useTranslation } from 'react-i18next';
-import { 
-  BookOpen, 
-  Clock, 
-  Users, 
-  CheckCircle, 
+import {
+  BookOpen,
+  Clock,
+  Users,
+  CheckCircle,
   Star,
   ArrowRight,
   Award,
@@ -136,14 +136,14 @@ const FormationPrograms = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
         {/* En-tête */}
         <div className="text-center mb-16">
-          <h2 
+          <h2
             className="text-4xl font-bold text-gray-900 mb-6"
             data-aos="fade-up"
             data-aos-duration="600"
           >
             {t('formations_page.programs.title')}
           </h2>
-          <p 
+          <p
             className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
             data-aos="fade-up"
             data-aos-duration="600"
@@ -159,6 +159,7 @@ const FormationPrograms = () => {
             const IconComponent = program.icon;
             return (
               <div
+                id={program.id}
                 key={program.id}
                 className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200 hover:shadow-lg transition-all duration-300 group"
                 data-aos="fade-up"
@@ -227,13 +228,12 @@ const FormationPrograms = () => {
                   <div className="text-lg font-semibold text-brand-blue">
                     {program.price}
                   </div>
-                  <button 
+                  <button
                     disabled={program.status === 'coming-soon'}
-                    className={`group/btn flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-200 ${
-                      program.status === 'coming-soon'
+                    className={`group/btn flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-200 ${program.status === 'coming-soon'
                         ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
                         : 'bg-brand-blue text-white hover:bg-yellow-600 hover:scale-105'
-                    }`}
+                      }`}
                   >
                     <span>
                       {program.status === 'coming-soon' ? t('formations_page.programs.coming_soon') : t('formations_page.programs.register')}
@@ -249,7 +249,7 @@ const FormationPrograms = () => {
         </div>
 
         {/* Section d'information */}
-        <div 
+        <div
           className="mt-16 bg-gradient-to-r from-brand-blue to-blue-600 rounded-2xl p-8 md:p-12 text-white text-center"
           data-aos="fade-up"
           data-aos-duration="600"

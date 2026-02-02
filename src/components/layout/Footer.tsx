@@ -1,10 +1,40 @@
-
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Facebook, Linkedin, MapPin, Twitter } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { useNewsletterSubscribeMutation } from '@/hooks/useFormMutations';
+import { toast } from '@/components/ui/use-toast';
 
 const Footer = () => {
   const { t } = useTranslation();
+  const [email, setEmail] = useState('');
+  const { mutate: subscribe, isPending } = useNewsletterSubscribeMutation();
+
+  const handleNewsletterSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const value = email.trim();
+    if (!value) return;
+    subscribe(
+      { email: value },
+      {
+        onSuccess: () => {
+          toast({
+            title: t('footer.newsletter_success'),
+          });
+          setEmail('');
+        },
+        onError: (err: { message?: string }) => {
+          toast({
+            variant: 'destructive',
+            title: t('footer.newsletter_error'),
+            description: err?.message,
+          });
+        },
+      }
+    );
+  };
 
   return (
     <footer className="bg-brand-blue text-white">
@@ -47,11 +77,36 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="mt-6 flex flex-row items-start gap-2">
-          <MapPin size={12} className="w-10 h-10 text-gray-400" />
-          <div className=" text-gray-400">
-            <p>60, Boulevard du 30 juin,  Immeuble mayumbe, niveau 6, appartement 33, C/Gombe, Kinshasa, RDC</p>
-            <p>+243 862121612 | contact@drcpioneers.com</p>
+        <div className="mt-6 fle grid grid-cols-1 md:grid-cols-2 lg:flex-row lg:items-center lg:justify-between gap-6">
+          <div className="flex flex-row items-start gap-2">
+            <MapPin size={12} className="w-10 h-10 text-gray-400 shrink-0" />
+            <div className=" text-gray-400">
+              <p>60, Boulevard du 30 juin,  Immeuble mayumbe, niveau 6, appartement 33, C/Gombe, Kinshasa, RDC</p>
+              <p>+243 862121612 | contact@drcpioneers.com</p>
+            </div>
+          </div>
+          <div className="flex-row sm:items-center gap-2 lg:shrink-0">
+            <p className="font-semibold tracking-wider mb-3 uppercase text-sm text-gray-300">
+              {t('footer.newsletter_title')}
+            </p>
+            <form onSubmit={handleNewsletterSubmit} className="flex flex-col sm:flex-row gap-2 sm:min-w-[280px]">
+              <Input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder={t('footer.newsletter_placeholder')}
+                className="bg-white/10 border-white/20 text-white placeholder:text-gray-400 flex-1 min-w-0"
+              />
+              <Button
+                type="submit"
+                variant="secondary"
+                size="sm"
+                disabled={isPending}
+                className="shrink-0 whitespace-nowrap"
+              >
+                {isPending ? t('footer.newsletter_submit_loading') : t('footer.newsletter_submit')}
+              </Button>
+            </form>
           </div>
         </div>
         <div className="mt-12 border-t border-gray-700 pt-8">

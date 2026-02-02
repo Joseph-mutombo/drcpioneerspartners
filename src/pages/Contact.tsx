@@ -4,6 +4,7 @@ import ContactHero from '@/components/block/contact/ContactHero';
 import ContactForm from '@/components/block/contact/ContactForm';
 import ContactInfo from '@/components/block/contact/ContactInfo';
 import ContactMap from '@/components/block/contact/ContactMap';
+import NewsletterCTA from '@/components/block/contact/NewsletterCTA';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -52,7 +53,11 @@ const Contact = () => {
             <ContactMap />
           </div>
         </div>
+
+        
+        <NewsletterCTA />
       </div>
+
     </div>
   );
 };

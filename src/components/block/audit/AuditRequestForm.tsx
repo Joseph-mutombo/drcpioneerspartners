@@ -4,6 +4,8 @@ import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { toast } from "@/components/ui/use-toast";
 import { Button } from "@/components/ui/button";
+import { useAuditRequestMutation } from "@/hooks/useFormMutations";
+import { AuditRequestPayload } from "@/services/api/types";
 import {
   Form,
   FormControl,
@@ -22,12 +24,12 @@ import {
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
-import { 
-  Building2, 
-  User, 
-  Mail, 
-  Phone, 
-  FileText, 
+import {
+  Building2,
+  User,
+  Mail,
+  Phone,
+  FileText,
   Send,
   CheckCircle,
   Heart,
@@ -37,6 +39,7 @@ import {
 
 const AuditRequestForm = () => {
   const { t } = useTranslation();
+  const { mutate, isPending } = useAuditRequestMutation();
 
   const formSchema = z.object({
     companyName: z.string().min(1, { message: t('audit_page.form.validation.company_name_required') }),
@@ -46,8 +49,8 @@ const AuditRequestForm = () => {
     serviceType: z.string().min(1, { message: t('audit_page.form.validation.service_type_required') }),
     companySize: z.string().min(1, { message: t('audit_page.form.validation.company_size_required') }),
     industry: z.string().min(1, { message: t('audit_page.form.validation.industry_required') }),
-    auditScope: z.string().min(1, { message: t('audit_page.form.validation.audit_scope_required') }),
-    objectives: z.string().min(1, { message: t('audit_page.form.validation.objectives_required') }),
+    auditScope: z.string().optional(),
+    objectives: z.string().optional(),
     timeline: z.string().min(1, { message: t('audit_page.form.validation.timeline_required') }),
     budget: z.string().min(1, { message: t('audit_page.form.validation.budget_required') }),
     additionalInfo: z.string().optional(),
@@ -78,10 +81,39 @@ const AuditRequestForm = () => {
   });
 
   const onSubmit = (values: z.infer<typeof formSchema>) => {
-    console.log(values);
-    toast({
-      title: t('audit_page.form.success.title'),
-      description: t('audit_page.form.success.description'),
+    const payload: AuditRequestPayload = {
+      serviceName: values.serviceType,
+      company: values.companyName,
+      contactName: values.contactPerson,
+      email: values.email,
+      phone: values.phone,
+      companySize: values.companySize,
+      activity: values.industry,
+      timeline: values.timeline,
+      budget: values.budget,
+      scope: values.auditScope || "",
+      objectives: values.objectives || "",
+      more: values.additionalInfo || "",
+      privacyPolicy: values.agreeTerms,
+      keepMeInformed: values.agreeNewsletter || false,
+    };
+
+    mutate(payload, {
+      onSuccess: () => {
+        toast({
+          variant: 'success',
+          title: t('audit_page.form.success.title'),
+          description: t('audit_page.form.success.description'),
+        });
+        form.reset();
+      },
+      onError: (err: { message?: string }) => {
+        toast({
+          variant: 'destructive',
+          title: t('audit_page.form.error_title', { defaultValue: 'Error' }),
+          description: err?.message ?? t('audit_page.form.error_description', { defaultValue: 'Please try again later.' }),
+        });
+      },
     });
   };
 
@@ -149,14 +181,14 @@ const AuditRequestForm = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-16">
         {/* En-tête */}
         <div className="text-center mb-12">
-          <h2 
+          <h2
             className="text-4xl font-bold text-gray-900 mb-6"
             data-aos="fade-up"
             data-aos-duration="600"
           >
             {t('audit_page.form.title')}
           </h2>
-          <p 
+          <p
             className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
             data-aos="fade-up"
             data-aos-duration="600"
@@ -167,7 +199,7 @@ const AuditRequestForm = () => {
         </div>
 
         {/* Formulaire */}
-        <div 
+        <div
           className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200"
           data-aos="fade-up"
           data-aos-duration="600"
@@ -395,10 +427,10 @@ const AuditRequestForm = () => {
                       <FormItem>
                         <FormLabel>{t('audit_page.form.labels.audit_scope')}</FormLabel>
                         <FormControl>
-                          <Textarea 
-                            placeholder={t('audit_page.form.placeholders.audit_scope')} 
+                          <Textarea
+                            placeholder={t('audit_page.form.placeholders.audit_scope')}
                             className="min-h-[100px]"
-                            {...field} 
+                            {...field}
                           />
                         </FormControl>
                         <FormMessage />
@@ -412,10 +444,10 @@ const AuditRequestForm = () => {
                       <FormItem>
                         <FormLabel>{t('audit_page.form.labels.objectives')}</FormLabel>
                         <FormControl>
-                          <Textarea 
-                            placeholder={t('audit_page.form.placeholders.objectives')} 
+                          <Textarea
+                            placeholder={t('audit_page.form.placeholders.objectives')}
                             className="min-h-[100px]"
-                            {...field} 
+                            {...field}
                           />
                         </FormControl>
                         <FormMessage />
@@ -429,10 +461,10 @@ const AuditRequestForm = () => {
                       <FormItem>
                         <FormLabel>{t('audit_page.form.labels.additional_info')}</FormLabel>
                         <FormControl>
-                          <Textarea 
-                            placeholder={t('audit_page.form.placeholders.additional_info')} 
+                          <Textarea
+                            placeholder={t('audit_page.form.placeholders.additional_info')}
                             className="min-h-[100px]"
-                            {...field} 
+                            {...field}
                           />
                         </FormControl>
                         <FormMessage />
@@ -493,12 +525,13 @@ const AuditRequestForm = () => {
 
               {/* Bouton de soumission */}
               <div className="text-center">
-                <Button 
-                  type="submit" 
+                <Button
+                  type="submit"
+                  disabled={isPending}
                   className="px-8 py-4 bg-brand-blue text-white font-semibold rounded-lg hover:bg-yellow-600 transition-colors duration-200"
                 >
                   <Send className="w-5 h-5 mr-2" />
-                  {t('audit_page.form.submit_button')}
+                  {isPending ? t('audit_page.form.submitting', { defaultValue: 'Sending...' }) : t('audit_page.form.submit_button')}
                 </Button>
               </div>
             </form>
@@ -506,7 +539,7 @@ const AuditRequestForm = () => {
         </div>
 
         {/* Section contact alternatif */}
-        <div 
+        <div
           className="mt-12 text-center"
           data-aos="fade-up"
           data-aos-duration="600"
@@ -520,15 +553,15 @@ const AuditRequestForm = () => {
               {t('audit_page.form.alternative_contact.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
-                href="mailto:contact@drcpioneers.com" 
+              <a
+                href="mailto:contact@drcpioneers.com"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-gray-100 text-gray-700 font-semibold rounded-lg hover:bg-gray-200 transition-colors duration-200"
               >
                 <Mail className="w-5 h-5" />
                 contact@drcpioneers.com
               </a>
-              <a 
-                href="tel:+243862121612" 
+              <a
+                href="tel:+243862121612"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-gray-100 text-gray-700 font-semibold rounded-lg hover:bg-gray-200 transition-colors duration-200"
               >
                 <Phone className="w-5 h-5" />

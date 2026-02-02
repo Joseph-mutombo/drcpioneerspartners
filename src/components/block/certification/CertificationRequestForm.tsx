@@ -4,6 +4,8 @@ import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { toast } from "@/components/ui/use-toast";
 import { Button } from "@/components/ui/button";
+import { useCertificationRequestMutation } from "@/hooks/useFormMutations";
+import type { CertificationRequestPayload } from "@/services/api/types";
 import {
   Form,
   FormControl,
@@ -36,6 +38,7 @@ import {
 
 const CertificationRequestForm = () => {
   const { t } = useTranslation();
+  const { mutate, isPending } = useCertificationRequestMutation();
 
   const formSchema = z.object({
     requestType: z.string().min(1, { message: t('certifications_page.form.validation.request_type') }),
@@ -79,12 +82,22 @@ const CertificationRequestForm = () => {
   const requestType = form.watch("requestType");
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    toast({
-      title: t('certifications_page.form.success.title'),
-      description: t('certifications_page.form.success.description'),
+    mutate(values as CertificationRequestPayload, {
+      onSuccess: () => {
+        toast({
+          title: t('certifications_page.form.success.title'),
+          description: t('certifications_page.form.success.description'),
+        });
+        form.reset();
+      },
+      onError: (err: { message?: string }) => {
+        toast({
+          variant: 'destructive',
+          title: t('certifications_page.form.error_title', { defaultValue: 'Error' }),
+          description: err?.message ?? t('certifications_page.form.error_description', { defaultValue: 'Please try again later.' }),
+        });
+      },
     });
-    form.reset();
   }
 
   const requestTypes = [
@@ -468,11 +481,12 @@ const CertificationRequestForm = () => {
               {/* Bouton de soumission */}
               <div className="pt-6">
                 <Button 
-                  type="submit" 
+                  type="submit"
+                  disabled={isPending}
                   className="w-full group flex items-center justify-center gap-2 px-8 py-4 bg-brand-blue text-white font-semibold rounded-lg hover:bg-yellow-600 transition-colors duration-200"
                 >
                   <Send className="w-5 h-5" />
-                  <span>{t('certifications_page.form.submit_button')}</span>
+                  <span>{isPending ? t('certifications_page.form.submitting', { defaultValue: 'Sending...' }) : t('certifications_page.form.submit_button')}</span>
                 </Button>
               </div>
             </form>
